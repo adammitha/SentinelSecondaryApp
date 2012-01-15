@@ -8,13 +8,32 @@
 
 #import "FeedbackViewController.h"
 #import "ASIHTTPRequest.h"
+#import "Menu2.h"
 
 @implementation FeedbackViewController
 
+//button//
+
 - (IBAction)menutab2:(id)sender{
     NSLog(@"Transfer to second menu");
+    //view button is linked to// 
+    Menu2 *second = [[Menu2 alloc] initWithNibName:nil bundle:nil];
+    [self presentModalViewController:second animated:YES];
+}     
+    //end button link//
+//end button/
     
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 - (IBAction)playsound:(id)sender{
     NSLog(@"play sound");
     SystemSoundID adam;
@@ -27,6 +46,11 @@
     /*path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
     AudioServicesCreateSystemSoundID((CFURLRef)objc_unretainedPointer([NSURL fileURLWithPath:path]), &crunchSoundID);    
     */
+}
+
+
+- (IBAction)feedback:(id)sender {
+    [TestFlight openFeedbackView];
 }
 
 
@@ -107,7 +131,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)feedback:(id)sender {
-    [TestFlight openFeedbackView];
-}
 @end

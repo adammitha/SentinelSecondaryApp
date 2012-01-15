@@ -78,6 +78,8 @@
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */; };
+		D0152A2414C2B5C000D87C1D /* Menu2.m in Sources */ = {isa = PBXBuildFile; fileRef = D0152A2214C2B5BF00D87C1D /* Menu2.m */; };
+		D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0152A2314C2B5C000D87C1D /* Menu2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +186,9 @@
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
+		D0152A2114C2B5BF00D87C1D /* Menu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu2.h; sourceTree = "<group>"; };
+		D0152A2214C2B5BF00D87C1D /* Menu2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu2.m; sourceTree = "<group>"; };
+		D0152A2314C2B5C000D87C1D /* Menu2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +280,9 @@
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				D0152A2114C2B5BF00D87C1D /* Menu2.h */,
+				D0152A2214C2B5BF00D87C1D /* Menu2.m */,
+				D0152A2314C2B5C000D87C1D /* Menu2.xib */,
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
@@ -468,6 +476,7 @@
 				6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */,
 				D0152A1714C2981200D87C1D /* Adam's Rendition of Bach.m4a in Resources */,
 				D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */,
+				D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +512,7 @@
 				6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */,
 				6672721814B95F430017CEDE /* MapViewController.m in Sources */,
 				6627D19D14BA5C0A00053EF3 /* Location.m in Sources */,
+				D0152A2414C2B5C000D87C1D /* Menu2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
