@@ -10,6 +10,26 @@
 #import "ASIHTTPRequest.h"
 
 @implementation FeedbackViewController
+
+- (IBAction)menutab2:(id)sender{
+    NSLog(@"Transfer to second menu");
+    
+}
+- (IBAction)playsound:(id)sender{
+    NSLog(@"play sound");
+    SystemSoundID adam;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Adam's Rendition of Bach" ofType:@"wav"];
+    NSURL* url = [NSURL fileURLWithPath:path];
+    
+    AudioServicesCreateSystemSoundID( (CFURLRef)objc_unretainedPointer(url), &adam);
+    AudioServicesPlaySystemSound(adam);
+    
+    /*path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((CFURLRef)objc_unretainedPointer([NSURL fileURLWithPath:path]), &crunchSoundID);    
+    */
+}
+
+
 @synthesize rotationsDict = _rotationsDict;
 @synthesize rotationLabel = _rotationLabel;
 @synthesize dayLabel = _dayLabel;
@@ -40,6 +60,8 @@
 */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
+
 - (void)viewDidLoad
 {
     UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Home-Background-Textrured.png"]];
