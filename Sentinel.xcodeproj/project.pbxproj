@@ -74,12 +74,12 @@
 		66CE220514AF8E3100F6BF0D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CE220414AF8E3100F6BF0D /* MessageUI.framework */; };
 		66CE220814AF8ED100F6BF0D /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */; };
 		66CE220A14AFD72500F6BF0D /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE220914AFD72500F6BF0D /* 18-envelope.png */; };
-		D0152A1714C2981200D87C1D /* Adam's Rendition of Bach.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D0152A1614C2981200D87C1D /* Adam's Rendition of Bach.m4a */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */; };
 		D0152A2414C2B5C000D87C1D /* Menu2.m in Sources */ = {isa = PBXBuildFile; fileRef = D0152A2214C2B5BF00D87C1D /* Menu2.m */; };
 		D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0152A2314C2B5C000D87C1D /* Menu2.xib */; };
+		D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -182,13 +182,13 @@
 		66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		66CE220914AFD72500F6BF0D /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
-		D0152A1614C2981200D87C1D /* Adam's Rendition of Bach.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adam's Rendition of Bach.m4a"; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 		D0152A2114C2B5BF00D87C1D /* Menu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu2.h; sourceTree = "<group>"; };
 		D0152A2214C2B5BF00D87C1D /* Menu2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu2.m; sourceTree = "<group>"; };
 		D0152A2314C2B5C000D87C1D /* Menu2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu2.xib; sourceTree = "<group>"; };
+		D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +229,7 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */,
 				D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */,
 				6627D19914BA570E00053EF3 /* apple-touch-icon copy 2.png */,
 				6627D19614BA56CF00053EF3 /* apple-touch-icon copy.png */,
@@ -387,7 +388,6 @@
 		D0152A1514C2981200D87C1D /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				D0152A1614C2981200D87C1D /* Adam's Rendition of Bach.m4a */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -474,9 +474,9 @@
 				6627D19A14BA570E00053EF3 /* apple-touch-icon copy 2.png in Resources */,
 				6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */,
 				6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */,
-				D0152A1714C2981200D87C1D /* Adam's Rendition of Bach.m4a in Resources */,
 				D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */,
 				D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */,
+				D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
