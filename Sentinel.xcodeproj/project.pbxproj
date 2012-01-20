@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C514C8BEB500666214 /* Black Wood Background.png */; };
+		660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C614C8BEB500666214 /* Button Clicked.png */; };
+		660F36CE14C8BEB600666214 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C714C8BEB500666214 /* Button.png */; };
+		660F36CF14C8BEB600666214 /* Center Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C814C8BEB500666214 /* Center Logo.png */; };
+		660F36D014C8BEB600666214 /* Header 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C914C8BEB500666214 /* Header 1.png */; };
+		660F36D114C8BEB600666214 /* School Info and Events.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CA14C8BEB500666214 /* School Info and Events.png */; };
+		660F36D214C8BEB600666214 /* Student Council.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CB14C8BEB500666214 /* Student Council.png */; };
+		660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36D514C8C0C000666214 /* HomePageViewController.m */; };
+		660F36DB14C8E9DA00666214 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36DA14C8E9DA00666214 /* Welcome.png */; };
+		660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36DC14C8ECFB00666214 /* 33-cabinet.png */; };
+		660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36E214C8EEEA00666214 /* DocumentsViewController.m */; };
 		6614A81014B902ED00091A14 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 6614A80F14B902ED00091A14 /* 53-house.png */; };
 		6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614A81614B9105100091A14 /* CouncilDetailViewController.m */; };
 		6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6614A81714B9105100091A14 /* CouncilDetailViewController.xib */; };
+		66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD514C8F771009B809C /* Winter Gym Schedule.png */; };
+		66160ADB14C8F771009B809C /* Important Dates.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD614C8F771009B809C /* Important Dates.png */; };
+		66160ADC14C8F771009B809C /* Daily Time Table.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD714C8F771009B809C /* Daily Time Table.png */; };
+		66160ADD14C8F771009B809C /* course book.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD814C8F771009B809C /* course book.png */; };
+		66160ADE14C8F771009B809C /* Annual School Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD914C8F771009B809C /* Annual School Calendar.png */; };
 		661D09CC14B4E2A900C75B17 /* CouncilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D09CB14B4E2A900C75B17 /* CouncilViewController.m */; };
 		661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09CE14B4E44E00C75B17 /* 112-group.png */; };
 		661D09D114B683FC00C75B17 /* retinalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D014B683FC00C75B17 /* retinalogo.png */; };
@@ -66,7 +82,6 @@
 		66CE21F214AD3D7600F6BF0D /* 66-microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21F114AD3D7600F6BF0D /* 66-microphone.png */; };
 		66CE21F614AECD0300F6BF0D /* AnnouncementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */; };
 		66CE21F714AECD0300F6BF0D /* AnnouncementsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */; };
-		66CE21FA14AEE16900F6BF0D /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE21F914AEE16900F6BF0D /* CalendarViewController.m */; };
 		66CE21FC14AF7F6800F6BF0D /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FB14AF7F6800F6BF0D /* 111-user.png */; };
 		66CE21FE14AF804900F6BF0D /* Logo-SD45App.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */; };
 		66CE220014AF82A300F6BF0D /* 42-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FF14AF82A300F6BF0D /* 42-photos.png */; };
@@ -77,16 +92,33 @@
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */; };
-		D0152A2414C2B5C000D87C1D /* Menu2.m in Sources */ = {isa = PBXBuildFile; fileRef = D0152A2214C2B5BF00D87C1D /* Menu2.m */; };
-		D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0152A2314C2B5C000D87C1D /* Menu2.xib */; };
 		D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660F36C514C8BEB500666214 /* Black Wood Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background.png"; sourceTree = "<group>"; };
+		660F36C614C8BEB500666214 /* Button Clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Clicked.png"; sourceTree = "<group>"; };
+		660F36C714C8BEB500666214 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		660F36C814C8BEB500666214 /* Center Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Center Logo.png"; sourceTree = "<group>"; };
+		660F36C914C8BEB500666214 /* Header 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header 1.png"; sourceTree = "<group>"; };
+		660F36CA14C8BEB500666214 /* School Info and Events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "School Info and Events.png"; sourceTree = "<group>"; };
+		660F36CB14C8BEB500666214 /* Student Council.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Student Council.png"; sourceTree = "<group>"; };
+		660F36D414C8C0C000666214 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		660F36D514C8C0C000666214 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		660F36DA14C8E9DA00666214 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
+		660F36DC14C8ECFB00666214 /* 33-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet.png"; sourceTree = "<group>"; };
+		660F36E114C8EEEA00666214 /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
+		660F36E214C8EEEA00666214 /* DocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsViewController.m; sourceTree = "<group>"; };
 		6614A80F14B902ED00091A14 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		6614A81514B9105100091A14 /* CouncilDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilDetailViewController.h; sourceTree = "<group>"; };
 		6614A81614B9105100091A14 /* CouncilDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilDetailViewController.m; sourceTree = "<group>"; };
 		6614A81714B9105100091A14 /* CouncilDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouncilDetailViewController.xib; sourceTree = "<group>"; };
+		66160AD514C8F771009B809C /* Winter Gym Schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Winter Gym Schedule.png"; sourceTree = "<group>"; };
+		66160AD614C8F771009B809C /* Important Dates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Important Dates.png"; sourceTree = "<group>"; };
+		66160AD714C8F771009B809C /* Daily Time Table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daily Time Table.png"; sourceTree = "<group>"; };
+		66160AD814C8F771009B809C /* course book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course book.png"; sourceTree = "<group>"; };
+		66160AD914C8F771009B809C /* Annual School Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Annual School Calendar.png"; sourceTree = "<group>"; };
+		66160AE014C8FD9E009B809C /* rotation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotation.txt; sourceTree = "<group>"; };
 		661D09CA14B4E2A900C75B17 /* CouncilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilViewController.h; sourceTree = "<group>"; };
 		661D09CB14B4E2A900C75B17 /* CouncilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilViewController.m; sourceTree = "<group>"; };
 		661D09CE14B4E44E00C75B17 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
@@ -171,8 +203,6 @@
 		66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsDetailViewController.h; sourceTree = "<group>"; };
 		66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsDetailViewController.m; sourceTree = "<group>"; };
 		66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementsDetailViewController.xib; sourceTree = "<group>"; };
-		66CE21F814AEE16900F6BF0D /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
-		66CE21F914AEE16900F6BF0D /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		66CE21FB14AF7F6800F6BF0D /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
 		66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-SD45App.png"; sourceTree = "<group>"; };
 		66CE21FF14AF82A300F6BF0D /* 42-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "42-photos.png"; sourceTree = "<group>"; };
@@ -185,9 +215,6 @@
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
-		D0152A2114C2B5BF00D87C1D /* Menu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu2.h; sourceTree = "<group>"; };
-		D0152A2214C2B5BF00D87C1D /* Menu2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu2.m; sourceTree = "<group>"; };
-		D0152A2314C2B5C000D87C1D /* Menu2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu2.xib; sourceTree = "<group>"; };
 		D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +256,13 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				660F36C514C8BEB500666214 /* Black Wood Background.png */,
+				660F36C614C8BEB500666214 /* Button Clicked.png */,
+				660F36C714C8BEB500666214 /* Button.png */,
+				660F36C814C8BEB500666214 /* Center Logo.png */,
+				660F36C914C8BEB500666214 /* Header 1.png */,
+				660F36CA14C8BEB500666214 /* School Info and Events.png */,
+				660F36CB14C8BEB500666214 /* Student Council.png */,
 				D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */,
 				D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */,
 				6627D19914BA570E00053EF3 /* apple-touch-icon copy 2.png */,
@@ -242,9 +276,9 @@
 				66CE220414AF8E3100F6BF0D /* MessageUI.framework */,
 				66CBDBB314A4463C004FE748 /* QuartzCore.framework */,
 				66CBDBAA149C27E7004FE748 /* libz.dylib */,
+				66CBDBA4149C27C3004FE748 /* CFNetwork.framework */,
 				66CBDBA8149C27DA004FE748 /* MobileCoreServices.framework */,
 				66CBDBA6149C27CB004FE748 /* SystemConfiguration.framework */,
-				66CBDBA4149C27C3004FE748 /* CFNetwork.framework */,
 				66CBDB83149C2733004FE748 /* ASIHTTPRequest */,
 				66C6D37A1491948C003C95DB /* Sentinel */,
 				66C6D3731491948C003C95DB /* Frameworks */,
@@ -274,16 +308,22 @@
 		66C6D37A1491948C003C95DB /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
+				66160AE014C8FD9E009B809C /* rotation.txt */,
 				66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */,
 				66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */,
 				66C6D3831491948C003C95DB /* SentinelAppDelegate.h */,
+				660F36DA14C8E9DA00666214 /* Welcome.png */,
 				66C6D3841491948C003C95DB /* SentinelAppDelegate.m */,
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
-				D0152A2114C2B5BF00D87C1D /* Menu2.h */,
-				D0152A2214C2B5BF00D87C1D /* Menu2.m */,
-				D0152A2314C2B5C000D87C1D /* Menu2.xib */,
+				660F36D414C8C0C000666214 /* HomePageViewController.h */,
+				660F36D514C8C0C000666214 /* HomePageViewController.m */,
+				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
+				66160AD614C8F771009B809C /* Important Dates.png */,
+				66160AD714C8F771009B809C /* Daily Time Table.png */,
+				66160AD814C8F771009B809C /* course book.png */,
+				66160AD914C8F771009B809C /* Annual School Calendar.png */,
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
@@ -303,9 +343,8 @@
 				6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */,
 				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
 				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
-				66CE21F814AEE16900F6BF0D /* CalendarViewController.h */,
-				66CE21F914AEE16900F6BF0D /* CalendarViewController.m */,
 				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
+				660F36DC14C8ECFB00666214 /* 33-cabinet.png */,
 				6672721414B95EAC0017CEDE /* 07-map-marker.png */,
 				6614A80F14B902ED00091A14 /* 53-house.png */,
 				661D09CE14B4E44E00C75B17 /* 112-group.png */,
@@ -331,6 +370,8 @@
 				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
 				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
 				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
+				660F36E114C8EEEA00666214 /* DocumentsViewController.h */,
+				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -475,8 +516,21 @@
 				6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */,
 				6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */,
 				D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */,
-				D0152A2514C2B5C000D87C1D /* Menu2.xib in Resources */,
 				D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */,
+				660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */,
+				660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */,
+				660F36CE14C8BEB600666214 /* Button.png in Resources */,
+				660F36CF14C8BEB600666214 /* Center Logo.png in Resources */,
+				660F36D014C8BEB600666214 /* Header 1.png in Resources */,
+				660F36D114C8BEB600666214 /* School Info and Events.png in Resources */,
+				660F36D214C8BEB600666214 /* Student Council.png in Resources */,
+				660F36DB14C8E9DA00666214 /* Welcome.png in Resources */,
+				660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */,
+				66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */,
+				66160ADB14C8F771009B809C /* Important Dates.png in Resources */,
+				66160ADC14C8F771009B809C /* Daily Time Table.png in Resources */,
+				66160ADD14C8F771009B809C /* course book.png in Resources */,
+				66160ADE14C8F771009B809C /* Annual School Calendar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +558,6 @@
 				66CBDBB714A44652004FE748 /* PullRefreshTableViewController.m in Sources */,
 				66CBDBCA14A45523004FE748 /* EventsDetailViewController.m in Sources */,
 				66CE21F614AECD0300F6BF0D /* AnnouncementsDetailViewController.m in Sources */,
-				66CE21FA14AEE16900F6BF0D /* CalendarViewController.m in Sources */,
 				66CE220314AF855700F6BF0D /* WebsiteViewController.m in Sources */,
 				66CE220814AF8ED100F6BF0D /* FeedbackViewController.m in Sources */,
 				6664556914AFF3A1009D0E87 /* WebsiteDetailViewController.m in Sources */,
@@ -512,7 +565,8 @@
 				6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */,
 				6672721814B95F430017CEDE /* MapViewController.m in Sources */,
 				6627D19D14BA5C0A00053EF3 /* Location.m in Sources */,
-				D0152A2414C2B5C000D87C1D /* Menu2.m in Sources */,
+				660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */,
+				660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

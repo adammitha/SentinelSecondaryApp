@@ -8,46 +8,8 @@
 
 #import "FeedbackViewController.h"
 #import "ASIHTTPRequest.h"
-#import "Menu2.h"
 
 @implementation FeedbackViewController
-
-//button//
-
-- (IBAction)menutab2:(id)sender{
-    NSLog(@"Transfer to second menu");
-    //view button is linked to// 
-    Menu2 *second = [[Menu2 alloc] initWithNibName:nil bundle:nil];
-    [self presentModalViewController:second animated:YES];
-}     
-    //end button link//
-//end button/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-- (IBAction)playsound:(id)sender{
-    NSLog(@"play sound");
-    SystemSoundID adam;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Adam's Rendition of Bach" ofType:@"wav"];
-    NSURL* url = [NSURL fileURLWithPath:path];
-    
-    AudioServicesCreateSystemSoundID( (CFURLRef)objc_unretainedPointer(url), &adam);
-    AudioServicesPlaySystemSound(adam);
-    
-    /*path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
-    AudioServicesCreateSystemSoundID((CFURLRef)objc_unretainedPointer([NSURL fileURLWithPath:path]), &crunchSoundID);    
-    */
-}
-
 
 - (IBAction)feedback:(id)sender {
     [TestFlight openFeedbackView];
@@ -73,6 +35,9 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
+- (IBAction)buttonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 #pragma mark - View lifecycle
 
@@ -90,32 +55,8 @@
 {
     UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Home-Background-Textrured.png"]];
     self.view.backgroundColor = color;
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setDelegate:self];
-    [request startAsynchronous];
 }
 
-- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    NSData *responseData = [request responseData];
-    NSError *error;
-    self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
-    //NSLog(@"%@", self.rotationsDict);
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateString = [formatter stringFromDate:date];
-    //NSLog(@"%@",dateString);
-    NSDictionary *tempDict = [self.rotationsDict objectForKey:dateString];
-    NSLog(@"%@", tempDict);
-    if (tempDict) {
-        NSString *block  = @"Block: ";
-        NSString *day = @"Day: ";
-        self.rotationLabel.text = [block stringByAppendingString:[tempDict objectForKey:@"rotation"]];
-        self.dayLabel.text = [day stringByAppendingString:[tempDict objectForKey:@"day"]];
-    }
-}
 - (void)viewDidUnload
 {
     [self setRotationLabel:nil];

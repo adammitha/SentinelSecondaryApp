@@ -37,7 +37,6 @@
 }
 
 #pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -196,4 +195,7 @@
     [self.navigationController pushViewController:eventsDetailViewController animated:YES];
 }
 
+- (IBAction)buttonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

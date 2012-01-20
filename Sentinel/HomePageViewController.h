@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomePageViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+@property (nonatomic, strong) NSDictionary *rotationsDict;
+@property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
 @end

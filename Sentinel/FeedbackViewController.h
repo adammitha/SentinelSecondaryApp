@@ -16,6 +16,4 @@
 @property (nonatomic, retain) NSDictionary *rotationsDict;
 @property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
-- (IBAction)menutab2:(id)sender;
-- (IBAction)playsound:(id)sender;
 @end

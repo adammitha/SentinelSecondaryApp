@@ -57,4 +57,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+- (IBAction)buttonPressed:(id)sender {
+    NSLog(@"%@", [sender identifier]);
+    NSString *string = [[NSString alloc] initWithContentsOfFile:@"rotation.h" encoding:NSUTF8StringEncoding error:nil];
+    
+}
 @end

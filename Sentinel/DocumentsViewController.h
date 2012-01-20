@@ -10,4 +10,5 @@
 
 @interface DocumentsViewController : UIViewController
 
+- (IBAction)buttonPressed:(id)sender;
 @end

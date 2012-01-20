@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) NSArray *eventsArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+- (void)homeButtonPressed;
+- (IBAction)buttonPressed:(id)sender;
 @end
