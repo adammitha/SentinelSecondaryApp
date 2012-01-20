@@ -1,16 +1,14 @@
 //
-//  Menu2.m
+//  HomePageViewController.m
 //  Sentinel
 //
-//  Created by Justin Wong on 12-01-14.
+//  Created by Adam Mitha on 12-01-19.
 //  Copyright (c) 2012 Sentinel Secondary School. All rights reserved.
 //
 
-#import "Menu2.h"
+#import "HomePageViewController.h"
 
-@implementation Menu2
-
-
+@implementation HomePageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,11 +29,20 @@
 
 #pragma mark - View lifecycle
 
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
+
+/*
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
+*/
 
 - (void)viewDidUnload
 {
@@ -49,7 +56,5 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-
 
 @end
