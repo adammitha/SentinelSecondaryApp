@@ -10,6 +10,7 @@
 #import "ASIHTTPRequest.h"
 #import "EventsDetailViewController.h"
 #import "MBProgressHUD.h"
+#import "HomePageViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 @implementation EventsViewController
 @synthesize eventsArray = _eventsArray;
@@ -36,10 +37,18 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)goHome
+{
+    //HomePageViewController *homePageViewController = [[HomePageViewController alloc] init];
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+    //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
+}
 #pragma mark - View lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelEventsXML"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
@@ -77,6 +86,7 @@
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     [alert show];
 }
 
@@ -136,11 +146,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.font = [UIFont boldSystemFontOfSize:12];
-    cell.detailTextLabel.font = [UIFont systemFontOfSize:10];
     cell.textLabel.text = [tempdict objectForKey:@"title"];
-    cell.detailTextLabel.text = [tempdict objectForKey:@"description"];
     return cell;
 }
 
@@ -184,6 +193,10 @@
 */
 
 #pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Cell-Color-2.png"]];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -191,11 +204,9 @@
     NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
     eventsDetailViewController.eventTitle = [tempdict objectForKey:@"title"];
     eventsDetailViewController.eventDescription = [tempdict objectForKey:@"description"];
+    eventsDetailViewController.eventLink = [tempdict objectForKey:@"link"];
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:eventsDetailViewController animated:YES];
 }
 
-- (IBAction)buttonPressed:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
 @end

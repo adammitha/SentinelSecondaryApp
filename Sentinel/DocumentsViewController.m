@@ -36,13 +36,15 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];
+    self.view.backgroundColor = color;
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -59,8 +61,6 @@
 
 
 - (IBAction)buttonPressed:(id)sender {
-    NSLog(@"%@", [sender identifier]);
-    NSString *string = [[NSString alloc] initWithContentsOfFile:@"rotation.h" encoding:NSUTF8StringEncoding error:nil];
     
 }
 @end

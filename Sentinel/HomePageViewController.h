@@ -12,4 +12,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property (nonatomic, strong) NSDictionary *rotationsDict;
 @property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @end

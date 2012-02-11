@@ -13,6 +13,7 @@
 @synthesize dayLabel = _dayLabel;
 @synthesize rotationsDict = _rotationsDict;
 @synthesize rotationLabel = _rotationLabel;
+@synthesize dateLabel = _dateLabel;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -72,6 +73,7 @@
         NSString *day = @"Day: ";
         self.rotationLabel.text = [rotation stringByAppendingString:[tempDict objectForKey:@"rotation"]];
         self.dayLabel.text = [day stringByAppendingString:[tempDict objectForKey:@"day"]];
+        self.dateLabel.text = [tempDict objectForKey:@"date"];
     }
 }
 
@@ -84,6 +86,7 @@
     [self setRotationLabel:nil];
     [self setDayLabel:nil];
     [self setDayLabel:nil];
+    [self setDateLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

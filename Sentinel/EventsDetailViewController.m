@@ -13,6 +13,7 @@
 @synthesize descriptionLabel;
 @synthesize eventTitle = _eventTitle;
 @synthesize eventDescription = _eventDescription;
+@synthesize eventLink = _eventLink;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,7 +33,7 @@
 
 - (void)launchURL
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://go45.sd45.bc.ca/schools/sentinel/Pages/events.aspx"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.eventLink]];
 }
 #pragma mark - View lifecycle
 

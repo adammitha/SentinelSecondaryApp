@@ -11,6 +11,7 @@
 @interface EventsDetailViewController : UIViewController
 @property (strong, nonatomic) NSString *eventTitle;
 @property (strong, nonatomic) NSString *eventDescription;
+@property (strong, nonatomic) NSString *eventLink;
 @property (weak, nonatomic) IBOutlet UITextView *titleView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 - (void)launchURL;

@@ -15,9 +15,14 @@
 		660F36D114C8BEB600666214 /* School Info and Events.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CA14C8BEB500666214 /* School Info and Events.png */; };
 		660F36D214C8BEB600666214 /* Student Council.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CB14C8BEB500666214 /* Student Council.png */; };
 		660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36D514C8C0C000666214 /* HomePageViewController.m */; };
-		660F36DB14C8E9DA00666214 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36DA14C8E9DA00666214 /* Welcome.png */; };
 		660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36DC14C8ECFB00666214 /* 33-cabinet.png */; };
 		660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36E214C8EEEA00666214 /* DocumentsViewController.m */; };
+		6612087314C9F97D003E3863 /* Documents-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612086E14C9F97D003E3863 /* Documents-1.png */; };
+		6612087414C9F97D003E3863 /* Documents-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612086F14C9F97D003E3863 /* Documents-2.png */; };
+		6612087514C9F97D003E3863 /* Documents-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087014C9F97D003E3863 /* Documents-3.png */; };
+		6612087614C9F97D003E3863 /* Documents-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087114C9F97D003E3863 /* Documents-4.png */; };
+		6612087714C9F97D003E3863 /* Documents-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087214C9F97D003E3863 /* Documents-5.png */; };
+		6612087A14C9FC69003E3863 /* Document Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087914C9FC69003E3863 /* Document Background.png */; };
 		6614A81014B902ED00091A14 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 6614A80F14B902ED00091A14 /* 53-house.png */; };
 		6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614A81614B9105100091A14 /* CouncilDetailViewController.m */; };
 		6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6614A81714B9105100091A14 /* CouncilDetailViewController.xib */; };
@@ -38,6 +43,12 @@
 		6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */; };
 		6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D1A014BA628900053EF3 /* HeaderLogo.png */; };
 		662A7C89149AED4900406F04 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A7C88149AED4900406F04 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		66490CE614CA031A00F99B89 /* Events-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE414CA031A00F99B89 /* Events-cell.png */; };
+		66490CE714CA031A00F99B89 /* Home-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE514CA031A00F99B89 /* Home-arrow.png */; };
+		66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE914CA07ED00F99B89 /* Welcome-1.png */; };
+		66490CEC14CA083000F99B89 /* Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CEB14CA083000F99B89 /* Black Wood Background3.png */; };
+		66490CEE14CA08E100F99B89 /* Cell-Color-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CED14CA08E100F99B89 /* Cell-Color-2.png */; };
+		66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CEF14CA0B4100F99B89 /* Center Logo-2.png */; };
 		6664556914AFF3A1009D0E87 /* WebsiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */; };
 		6664556A14AFF3A1009D0E87 /* WebsiteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */; };
 		6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664556E14AFFC15009D0E87 /* sd45app icon copy.png */; };
@@ -91,7 +102,6 @@
 		66CE220A14AFD72500F6BF0D /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE220914AFD72500F6BF0D /* 18-envelope.png */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
-		D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */; };
 		D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */; };
 /* End PBXBuildFile section */
 
@@ -105,10 +115,15 @@
 		660F36CB14C8BEB500666214 /* Student Council.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Student Council.png"; sourceTree = "<group>"; };
 		660F36D414C8C0C000666214 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		660F36D514C8C0C000666214 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		660F36DA14C8E9DA00666214 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
 		660F36DC14C8ECFB00666214 /* 33-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet.png"; sourceTree = "<group>"; };
 		660F36E114C8EEEA00666214 /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
 		660F36E214C8EEEA00666214 /* DocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsViewController.m; sourceTree = "<group>"; };
+		6612086E14C9F97D003E3863 /* Documents-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-1.png"; sourceTree = "<group>"; };
+		6612086F14C9F97D003E3863 /* Documents-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-2.png"; sourceTree = "<group>"; };
+		6612087014C9F97D003E3863 /* Documents-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-3.png"; sourceTree = "<group>"; };
+		6612087114C9F97D003E3863 /* Documents-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-4.png"; sourceTree = "<group>"; };
+		6612087214C9F97D003E3863 /* Documents-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-5.png"; sourceTree = "<group>"; };
+		6612087914C9FC69003E3863 /* Document Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Document Background.png"; sourceTree = "<group>"; };
 		6614A80F14B902ED00091A14 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		6614A81514B9105100091A14 /* CouncilDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilDetailViewController.h; sourceTree = "<group>"; };
 		6614A81614B9105100091A14 /* CouncilDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilDetailViewController.m; sourceTree = "<group>"; };
@@ -135,6 +150,12 @@
 		6627D1A014BA628900053EF3 /* HeaderLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderLogo.png; sourceTree = "<group>"; };
 		662A7C87149AED4900406F04 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		662A7C88149AED4900406F04 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		66490CE414CA031A00F99B89 /* Events-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Events-cell.png"; sourceTree = "<group>"; };
+		66490CE514CA031A00F99B89 /* Home-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow.png"; sourceTree = "<group>"; };
+		66490CE914CA07ED00F99B89 /* Welcome-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome-1.png"; sourceTree = "<group>"; };
+		66490CEB14CA083000F99B89 /* Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background3.png"; sourceTree = "<group>"; };
+		66490CED14CA08E100F99B89 /* Cell-Color-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell-Color-2.png"; sourceTree = "<group>"; };
+		66490CEF14CA0B4100F99B89 /* Center Logo-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Center Logo-2.png"; sourceTree = "<group>"; };
 		6664556614AFF3A1009D0E87 /* WebsiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteDetailViewController.h; sourceTree = "<group>"; };
 		6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteDetailViewController.m; sourceTree = "<group>"; };
 		6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebsiteDetailViewController.xib; sourceTree = "<group>"; };
@@ -214,7 +235,6 @@
 		66CE220914AFD72500F6BF0D /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 		D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,11 +328,18 @@
 		66C6D37A1491948C003C95DB /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
+				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
+				66490CE414CA031A00F99B89 /* Events-cell.png */,
+				66490CE514CA031A00F99B89 /* Home-arrow.png */,
+				6612086E14C9F97D003E3863 /* Documents-1.png */,
+				6612086F14C9F97D003E3863 /* Documents-2.png */,
+				6612087014C9F97D003E3863 /* Documents-3.png */,
+				6612087114C9F97D003E3863 /* Documents-4.png */,
+				6612087214C9F97D003E3863 /* Documents-5.png */,
 				66160AE014C8FD9E009B809C /* rotation.txt */,
 				66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */,
 				66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */,
 				66C6D3831491948C003C95DB /* SentinelAppDelegate.h */,
-				660F36DA14C8E9DA00666214 /* Welcome.png */,
 				66C6D3841491948C003C95DB /* SentinelAppDelegate.m */,
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
@@ -330,7 +357,7 @@
 				6672721714B95F430017CEDE /* MapViewController.m */,
 				661D09CA14B4E2A900C75B17 /* CouncilViewController.h */,
 				661D09CB14B4E2A900C75B17 /* CouncilViewController.m */,
-				D0152A1D14C2A49900D87C1D /* Adam's Rendition of Bach.wav */,
+				6612087914C9FC69003E3863 /* Document Background.png */,
 				6614A81514B9105100091A14 /* CouncilDetailViewController.h */,
 				6614A81614B9105100091A14 /* CouncilDetailViewController.m */,
 				6614A81714B9105100091A14 /* CouncilDetailViewController.xib */,
@@ -343,15 +370,18 @@
 				6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */,
 				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
 				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
+				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
 				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
 				660F36DC14C8ECFB00666214 /* 33-cabinet.png */,
 				6672721414B95EAC0017CEDE /* 07-map-marker.png */,
 				6614A80F14B902ED00091A14 /* 53-house.png */,
+				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
 				661D09CE14B4E44E00C75B17 /* 112-group.png */,
 				66CE220914AFD72500F6BF0D /* 18-envelope.png */,
 				66CE21FF14AF82A300F6BF0D /* 42-photos.png */,
 				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
 				66CE21F114AD3D7600F6BF0D /* 66-microphone.png */,
+				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
 				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
 				66CBDBB1149C2DB1004FE748 /* 179-notepad.png */,
 				66C6D38C1491948C003C95DB /* first.png */,
@@ -515,7 +545,6 @@
 				6627D19A14BA570E00053EF3 /* apple-touch-icon copy 2.png in Resources */,
 				6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */,
 				6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */,
-				D0152A1E14C2A49900D87C1D /* Adam's Rendition of Bach.wav in Resources */,
 				D0F55E4514C3D6FB00A0B425 /* Adam's Rendition of Bach.wav in Resources */,
 				660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */,
 				660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */,
@@ -524,13 +553,24 @@
 				660F36D014C8BEB600666214 /* Header 1.png in Resources */,
 				660F36D114C8BEB600666214 /* School Info and Events.png in Resources */,
 				660F36D214C8BEB600666214 /* Student Council.png in Resources */,
-				660F36DB14C8E9DA00666214 /* Welcome.png in Resources */,
 				660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */,
 				66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */,
 				66160ADB14C8F771009B809C /* Important Dates.png in Resources */,
 				66160ADC14C8F771009B809C /* Daily Time Table.png in Resources */,
 				66160ADD14C8F771009B809C /* course book.png in Resources */,
 				66160ADE14C8F771009B809C /* Annual School Calendar.png in Resources */,
+				6612087314C9F97D003E3863 /* Documents-1.png in Resources */,
+				6612087414C9F97D003E3863 /* Documents-2.png in Resources */,
+				6612087514C9F97D003E3863 /* Documents-3.png in Resources */,
+				6612087614C9F97D003E3863 /* Documents-4.png in Resources */,
+				6612087714C9F97D003E3863 /* Documents-5.png in Resources */,
+				6612087A14C9FC69003E3863 /* Document Background.png in Resources */,
+				66490CE614CA031A00F99B89 /* Events-cell.png in Resources */,
+				66490CE714CA031A00F99B89 /* Home-arrow.png in Resources */,
+				66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */,
+				66490CEC14CA083000F99B89 /* Black Wood Background3.png in Resources */,
+				66490CEE14CA08E100F99B89 /* Cell-Color-2.png in Resources */,
+				66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
