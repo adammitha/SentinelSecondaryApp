@@ -605,6 +605,12 @@
 				66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */,
 				66000AAD14E741CC0004F786 /* Logo.png in Resources */,
 				66000AAE14E741CC0004F786 /* Sentinel Text Logo.png in Resources */,
+				D0BD6F8B14E753BE007986C6 /* Calendar.pdf in Resources */,
+				D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */,
+				D0BD6F9314E75CF5007986C6 /* Course Book.pdf in Resources */,
+				D0BD6F9514E75D35007986C6 /* Gym Schedule.pdf in Resources */,
+				D0BD6F9714E75DA7007986C6 /* Important Dates.pdf in Resources */,
+				D0BD6F9914E75DEC007986C6 /* Timetable.pdf in Resources */,
 				66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
