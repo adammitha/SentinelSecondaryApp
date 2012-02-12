@@ -11,4 +11,5 @@
 @interface DocumentsViewController : UIViewController
 
 - (IBAction)buttonPressed:(id)sender;
+- (void)goHome;
 @end

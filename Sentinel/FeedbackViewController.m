@@ -57,12 +57,10 @@
 
 - (void)viewDidLoad
 {
-    UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Home-Background-Textrured.png"]];
-    self.view.backgroundColor = color;
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
-
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void)viewDidUnload

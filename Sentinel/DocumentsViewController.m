@@ -7,7 +7,7 @@
 //
 
 #import "DocumentsViewController.h"
-
+#import "DocumentsDetailViewController.h"
 @implementation DocumentsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,11 +35,18 @@
 {
 }
 */
-
+- (void)goHome
+{
+    //HomePageViewController *homePageViewController = [[HomePageViewController alloc] init];
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+    //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    self.navigationItem.leftBarButtonItem = item;
     [super viewDidLoad];
     UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];
     self.view.backgroundColor = color;
@@ -60,7 +67,11 @@
 }
 
 
-- (IBAction)buttonPressed:(id)sender {
-    
+- (IBAction)buttonPressed:(UIButton*)sender {
+    NSLog(@"%@", sender.titleLabel.text);
+    DocumentsDetailViewController *detailViewController = [[DocumentsDetailViewController alloc] init];
+    detailViewController.fileName = sender.titleLabel.text;
+    detailViewController.filePath = [[NSBundle mainBundle] pathForResource:sender.titleLabel.text ofType:@"pdf"];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 @end
