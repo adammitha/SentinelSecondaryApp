@@ -43,6 +43,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Map";
     MKCoordinateRegion region;
     region.center.latitude = 49.3462955;
     region.center.longitude = -123.1493511;

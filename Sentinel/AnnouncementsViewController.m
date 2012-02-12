@@ -31,12 +31,21 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)goHome
+{
+    //HomePageViewController *homePageViewController = [[HomePageViewController alloc] init];
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+    //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Announcements";
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelAnnouncementsXml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];

@@ -37,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Teacher Websites";
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/teacherWebsitesXml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
