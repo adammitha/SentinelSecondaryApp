@@ -217,7 +217,8 @@
                                 <rect key="frame" x="0.0" y="126" width="320" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535442352295" green="1" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
-                                <mutableString key="text">	Sentinel Secondary is a comprehensive high school that currently enrolls over 1170 students in Grades 8 through 12. Sentinel also offers a number of special programs including Advanced Placement, French Immersion, Computer Immersion, Super Achievers and the Hockey, Soccer, and Tennis Academies. 
+                                <mutableString key="text">	Sentinel Secondary is a comprehensive high school that currently enrolls over 1170 students in Grades 8 through 12. Sentinel also offers a number of special programs including Advanced Placement, French Immersion, Computer Immersion, Super Achievers and the Hockey, Soccer, and Tennis Academies.
+
 
 
 At Sentinel Secondary School we:
