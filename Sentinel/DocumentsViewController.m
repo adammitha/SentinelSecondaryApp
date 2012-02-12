@@ -50,6 +50,8 @@
     [super viewDidLoad];
     UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];
     self.view.backgroundColor = color;
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    [self.view addSubview:scrollView];
 }
 
 
