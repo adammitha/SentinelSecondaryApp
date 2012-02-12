@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel Text Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */; };
+		66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AB614E7825E0004F786 /* Sentinel School Photo.png */; };
 		660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C514C8BEB500666214 /* Black Wood Background.png */; };
 		660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C614C8BEB500666214 /* Button Clicked.png */; };
 		660F36CE14C8BEB600666214 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C714C8BEB500666214 /* Button.png */; };
@@ -110,6 +111,7 @@
 /* Begin PBXFileReference section */
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sentinel Text Logo.png"; path = "Sentinel/Sentinel Text Logo.png"; sourceTree = SOURCE_ROOT; };
+		66000AB614E7825E0004F786 /* Sentinel School Photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel School Photo.png"; sourceTree = "<group>"; };
 		660F36C514C8BEB500666214 /* Black Wood Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background.png"; sourceTree = "<group>"; };
 		660F36C614C8BEB500666214 /* Button Clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Clicked.png"; sourceTree = "<group>"; };
 		660F36C714C8BEB500666214 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
 				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
 				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
+				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
 				660F36DC14C8ECFB00666214 /* 33-cabinet.png */,
 				6672721414B95EAC0017CEDE /* 07-map-marker.png */,
 				6614A80F14B902ED00091A14 /* 53-house.png */,
@@ -579,6 +582,7 @@
 				66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */,
 				66000AAD14E741CC0004F786 /* Logo.png in Resources */,
 				66000AAE14E741CC0004F786 /* Sentinel Text Logo.png in Resources */,
+				66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
