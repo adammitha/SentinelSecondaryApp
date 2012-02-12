@@ -615,6 +615,7 @@
 				D0BD6F9714E75DA7007986C6 /* Important Dates.pdf in Resources */,
 				D0BD6F9914E75DEC007986C6 /* Timetable.pdf in Resources */,
 				D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */,
+				66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
