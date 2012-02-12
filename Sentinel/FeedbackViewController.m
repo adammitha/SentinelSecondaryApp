@@ -53,8 +53,7 @@
 
 - (void)viewDidLoad
 {
-    UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Home-Background-Textrured.png"]];
-    self.view.backgroundColor = color;
+
 }
 
 - (void)viewDidUnload
