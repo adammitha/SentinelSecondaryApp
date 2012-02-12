@@ -108,8 +108,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
-		66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Text Logo.png"; sourceTree = "<group>"; };
+		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
+		66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sentinel Text Logo.png"; path = "Sentinel/Sentinel Text Logo.png"; sourceTree = SOURCE_ROOT; };
 		660F36C514C8BEB500666214 /* Black Wood Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background.png"; sourceTree = "<group>"; };
 		660F36C614C8BEB500666214 /* Button Clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Clicked.png"; sourceTree = "<group>"; };
 		660F36C714C8BEB500666214 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
