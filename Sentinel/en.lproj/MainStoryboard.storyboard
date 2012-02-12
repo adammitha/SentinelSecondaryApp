@@ -196,9 +196,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Sentinel Text Logo.png" id="xU2-Xr-3Dg">
-                                <rect key="frame" x="71" y="59" width="229" height="54"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Sentinel School Photo.png" id="wLl-kQ-x2P">
+                                <rect key="frame" x="0.0" y="44" width="321" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="SoI-Wh-4eZ">
                                 <rect key="frame" x="0.0" y="126" width="320" height="305"/>
@@ -206,16 +206,13 @@
                                 <color key="backgroundColor" red="0.98823535442352295" green="1" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
                                 <string key="text">	Sentinel Secondary is a comprehensive high school that currently enrolls over 1170 students in Grades 8 through 12. Sentinel also offers a number of special programs including Advanced Placement, French Immersion, Computer Immersion, Super Achievers and the Hockey, Soccer, and Tennis Academies.
 
-
-
 At Sentinel Secondary School we:
-
-- Demonstrate a love of learning by modeling and encouraging personal excellence
-- Value integrity
-- Treat everyone with Dignity, Honesty, and Compassion
-- Behave in a collaborative and consistent manner
-- Are proud to be a safe, caring and inclusive community
-
+	- Demonstrate a love of learning by		  modeling and encouraging personal 		  excellence
+	- Value integrity
+	- Treat everyone with Dignity, Honesty, 	and 	  Compassion
+	- Behave in a collaborative and consistent 	  manner
+	- Are proud to be a safe, caring and 		  inclusive community
+ 
 
 School Motto:
  
@@ -224,10 +221,6 @@ Summis Cum Animis
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.png" id="rIc-aI-IIh">
-                                <rect key="frame" x="14" y="53" width="60" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -542,9 +535,8 @@ Summis Cum Animis
         <image name="Documents-5.png" width="650" height="650"/>
         <image name="Header 1.png" width="660" height="168"/>
         <image name="Home-arrow.png" width="50" height="50"/>
-        <image name="Logo.png" width="122" height="131"/>
         <image name="School Info and Events.png" width="640" height="109"/>
-        <image name="Sentinel Text Logo.png" width="2292" height="546"/>
+        <image name="Sentinel School Photo.png" width="450" height="251"/>
         <image name="Student Council.png" width="450" height="90"/>
         <image name="Welcome-1.png" width="380" height="90"/>
     </resources>
