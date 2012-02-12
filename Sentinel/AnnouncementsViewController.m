@@ -31,6 +31,13 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)goHome
+{
+    //HomePageViewController *homePageViewController = [[HomePageViewController alloc] init];
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+    //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad

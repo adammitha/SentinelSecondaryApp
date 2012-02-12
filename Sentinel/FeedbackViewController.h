@@ -16,4 +16,5 @@
 @property (nonatomic, retain) NSDictionary *rotationsDict;
 @property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+- (void)swipeDidOccur;
 @end

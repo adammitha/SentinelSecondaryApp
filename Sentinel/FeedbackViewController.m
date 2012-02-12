@@ -50,11 +50,18 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad
 {
     UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Home-Background-Textrured.png"]];
     self.view.backgroundColor = color;
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
+    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRecognizer];
 }
 
 - (void)viewDidUnload

@@ -13,4 +13,5 @@
 
 @property (nonatomic, strong) NSArray *announcementsArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+- (void)goHome;
 @end
