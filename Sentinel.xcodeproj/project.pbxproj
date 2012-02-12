@@ -104,6 +104,7 @@
 		66CE220A14AFD72500F6BF0D /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE220914AFD72500F6BF0D /* 18-envelope.png */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
+		D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8A6C14E7B741008A8F33 /* Default@2x.png */; };
 		D0BD6F8B14E753BE007986C6 /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F8A14E753BE007986C6 /* Calendar.pdf */; };
 		D0BD6F9014E7550F007986C6 /* DocumentsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */; };
 		D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */; };
@@ -246,6 +247,7 @@
 		66CE220914AFD72500F6BF0D /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D03F8A6C14E7B741008A8F33 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Sentinel/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		D0BD6F8A14E753BE007986C6 /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsDetailViewController.h; sourceTree = "<group>"; };
 		D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsDetailViewController.m; sourceTree = "<group>"; };
@@ -253,7 +255,7 @@
 		D0BD6F9214E75CF5007986C6 /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Gym Schedule.pdf"; sourceTree = "<group>"; };
 		D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
-		D0BD6F9814E75DEC007986C6 /* Timetable.pdf */ = {isa = PBXFileReference; path = Timetable.pdf; sourceTree = "<group>"; };
+		D0BD6F9814E75DEC007986C6 /* Timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Timetable.pdf; sourceTree = "<group>"; };
 		D0F55E4414C3D6FB00A0B425 /* Adam's Rendition of Bach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Adam's Rendition of Bach.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -360,6 +362,7 @@
 				6612087014C9F97D003E3863 /* Documents-3.png */,
 				6612087114C9F97D003E3863 /* Documents-4.png */,
 				6612087214C9F97D003E3863 /* Documents-5.png */,
+				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
 				66160AE014C8FD9E009B809C /* rotation.txt */,
 				66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */,
 				66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */,
@@ -608,6 +611,7 @@
 				D0BD6F9514E75D35007986C6 /* Gym Schedule.pdf in Resources */,
 				D0BD6F9714E75DA7007986C6 /* Important Dates.pdf in Resources */,
 				D0BD6F9914E75DEC007986C6 /* Timetable.pdf in Resources */,
+				D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

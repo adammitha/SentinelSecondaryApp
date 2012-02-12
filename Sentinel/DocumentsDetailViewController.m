@@ -31,8 +31,20 @@
 
 #pragma mark - View lifecycle
 
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad
 {
+    
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
+    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //swipe 
+   
     [super viewDidLoad];
     NSLog(@"%@", _filePath);
     self.webView.scalesPageToFit = YES;

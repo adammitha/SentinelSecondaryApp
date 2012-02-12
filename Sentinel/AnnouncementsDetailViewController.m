@@ -37,9 +37,19 @@
 }
 #pragma mark - View lifecycle
 
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
+    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //swipe     [super viewDidLoad];
     self.titleLabel.text = self.announcementTitle;
     self.descriptionLabel.text = self.announcementDescription;
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchURL)];

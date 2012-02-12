@@ -11,5 +11,4 @@
 
 @interface MapViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
 @end

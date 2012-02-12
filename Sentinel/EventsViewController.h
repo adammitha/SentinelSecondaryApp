@@ -14,4 +14,5 @@
 @property (nonatomic, strong) NSArray *eventsArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (void)goHome;
+- (void)swipeDidOccur;
 @end

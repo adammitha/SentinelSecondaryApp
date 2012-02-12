@@ -43,15 +43,30 @@
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad
 {
+    
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
+    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //swipe 
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
     [super viewDidLoad];
-    UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];
-    self.view.backgroundColor = color;
-    UIScrollView *scrollView = [[UIScrollView alloc] init];
-    [self.view addSubview:scrollView];
+ UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];
+  self.view.backgroundColor = color;
+    //UIScrollView *scrollView = [[UIScrollView alloc] init];
+    //[self.view addSubview:scrollView];
+    
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 450)];
+    [super viewDidLoad];
 }
 
 

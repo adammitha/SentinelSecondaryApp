@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface DocumentsViewController : UIViewController
+{
+    IBOutlet UIScrollView *scroller;
+}
 
 - (IBAction)buttonPressed:(id)sender;
 - (void)goHome;
+- (void)swipeDidOccur;
 @end

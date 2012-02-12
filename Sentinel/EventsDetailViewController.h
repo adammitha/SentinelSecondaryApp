@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UITextView *titleView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 - (void)launchURL;
+- (void)swipeDidOccur;
 @end
