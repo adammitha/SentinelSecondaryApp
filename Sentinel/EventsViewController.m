@@ -43,9 +43,23 @@
     [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
     //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
 }
+
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
+
 #pragma mark - View lifecycle
 - (void)viewDidLoad
 {
+   
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
+    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+      //swipe 
     [super viewDidLoad];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
@@ -59,8 +73,16 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+  
+    
+      
+    
 }
+
 
 - (void)refresh
 {

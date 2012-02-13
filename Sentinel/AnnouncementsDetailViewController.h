@@ -16,4 +16,5 @@
 @property (nonatomic, strong) NSString *announcementLink;
 @property (weak, nonatomic) IBOutlet UITextView *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionLabel;
+- (void)swipeDidOccur;
 @end

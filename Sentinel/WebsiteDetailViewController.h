@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (void)launchURL;
+- (void)swipeDidOccur;
 @end
