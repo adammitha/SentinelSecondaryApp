@@ -1,19 +1,16 @@
 //
-//  EventsDetailViewController.m
+//  TwitterViewController.m
 //  Sentinel
 //
-//  Created by Adam Mitha on 11-12-22.
-//  Copyright (c) 2011 Sentinel Secondary School. All rights reserved.
+//  Created by Adam Mitha on 12-02-16.
+//  Copyright (c) 2012 Sentinel Secondary School. All rights reserved.
 //
 
-#import "EventsDetailViewController.h"
-
-@implementation EventsDetailViewController
-@synthesize eventTitle = _eventTitle;
-@synthesize eventDescription = _eventDescription;
-@synthesize eventLink = _eventLink;
-@synthesize webView = _webView;
-@synthesize progressHUD = _progressHUD;
+#import "TwitterViewController.h"
+#import "MBProgressHUD.h"
+@implementation TwitterViewController
+@synthesize webView;
+@synthesize progressHUD;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,32 +29,22 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)launchURL
-{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.eventLink]];
-}
 #pragma mark - View lifecycle
 
-- (void)swipeDidOccur
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
 {
-    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
 }
+*/
 
-
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
-    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
-    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-    //swipe 
-
     [super viewDidLoad];
-    NSLog(@"%@", self.eventTitle);
-    self.webView.scalesPageToFit = YES;
+    self.title = @"Principal's Tweets";
     self.webView.delegate = self;
-   [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.eventLink]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://mobile.twitter.com/jlaursoo"]]];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
 }

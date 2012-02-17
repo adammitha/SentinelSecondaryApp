@@ -10,10 +10,10 @@
 
 @implementation AnnouncementsDetailViewController
 @synthesize announcementTitle = _announcementTitle;
-@synthesize descriptionLabel = _descriptionLabel;
 @synthesize announcementDescription = _announcementDescription;
 @synthesize announcementLink = _announcementLink;
-@synthesize titleLabel = _titleLabel;
+@synthesize webView = _webView;
+@synthesize progressHUD = _progressHUD;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,19 +48,23 @@
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
-    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-    //swipe     [super viewDidLoad];
-    self.titleLabel.text = self.announcementTitle;
-    self.descriptionLabel.text = self.announcementDescription;
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchURL)];
-    self.navigationItem.rightBarButtonItem = item;
+    self.webView.scalesPageToFit = YES;
+    self.webView.delegate = self;
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.announcementLink]]];
+    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.progressHUD.labelText = @"Loading...";
+    //swipe     
+    [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
 - (void)viewDidUnload
 {
-    [self setDescriptionLabel:nil];
-    [self setTitleLabel:nil];
+    [self setWebView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

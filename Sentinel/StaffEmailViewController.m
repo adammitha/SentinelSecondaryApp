@@ -1,21 +1,15 @@
 //
-//  EventsViewController.m
+//  StaffEmailViewController.m
 //  Sentinel
 //
-//  Created by Adam Mitha on 11-12-08.
-//  Copyright (c) 2011 Sentinel Secondary School. All rights reserved.
+//  Created by Adam Mitha on 12-02-16.
+//  Copyright (c) 2012 Sentinel Secondary School. All rights reserved.
 //
 
-#import "EventsViewController.h"
+#import "StaffEmailViewController.h"
 #import "ASIHTTPRequest.h"
-#import "EventsDetailViewController.h"
-#import "MBProgressHUD.h"
-#import "HomePageViewController.h"
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
-@implementation EventsViewController
-@synthesize eventsArray = _eventsArray;
-@synthesize progressHUD = _progressHUD;
-
+@implementation StaffEmailViewController
+@synthesize emailArray;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -25,10 +19,6 @@
     return self;
 }
 
-- (void)setEventsArray:(NSArray *)eventsArray 
-{
-    _eventsArray = [[NSArray alloc] initWithArray:eventsArray];
-}
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -37,12 +27,9 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)goHome
-{
-    //HomePageViewController *homePageViewController = [[HomePageViewController alloc] init];
-    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
-    //[self presentViewController:homePageViewController animated:YES completion:^(){NSLog(@"Testing...");}];
-}
+#pragma mark - View lifecycle
+
+
 
 - (void)swipeDidOccur
 {
@@ -51,59 +38,29 @@
 
 
 
-#pragma mark - View lifecycle
+
 - (void)viewDidLoad
 {
-   
+    [super viewDidLoad];
+    self.title = @"Staff Emails";
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-      //swipe 
-    [super viewDidLoad];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
-    self.navigationItem.leftBarButtonItem = item;
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelEventsXML"];
+    //swipe 
+    
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"emails" ofType:@"txt"]];
+    NSError *error;
+    self.emailArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    /*NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/staffEmailXml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
-    [request startAsynchronous];
-    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.progressHUD.labelText = @"Loading...";
+    [request startAsynchronous];*/
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-
-- (void)refresh
-{
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelEventsXML"];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setDelegate:self];
-    [request startAsynchronous];
-    [super refresh];
-}
-- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    NSData *responseData = [request responseData];
-    NSError* error;
-    NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
-    //NSLog(@"%@", json);
-    self.eventsArray = json;
-    [self.tableView reloadData];
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    NSError *error = [request error];
-    NSLog(@"Request Failed: %@", [error localizedDescription]);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-    [alert show];
 }
 
 - (void)viewDidUnload
@@ -116,6 +73,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -150,7 +108,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.eventsArray count];
+    return [self.emailArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -159,11 +117,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:12];
-    cell.textLabel.text = [tempdict objectForKey:@"title"];
+    
+    // Configure the cell...
+    NSDictionary *tempDict = [self.emailArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [tempDict objectForKey:@"title"];
     return cell;
 }
 
@@ -210,13 +169,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EventsDetailViewController *eventsDetailViewController = [[EventsDetailViewController alloc] initWithNibName:@"EventsDetailViewController" bundle:nil];
-    NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
-    eventsDetailViewController.eventTitle = [tempdict objectForKey:@"title"];
-    eventsDetailViewController.eventDescription = [tempdict objectForKey:@"description"];
-    eventsDetailViewController.eventLink = [tempdict objectForKey:@"link"];
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:eventsDetailViewController animated:YES];
+    NSDictionary *tempDict = [self.emailArray objectAtIndex:indexPath.row];
+    NSLog(@"%@", tempDict);
+    MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
+    [mailController setToRecipients:[NSArray arrayWithObject:@"adam.mitha@gmail.com"]];
+    mailController.mailComposeDelegate = self;
+    [self presentModalViewController:mailController animated:YES];
 }
 
+#pragma mark - Mail View Controller delegate
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

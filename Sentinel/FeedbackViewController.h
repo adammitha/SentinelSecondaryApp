@@ -13,8 +13,7 @@
 
 @interface FeedbackViewController : UIViewController
 - (IBAction)feedback:(id)sender;
-@property (nonatomic, retain) NSDictionary *rotationsDict;
-@property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
-@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 - (void)swipeDidOccur;
 @end

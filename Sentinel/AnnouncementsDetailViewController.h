@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AnnouncementsDetailViewController : UIViewController
+#import "MBProgressHUD.h"
+@interface AnnouncementsDetailViewController : UIViewController <UIWebViewDelegate>
 
 - (void)launchURL;
 @property (nonatomic, strong) NSString *announcementTitle;
 @property (nonatomic, strong) NSString *announcementDescription;
 @property (nonatomic, strong) NSString *announcementLink;
-@property (weak, nonatomic) IBOutlet UITextView *titleLabel;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (void)swipeDidOccur;
 @end

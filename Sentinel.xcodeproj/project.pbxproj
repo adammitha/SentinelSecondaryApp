@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
-		66000AAE14E741CC0004F786 /* Sentinel Text Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */; };
+		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AB614E7825E0004F786 /* Sentinel School Photo.png */; };
+		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
+		660DE30514EE169900491668 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30414EE169900491668 /* emails.txt */; };
+		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
+		660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30914EE1B5100491668 /* TwitterViewController.m */; };
 		660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C514C8BEB500666214 /* Black Wood Background.png */; };
 		660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C614C8BEB500666214 /* Button Clicked.png */; };
 		660F36CE14C8BEB600666214 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C714C8BEB500666214 /* Button.png */; };
@@ -18,7 +22,6 @@
 		660F36D114C8BEB600666214 /* School Info and Events.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CA14C8BEB500666214 /* School Info and Events.png */; };
 		660F36D214C8BEB600666214 /* Student Council.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CB14C8BEB500666214 /* Student Council.png */; };
 		660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36D514C8C0C000666214 /* HomePageViewController.m */; };
-		660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36DC14C8ECFB00666214 /* 33-cabinet.png */; };
 		660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36E214C8EEEA00666214 /* DocumentsViewController.m */; };
 		6612087314C9F97D003E3863 /* Documents-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612086E14C9F97D003E3863 /* Documents-1.png */; };
 		6612087414C9F97D003E3863 /* Documents-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612086F14C9F97D003E3863 /* Documents-2.png */; };
@@ -26,7 +29,6 @@
 		6612087614C9F97D003E3863 /* Documents-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087114C9F97D003E3863 /* Documents-4.png */; };
 		6612087714C9F97D003E3863 /* Documents-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087214C9F97D003E3863 /* Documents-5.png */; };
 		6612087A14C9FC69003E3863 /* Document Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087914C9FC69003E3863 /* Document Background.png */; };
-		6614A81014B902ED00091A14 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 6614A80F14B902ED00091A14 /* 53-house.png */; };
 		6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614A81614B9105100091A14 /* CouncilDetailViewController.m */; };
 		6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6614A81714B9105100091A14 /* CouncilDetailViewController.xib */; };
 		66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD514C8F771009B809C /* Winter Gym Schedule.png */; };
@@ -57,7 +59,6 @@
 		6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664556E14AFFC15009D0E87 /* sd45app icon copy.png */; };
 		6664557114AFFC6A009D0E87 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664557014AFFC6A009D0E87 /* Default.png */; };
 		6664557514B260D0009D0E87 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6664557414B260D0009D0E87 /* Entitlements.plist */; };
-		6672721514B95EAC0017CEDE /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 6672721414B95EAC0017CEDE /* 07-map-marker.png */; };
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
@@ -72,6 +73,9 @@
 		66C6D3941491948C003C95DB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3931491948C003C95DB /* second.png */; };
 		66C6D3961491948C003C95DB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3951491948C003C95DB /* second@2x.png */; };
 		66C6D3A4149199D1003C95DB /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D3A3149199D1003C95DB /* EventsViewController.m */; };
+		66C8051F14EDA2E900DD312D /* rotations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C8051E14EDA2E900DD312D /* rotations.txt */; };
+		66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C8052114EDA5A500DD312D /* CoreText.framework */; };
+		66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */; };
 		66CBDB99149C274B004FE748 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB86149C274B004FE748 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66CBDB9A149C274B004FE748 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB89149C274B004FE748 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66CBDB9B149C274B004FE748 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB8B149C274B004FE748 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -86,23 +90,28 @@
 		66CBDBA9149C27DA004FE748 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CBDBA8149C27DA004FE748 /* MobileCoreServices.framework */; };
 		66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CBDBAA149C27E7004FE748 /* libz.dylib */; };
 		66CBDBAE149C2CD2004FE748 /* AnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */; };
-		66CBDBB2149C2DB1004FE748 /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CBDBB1149C2DB1004FE748 /* 179-notepad.png */; };
 		66CBDBB414A4463C004FE748 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CBDBB314A4463C004FE748 /* QuartzCore.framework */; };
 		66CBDBB714A44652004FE748 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66CBDBB914A446BD004FE748 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CBDBB814A446BD004FE748 /* arrow.png */; };
 		66CBDBCA14A45523004FE748 /* EventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDBC814A45523004FE748 /* EventsDetailViewController.m */; };
 		66CBDBCB14A45523004FE748 /* EventsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */; };
 		66CE21EF14AD3D5100F6BF0D /* 83-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */; };
-		66CE21F214AD3D7600F6BF0D /* 66-microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21F114AD3D7600F6BF0D /* 66-microphone.png */; };
 		66CE21F614AECD0300F6BF0D /* AnnouncementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */; };
 		66CE21F714AECD0300F6BF0D /* AnnouncementsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */; };
 		66CE21FC14AF7F6800F6BF0D /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FB14AF7F6800F6BF0D /* 111-user.png */; };
 		66CE21FE14AF804900F6BF0D /* Logo-SD45App.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */; };
-		66CE220014AF82A300F6BF0D /* 42-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE21FF14AF82A300F6BF0D /* 42-photos.png */; };
 		66CE220314AF855700F6BF0D /* WebsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE220214AF855700F6BF0D /* WebsiteViewController.m */; };
 		66CE220514AF8E3100F6BF0D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CE220414AF8E3100F6BF0D /* MessageUI.framework */; };
 		66CE220814AF8ED100F6BF0D /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */; };
-		66CE220A14AFD72500F6BF0D /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE220914AFD72500F6BF0D /* 18-envelope.png */; };
+		66D209F014EDD5DE001E8CC2 /* 179-notepad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */; };
+		66D209F214EDD62B001E8CC2 /* 53-house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F114EDD62B001E8CC2 /* 53-house@2x.png */; };
+		66D209F414EDD66B001E8CC2 /* 33-cabinet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */; };
+		66D209F614EDD6BB001E8CC2 /* 18-envelope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */; };
+		66D209F814EDD6EC001E8CC2 /* 42-photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */; };
+		66D209FA14EDD732001E8CC2 /* 66-microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */; };
+		66D209FC14EDD8D2001E8CC2 /* SSS2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FB14EDD8D2001E8CC2 /* SSS2.png */; };
+		66D209FE14EDDA6B001E8CC2 /* description.html in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FD14EDDA6B001E8CC2 /* description.html */; };
+		66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8A6C14E7B741008A8F33 /* Default@2x.png */; };
@@ -118,8 +127,14 @@
 
 /* Begin PBXFileReference section */
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
-		66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sentinel Text Logo.png"; path = "Sentinel/Sentinel Text Logo.png"; sourceTree = SOURCE_ROOT; };
+		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AB614E7825E0004F786 /* Sentinel School Photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel School Photo.png"; sourceTree = "<group>"; };
+		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
+		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
+		660DE30414EE169900491668 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
+		660DE30614EE1ACD00491668 /* bird_32_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_32_black.png; sourceTree = "<group>"; };
+		660DE30814EE1B5100491668 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		660DE30914EE1B5100491668 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		660F36C514C8BEB500666214 /* Black Wood Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background.png"; sourceTree = "<group>"; };
 		660F36C614C8BEB500666214 /* Button Clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Clicked.png"; sourceTree = "<group>"; };
 		660F36C714C8BEB500666214 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
@@ -129,7 +144,6 @@
 		660F36CB14C8BEB500666214 /* Student Council.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Student Council.png"; sourceTree = "<group>"; };
 		660F36D414C8C0C000666214 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		660F36D514C8C0C000666214 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		660F36DC14C8ECFB00666214 /* 33-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet.png"; sourceTree = "<group>"; };
 		660F36E114C8EEEA00666214 /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
 		660F36E214C8EEEA00666214 /* DocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsViewController.m; sourceTree = "<group>"; };
 		6612086E14C9F97D003E3863 /* Documents-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-1.png"; sourceTree = "<group>"; };
@@ -138,7 +152,6 @@
 		6612087114C9F97D003E3863 /* Documents-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-4.png"; sourceTree = "<group>"; };
 		6612087214C9F97D003E3863 /* Documents-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Documents-5.png"; sourceTree = "<group>"; };
 		6612087914C9FC69003E3863 /* Document Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Document Background.png"; sourceTree = "<group>"; };
-		6614A80F14B902ED00091A14 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		6614A81514B9105100091A14 /* CouncilDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilDetailViewController.h; sourceTree = "<group>"; };
 		6614A81614B9105100091A14 /* CouncilDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilDetailViewController.m; sourceTree = "<group>"; };
 		6614A81714B9105100091A14 /* CouncilDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouncilDetailViewController.xib; sourceTree = "<group>"; };
@@ -176,7 +189,6 @@
 		6664556E14AFFC15009D0E87 /* sd45app icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sd45app icon copy.png"; sourceTree = "<group>"; };
 		6664557014AFFC6A009D0E87 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6664557414B260D0009D0E87 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		6672721414B95EAC0017CEDE /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
 		6672721614B95F420017CEDE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -197,6 +209,9 @@
 		66C6D3951491948C003C95DB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		66C6D3A2149199D1003C95DB /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		66C6D3A3149199D1003C95DB /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		66C8051E14EDA2E900DD312D /* rotations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotations.txt; sourceTree = "<group>"; };
+		66C8052114EDA5A500DD312D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker@2x.png"; sourceTree = "<group>"; };
 		66CBDB85149C274B004FE748 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		66CBDB86149C274B004FE748 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		66CBDB87149C274B004FE748 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -225,7 +240,6 @@
 		66CBDBAA149C27E7004FE748 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		66CBDBAC149C2CD1004FE748 /* AnnouncementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsViewController.h; sourceTree = "<group>"; };
 		66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsViewController.m; sourceTree = "<group>"; };
-		66CBDBB1149C2DB1004FE748 /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "179-notepad.png"; path = "Sentinel/179-notepad.png"; sourceTree = SOURCE_ROOT; };
 		66CBDBB314A4463C004FE748 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
 		66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
@@ -234,19 +248,25 @@
 		66CBDBC814A45523004FE748 /* EventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDetailViewController.m; sourceTree = "<group>"; };
 		66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsDetailViewController.xib; sourceTree = "<group>"; };
 		66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar.png"; sourceTree = "<group>"; };
-		66CE21F114AD3D7600F6BF0D /* 66-microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "66-microphone.png"; sourceTree = "<group>"; };
 		66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsDetailViewController.h; sourceTree = "<group>"; };
 		66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsDetailViewController.m; sourceTree = "<group>"; };
 		66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementsDetailViewController.xib; sourceTree = "<group>"; };
 		66CE21FB14AF7F6800F6BF0D /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
 		66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-SD45App.png"; sourceTree = "<group>"; };
-		66CE21FF14AF82A300F6BF0D /* 42-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "42-photos.png"; sourceTree = "<group>"; };
 		66CE220114AF855700F6BF0D /* WebsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteViewController.h; sourceTree = "<group>"; };
 		66CE220214AF855700F6BF0D /* WebsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteViewController.m; sourceTree = "<group>"; };
 		66CE220414AF8E3100F6BF0D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
-		66CE220914AFD72500F6BF0D /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad@2x.png"; sourceTree = "<group>"; };
+		66D209F114EDD62B001E8CC2 /* 53-house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house@2x.png"; sourceTree = "<group>"; };
+		66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet@2x.png"; sourceTree = "<group>"; };
+		66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope@2x.png"; sourceTree = "<group>"; };
+		66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "42-photos@2x.png"; sourceTree = "<group>"; };
+		66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "66-microphone@2x.png"; sourceTree = "<group>"; };
+		66D209FB14EDD8D2001E8CC2 /* SSS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSS2.png; sourceTree = "<group>"; };
+		66D209FD14EDDA6B001E8CC2 /* description.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = description.html; sourceTree = "<group>"; };
+		66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSS2-1.png"; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D03F8A6C14E7B741008A8F33 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Sentinel/Default@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -266,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */,
 				D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */,
 				6672721A14B961670017CEDE /* MapKit.framework in Frameworks */,
 				66CE220514AF8E3100F6BF0D /* MessageUI.framework in Frameworks */,
@@ -299,6 +320,7 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				66C8052114EDA5A500DD312D /* CoreText.framework */,
 				660F36C514C8BEB500666214 /* Black Wood Background.png */,
 				660F36C614C8BEB500666214 /* Button Clicked.png */,
 				660F36C714C8BEB500666214 /* Button.png */,
@@ -359,6 +381,7 @@
 				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
 				66490CE414CA031A00F99B89 /* Events-cell.png */,
 				66490CE514CA031A00F99B89 /* Home-arrow.png */,
+				66D209FB14EDD8D2001E8CC2 /* SSS2.png */,
 				6612086E14C9F97D003E3863 /* Documents-1.png */,
 				6612086F14C9F97D003E3863 /* Documents-2.png */,
 				6612087014C9F97D003E3863 /* Documents-3.png */,
@@ -373,8 +396,11 @@
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				660DE30814EE1B5100491668 /* TwitterViewController.h */,
+				660DE30914EE1B5100491668 /* TwitterViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
 				660F36D514C8C0C000666214 /* HomePageViewController.m */,
+				66C8051E14EDA2E900DD312D /* rotations.txt */,
 				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
 				66160AD614C8F771009B809C /* Important Dates.png */,
 				66160AD714C8F771009B809C /* Daily Time Table.png */,
@@ -392,6 +418,7 @@
 				6614A81714B9105100091A14 /* CouncilDetailViewController.xib */,
 				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
 				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
+				66D209FD14EDDA6B001E8CC2 /* description.html */,
 				66CE220114AF855700F6BF0D /* WebsiteViewController.h */,
 				66CE220214AF855700F6BF0D /* WebsiteViewController.m */,
 				6664556614AFF3A1009D0E87 /* WebsiteDetailViewController.h */,
@@ -400,35 +427,37 @@
 				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
 				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
 				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
+				66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */,
 				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
 				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
-				660F36DC14C8ECFB00666214 /* 33-cabinet.png */,
-				6672721414B95EAC0017CEDE /* 07-map-marker.png */,
-				6614A80F14B902ED00091A14 /* 53-house.png */,
-				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
-				661D09CE14B4E44E00C75B17 /* 112-group.png */,
-				66CE220914AFD72500F6BF0D /* 18-envelope.png */,
-				66CE21FF14AF82A300F6BF0D /* 42-photos.png */,
+				660DE30614EE1ACD00491668 /* bird_32_black.png */,
+				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
+				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
+				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
+				66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */,
+				66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */,
+				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
+				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
 				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
-				66CE21F114AD3D7600F6BF0D /* 66-microphone.png */,
+				661D09CE14B4E44E00C75B17 /* 112-group.png */,
+				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
 				66000AAB14E741CC0004F786 /* Logo.png */,
-				66000AAC14E741CC0004F786 /* Sentinel Text Logo.png */,
+				66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */,
 				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
 				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
-				66CBDBB1149C2DB1004FE748 /* 179-notepad.png */,
 				66C6D38C1491948C003C95DB /* first.png */,
 				66C6D38E1491948C003C95DB /* first@2x.png */,
 				66C6D3931491948C003C95DB /* second.png */,
 				66C6D3951491948C003C95DB /* second@2x.png */,
 				66C6D37B1491948C003C95DB /* Supporting Files */,
-				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
-				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
 				66CBDBAC149C2CD1004FE748 /* AnnouncementsViewController.h */,
 				66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */,
 				66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */,
 				66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */,
 				66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */,
 				66CBDBB814A446BD004FE748 /* arrow.png */,
+				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
+				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
 				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
 				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
 				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
@@ -437,6 +466,9 @@
 				D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */,
 				D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */,
 				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
+				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
+				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
+				660DE30414EE169900491668 /* emails.txt */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -555,16 +587,12 @@
 				66C6D38F1491948C003C95DB /* first@2x.png in Resources */,
 				66C6D3941491948C003C95DB /* second.png in Resources */,
 				66C6D3961491948C003C95DB /* second@2x.png in Resources */,
-				66CBDBB2149C2DB1004FE748 /* 179-notepad.png in Resources */,
 				66CBDBB914A446BD004FE748 /* arrow.png in Resources */,
 				66CBDBCB14A45523004FE748 /* EventsDetailViewController.xib in Resources */,
 				66CE21EF14AD3D5100F6BF0D /* 83-calendar.png in Resources */,
-				66CE21F214AD3D7600F6BF0D /* 66-microphone.png in Resources */,
 				66CE21F714AECD0300F6BF0D /* AnnouncementsDetailViewController.xib in Resources */,
 				66CE21FC14AF7F6800F6BF0D /* 111-user.png in Resources */,
 				66CE21FE14AF804900F6BF0D /* Logo-SD45App.png in Resources */,
-				66CE220014AF82A300F6BF0D /* 42-photos.png in Resources */,
-				66CE220A14AFD72500F6BF0D /* 18-envelope.png in Resources */,
 				6664556A14AFF3A1009D0E87 /* WebsiteDetailViewController.xib in Resources */,
 				6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */,
 				6664557114AFFC6A009D0E87 /* Default.png in Resources */,
@@ -573,9 +601,7 @@
 				661D09D114B683FC00C75B17 /* retinalogo.png in Resources */,
 				661D09D814B69CFC00C75B17 /* README.txt in Resources */,
 				661D09D914B69CFC00C75B17 /* release_notes.txt in Resources */,
-				6614A81014B902ED00091A14 /* 53-house.png in Resources */,
 				6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */,
-				6672721514B95EAC0017CEDE /* 07-map-marker.png in Resources */,
 				6627D19714BA56CF00053EF3 /* apple-touch-icon copy.png in Resources */,
 				6627D19A14BA570E00053EF3 /* apple-touch-icon copy 2.png in Resources */,
 				6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */,
@@ -588,7 +614,6 @@
 				660F36D014C8BEB600666214 /* Header 1.png in Resources */,
 				660F36D114C8BEB600666214 /* School Info and Events.png in Resources */,
 				660F36D214C8BEB600666214 /* Student Council.png in Resources */,
-				660F36DD14C8ECFB00666214 /* 33-cabinet.png in Resources */,
 				66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */,
 				66160ADB14C8F771009B809C /* Important Dates.png in Resources */,
 				66160ADC14C8F771009B809C /* Daily Time Table.png in Resources */,
@@ -607,7 +632,7 @@
 				66490CEE14CA08E100F99B89 /* Cell-Color-2.png in Resources */,
 				66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */,
 				66000AAD14E741CC0004F786 /* Logo.png in Resources */,
-				66000AAE14E741CC0004F786 /* Sentinel Text Logo.png in Resources */,
+				66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */,
 				D0BD6F8B14E753BE007986C6 /* Calendar.pdf in Resources */,
 				D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */,
 				D0BD6F9314E75CF5007986C6 /* Course Book.pdf in Resources */,
@@ -616,6 +641,19 @@
 				D0BD6F9914E75DEC007986C6 /* Timetable.pdf in Resources */,
 				D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */,
 				66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */,
+				66C8051F14EDA2E900DD312D /* rotations.txt in Resources */,
+				66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */,
+				66D209F014EDD5DE001E8CC2 /* 179-notepad@2x.png in Resources */,
+				66D209F214EDD62B001E8CC2 /* 53-house@2x.png in Resources */,
+				66D209F414EDD66B001E8CC2 /* 33-cabinet@2x.png in Resources */,
+				66D209F614EDD6BB001E8CC2 /* 18-envelope@2x.png in Resources */,
+				66D209F814EDD6EC001E8CC2 /* 42-photos@2x.png in Resources */,
+				66D209FA14EDD732001E8CC2 /* 66-microphone@2x.png in Resources */,
+				66D209FC14EDD8D2001E8CC2 /* SSS2.png in Resources */,
+				66D209FE14EDDA6B001E8CC2 /* description.html in Resources */,
+				66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */,
+				660DE30514EE169900491668 /* emails.txt in Resources */,
+				660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +691,8 @@
 				660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */,
 				660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */,
 				D0BD6F9014E7550F007986C6 /* DocumentsDetailViewController.m in Sources */,
+				660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */,
+				660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
