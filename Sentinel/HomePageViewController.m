@@ -49,16 +49,41 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated 
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    //NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
+    //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    //[request setDelegate:self];
+    //[request startAsynchronous];
+    NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"rotations" ofType:@"txt"]];
+    NSError *error;
+    self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *dateString = [formatter stringFromDate:date];
+    NSDictionary *tempDict = [self.rotationsDict objectForKey:dateString];
+    NSLog(@"%@", tempDict);
+    if (tempDict) {
+        NSString *rotation = @"Block: ";
+        NSString *day = @"Day: ";
+        self.rotationLabel.text = [rotation stringByAppendingString:[tempDict objectForKey:@"rotation"]];
+        self.dayLabel.text = [day stringByAppendingString:[tempDict objectForKey:@"day"]];
+        self.dateLabel.text = [tempDict objectForKey:@"date"];
+    }
+}
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setDelegate:self];
-    [request startAsynchronous];
-    
     UITapGestureRecognizer *doubleTap = 
     [[UITapGestureRecognizer alloc]
      initWithTarget:self 
@@ -93,26 +118,6 @@
     longPressRecognizer.numberOfTouchesRequired = 1;
     [self.view addGestureRecognizer:longPressRecognizer];
     [super viewDidLoad];
-}
-
-- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    NSData *responseData = [request responseData];
-    NSError *error;
-    self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateString = [formatter stringFromDate:date];
-    NSDictionary *tempDict = [self.rotationsDict objectForKey:dateString];
-    NSLog(@"%@", tempDict);
-    if (tempDict) {
-        NSString *rotation = @"Block: ";
-        NSString *day = @"Day: ";
-        self.rotationLabel.text = [rotation stringByAppendingString:[tempDict objectForKey:@"rotation"]];
-        self.dayLabel.text = [day stringByAppendingString:[tempDict objectForKey:@"day"]];
-        self.dateLabel.text = [tempDict objectForKey:@"date"];
-    }
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
