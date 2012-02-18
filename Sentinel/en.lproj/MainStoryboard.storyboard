@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -55,6 +55,9 @@
                                 <state key="highlighted" image="Button Clicked.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5sn-9A-35z" kind="push" id="ypB-tc-A8G"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Student Council.png" id="Xl2-7t-Voa">
                                 <rect key="frame" x="10" y="408" width="170" height="33"/>
@@ -110,6 +113,61 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1388" y="222"/>
+        </scene>
+        <scene sceneID="3iU-3a-dOf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYO-yN-ccN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController title="Student Council Section" definesPresentationContext="YES" id="5sn-9A-35z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="d9f-Vz-QMb"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Es2-sw-OwO">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wrH-8t-o3U" kind="relationship" relationship="viewControllers" id="j9E-Ac-Knz"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-2791" y="1311"/>
+        </scene>
+        <scene sceneID="7d7-uH-6e0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bG1-YD-4Ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController title="Council Events" definesPresentationContext="YES" id="wrH-8t-o3U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Council Events" image="112-group.png" id="7nI-4o-Vqz" userLabel="Council Events"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="Pwz-cR-par">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qTO-ah-FxI" kind="relationship" relationship="rootViewController" id="rL4-1n-SVc"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-2319" y="1311"/>
+        </scene>
+        <scene sceneID="I96-Q7-bRM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRt-Ih-7LX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="qTO-ah-FxI" customClass="CouncilEventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uAo-QA-4c5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="qTO-ah-FxI" id="JYd-x1-CHV"/>
+                            <outlet property="delegate" destination="qTO-ah-FxI" id="Qxh-eg-qo9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6Ep-qT-uKJ"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-1883" y="1311"/>
         </scene>
         <scene sceneID="Ia4-ii-j8x">
             <objects>
@@ -544,9 +602,29 @@
             </objects>
             <point key="canvasLocation" x="-16" y="-37"/>
         </scene>
+        <scene sceneID="L14-2M-G9S">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G61-yV-lmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="yeW-U4-f43"/>
+                <tableViewController id="5t5-Bj-90Q" customClass="EventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oKU-GY-OwY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="5t5-Bj-90Q" id="TKE-x7-zHb"/>
+                            <outlet property="delegate" destination="5t5-Bj-90Q" id="0Mp-nl-mKO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Events" id="cEw-uE-qqH"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="510" y="-37"/>
+        </scene>
     </scenes>
     <resources>
         <image name="07-map-marker.png" width="16" height="16"/>
+        <image name="112-group.png" width="32" height="21"/>
         <image name="179-notepad.png" width="16" height="16"/>
         <image name="18-envelope.png" width="16" height="16"/>
         <image name="33-cabinet.png" width="16" height="16"/>
@@ -570,6 +648,61 @@
         <image name="Welcome-1.png" width="380" height="90"/>
         <image name="bird_32_black.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="AnnouncementsViewController" superclassName="PullRefreshTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnnouncementsViewController.h"/>
+        </class>
+        <class className="CouncilEventsViewController" superclassName="PullRefreshTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CouncilEventsViewController.h"/>
+        </class>
+        <class className="DocumentsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DocumentsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="EventsViewController" superclassName="PullRefreshTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventsViewController.h"/>
+        </class>
+        <class className="FeedbackViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedbackViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="feedback:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="HomePageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rotationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="PullRefreshTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
+        </class>
+        <class className="StaffEmailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StaffEmailViewController.h"/>
+        </class>
+        <class className="TwitterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="WebsiteViewController" superclassName="PullRefreshTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebsiteViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
