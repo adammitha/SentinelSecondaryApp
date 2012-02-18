@@ -114,6 +114,7 @@
 		66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
+		D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */; };
 		D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8A6C14E7B741008A8F33 /* Default@2x.png */; };
 		D0BD6F8B14E753BE007986C6 /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F8A14E753BE007986C6 /* Calendar.pdf */; };
 		D0BD6F9014E7550F007986C6 /* DocumentsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */; };
@@ -269,6 +270,8 @@
 		66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSS2-1.png"; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilEventsViewController.h; sourceTree = "<group>"; };
+		D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilEventsViewController.m; sourceTree = "<group>"; };
 		D03F8A6C14E7B741008A8F33 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Sentinel/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		D0BD6F8A14E753BE007986C6 /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsDetailViewController.h; sourceTree = "<group>"; };
@@ -396,6 +399,13 @@
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */,
+				D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */,
+				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
+				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
+				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
+				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
+				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
 				660DE30814EE1B5100491668 /* TwitterViewController.h */,
 				660DE30914EE1B5100491668 /* TwitterViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
@@ -456,11 +466,6 @@
 				66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */,
 				66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */,
 				66CBDBB814A446BD004FE748 /* arrow.png */,
-				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
-				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
-				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
-				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
-				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
 				660F36E114C8EEEA00666214 /* DocumentsViewController.h */,
 				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
 				D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */,
@@ -693,6 +698,7 @@
 				D0BD6F9014E7550F007986C6 /* DocumentsDetailViewController.m in Sources */,
 				660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */,
 				660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */,
+				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,9 +731,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: SD45 APP DEVELOPMENT TEAM";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -735,7 +741,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "EFA10185-2442-4DA9-B716-A279A4498356";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -794,7 +800,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: SD45 APP DEVELOPMENT TEAM";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -804,7 +810,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "EFA10185-2442-4DA9-B716-A279A4498356";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
