@@ -55,9 +55,9 @@
 
     [super viewDidLoad];
     NSLog(@"%@", self.eventTitle);
-    self.webView.scalesPageToFit = NO;
+    self.webView.scalesPageToFit = YES;
   //zoom
-    CGRect webFrame = CGRectMake(0.0, 0.0, 320.0, 460.0);
+   /* CGRect webFrame = CGRectMake(0.0, 0.0, 320.0, 460.0);
     UIWebView *webView = [[UIWebView alloc] initWithFrame:webFrame];
     [webView setBackgroundColor:[UIColor whiteColor]];
     NSURL *url = [NSURL URLWithString:self.eventLink];
@@ -66,10 +66,10 @@
     [self.webView addSubview:webView]; 
 
     //zoom
-    
-  //  self.webView.delegate = self;
-   //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.eventLink]]];
-   // self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    */
+   self.webView.delegate = self;
+   [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.eventLink]]];
+    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
 }
 

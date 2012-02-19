@@ -56,7 +56,7 @@
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     //swipe 
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
     [super viewDidLoad];
  UIColor *color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Document Background.png"]];

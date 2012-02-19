@@ -66,7 +66,8 @@
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/teacherWebsitesXml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
-    [request startAsynchronous]; 
+    [request startAsynchronous];
+    [super refresh];
 }
 - (void)requestFinished:(ASIHTTPRequest *)request 
 {

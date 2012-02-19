@@ -56,7 +56,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5sn-9A-35z" kind="push" id="ypB-tc-A8G"/>
+                                    <segue destination="MMj-ql-9Hz" kind="modal" modalTransitionStyle="partialCurl" id="s1Y-Mq-piX"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Student Council.png" id="Xl2-7t-Voa">
@@ -100,12 +100,29 @@
                                 <rect key="frame" x="-6" y="-5" width="330" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dQv-iq-N7k">
+                                <rect key="frame" x="86" y="456" width="149" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="About Us Text.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2vz-CH-Ns3" kind="modal" id="S7M-mh-2aM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vps-Kf-vOz"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="about" destination="dQv-iq-N7k" id="cUg-FU-Wby"/>
                         <outlet property="dateLabel" destination="Ho4-Rt-iW0" id="UgS-nK-qu3"/>
                         <outlet property="dayLabel" destination="TpI-bY-RWa" id="QSH-hh-40z"/>
                         <outlet property="rotationLabel" destination="GT6-3R-RtS" id="LAn-tU-0l8"/>
@@ -113,61 +130,6 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1388" y="222"/>
-        </scene>
-        <scene sceneID="3iU-3a-dOf">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NYO-yN-ccN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController title="Student Council Section" definesPresentationContext="YES" id="5sn-9A-35z" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="d9f-Vz-QMb"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Es2-sw-OwO">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="wrH-8t-o3U" kind="relationship" relationship="viewControllers" id="j9E-Ac-Knz"/>
-                    </connections>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="-2791" y="1311"/>
-        </scene>
-        <scene sceneID="7d7-uH-6e0">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bG1-YD-4Ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController title="Council Events" definesPresentationContext="YES" id="wrH-8t-o3U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Council Events" image="112-group.png" id="7nI-4o-Vqz" userLabel="Council Events"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="Pwz-cR-par">
-                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="qTO-ah-FxI" kind="relationship" relationship="rootViewController" id="rL4-1n-SVc"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-2319" y="1311"/>
-        </scene>
-        <scene sceneID="I96-Q7-bRM">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uRt-Ih-7LX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="qTO-ah-FxI" customClass="CouncilEventsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uAo-QA-4c5">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="qTO-ah-FxI" id="JYd-x1-CHV"/>
-                            <outlet property="delegate" destination="qTO-ah-FxI" id="Qxh-eg-qo9"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="6Ep-qT-uKJ"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="-1883" y="1311"/>
         </scene>
         <scene sceneID="Ia4-ii-j8x">
             <objects>
@@ -190,7 +152,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController id="4" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="8Ln-G3-UfZ"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
@@ -210,7 +171,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-534" y="242"/>
+            <point key="canvasLocation" x="-422" y="-2425"/>
         </scene>
         <scene sceneID="dmw-Ro-B0K">
             <objects>
@@ -218,7 +179,7 @@
                 <swipeGestureRecognizer direction="right" id="r72-i0-Cgz"/>
                 <tableViewController id="yOp-Qi-6OZ" customClass="EventsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r9P-YP-NNM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -229,7 +190,7 @@
                     <navigationItem key="navigationItem" title="Events" id="e77-aZ-vjn"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="510" y="-37"/>
+            <point key="canvasLocation" x="638" y="-4400"/>
         </scene>
         <scene sceneID="NGa-aN-QvO">
             <objects>
@@ -244,7 +205,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home" id="it4-3P-j16">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="Pmv-cR-4Dr">
+                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Pmv-cR-4Dr">
                                             <connections>
                                                 <action selector="buttonPressed:" destination="U4Z-98-WNi" id="j7p-TY-qHN"/>
                                             </connections>
@@ -278,7 +239,7 @@
                 </viewController>
                 <swipeGestureRecognizer direction="right" id="Wve-yQ-Dsw"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="1769"/>
+            <point key="canvasLocation" x="116" y="-2594"/>
         </scene>
         <scene sceneID="jHY-Sx-w9t">
             <objects>
@@ -295,36 +256,37 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-16" y="2380"/>
+            <point key="canvasLocation" x="112" y="-1983"/>
         </scene>
         <scene sceneID="4aT-8o-E6N">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJn-WC-QAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="LIy-PG-yVF" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1eW-Zz-Blb">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="H2N-oK-GN4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                            <webView contentMode="scaleToFill" id="cYC-yT-55C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="07-map-marker.png" id="Oea-bq-tGW"/>
                     <connections>
-                        <outlet property="mapView" destination="H2N-oK-GN4" id="SX2-q8-E3Q"/>
+                        <outlet property="webView" destination="cYC-yT-55C" id="A4x-q3-3Be"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-16" y="3020"/>
+            <point key="canvasLocation" x="112" y="-1343"/>
         </scene>
         <scene sceneID="8ef-hq-Bbk">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qth-Wb-nTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="lpa-5M-mMa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Teacher Emails" image="18-envelope.png" id="f24-9i-t1k"/>
+                    <tabBarItem key="tabBarItem" title="Staff Emails" image="18-envelope.png" id="f24-9i-t1k"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="7bX-HX-Hi8">
                         <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
@@ -335,18 +297,54 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-16" y="3651"/>
+            <point key="canvasLocation" x="112" y="-712"/>
+        </scene>
+        <scene sceneID="ify-rb-VBT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cx-gP-AfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2vz-CH-Ns3" customClass="AboutUsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kjR-iH-vcX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="x1S-3N-zmj">
+                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="bPZ-ty-OpQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="yaT-aU-nEH">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="EUn-x3-jwi">
+                                            <connections>
+                                                <action selector="goHome:" destination="2vz-CH-Ns3" id="llj-lR-k3n"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="x1S-3N-zmj" id="Fg5-LH-tlc"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-474" y="49"/>
         </scene>
         <scene sceneID="KSD-v4-9b7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qtw-zl-wdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vk2-jd-J1u" customClass="TwitterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cS6-g2-Q68">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="n2q-Yv-52o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -359,14 +357,40 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-16" y="4280"/>
+            <point key="canvasLocation" x="112" y="-83"/>
+        </scene>
+        <scene sceneID="isI-OY-7Tr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6E4-Zp-hIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="MMj-ql-9Hz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udV-qb-paE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Black Wood Background3.png" id="jPQ-eU-qsi">
+                                <rect key="frame" x="0.0" y="-57" width="320" height="537"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student Council - Coming Soon!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="QqI-L5-3x7">
+                                <rect key="frame" x="25" y="261" width="271" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-492" y="683"/>
         </scene>
         <scene sceneID="02p-Qy-q36">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KM-K8-EfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="OKa-Pf-Zb4" customClass="StaffEmailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tQo-ra-zm7">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -377,7 +401,7 @@
                     <navigationItem key="navigationItem" id="mhj-0k-N94"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="501" y="3651"/>
+            <point key="canvasLocation" x="629" y="-712"/>
         </scene>
         <scene sceneID="E3T-DF-Zhk">
             <objects>
@@ -385,7 +409,7 @@
                 <swipeGestureRecognizer direction="right" id="i4U-Fb-2ee"/>
                 <tableViewController id="z9j-Tb-Sy0" customClass="WebsiteViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zS4-vJ-QKy">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -396,7 +420,7 @@
                     <navigationItem key="navigationItem" id="X5O-59-NHs"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="510" y="2380"/>
+            <point key="canvasLocation" x="638" y="-1983"/>
         </scene>
         <scene sceneID="KO2-kS-fE1">
             <objects>
@@ -413,7 +437,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-12" y="559"/>
+            <point key="canvasLocation" x="116" y="-3804"/>
         </scene>
         <scene sceneID="vgo-5U-mbs">
             <objects>
@@ -430,7 +454,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-16" y="1178"/>
+            <point key="canvasLocation" x="112" y="-3185"/>
         </scene>
         <scene sceneID="0aN-W9-haH">
             <objects>
@@ -438,7 +462,7 @@
                 <swipeGestureRecognizer direction="right" id="gI6-vM-xa1"/>
                 <viewController id="ock-t3-pLg" customClass="DocumentsViewController" sceneMemberID="viewController">
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" canCancelContentTouches="NO" id="9yB-rX-slp">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tv7-zH-7BL">
@@ -561,7 +585,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="501" y="1178"/>
+            <point key="canvasLocation" x="629" y="-3185"/>
         </scene>
         <scene sceneID="CqX-Ka-eOd">
             <objects>
@@ -569,7 +593,7 @@
                 <swipeGestureRecognizer direction="right" id="4cC-mq-BGr"/>
                 <tableViewController id="asr-zi-TAR" customClass="AnnouncementsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ucm-hL-QR8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -580,7 +604,7 @@
                     <navigationItem key="navigationItem" id="Moq-QH-hUI"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="510" y="559"/>
+            <point key="canvasLocation" x="638" y="-3804"/>
         </scene>
         <scene sceneID="v1P-en-c8O">
             <objects>
@@ -600,7 +624,7 @@
                 </navigationController>
                 <swipeGestureRecognizer direction="right" id="UsE-B3-ZYk"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-37"/>
+            <point key="canvasLocation" x="112" y="-4400"/>
         </scene>
         <scene sceneID="L14-2M-G9S">
             <objects>
@@ -619,18 +643,18 @@
                     <navigationItem key="navigationItem" title="Events" id="cEw-uE-qqH"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="510" y="-37"/>
+            <point key="canvasLocation" x="638" y="-4400"/>
         </scene>
     </scenes>
     <resources>
         <image name="07-map-marker.png" width="16" height="16"/>
-        <image name="112-group.png" width="32" height="21"/>
         <image name="179-notepad.png" width="16" height="16"/>
         <image name="18-envelope.png" width="16" height="16"/>
         <image name="33-cabinet.png" width="16" height="16"/>
         <image name="42-photos.png" width="16" height="16"/>
         <image name="53-house.png" width="16" height="16"/>
         <image name="66-microphone.png" width="16" height="16"/>
+        <image name="About Us Text.png" width="490" height="80"/>
         <image name="Black Wood Background3.png" width="640" height="960"/>
         <image name="Button Clicked.png" width="640" height="110"/>
         <image name="Button.png" width="640" height="110"/>
@@ -649,11 +673,15 @@
         <image name="bird_32_black.png" width="32" height="32"/>
     </resources>
     <classes>
+        <class className="AboutUsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutUsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goHome:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
         <class className="AnnouncementsViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnnouncementsViewController.h"/>
-        </class>
-        <class className="CouncilEventsViewController" superclassName="PullRefreshTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CouncilEventsViewController.h"/>
         </class>
         <class className="DocumentsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DocumentsViewController.h"/>
@@ -675,16 +703,16 @@
         <class className="HomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="about" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rotationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="PullRefreshTableViewController" superclassName="UITableViewController">

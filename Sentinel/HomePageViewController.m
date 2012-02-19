@@ -11,9 +11,9 @@
 #import "ASIHTTPRequest.h"
 @implementation HomePageViewController
 //Swipe
-@synthesize statusLabel;
 //Swipe
 
+@synthesize about = _about;
 @synthesize dayLabel = _dayLabel;
 @synthesize rotationsDict = _rotationsDict;
 @synthesize rotationLabel = _rotationLabel;
@@ -53,6 +53,9 @@
 {
     [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [[[self navigationController] view] setFrame:[[UIScreen mainScreen] bounds]];
+    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationController setNavigationBarHidden:YES];
     //NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
     //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setDelegate:self];
@@ -84,52 +87,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UITapGestureRecognizer *doubleTap = 
-    [[UITapGestureRecognizer alloc]
-     initWithTarget:self 
-     action:@selector(tapDetected:)];
-    doubleTap.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:doubleTap];
-    
-    UIPinchGestureRecognizer *pinchRecognizer = 
-    [[UIPinchGestureRecognizer alloc]
-     initWithTarget:self 
-     action:@selector(pinchDetected:)];
-    [self.view addGestureRecognizer:pinchRecognizer];
-    
-    UIRotationGestureRecognizer *rotationRecognizer =
-    [[UIRotationGestureRecognizer alloc]
-     initWithTarget:self 
-     action:@selector(rotationDetected:)];
-    [self.view addGestureRecognizer:rotationRecognizer];
-    
-    UISwipeGestureRecognizer *swipeRecognizer = 
-    [[UISwipeGestureRecognizer alloc]
-     initWithTarget:self 
-     action:@selector(swipeDetected:)];
-    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
-    
-    UILongPressGestureRecognizer *longPressRecognizer = 
-    [[UILongPressGestureRecognizer alloc]
-     initWithTarget:self 
-     action:@selector(longPressDetected:)];
-    longPressRecognizer.minimumPressDuration = 3;
-    longPressRecognizer.numberOfTouchesRequired = 1;
-    [self.view addGestureRecognizer:longPressRecognizer];
-    [super viewDidLoad];
+    self.about.backgroundColor = [UIColor clearColor];
 }
 
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    
-}
 - (void)viewDidUnload
 {
     [self setRotationLabel:nil];
     [self setDayLabel:nil];
     [self setDayLabel:nil];
     [self setDateLabel:nil];
+    [self setAbout:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -137,7 +104,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.statusLabel = nil;
     //Swipe end
 }
 

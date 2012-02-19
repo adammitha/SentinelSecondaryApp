@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Mapkit/Mapkit.h>
-
-@interface MapViewController : UIViewController
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+#import "MBProgressHUD.h"
+@interface MapViewController : UIViewController <UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) MBProgressHUD *progressHUD;
 @end

@@ -57,7 +57,7 @@
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     self.webView.scalesPageToFit = YES;
-    NSString *tempString = [NSString stringWithFormat:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil], [[NSBundle mainBundle] pathForResource:@"Sentinel Text Logo" ofType:@"png"]];
+    NSString *tempString = [NSString stringWithFormat:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil]];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;

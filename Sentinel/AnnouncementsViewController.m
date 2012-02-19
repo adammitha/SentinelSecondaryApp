@@ -61,7 +61,7 @@
     
     [super viewDidLoad];
     self.title = @"Announcements";
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelAnnouncementsXml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -82,6 +82,7 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
+    [super refresh];
 }
 - (void)requestFinished:(ASIHTTPRequest *)request
 {

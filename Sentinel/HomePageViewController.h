@@ -14,12 +14,12 @@
 }
 
 
+@property (weak, nonatomic) IBOutlet UIButton *about;
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property (nonatomic, strong) NSDictionary *rotationsDict;
 @property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
-@property (retain,nonatomic) IBOutlet UILabel *statusLabel;
 
 
 

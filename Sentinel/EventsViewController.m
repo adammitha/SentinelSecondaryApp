@@ -61,7 +61,7 @@
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
       //swipe 
     [super viewDidLoad];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelEventsXML"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -162,6 +162,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont boldSystemFontOfSize:12];
     cell.textLabel.text = [tempdict objectForKey:@"title"];
     return cell;

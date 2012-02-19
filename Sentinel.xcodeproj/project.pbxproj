@@ -49,7 +49,6 @@
 		6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D1A014BA628900053EF3 /* HeaderLogo.png */; };
 		662A7C89149AED4900406F04 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A7C88149AED4900406F04 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66490CE614CA031A00F99B89 /* Events-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE414CA031A00F99B89 /* Events-cell.png */; };
-		66490CE714CA031A00F99B89 /* Home-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE514CA031A00F99B89 /* Home-arrow.png */; };
 		66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE914CA07ED00F99B89 /* Welcome-1.png */; };
 		66490CEC14CA083000F99B89 /* Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CEB14CA083000F99B89 /* Black Wood Background3.png */; };
 		66490CEE14CA08E100F99B89 /* Cell-Color-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CED14CA08E100F99B89 /* Cell-Color-2.png */; };
@@ -59,6 +58,8 @@
 		6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664556E14AFFC15009D0E87 /* sd45app icon copy.png */; };
 		6664557114AFFC6A009D0E87 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664557014AFFC6A009D0E87 /* Default.png */; };
 		6664557514B260D0009D0E87 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6664557414B260D0009D0E87 /* Entitlements.plist */; };
+		6672063014F06B8D001B8391 /* Home-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6672062E14F06B8D001B8391 /* Home-arrow.png */; };
+		6672063114F06B8D001B8391 /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6672062F14F06B8D001B8391 /* Home-arrow2.png */; };
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
@@ -112,6 +113,14 @@
 		66D209FC14EDD8D2001E8CC2 /* SSS2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FB14EDD8D2001E8CC2 /* SSS2.png */; };
 		66D209FE14EDDA6B001E8CC2 /* description.html in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FD14EDDA6B001E8CC2 /* description.html */; };
 		66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */; };
+		66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F97E8114F0808400D33150 /* AboutUsViewController.m */; };
+		66F97E8914F0861100D33150 /* About Us Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8814F0861100D33150 /* About Us Text.png */; };
+		66F97E8F14F090E200D33150 /* Created_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8A14F090E200D33150 /* Created_Text.png */; };
+		66F97E9014F090E200D33150 /* The_History_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8B14F090E200D33150 /* The_History_Text.png */; };
+		66F97E9114F090E200D33150 /* The_Team_Text3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8C14F090E200D33150 /* The_Team_Text3.png */; };
+		66F97E9214F090E200D33150 /* The_Team_Text2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8D14F090E200D33150 /* The_Team_Text2.png */; };
+		66F97E9314F090E200D33150 /* The_Team_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8E14F090E200D33150 /* The_Team_Text.png */; };
+		66F97E9514F090F900D33150 /* about_us.html in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E9414F090F900D33150 /* about_us.html */; };
 		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */; };
@@ -179,7 +188,6 @@
 		662A7C87149AED4900406F04 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		662A7C88149AED4900406F04 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		66490CE414CA031A00F99B89 /* Events-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Events-cell.png"; sourceTree = "<group>"; };
-		66490CE514CA031A00F99B89 /* Home-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow.png"; sourceTree = "<group>"; };
 		66490CE914CA07ED00F99B89 /* Welcome-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome-1.png"; sourceTree = "<group>"; };
 		66490CEB14CA083000F99B89 /* Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Wood Background3.png"; sourceTree = "<group>"; };
 		66490CED14CA08E100F99B89 /* Cell-Color-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell-Color-2.png"; sourceTree = "<group>"; };
@@ -190,6 +198,8 @@
 		6664556E14AFFC15009D0E87 /* sd45app icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sd45app icon copy.png"; sourceTree = "<group>"; };
 		6664557014AFFC6A009D0E87 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6664557414B260D0009D0E87 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		6672062E14F06B8D001B8391 /* Home-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-arrow.png"; path = "../../../../../../Desktop/Home-arrow.png"; sourceTree = "<group>"; };
+		6672062F14F06B8D001B8391 /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-arrow2.png"; path = "../../../../../../Desktop/Home-arrow2.png"; sourceTree = "<group>"; };
 		6672721614B95F420017CEDE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -268,6 +278,15 @@
 		66D209FB14EDD8D2001E8CC2 /* SSS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSS2.png; sourceTree = "<group>"; };
 		66D209FD14EDDA6B001E8CC2 /* description.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = description.html; sourceTree = "<group>"; };
 		66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSS2-1.png"; sourceTree = "<group>"; };
+		66F97E8014F0808400D33150 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		66F97E8114F0808400D33150 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		66F97E8814F0861100D33150 /* About Us Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About Us Text.png"; sourceTree = "<group>"; };
+		66F97E8A14F090E200D33150 /* Created_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Created_Text.png; sourceTree = "<group>"; };
+		66F97E8B14F090E200D33150 /* The_History_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_History_Text.png; sourceTree = "<group>"; };
+		66F97E8C14F090E200D33150 /* The_Team_Text3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Team_Text3.png; sourceTree = "<group>"; };
+		66F97E8D14F090E200D33150 /* The_Team_Text2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Team_Text2.png; sourceTree = "<group>"; };
+		66F97E8E14F090E200D33150 /* The_Team_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Team_Text.png; sourceTree = "<group>"; };
+		66F97E9414F090F900D33150 /* about_us.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_us.html; sourceTree = "<group>"; };
 		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilEventsViewController.h; sourceTree = "<group>"; };
@@ -376,22 +395,8 @@
 		66C6D37A1491948C003C95DB /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
-				D0BD6F8A14E753BE007986C6 /* Calendar.pdf */,
-				D0BD6F9214E75CF5007986C6 /* Course Book.pdf */,
-				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
-				D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */,
-				D0BD6F9814E75DEC007986C6 /* Timetable.pdf */,
-				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
-				66490CE414CA031A00F99B89 /* Events-cell.png */,
-				66490CE514CA031A00F99B89 /* Home-arrow.png */,
-				66D209FB14EDD8D2001E8CC2 /* SSS2.png */,
-				6612086E14C9F97D003E3863 /* Documents-1.png */,
-				6612086F14C9F97D003E3863 /* Documents-2.png */,
-				6612087014C9F97D003E3863 /* Documents-3.png */,
-				6612087114C9F97D003E3863 /* Documents-4.png */,
-				6612087214C9F97D003E3863 /* Documents-5.png */,
-				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
-				66160AE014C8FD9E009B809C /* rotation.txt */,
+				66F97E8414F0828B00D33150 /* Images */,
+				66F97E8514F082F000D33150 /* Files */,
 				66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */,
 				66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */,
 				66C6D3831491948C003C95DB /* SentinelAppDelegate.h */,
@@ -399,6 +404,8 @@
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
 				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				66F97E8014F0808400D33150 /* AboutUsViewController.h */,
+				66F97E8114F0808400D33150 /* AboutUsViewController.m */,
 				D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */,
 				D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */,
 				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
@@ -410,62 +417,28 @@
 				660DE30914EE1B5100491668 /* TwitterViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
 				660F36D514C8C0C000666214 /* HomePageViewController.m */,
-				66C8051E14EDA2E900DD312D /* rotations.txt */,
-				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
-				66160AD614C8F771009B809C /* Important Dates.png */,
-				66160AD714C8F771009B809C /* Daily Time Table.png */,
-				66160AD814C8F771009B809C /* course book.png */,
-				66160AD914C8F771009B809C /* Annual School Calendar.png */,
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
 				6672721714B95F430017CEDE /* MapViewController.m */,
 				661D09CA14B4E2A900C75B17 /* CouncilViewController.h */,
 				661D09CB14B4E2A900C75B17 /* CouncilViewController.m */,
-				6612087914C9FC69003E3863 /* Document Background.png */,
 				6614A81514B9105100091A14 /* CouncilDetailViewController.h */,
 				6614A81614B9105100091A14 /* CouncilDetailViewController.m */,
 				6614A81714B9105100091A14 /* CouncilDetailViewController.xib */,
 				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
 				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
-				66D209FD14EDDA6B001E8CC2 /* description.html */,
 				66CE220114AF855700F6BF0D /* WebsiteViewController.h */,
 				66CE220214AF855700F6BF0D /* WebsiteViewController.m */,
 				6664556614AFF3A1009D0E87 /* WebsiteDetailViewController.h */,
 				6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */,
 				6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */,
-				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
-				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
-				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
-				66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */,
-				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
-				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
-				660DE30614EE1ACD00491668 /* bird_32_black.png */,
-				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
-				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
-				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
-				66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */,
-				66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */,
-				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
-				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
-				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
-				661D09CE14B4E44E00C75B17 /* 112-group.png */,
-				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
-				66000AAB14E741CC0004F786 /* Logo.png */,
-				66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */,
-				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
-				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
-				66C6D38C1491948C003C95DB /* first.png */,
-				66C6D38E1491948C003C95DB /* first@2x.png */,
-				66C6D3931491948C003C95DB /* second.png */,
-				66C6D3951491948C003C95DB /* second@2x.png */,
 				66C6D37B1491948C003C95DB /* Supporting Files */,
 				66CBDBAC149C2CD1004FE748 /* AnnouncementsViewController.h */,
 				66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */,
 				66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */,
 				66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */,
 				66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */,
-				66CBDBB814A446BD004FE748 /* arrow.png */,
 				660F36E114C8EEEA00666214 /* DocumentsViewController.h */,
 				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
 				D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */,
@@ -473,7 +446,6 @@
 				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
 				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
 				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
-				660DE30414EE169900491668 /* emails.txt */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -517,6 +489,79 @@
 				66CBDB98149C274B004FE748 /* ASIProgressDelegate.h */,
 			);
 			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		66F97E8414F0828B00D33150 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				66F97E8A14F090E200D33150 /* Created_Text.png */,
+				66F97E8B14F090E200D33150 /* The_History_Text.png */,
+				66F97E8C14F090E200D33150 /* The_Team_Text3.png */,
+				66F97E8D14F090E200D33150 /* The_Team_Text2.png */,
+				66F97E8E14F090E200D33150 /* The_Team_Text.png */,
+				66F97E8814F0861100D33150 /* About Us Text.png */,
+				6612087914C9FC69003E3863 /* Document Background.png */,
+				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
+				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
+				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
+				66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */,
+				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
+				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
+				660DE30614EE1ACD00491668 /* bird_32_black.png */,
+				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
+				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
+				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
+				66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */,
+				66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */,
+				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
+				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
+				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
+				661D09CE14B4E44E00C75B17 /* 112-group.png */,
+				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
+				66000AAB14E741CC0004F786 /* Logo.png */,
+				66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */,
+				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
+				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
+				66C6D38C1491948C003C95DB /* first.png */,
+				66C6D38E1491948C003C95DB /* first@2x.png */,
+				66C6D3931491948C003C95DB /* second.png */,
+				66C6D3951491948C003C95DB /* second@2x.png */,
+				66CBDBB814A446BD004FE748 /* arrow.png */,
+				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
+				66160AD614C8F771009B809C /* Important Dates.png */,
+				66160AD714C8F771009B809C /* Daily Time Table.png */,
+				66160AD814C8F771009B809C /* course book.png */,
+				66160AD914C8F771009B809C /* Annual School Calendar.png */,
+				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
+				66490CE414CA031A00F99B89 /* Events-cell.png */,
+				6672062E14F06B8D001B8391 /* Home-arrow.png */,
+				6672062F14F06B8D001B8391 /* Home-arrow2.png */,
+				66D209FB14EDD8D2001E8CC2 /* SSS2.png */,
+				6612086E14C9F97D003E3863 /* Documents-1.png */,
+				6612086F14C9F97D003E3863 /* Documents-2.png */,
+				6612087014C9F97D003E3863 /* Documents-3.png */,
+				6612087114C9F97D003E3863 /* Documents-4.png */,
+				6612087214C9F97D003E3863 /* Documents-5.png */,
+				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		66F97E8514F082F000D33150 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				660DE30414EE169900491668 /* emails.txt */,
+				66D209FD14EDDA6B001E8CC2 /* description.html */,
+				66C8051E14EDA2E900DD312D /* rotations.txt */,
+				D0BD6F8A14E753BE007986C6 /* Calendar.pdf */,
+				D0BD6F9214E75CF5007986C6 /* Course Book.pdf */,
+				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
+				D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */,
+				D0BD6F9814E75DEC007986C6 /* Timetable.pdf */,
+				66160AE014C8FD9E009B809C /* rotation.txt */,
+				66F97E9414F090F900D33150 /* about_us.html */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 		D0152A1414C2981200D87C1D /* assets */ = {
@@ -631,7 +676,6 @@
 				6612087714C9F97D003E3863 /* Documents-5.png in Resources */,
 				6612087A14C9FC69003E3863 /* Document Background.png in Resources */,
 				66490CE614CA031A00F99B89 /* Events-cell.png in Resources */,
-				66490CE714CA031A00F99B89 /* Home-arrow.png in Resources */,
 				66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */,
 				66490CEC14CA083000F99B89 /* Black Wood Background3.png in Resources */,
 				66490CEE14CA08E100F99B89 /* Cell-Color-2.png in Resources */,
@@ -659,6 +703,15 @@
 				66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */,
 				660DE30514EE169900491668 /* emails.txt in Resources */,
 				660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */,
+				6672063014F06B8D001B8391 /* Home-arrow.png in Resources */,
+				6672063114F06B8D001B8391 /* Home-arrow2.png in Resources */,
+				66F97E8914F0861100D33150 /* About Us Text.png in Resources */,
+				66F97E8F14F090E200D33150 /* Created_Text.png in Resources */,
+				66F97E9014F090E200D33150 /* The_History_Text.png in Resources */,
+				66F97E9114F090E200D33150 /* The_Team_Text3.png in Resources */,
+				66F97E9214F090E200D33150 /* The_Team_Text2.png in Resources */,
+				66F97E9314F090E200D33150 /* The_Team_Text.png in Resources */,
+				66F97E9514F090F900D33150 /* about_us.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +752,7 @@
 				660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */,
 				660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */,
 				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
+				66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
