@@ -11,4 +11,5 @@
 @interface TwitterViewController : UIViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+- (IBAction)buttonPressed:(id)sender;
 @end

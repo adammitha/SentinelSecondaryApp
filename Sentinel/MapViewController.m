@@ -37,19 +37,29 @@
 {
 }
 */
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-
-
-- (void)viewDidLoad
+- (IBAction)buttonPressed:(UIBarButtonItem *)sender
 {
+    if (sender.tag == 0) {
+        [self.webView goBack];
+    }
+    if (sender.tag == 1) {
+        [self.webView goForward];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     self.webView.scalesPageToFit = YES;
     self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://g.co/maps/75nh6"]]];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
-    
+}
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
+- (void)viewDidLoad
+{    
     /*[super viewDidLoad];
     self.title = @"Map";
     MKCoordinateRegion region;
@@ -66,6 +76,12 @@
    */
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to Google Maps." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+    NSLog(@"Error: %@", [error localizedDescription]);
+}
 - (void)webViewDidFinishLoad:(UIWebView *)webView 
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];

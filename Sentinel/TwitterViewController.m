@@ -39,6 +39,16 @@
 */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (IBAction)buttonPressed:(UIBarButtonItem *)sender
+{
+    if (sender.tag == 0) {
+        [self.webView goBack];
+    }
+    if (sender.tag == 1) {
+        [self.webView goForward];
+    }
+        
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

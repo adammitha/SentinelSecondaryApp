@@ -101,7 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dQv-iq-N7k">
-                                <rect key="frame" x="86" y="456" width="149" height="20"/>
+                                <rect key="frame" x="96" y="456" width="128" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -217,6 +217,7 @@
                                 <rect key="frame" x="0.0" y="165" width="320" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SSS2-1.png" id="yF6-jN-CcU">
                                 <rect key="frame" x="0.0" y="44" width="320" height="130"/>
@@ -271,6 +272,27 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="aEe-gg-PVU">
+                                <rect key="frame" x="0.0" y="343" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="npx-tv-fhI"/>
+                                    <barButtonItem image="Home-arrow2.png" width="17" style="plain" id="nN3-nE-wIr">
+                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="LIy-PG-yVF" id="mat-uD-cmP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="164" style="plain" systemItem="fixedSpace" id="n5t-aT-fkF"/>
+                                    <barButtonItem tag="1" image="Home-arrow.png" width="17" style="plain" id="vYb-Ol-VZM">
+                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="LIy-PG-yVF" id="ZKM-5M-qjJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Qxn-qm-lmN"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -307,16 +329,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="x1S-3N-zmj">
+                            <webView opaque="NO" contentMode="scaleToFill" id="x1S-3N-zmj">
                                 <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="bPZ-ty-OpQ">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" id="bPZ-ty-OpQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="yaT-aU-nEH">
+                                    <navigationItem title="About Us" id="yaT-aU-nEH">
                                         <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="EUn-x3-jwi">
                                             <connections>
                                                 <action selector="goHome:" destination="2vz-CH-Ns3" id="llj-lR-k3n"/>
@@ -326,7 +348,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="webView" destination="x1S-3N-zmj" id="Fg5-LH-tlc"/>
@@ -344,10 +366,31 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="n2q-Yv-52o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="O44-MQ-wE6">
+                                <rect key="frame" x="0.0" y="343" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="43" style="plain" systemItem="fixedSpace" id="Llf-Pb-spS"/>
+                                    <barButtonItem image="Home-arrow2.png" width="17" style="plain" id="hic-tg-ORJ">
+                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="bNr-jx-sRB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="169" style="plain" systemItem="fixedSpace" id="spp-uY-7iA"/>
+                                    <barButtonItem tag="1" image="Home-arrow.png" width="17" style="plain" id="vwF-yE-OiU">
+                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="sKQ-DR-drV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Wad-wK-KPK"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -481,7 +524,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D5h-3y-hi6">
-                                <rect key="frame" x="20" y="170" width="115" height="111"/>
+                                <rect key="frame" x="21" y="171" width="112" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Gym Schedule" image="Documents-3.png">
@@ -496,7 +539,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="huB-SP-Al8">
-                                <rect key="frame" x="199" y="27" width="106" height="114"/>
+                                <rect key="frame" x="199" y="27" width="112" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Course Book" image="Documents-2.png">
@@ -511,7 +554,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cIg-mw-dHM">
-                                <rect key="frame" x="197" y="170" width="108" height="112"/>
+                                <rect key="frame" x="199" y="171" width="112" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Important Dates" image="Documents-4.png">
@@ -526,7 +569,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fBr-sn-9Fg">
-                                <rect key="frame" x="106" y="307" width="108" height="110"/>
+                                <rect key="frame" x="104" y="307" width="112" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Timetable" image="Documents-5.png">
@@ -666,6 +709,7 @@
         <image name="Documents-5.png" width="650" height="650"/>
         <image name="Header 1.png" width="660" height="168"/>
         <image name="Home-arrow.png" width="50" height="50"/>
+        <image name="Home-arrow2.png" width="50" height="50"/>
         <image name="SSS2-1.png" width="450" height="168"/>
         <image name="School Info and Events.png" width="640" height="109"/>
         <image name="Student Council.png" width="450" height="90"/>
@@ -712,6 +756,7 @@
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonPressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
@@ -724,6 +769,7 @@
         <class className="TwitterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
