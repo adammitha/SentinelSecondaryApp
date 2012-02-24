@@ -11,7 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface FeedbackViewController : UIViewController
+@interface FeedbackViewController : UIViewController <UIWebViewDelegate>
 - (IBAction)feedback:(id)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 

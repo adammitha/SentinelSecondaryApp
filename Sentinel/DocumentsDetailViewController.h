@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
-@interface DocumentsDetailViewController : UIViewController
+@interface DocumentsDetailViewController : UIViewController <UIWebViewDelegate>
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSString *fileName;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (void)swipeDidOccur;
 @end
