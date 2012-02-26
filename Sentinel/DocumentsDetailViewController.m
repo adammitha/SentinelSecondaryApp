@@ -64,6 +64,13 @@
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"%@", [error localizedDescription]);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the Sentinel Yearly Calendar. Please check your internet connection" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+}
 - (void)viewDidUnload
 {
     [self setWebView:nil];

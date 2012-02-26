@@ -67,8 +67,12 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        [[UIApplication sharedApplication] openURL:[request URL]];
-        return NO;
+        NSString *string = [[request URL] absoluteString];
+        if ([string isEqualToString:@"http://sd45.bc.ca/sentinel"]) {
+            [[UIApplication sharedApplication] openURL:[request URL]];
+            return NO;
+        }
+        return YES;
     }
     return YES;
 }
