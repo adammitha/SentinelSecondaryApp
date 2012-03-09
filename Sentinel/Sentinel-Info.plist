@@ -22,7 +22,6 @@
 			<array>
 				<string>apple-touch-icon copy.png</string>
 				<string>apple-touch-icon copy 2.png</string>
-				<string>apple-touch-icon copy2.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>
