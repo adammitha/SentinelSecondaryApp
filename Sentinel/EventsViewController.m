@@ -214,7 +214,6 @@
     EventsDetailViewController *eventsDetailViewController = [[EventsDetailViewController alloc] initWithNibName:@"EventsDetailViewController" bundle:nil];
     NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:indexPath.row]];
     eventsDetailViewController.eventTitle = [tempdict objectForKey:@"title"];
-    eventsDetailViewController.eventDescription = [tempdict objectForKey:@"description"];
     eventsDetailViewController.eventLink = [tempdict objectForKey:@"link"];
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:eventsDetailViewController animated:YES];
