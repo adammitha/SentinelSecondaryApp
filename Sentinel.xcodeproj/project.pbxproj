@@ -73,6 +73,7 @@
 		66C6D3941491948C003C95DB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3931491948C003C95DB /* second.png */; };
 		66C6D3961491948C003C95DB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3951491948C003C95DB /* second@2x.png */; };
 		66C6D3A4149199D1003C95DB /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D3A3149199D1003C95DB /* EventsViewController.m */; };
+		66C7BFF4153A335100CB8F99 /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C7BFF3153A335100CB8F99 /* Update.m */; };
 		66C8051F14EDA2E900DD312D /* rotations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C8051E14EDA2E900DD312D /* rotations.txt */; };
 		66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C8052114EDA5A500DD312D /* CoreText.framework */; };
 		66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */; };
@@ -218,6 +219,8 @@
 		66C6D3951491948C003C95DB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		66C6D3A2149199D1003C95DB /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		66C6D3A3149199D1003C95DB /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		66C7BFF2153A335100CB8F99 /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
+		66C7BFF3153A335100CB8F99 /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		66C8051E14EDA2E900DD312D /* rotations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotations.txt; sourceTree = "<group>"; };
 		66C8052114EDA5A500DD312D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker@2x.png"; sourceTree = "<group>"; };
@@ -444,6 +447,8 @@
 				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
 				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
 				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
+				66C7BFF2153A335100CB8F99 /* Update.h */,
+				66C7BFF3153A335100CB8F99 /* Update.m */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -749,6 +754,7 @@
 				660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */,
 				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
 				66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */,
+				66C7BFF4153A335100CB8F99 /* Update.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
