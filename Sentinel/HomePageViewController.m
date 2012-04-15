@@ -9,6 +9,7 @@
 #import "HomePageViewController.h"
 #import "MapViewController.h"
 #import "ASIHTTPRequest.h"
+#import "Update.h"
 @implementation HomePageViewController
 //Swipe
 //Swipe
@@ -35,10 +36,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (IBAction)eventsAndInfo:(id)sender {
-    MapViewController *mvc = [[MapViewController alloc] init];
-    [self.navigationController pushViewController:mvc animated:YES];
-}
 
 #pragma mark - View lifecycle
 
@@ -88,6 +85,8 @@
 {
     [super viewDidLoad];
     self.about.backgroundColor = [UIColor clearColor];
+    Update *anUpdate = [[Update alloc] initWithURL:[NSURL URLWithString:@"http://sd45app.com/test/test.json"]];
+    [anUpdate checkForUpdate];
 }
 
 - (void)viewDidUnload

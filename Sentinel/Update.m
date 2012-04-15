@@ -21,8 +21,33 @@
     return self;
 }
 
+- (void)checkForUpdate
+{
+    NSLog(@"checkForUpdate");
+    //ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:self.updateURL];
+    //[request setDelegate:self];
+    //[request startAsynchronous];
+    /*NSError *error;
+    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:self.responseData options:kNilOptions error:&error];
+    if ([[json objectForKey:@"Update needed"] isEqualToString:@"YES"]) {
+        [self update];
+    }*/
+}
+
 - (NSData *)update
 {
+    NSLog(@"%@", self.responseData);
     return self.responseData;
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request 
+{
+    self.responseData = [request responseData];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    NSLog(@"Unable to retrieve updates: %@", [error localizedDescription]);
 }
 @end

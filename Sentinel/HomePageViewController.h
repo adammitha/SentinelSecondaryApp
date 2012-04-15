@@ -20,18 +20,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *rotationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @end

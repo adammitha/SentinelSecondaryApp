@@ -16,5 +16,6 @@
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 
 - (id)initWithURL:(NSURL *)url;
+- (void)checkForUpdate;
 - (NSData *)update;
 @end
