@@ -608,7 +608,7 @@
 		66C6D3671491948C003C95DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Sentinel Secondary School";
 			};
 			buildConfigurationList = 66C6D36A1491948C003C95DB /* Build configuration list for PBXProject "Sentinel" */;

@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ASIHTTPRequest.h"
 #import "MBProgressHUD.h"
 @interface Update : NSObject
 
 @property (nonatomic, strong) NSURL *updateURL;
-@property (nonatomic, strong) NSData *responseData;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+@property (nonatomic, strong) NSData *data;
+@property (nonatomic, strong) NSData *updateData;
 
 - (id)initWithURL:(NSURL *)url;
 - (void)checkForUpdate;
-- (NSData *)update;
+- (void)logData;
+- (NSData *)updateData;
 @end

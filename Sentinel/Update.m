@@ -5,14 +5,14 @@
 //  Created by Adam Mitha on 12-04-14.
 //  Copyright (c) 2012 Sentinel Secondary School. All rights reserved.
 //
-
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #import "Update.h"
 
 @implementation Update
 @synthesize updateURL = _updateURL;
-@synthesize responseData = _responseData;
 @synthesize progressHUD = _progressHUD;
-
+@synthesize data = _data;
+@synthesize updateData = _updateData;
 - (id)initWithURL:(NSURL *)url
 {
     if (self = [super init]) {
@@ -23,31 +23,27 @@
 
 - (void)checkForUpdate
 {
-    NSLog(@"checkForUpdate");
-    //ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:self.updateURL];
-    //[request setDelegate:self];
-    //[request startAsynchronous];
-    /*NSError *error;
-    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:self.responseData options:kNilOptions error:&error];
-    if ([[json objectForKey:@"Update needed"] isEqualToString:@"YES"]) {
-        [self update];
-    }*/
+    dispatch_async(kBgQueue, ^{
+        self.data = [NSData dataWithContentsOfURL:_updateURL];
+        if (self.data) {
+            [self performSelectorOnMainThread:@selector(updateData) withObject:self.data waitUntilDone:YES];
+        }
+    });
+
 }
 
-- (NSData *)update
+- (void)logData
 {
-    NSLog(@"%@", self.responseData);
-    return self.responseData;
+    NSError *error;
+    NSDictionary *tempdict = [NSJSONSerialization JSONObjectWithData:self.data options:kNilOptions error:&error];
+    NSLog(@"%@", tempdict);
 }
 
-- (void)requestFinished:(ASIHTTPRequest *)request 
+- (NSData *)updateData
 {
-    self.responseData = [request responseData];
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    NSError *error = [request error];
-    NSLog(@"Unable to retrieve updates: %@", [error localizedDescription]);
+    dispatch_async(kBgQueue, ^{
+        //get update data from here
+    });
+    return self.updateData;
 }
 @end
