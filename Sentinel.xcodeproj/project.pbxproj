@@ -61,6 +61,7 @@
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
 		668B8D7A14FB1B4A00A7EC78 /* apple-touch-icon copy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */; };
+		668BA0BF1594386E001F516F /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BA0BE1594386E001F516F /* Update.m */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
 		66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3761491948C003C95DB /* Foundation.framework */; };
 		66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3781491948C003C95DB /* CoreGraphics.framework */; };
@@ -73,7 +74,6 @@
 		66C6D3941491948C003C95DB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3931491948C003C95DB /* second.png */; };
 		66C6D3961491948C003C95DB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3951491948C003C95DB /* second@2x.png */; };
 		66C6D3A4149199D1003C95DB /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D3A3149199D1003C95DB /* EventsViewController.m */; };
-		66C7BFF4153A335100CB8F99 /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C7BFF3153A335100CB8F99 /* Update.m */; };
 		66C8051F14EDA2E900DD312D /* rotations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C8051E14EDA2E900DD312D /* rotations.txt */; };
 		66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C8052114EDA5A500DD312D /* CoreText.framework */; };
 		66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */; };
@@ -124,7 +124,6 @@
 		66F97E9214F090E200D33150 /* The_Team_Text2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8D14F090E200D33150 /* The_Team_Text2.png */; };
 		66F97E9314F090E200D33150 /* The_Team_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8E14F090E200D33150 /* The_Team_Text.png */; };
 		66F97E9514F090F900D33150 /* about_us.html in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E9414F090F900D33150 /* about_us.html */; };
-		D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1914C29C7100D87C1D /* AudioToolbox.framework */; };
 		D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */; };
 		D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */; };
 		D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8A6C14E7B741008A8F33 /* Default@2x.png */; };
@@ -202,6 +201,8 @@
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon copy2.png"; sourceTree = "<group>"; };
+		668BA0BD1594386E001F516F /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
+		668BA0BE1594386E001F516F /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		66C6D3701491948C003C95DB /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C6D3741491948C003C95DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66C6D3761491948C003C95DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -219,8 +220,6 @@
 		66C6D3951491948C003C95DB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		66C6D3A2149199D1003C95DB /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		66C6D3A3149199D1003C95DB /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
-		66C7BFF2153A335100CB8F99 /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
-		66C7BFF3153A335100CB8F99 /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		66C8051E14EDA2E900DD312D /* rotations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotations.txt; sourceTree = "<group>"; };
 		66C8052114EDA5A500DD312D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker@2x.png"; sourceTree = "<group>"; };
@@ -291,7 +290,6 @@
 		66F97E8D14F090E200D33150 /* The_Team_Text2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Team_Text2.png; sourceTree = "<group>"; };
 		66F97E8E14F090E200D33150 /* The_Team_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Team_Text.png; sourceTree = "<group>"; };
 		66F97E9414F090F900D33150 /* about_us.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_us.html; sourceTree = "<group>"; };
-		D0152A1914C29C7100D87C1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
 		D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilEventsViewController.h; sourceTree = "<group>"; };
 		D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilEventsViewController.m; sourceTree = "<group>"; };
@@ -322,7 +320,6 @@
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
 				661D09D714B69CFC00C75B17 /* libTestFlight.a in Frameworks */,
-				D0152A1A14C29C7100D87C1D /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +382,6 @@
 		66C6D3731491948C003C95DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0152A1914C29C7100D87C1D /* AudioToolbox.framework */,
 				66C6D3741491948C003C95DB /* UIKit.framework */,
 				66C6D3761491948C003C95DB /* Foundation.framework */,
 				66C6D3781491948C003C95DB /* CoreGraphics.framework */,
@@ -418,6 +414,8 @@
 				660DE30914EE1B5100491668 /* TwitterViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
 				660F36D514C8C0C000666214 /* HomePageViewController.m */,
+				668BA0BD1594386E001F516F /* Update.h */,
+				668BA0BE1594386E001F516F /* Update.m */,
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
@@ -447,8 +445,6 @@
 				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
 				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
 				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
-				66C7BFF2153A335100CB8F99 /* Update.h */,
-				66C7BFF3153A335100CB8F99 /* Update.m */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -754,7 +750,7 @@
 				660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */,
 				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
 				66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */,
-				66C7BFF4153A335100CB8F99 /* Update.m in Sources */,
+				668BA0BF1594386E001F516F /* Update.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

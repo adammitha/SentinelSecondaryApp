@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Home Page View Controller-->
         <scene sceneID="C86-Qc-vGs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yO-Bl-8K9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,6 +133,7 @@
             </objects>
             <point key="canvasLocation" x="-1388" y="222"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="Ia4-ii-j8x">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hka-Di-Af3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,6 +150,7 @@
             </objects>
             <point key="canvasLocation" x="-1813" y="222"/>
         </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -173,6 +177,7 @@
             </objects>
             <point key="canvasLocation" x="-422" y="-2425"/>
         </scene>
+        <!--Events View Controller - Events-->
         <scene sceneID="dmw-Ro-B0K">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjl-SN-3gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,6 +197,7 @@
             </objects>
             <point key="canvasLocation" x="638" y="-4400"/>
         </scene>
+        <!--Feedback View Controller - Home-->
         <scene sceneID="NGa-aN-QvO">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUd-Fj-jQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,6 +248,7 @@
             </objects>
             <point key="canvasLocation" x="116" y="-2594"/>
         </scene>
+        <!--Navigation Controller - Teacher Websites-->
         <scene sceneID="jHY-Sx-w9t">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFs-Nf-LHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -259,6 +266,7 @@
             </objects>
             <point key="canvasLocation" x="112" y="-1983"/>
         </scene>
+        <!--Map View Controller - Map-->
         <scene sceneID="4aT-8o-E6N">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJn-WC-QAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,6 +312,7 @@
             </objects>
             <point key="canvasLocation" x="112" y="-1343"/>
         </scene>
+        <!--Navigation Controller - Staff Emails-->
         <scene sceneID="8ef-hq-Bbk">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qth-Wb-nTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -321,6 +330,7 @@
             </objects>
             <point key="canvasLocation" x="112" y="-712"/>
         </scene>
+        <!--About Us View Controller-->
         <scene sceneID="ify-rb-VBT">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cx-gP-AfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,10 +367,11 @@
             </objects>
             <point key="canvasLocation" x="-474" y="49"/>
         </scene>
+        <!--Twitter View Controller - Twitter-->
         <scene sceneID="KSD-v4-9b7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qtw-zl-wdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vk2-jd-J1u" customClass="TwitterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TwitterViewController" id="vk2-jd-J1u" customClass="TwitterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cS6-g2-Q68">
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -402,6 +413,7 @@
             </objects>
             <point key="canvasLocation" x="112" y="-83"/>
         </scene>
+        <!--View Controller-->
         <scene sceneID="isI-OY-7Tr">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6E4-Zp-hIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -428,6 +440,7 @@
             </objects>
             <point key="canvasLocation" x="-492" y="683"/>
         </scene>
+        <!--Staff Email View Controller-->
         <scene sceneID="02p-Qy-q36">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KM-K8-EfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,6 +459,7 @@
             </objects>
             <point key="canvasLocation" x="629" y="-712"/>
         </scene>
+        <!--Website View Controller-->
         <scene sceneID="E3T-DF-Zhk">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Up2-HM-xU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,6 +479,7 @@
             </objects>
             <point key="canvasLocation" x="638" y="-1983"/>
         </scene>
+        <!--Navigation Controller - Announcements-->
         <scene sceneID="KO2-kS-fE1">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZ8-Kn-UCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -482,6 +497,7 @@
             </objects>
             <point key="canvasLocation" x="116" y="-3804"/>
         </scene>
+        <!--Navigation Controller - Documents-->
         <scene sceneID="vgo-5U-mbs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPJ-Ed-s6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -499,6 +515,7 @@
             </objects>
             <point key="canvasLocation" x="112" y="-3185"/>
         </scene>
+        <!--Documents View Controller-->
         <scene sceneID="0aN-W9-haH">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFJ-U1-0en" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -630,11 +647,12 @@
             </objects>
             <point key="canvasLocation" x="629" y="-3185"/>
         </scene>
+        <!--Announcements View Controller-->
         <scene sceneID="CqX-Ka-eOd">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMN-qt-Sg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="4cC-mq-BGr"/>
-                <tableViewController id="asr-zi-TAR" customClass="AnnouncementsViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AnnouncementsViewController" id="asr-zi-TAR" customClass="AnnouncementsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ucm-hL-QR8">
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,6 +667,7 @@
             </objects>
             <point key="canvasLocation" x="638" y="-3804"/>
         </scene>
+        <!--Navigation Controller - Events-->
         <scene sceneID="v1P-en-c8O">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecm-CD-XUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -669,11 +688,12 @@
             </objects>
             <point key="canvasLocation" x="112" y="-4400"/>
         </scene>
+        <!--Events View Controller - Events-->
         <scene sceneID="L14-2M-G9S">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G61-yV-lmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="yeW-U4-f43"/>
-                <tableViewController id="5t5-Bj-90Q" customClass="EventsViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EventsViewController" id="5t5-Bj-90Q" customClass="EventsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oKU-GY-OwY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
