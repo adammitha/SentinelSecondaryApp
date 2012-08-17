@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
+		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AB614E7825E0004F786 /* Sentinel School Photo.png */; };
@@ -135,6 +137,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
+		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AB614E7825E0004F786 /* Sentinel School Photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel School Photo.png"; sourceTree = "<group>"; };
@@ -493,55 +497,56 @@
 		66F97E8414F0828B00D33150 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				66F97E8A14F090E200D33150 /* Created_Text.png */,
-				66F97E8B14F090E200D33150 /* The_History_Text.png */,
-				66F97E8C14F090E200D33150 /* The_Team_Text3.png */,
-				66F97E8D14F090E200D33150 /* The_Team_Text2.png */,
-				66F97E8E14F090E200D33150 /* The_Team_Text.png */,
-				66F97E8814F0861100D33150 /* About Us Text.png */,
-				6612087914C9FC69003E3863 /* Document Background.png */,
-				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
-				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
-				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
-				66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */,
-				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
-				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
-				660DE30614EE1ACD00491668 /* bird_32_black.png */,
-				66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */,
 				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
-				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
-				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
-				66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */,
-				66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */,
-				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
-				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
 				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
 				661D09CE14B4E44E00C75B17 /* 112-group.png */,
-				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
-				66000AAB14E741CC0004F786 /* Logo.png */,
-				66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */,
-				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
+				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
+				66D209F514EDD6BB001E8CC2 /* 18-envelope@2x.png */,
+				66D209F314EDD66B001E8CC2 /* 33-cabinet@2x.png */,
+				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
+				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
+				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
 				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
-				66C6D38C1491948C003C95DB /* first.png */,
-				66C6D38E1491948C003C95DB /* first@2x.png */,
-				66C6D3931491948C003C95DB /* second.png */,
-				66C6D3951491948C003C95DB /* second@2x.png */,
-				66CBDBB814A446BD004FE748 /* arrow.png */,
-				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
-				66160AD614C8F771009B809C /* Important Dates.png */,
-				66160AD714C8F771009B809C /* Daily Time Table.png */,
-				66160AD814C8F771009B809C /* course book.png */,
+				66F97E8814F0861100D33150 /* About Us Text.png */,
 				66160AD914C8F771009B809C /* Annual School Calendar.png */,
+				66CBDBB814A446BD004FE748 /* arrow.png */,
+				660DE30614EE1ACD00491668 /* bird_32_black.png */,
+				66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */,
+				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
+				66490CED14CA08E100F99B89 /* Cell-Color-2.png */,
 				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
-				6647F37D152558CD0066F799 /* Home-arrow.png */,
-				66490CE414CA031A00F99B89 /* Events-cell.png */,
-				66D209FB14EDD8D2001E8CC2 /* SSS2.png */,
+				66160AD814C8F771009B809C /* course book.png */,
+				66F97E8A14F090E200D33150 /* Created_Text.png */,
+				66160AD714C8F771009B809C /* Daily Time Table.png */,
+				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
+				6612087914C9FC69003E3863 /* Document Background.png */,
 				6612086E14C9F97D003E3863 /* Documents-1.png */,
 				6612086F14C9F97D003E3863 /* Documents-2.png */,
 				6612087014C9F97D003E3863 /* Documents-3.png */,
 				6612087114C9F97D003E3863 /* Documents-4.png */,
 				6612087214C9F97D003E3863 /* Documents-5.png */,
-				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
+				66490CE414CA031A00F99B89 /* Events-cell.png */,
+				66C6D38C1491948C003C95DB /* first.png */,
+				66C6D38E1491948C003C95DB /* first@2x.png */,
+				6627D1A014BA628900053EF3 /* HeaderLogo.png */,
+				6647F37D152558CD0066F799 /* Home-arrow.png */,
+				6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */,
+				66160AD614C8F771009B809C /* Important Dates.png */,
+				66CE21FD14AF804900F6BF0D /* Logo-SD45App.png */,
+				66000AAB14E741CC0004F786 /* Logo.png */,
+				66C6D3931491948C003C95DB /* second.png */,
+				66C6D3951491948C003C95DB /* second@2x.png */,
+				1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */,
+				66000AB614E7825E0004F786 /* Sentinel School Photo.png */,
+				66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */,
+				66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */,
+				66D209FB14EDD8D2001E8CC2 /* SSS2.png */,
+				66F97E8B14F090E200D33150 /* The_History_Text.png */,
+				66F97E8E14F090E200D33150 /* The_Team_Text.png */,
+				66F97E8D14F090E200D33150 /* The_Team_Text2.png */,
+				66F97E8C14F090E200D33150 /* The_Team_Text3.png */,
+				66490CE914CA07ED00F99B89 /* Welcome-1.png */,
+				66160AD514C8F771009B809C /* Winter Gym Schedule.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				66C8051E14EDA2E900DD312D /* rotations.txt */,
 				D0BD6F9214E75CF5007986C6 /* Course Book.pdf */,
 				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
+				1223FA0115DE012D00B22BDF /* Calendar.pdf */,
 				66F90C9814F73F3600FDBF5F /* Timetable.pdf */,
 				D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */,
 				66160AE014C8FD9E009B809C /* rotation.txt */,
@@ -709,6 +715,8 @@
 				66F90C9D14FB15D900FDBF5F /* apple-touch-icon copy 2.png in Resources */,
 				668B8D7A14FB1B4A00A7EC78 /* apple-touch-icon copy2.png in Resources */,
 				6647F37E152558CD0066F799 /* Home-arrow.png in Resources */,
+				1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */,
+				1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
