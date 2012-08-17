@@ -13,7 +13,6 @@
 @synthesize webView = _webView;
 
 - (IBAction)feedback:(id)sender {
-    [TestFlight openFeedbackView];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,7 +58,7 @@
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
-    NSString *tempString = [NSString stringWithFormat:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil]];
+    NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
 }

@@ -15,7 +15,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [TestFlight takeOff:@"dee30b38ab3c182759ed332028d6d143_NTA2MDMyMDEyLTAxLTAyIDE2OjE4OjUzLjYyODM1NQ"];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     return YES;
 }
