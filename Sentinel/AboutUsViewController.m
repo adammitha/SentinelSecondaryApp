@@ -46,7 +46,7 @@
 {
     [super viewDidLoad];
     self.webView.scalesPageToFit = YES;
-    NSString *tempString = [NSString stringWithFormat:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"about_us" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil]];
+    NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"about_us" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
 }
 
