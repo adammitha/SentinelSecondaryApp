@@ -50,13 +50,7 @@
     NSLog(@"%@", _filePath);
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
-    if ([self.fileName isEqualToString:@"Calendar"]) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://go45.sd45.bc.ca/schools/sentinel/Publications/Sentinel%20Secondary%202012%20-%202013%20School%20Calendar.pdf"]]];
-        self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    } else {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:_filePath]]];
-
-    }
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:_filePath]]];
     // Do any additional setup after loading the view from its nib.
 }
 
