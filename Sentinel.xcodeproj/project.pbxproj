@@ -22,7 +22,6 @@
 		660F36CF14C8BEB600666214 /* Center Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C814C8BEB500666214 /* Center Logo.png */; };
 		660F36D014C8BEB600666214 /* Header 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36C914C8BEB500666214 /* Header 1.png */; };
 		660F36D114C8BEB600666214 /* School Info and Events.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CA14C8BEB500666214 /* School Info and Events.png */; };
-		660F36D214C8BEB600666214 /* Student Council.png in Resources */ = {isa = PBXBuildFile; fileRef = 660F36CB14C8BEB500666214 /* Student Council.png */; };
 		660F36D614C8C0C000666214 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36D514C8C0C000666214 /* HomePageViewController.m */; };
 		660F36E314C8EEEA00666214 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F36E214C8EEEA00666214 /* DocumentsViewController.m */; };
 		6612087314C9F97D003E3863 /* Documents-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612086E14C9F97D003E3863 /* Documents-1.png */; };
@@ -154,7 +153,6 @@
 		660F36C814C8BEB500666214 /* Center Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Center Logo.png"; sourceTree = "<group>"; };
 		660F36C914C8BEB500666214 /* Header 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header 1.png"; sourceTree = "<group>"; };
 		660F36CA14C8BEB500666214 /* School Info and Events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "School Info and Events.png"; sourceTree = "<group>"; };
-		660F36CB14C8BEB500666214 /* Student Council.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Student Council.png"; sourceTree = "<group>"; };
 		660F36D414C8C0C000666214 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		660F36D514C8C0C000666214 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		660F36E114C8EEEA00666214 /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
@@ -344,6 +342,7 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				66C6D37A1491948C003C95DB /* Sentinel */,
 				66F90C9C14FB15D900FDBF5F /* apple-touch-icon copy 2.png */,
 				668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */,
 				66C8052114EDA5A500DD312D /* CoreText.framework */,
@@ -353,7 +352,6 @@
 				660F36C814C8BEB500666214 /* Center Logo.png */,
 				660F36C914C8BEB500666214 /* Header 1.png */,
 				660F36CA14C8BEB500666214 /* School Info and Events.png */,
-				660F36CB14C8BEB500666214 /* Student Council.png */,
 				D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */,
 				6627D19614BA56CF00053EF3 /* apple-touch-icon copy.png */,
 				6672721914B961670017CEDE /* MapKit.framework */,
@@ -369,7 +367,6 @@
 				66CBDBA8149C27DA004FE748 /* MobileCoreServices.framework */,
 				66CBDBA6149C27CB004FE748 /* SystemConfiguration.framework */,
 				66CBDB83149C2733004FE748 /* ASIHTTPRequest */,
-				66C6D37A1491948C003C95DB /* Sentinel */,
 				66C6D3731491948C003C95DB /* Frameworks */,
 				66C6D3711491948C003C95DB /* Products */,
 			);
@@ -398,57 +395,57 @@
 			children = (
 				66F97E8414F0828B00D33150 /* Images */,
 				66F97E8514F082F000D33150 /* Files */,
+				66C6D37B1491948C003C95DB /* Supporting Files */,
+				66F97E8014F0808400D33150 /* AboutUsViewController.h */,
+				66F97E8114F0808400D33150 /* AboutUsViewController.m */,
+				66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */,
+				66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */,
+				66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */,
+				66CBDBAC149C2CD1004FE748 /* AnnouncementsViewController.h */,
+				66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */,
+				6614A81514B9105100091A14 /* CouncilDetailViewController.h */,
+				6614A81614B9105100091A14 /* CouncilDetailViewController.m */,
+				6614A81714B9105100091A14 /* CouncilDetailViewController.xib */,
+				D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */,
+				D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */,
+				661D09CA14B4E2A900C75B17 /* CouncilViewController.h */,
+				661D09CB14B4E2A900C75B17 /* CouncilViewController.m */,
+				D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */,
+				D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */,
+				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
+				660F36E114C8EEEA00666214 /* DocumentsViewController.h */,
+				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
+				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
+				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
+				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
+				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
+				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
+				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
+				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
+				660F36D414C8C0C000666214 /* HomePageViewController.h */,
+				660F36D514C8C0C000666214 /* HomePageViewController.m */,
+				6627D19B14BA5C0A00053EF3 /* Location.h */,
+				6627D19C14BA5C0A00053EF3 /* Location.m */,
+				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				6672721614B95F420017CEDE /* MapViewController.h */,
+				6672721714B95F430017CEDE /* MapViewController.m */,
+				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
+				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
 				66CBDBB514A44652004FE748 /* PullRefreshTableViewController.h */,
 				66CBDBB614A44652004FE748 /* PullRefreshTableViewController.m */,
 				66C6D3831491948C003C95DB /* SentinelAppDelegate.h */,
 				66C6D3841491948C003C95DB /* SentinelAppDelegate.m */,
-				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
-				662A7C88149AED4900406F04 /* MBProgressHUD.m */,
-				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
-				66F97E8014F0808400D33150 /* AboutUsViewController.h */,
-				66F97E8114F0808400D33150 /* AboutUsViewController.m */,
-				D035370B14EE4B0D00E85B40 /* CouncilEventsViewController.h */,
-				D035370C14EE4B0D00E85B40 /* CouncilEventsViewController.m */,
-				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
-				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
-				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
-				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
-				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
+				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
+				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
 				660DE30814EE1B5100491668 /* TwitterViewController.h */,
 				660DE30914EE1B5100491668 /* TwitterViewController.m */,
-				660F36D414C8C0C000666214 /* HomePageViewController.h */,
-				660F36D514C8C0C000666214 /* HomePageViewController.m */,
 				668BA0BD1594386E001F516F /* Update.h */,
 				668BA0BE1594386E001F516F /* Update.m */,
-				6627D19B14BA5C0A00053EF3 /* Location.h */,
-				6627D19C14BA5C0A00053EF3 /* Location.m */,
-				6672721614B95F420017CEDE /* MapViewController.h */,
-				6672721714B95F430017CEDE /* MapViewController.m */,
-				661D09CA14B4E2A900C75B17 /* CouncilViewController.h */,
-				661D09CB14B4E2A900C75B17 /* CouncilViewController.m */,
-				6614A81514B9105100091A14 /* CouncilDetailViewController.h */,
-				6614A81614B9105100091A14 /* CouncilDetailViewController.m */,
-				6614A81714B9105100091A14 /* CouncilDetailViewController.xib */,
-				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
-				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
-				66CE220114AF855700F6BF0D /* WebsiteViewController.h */,
-				66CE220214AF855700F6BF0D /* WebsiteViewController.m */,
 				6664556614AFF3A1009D0E87 /* WebsiteDetailViewController.h */,
 				6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */,
 				6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */,
-				66C6D37B1491948C003C95DB /* Supporting Files */,
-				66CBDBAC149C2CD1004FE748 /* AnnouncementsViewController.h */,
-				66CBDBAD149C2CD1004FE748 /* AnnouncementsViewController.m */,
-				66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */,
-				66CE21F414AECD0300F6BF0D /* AnnouncementsDetailViewController.m */,
-				66CE21F514AECD0300F6BF0D /* AnnouncementsDetailViewController.xib */,
-				660F36E114C8EEEA00666214 /* DocumentsViewController.h */,
-				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
-				D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */,
-				D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */,
-				D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */,
-				660DE30014EDF32600491668 /* StaffEmailViewController.h */,
-				660DE30114EDF32700491668 /* StaffEmailViewController.m */,
+				66CE220114AF855700F6BF0D /* WebsiteViewController.h */,
+				66CE220214AF855700F6BF0D /* WebsiteViewController.m */,
 			);
 			path = Sentinel;
 			sourceTree = "<group>";
@@ -665,7 +662,6 @@
 				660F36CF14C8BEB600666214 /* Center Logo.png in Resources */,
 				660F36D014C8BEB600666214 /* Header 1.png in Resources */,
 				660F36D114C8BEB600666214 /* School Info and Events.png in Resources */,
-				660F36D214C8BEB600666214 /* Student Council.png in Resources */,
 				66160ADA14C8F771009B809C /* Winter Gym Schedule.png in Resources */,
 				66160ADB14C8F771009B809C /* Important Dates.png in Resources */,
 				66160ADC14C8F771009B809C /* Daily Time Table.png in Resources */,
@@ -817,6 +813,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
@@ -890,6 +887,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
@@ -910,6 +908,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
