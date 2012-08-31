@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
+		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AB614E7825E0004F786 /* Sentinel School Photo.png */; };
@@ -130,7 +131,6 @@
 		D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F8A6C14E7B741008A8F33 /* Default@2x.png */; };
 		D0BD6F9014E7550F007986C6 /* DocumentsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */; };
 		D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */; };
-		D0BD6F9314E75CF5007986C6 /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F9214E75CF5007986C6 /* Course Book.pdf */; };
 		D0BD6F9514E75D35007986C6 /* Gym Schedule.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */; };
 		D0BD6F9714E75DA7007986C6 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */; };
 /* End PBXBuildFile section */
@@ -138,6 +138,7 @@
 /* Begin PBXFileReference section */
 		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
+		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AB614E7825E0004F786 /* Sentinel School Photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel School Photo.png"; sourceTree = "<group>"; };
@@ -299,7 +300,6 @@
 		D0BD6F8D14E7550F007986C6 /* DocumentsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsDetailViewController.h; sourceTree = "<group>"; };
 		D0BD6F8E14E7550F007986C6 /* DocumentsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsDetailViewController.m; sourceTree = "<group>"; };
 		D0BD6F8F14E7550F007986C6 /* DocumentsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentsDetailViewController.xib; sourceTree = "<group>"; };
-		D0BD6F9214E75CF5007986C6 /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Gym Schedule.pdf"; sourceTree = "<group>"; };
 		D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -554,8 +554,8 @@
 				660DE30414EE169900491668 /* emails.txt */,
 				66D209FD14EDDA6B001E8CC2 /* description.html */,
 				66C8051E14EDA2E900DD312D /* rotations.txt */,
-				D0BD6F9214E75CF5007986C6 /* Course Book.pdf */,
 				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
+				128C59CF15F167C80095DD5C /* Course Book.pdf */,
 				1223FA0115DE012D00B22BDF /* Calendar.pdf */,
 				66F90C9814F73F3600FDBF5F /* Timetable.pdf */,
 				D0BD6F9614E75DA7007986C6 /* Important Dates.pdf */,
@@ -681,7 +681,6 @@
 				66000AAD14E741CC0004F786 /* Logo.png in Resources */,
 				66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */,
 				D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */,
-				D0BD6F9314E75CF5007986C6 /* Course Book.pdf in Resources */,
 				D0BD6F9514E75D35007986C6 /* Gym Schedule.pdf in Resources */,
 				D0BD6F9714E75DA7007986C6 /* Important Dates.pdf in Resources */,
 				D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */,
@@ -713,6 +712,7 @@
 				6647F37E152558CD0066F799 /* Home-arrow.png in Resources */,
 				1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */,
 				1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */,
+				128C59D015F167C80095DD5C /* Course Book.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
