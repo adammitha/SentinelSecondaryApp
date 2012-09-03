@@ -12,6 +12,7 @@
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		1236476E15F47CBC0080D60D /* Icon2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236476D15F47CBC0080D60D /* Icon2013.png */; };
 		1236477015F47CC70080D60D /* Iconsmall2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236476F15F47CC70080D60D /* Iconsmall2013.png */; };
+		127BBE3815F4885000D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3715F4885000D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
@@ -144,6 +145,7 @@
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		1236476D15F47CBC0080D60D /* Icon2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2013.png; sourceTree = "<group>"; };
 		1236476F15F47CC70080D60D /* Iconsmall2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconsmall2013.png; sourceTree = "<group>"; };
+		127BBE3715F4885000D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-arrow2.png"; path = "../../../App Development/Sentinel/More/Sentinel App/Sentinel Graphics/Home/Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
@@ -530,6 +532,7 @@
 				6612087014C9F97D003E3863 /* Documents-3.png */,
 				6612087114C9F97D003E3863 /* Documents-4.png */,
 				6612087214C9F97D003E3863 /* Documents-5.png */,
+				127BBE3715F4885000D8892E /* Home-arrow2.png */,
 				66490CE414CA031A00F99B89 /* Events-cell.png */,
 				66C6D38C1491948C003C95DB /* first.png */,
 				66C6D38E1491948C003C95DB /* first@2x.png */,
@@ -725,6 +728,7 @@
 				1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */,
 				1236476E15F47CBC0080D60D /* Icon2013.png in Resources */,
 				1236477015F47CC70080D60D /* Iconsmall2013.png in Resources */,
+				127BBE3815F4885000D8892E /* Home-arrow2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +822,6 @@
 		6664557314B25ECF009D0E87 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SD45 APP DEVELOPMENT TEAM";
 				COMPRESS_PNG_FILES = NO;
@@ -892,7 +895,6 @@
 		66C6D39A1491948C003C95DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adam Mitha (33VG6WKJCQ)";
 				COMPRESS_PNG_FILES = NO;
@@ -914,7 +916,6 @@
 		66C6D39B1491948C003C95DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
