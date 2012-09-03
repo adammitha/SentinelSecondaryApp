@@ -10,9 +10,8 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>apple-touch-icon copy.png</string>
-		<string>apple-touch-icon copy 2.png</string>
-		<string>apple-touch-icon copy2.png</string>
+		<string>Icon2013.png</string>
+		<string>Iconsmall2013.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -20,11 +19,11 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>apple-touch-icon copy.png</string>
-				<string>apple-touch-icon copy 2.png</string>
+				<string>Icon2013.png</string>
+				<string>Iconsmall2013.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
