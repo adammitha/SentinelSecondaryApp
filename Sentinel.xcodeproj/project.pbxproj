@@ -823,8 +823,8 @@
 		6664557314B25ECF009D0E87 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Justin Wong (A4CP47K626)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SD45 APP DEVELOPMENT TEAM";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -835,8 +835,8 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3A72E19C-2E8D-4F0F-96BB-A75B76370212";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E47F097F-B30A-4685-94D6-9E9832E89307";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -897,9 +897,9 @@
 		66C6D39A1491948C003C95DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Justin Wong (A4CP47K626)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Justin Wong (A4CP47K626)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Justin Wong (A4CP47K626)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -910,9 +910,9 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3A72E19C-2E8D-4F0F-96BB-A75B76370212";
-				"PROVISIONING_PROFILE[sdk=*]" = "3A72E19C-2E8D-4F0F-96BB-A75B76370212";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3A72E19C-2E8D-4F0F-96BB-A75B76370212";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -920,7 +920,7 @@
 		66C6D39B1491948C003C95DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Justin Wong (A4CP47K626)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -931,7 +931,7 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3A72E19C-2E8D-4F0F-96BB-A75B76370212";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
