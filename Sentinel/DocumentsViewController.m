@@ -64,7 +64,7 @@
     //UIScrollView *scrollView = [[UIScrollView alloc] init];
     //[self.view addSubview:scrollView];
     
-    [scroller setScrollEnabled:YES];
+    [scroller setScrollEnabled:NO];
     [scroller setContentSize:CGSizeMake(320, 450)];
     [super viewDidLoad];
 }

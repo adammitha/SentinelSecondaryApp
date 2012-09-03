@@ -56,7 +56,7 @@
     //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setDelegate:self];
     //[request startAsynchronous];
-    NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"rotations" ofType:@"txt"]];
+    NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
     NSError *error;
     self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     NSDate *date = [NSDate date];
@@ -84,12 +84,12 @@
 {
     [super viewDidLoad];
     self.about.backgroundColor = [UIColor clearColor];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://www.sd45app.com/test/test.json"]];
-    [request setDelegate:self];
-    [request startAsynchronous];
+    //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://www.sd45app.com/test/test.json"]];
+    //[request setDelegate:self];
+    //[request startAsynchronous];
 }
 
-- (void)requestFinished:(ASIHTTPRequest *)request
+/*- (void)requestFinished:(ASIHTTPRequest *)request
 {
     //NSLog(@"%@", [request responseData]);
     NSDictionary *tempdict = [NSJSONSerialization JSONObjectWithData:[request responseData] options:kNilOptions error:nil];
@@ -105,7 +105,7 @@
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
     NSLog(@"Error: %@", [[request error] localizedDescription]);
-}
+}*/
 - (void)viewDidUnload
 {
     [self setRotationLabel:nil];

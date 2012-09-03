@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
+		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
@@ -138,6 +139,7 @@
 /* Begin PBXFileReference section */
 		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
+		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
@@ -559,6 +561,7 @@
 				1223FA0115DE012D00B22BDF /* Calendar.pdf */,
 				128FE6AB15F3050000EFA893 /* Important Dates.pdf */,
 				66F90C9814F73F3600FDBF5F /* Timetable.pdf */,
+				1236475315F46EF30080D60D /* BlockRotation2013.txt */,
 				66160AE014C8FD9E009B809C /* rotation.txt */,
 				66F97E9414F090F900D33150 /* about_us.html */,
 			);
@@ -713,6 +716,7 @@
 				1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */,
 				128C59D015F167C80095DD5C /* Course Book.pdf in Resources */,
 				128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */,
+				1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
