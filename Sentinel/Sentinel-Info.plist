@@ -22,8 +22,6 @@
 				<string>Icon2013.png</string>
 				<string>Iconsmall2013.png</string>
 			</array>
-			<key>UIPrerenderedIcon</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
