@@ -45,11 +45,9 @@
 		66160ADE14C8F771009B809C /* Annual School Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66160AD914C8F771009B809C /* Annual School Calendar.png */; };
 		661D09CC14B4E2A900C75B17 /* CouncilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D09CB14B4E2A900C75B17 /* CouncilViewController.m */; };
 		661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09CE14B4E44E00C75B17 /* 112-group.png */; };
-		661D09D114B683FC00C75B17 /* retinalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D014B683FC00C75B17 /* retinalogo.png */; };
 		661D09D714B69CFC00C75B17 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D09D314B69CFC00C75B17 /* libTestFlight.a */; };
 		661D09D814B69CFC00C75B17 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D414B69CFC00C75B17 /* README.txt */; };
 		661D09D914B69CFC00C75B17 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D514B69CFC00C75B17 /* release_notes.txt */; };
-		6627D19714BA56CF00053EF3 /* apple-touch-icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D19614BA56CF00053EF3 /* apple-touch-icon copy.png */; };
 		6627D19D14BA5C0A00053EF3 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6627D19C14BA5C0A00053EF3 /* Location.m */; };
 		6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */; };
 		6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6627D1A014BA628900053EF3 /* HeaderLogo.png */; };
@@ -62,12 +60,10 @@
 		66490CF014CA0B4100F99B89 /* Center Logo-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CEF14CA0B4100F99B89 /* Center Logo-2.png */; };
 		6664556914AFF3A1009D0E87 /* WebsiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */; };
 		6664556A14AFF3A1009D0E87 /* WebsiteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */; };
-		6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664556E14AFFC15009D0E87 /* sd45app icon copy.png */; };
 		6664557114AFFC6A009D0E87 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6664557014AFFC6A009D0E87 /* Default.png */; };
 		6664557514B260D0009D0E87 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6664557414B260D0009D0E87 /* Entitlements.plist */; };
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
-		668B8D7A14FB1B4A00A7EC78 /* apple-touch-icon copy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */; };
 		668BA0BF1594386E001F516F /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BA0BE1594386E001F516F /* Update.m */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
 		66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3761491948C003C95DB /* Foundation.framework */; };
@@ -122,7 +118,6 @@
 		66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */; };
 		66F90C9914F73F3600FDBF5F /* Timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 66F90C9814F73F3600FDBF5F /* Timetable.pdf */; };
 		66F90C9B14FADA3400FDBF5F /* bird_32_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */; };
-		66F90C9D14FB15D900FDBF5F /* apple-touch-icon copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F90C9C14FB15D900FDBF5F /* apple-touch-icon copy 2.png */; };
 		66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F97E8114F0808400D33150 /* AboutUsViewController.m */; };
 		66F97E8914F0861100D33150 /* About Us Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8814F0861100D33150 /* About Us Text.png */; };
 		66F97E8F14F090E200D33150 /* Created_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8A14F090E200D33150 /* Created_Text.png */; };
@@ -185,12 +180,10 @@
 		661D09CA14B4E2A900C75B17 /* CouncilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilViewController.h; sourceTree = "<group>"; };
 		661D09CB14B4E2A900C75B17 /* CouncilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilViewController.m; sourceTree = "<group>"; };
 		661D09CE14B4E44E00C75B17 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
-		661D09D014B683FC00C75B17 /* retinalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retinalogo.png; sourceTree = "<group>"; };
 		661D09D314B69CFC00C75B17 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		661D09D414B69CFC00C75B17 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		661D09D514B69CFC00C75B17 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
 		661D09D614B69CFC00C75B17 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		6627D19614BA56CF00053EF3 /* apple-touch-icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon copy.png"; sourceTree = "<group>"; };
 		6627D19B14BA5C0A00053EF3 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		6627D19C14BA5C0A00053EF3 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		6627D19E14BA605100053EF3 /* Home-Background-Textrured.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-Background-Textrured.png"; sourceTree = "<group>"; };
@@ -206,13 +199,11 @@
 		6664556614AFF3A1009D0E87 /* WebsiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteDetailViewController.h; sourceTree = "<group>"; };
 		6664556714AFF3A1009D0E87 /* WebsiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteDetailViewController.m; sourceTree = "<group>"; };
 		6664556814AFF3A1009D0E87 /* WebsiteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebsiteDetailViewController.xib; sourceTree = "<group>"; };
-		6664556E14AFFC15009D0E87 /* sd45app icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sd45app icon copy.png"; sourceTree = "<group>"; };
 		6664557014AFFC6A009D0E87 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6664557414B260D0009D0E87 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		6672721614B95F420017CEDE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon copy2.png"; sourceTree = "<group>"; };
 		668BA0BD1594386E001F516F /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
 		668BA0BE1594386E001F516F /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		66C6D3701491948C003C95DB /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,7 +283,6 @@
 		66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSS2-1.png"; sourceTree = "<group>"; };
 		66F90C9814F73F3600FDBF5F /* Timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Timetable.pdf; sourceTree = "<group>"; };
 		66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird_32_black@2x.png"; sourceTree = "<group>"; };
-		66F90C9C14FB15D900FDBF5F /* apple-touch-icon copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon copy 2.png"; sourceTree = "<group>"; };
 		66F97E8014F0808400D33150 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		66F97E8114F0808400D33150 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		66F97E8814F0861100D33150 /* About Us Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About Us Text.png"; sourceTree = "<group>"; };
@@ -353,8 +343,6 @@
 				127BBE3C15F48D2C00D8892E /* Iconsmall2013.png */,
 				127BBE3D15F48D2C00D8892E /* Icon2013.png */,
 				66C6D37A1491948C003C95DB /* Sentinel */,
-				66F90C9C14FB15D900FDBF5F /* apple-touch-icon copy 2.png */,
-				668B8D7914FB1B4A00A7EC78 /* apple-touch-icon copy2.png */,
 				66C8052114EDA5A500DD312D /* CoreText.framework */,
 				660F36C514C8BEB500666214 /* Black Wood Background.png */,
 				660F36C614C8BEB500666214 /* Button Clicked.png */,
@@ -363,13 +351,10 @@
 				660F36C914C8BEB500666214 /* Header 1.png */,
 				660F36CA14C8BEB500666214 /* School Info and Events.png */,
 				D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */,
-				6627D19614BA56CF00053EF3 /* apple-touch-icon copy.png */,
 				6672721914B961670017CEDE /* MapKit.framework */,
 				661D09D214B69CFC00C75B17 /* TestFlightSDK0 */,
-				661D09D014B683FC00C75B17 /* retinalogo.png */,
 				6664557414B260D0009D0E87 /* Entitlements.plist */,
 				6664557014AFFC6A009D0E87 /* Default.png */,
-				6664556E14AFFC15009D0E87 /* sd45app icon copy.png */,
 				66CE220414AF8E3100F6BF0D /* MessageUI.framework */,
 				66CBDBB314A4463C004FE748 /* QuartzCore.framework */,
 				66CBDBAA149C27E7004FE748 /* libz.dylib */,
@@ -657,15 +642,12 @@
 				66CE21FC14AF7F6800F6BF0D /* 111-user.png in Resources */,
 				66CE21FE14AF804900F6BF0D /* Logo-SD45App.png in Resources */,
 				6664556A14AFF3A1009D0E87 /* WebsiteDetailViewController.xib in Resources */,
-				6664556F14AFFC15009D0E87 /* sd45app icon copy.png in Resources */,
 				6664557114AFFC6A009D0E87 /* Default.png in Resources */,
 				6664557514B260D0009D0E87 /* Entitlements.plist in Resources */,
 				661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */,
-				661D09D114B683FC00C75B17 /* retinalogo.png in Resources */,
 				661D09D814B69CFC00C75B17 /* README.txt in Resources */,
 				661D09D914B69CFC00C75B17 /* release_notes.txt in Resources */,
 				6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */,
-				6627D19714BA56CF00053EF3 /* apple-touch-icon copy.png in Resources */,
 				6627D19F14BA605100053EF3 /* Home-Background-Textrured.png in Resources */,
 				6627D1A114BA628900053EF3 /* HeaderLogo.png in Resources */,
 				660F36CC14C8BEB600666214 /* Black Wood Background.png in Resources */,
@@ -717,8 +699,6 @@
 				66F97E9514F090F900D33150 /* about_us.html in Resources */,
 				66F90C9914F73F3600FDBF5F /* Timetable.pdf in Resources */,
 				66F90C9B14FADA3400FDBF5F /* bird_32_black@2x.png in Resources */,
-				66F90C9D14FB15D900FDBF5F /* apple-touch-icon copy 2.png in Resources */,
-				668B8D7A14FB1B4A00A7EC78 /* apple-touch-icon copy2.png in Resources */,
 				6647F37E152558CD0066F799 /* Home-arrow.png in Resources */,
 				1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */,
 				1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */,
