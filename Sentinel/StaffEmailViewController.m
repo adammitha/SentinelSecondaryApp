@@ -172,7 +172,7 @@
     NSDictionary *tempDict = [self.emailArray objectAtIndex:indexPath.row];
     NSLog(@"%@", tempDict);
     MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
-    [mailController setToRecipients:[NSArray arrayWithObject:[tempDict objectForKey:@"description"]]];
+    [mailController setToRecipients:[NSArray arrayWithObject:[tempDict objectForKey:@"link"]]];
     mailController.mailComposeDelegate = self;
     [self presentModalViewController:mailController animated:YES];
 }

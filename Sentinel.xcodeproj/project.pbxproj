@@ -11,11 +11,11 @@
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
-		127BBE3E15F48D2C00D8892E /* Iconsmall2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3C15F48D2C00D8892E /* Iconsmall2013.png */; };
-		127BBE3F15F48D2C00D8892E /* Icon2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3D15F48D2C00D8892E /* Icon2013.png */; };
+		127BBE3F15F48D2C00D8892E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3D15F48D2C00D8892E /* Icon@2x.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
+		12F28B6715F6B39000BCFEEA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F28B6615F6B39000BCFEEA /* Icon.png */; };
 		66000AAD14E741CC0004F786 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAB14E741CC0004F786 /* Logo.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		66000AB714E7825E0004F786 /* Sentinel School Photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AB614E7825E0004F786 /* Sentinel School Photo.png */; };
@@ -139,11 +139,11 @@
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
-		127BBE3C15F48D2C00D8892E /* Iconsmall2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconsmall2013.png; sourceTree = "<group>"; };
-		127BBE3D15F48D2C00D8892E /* Icon2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2013.png; sourceTree = "<group>"; };
+		127BBE3D15F48D2C00D8892E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
+		12F28B6615F6B39000BCFEEA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		66000AAB14E741CC0004F786 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Sentinel/Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		66000AB614E7825E0004F786 /* Sentinel School Photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel School Photo.png"; sourceTree = "<group>"; };
@@ -340,8 +340,8 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
-				127BBE3C15F48D2C00D8892E /* Iconsmall2013.png */,
-				127BBE3D15F48D2C00D8892E /* Icon2013.png */,
+				12F28B6615F6B39000BCFEEA /* Icon.png */,
+				127BBE3D15F48D2C00D8892E /* Icon@2x.png */,
 				66C6D37A1491948C003C95DB /* Sentinel */,
 				66C8052114EDA5A500DD312D /* CoreText.framework */,
 				660F36C514C8BEB500666214 /* Black Wood Background.png */,
@@ -706,9 +706,9 @@
 				128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */,
 				1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */,
 				127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */,
-				127BBE3E15F48D2C00D8892E /* Iconsmall2013.png in Resources */,
-				127BBE3F15F48D2C00D8892E /* Icon2013.png in Resources */,
+				127BBE3F15F48D2C00D8892E /* Icon@2x.png in Resources */,
 				12A5150015F557260022E128 /* emails.txt in Resources */,
+				12F28B6715F6B39000BCFEEA /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
