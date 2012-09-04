@@ -63,7 +63,7 @@
     self.title = @"Announcements";
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelAnnouncementsXml"];
+    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/announcements.php"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];

@@ -48,7 +48,7 @@
     //swipe 
     [super viewDidLoad];
     self.title = @"Teacher Websites";
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/teacherWebsitesXml"];
+    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/teacherwebsites.php"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -145,7 +145,7 @@
     // Configure the cell...
     NSDictionary *tempdict = [[NSDictionary alloc] initWithDictionary:[self.websitesArray objectAtIndex:indexPath.row]];
     cell.textLabel.text = [tempdict objectForKey:@"title"];
-    cell.detailTextLabel.text = [tempdict objectForKey:@"description"];
+    //cell.detailTextLabel.text = [tempdict objectForKey:@"description"];
     return cell;
 }
 
