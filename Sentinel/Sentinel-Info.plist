@@ -14,8 +14,8 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Icon@2x.png</string>
-				<string>Icon.png</string>
+				<string>Icon2013.png</string>
+				<string>Iconsmall2013.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
@@ -34,7 +34,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
