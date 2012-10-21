@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		121166A815F6D2FF004C32FB /* Icon2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A615F6D2FF004C32FB /* Icon2013.png */; };
 		121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A715F6D2FF004C32FB /* Iconsmall2013.png */; };
-		121166AB15F6D365004C32FB /* Sentinel-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 121166AA15F6D365004C32FB /* Sentinel-Info.plist */; };
 		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
+		122C50E8163356140033F322 /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 122C50E7163356140033F322 /* sports.txt */; };
+		122C50EB16335F4D0033F322 /* AthleticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122C50EA16335F4D0033F322 /* AthleticsViewController.m */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
@@ -125,6 +126,9 @@
 		121166AA15F6D365004C32FB /* Sentinel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
 		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
+		122C50E7163356140033F322 /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sports.txt; sourceTree = "<group>"; };
+		122C50E916335F4D0033F322 /* AthleticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsViewController.h; sourceTree = "<group>"; };
+		122C50EA16335F4D0033F322 /* AthleticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsViewController.m; sourceTree = "<group>"; };
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
@@ -295,6 +299,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122C50E5163356040033F322 /* Athletics */ = {
+			isa = PBXGroup;
+			children = (
+				122C50E7163356140033F322 /* sports.txt */,
+			);
+			name = Athletics;
+			sourceTree = "<group>";
+		};
 		661D09D214B69CFC00C75B17 /* TestFlightSDK0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +402,8 @@
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				122C50E916335F4D0033F322 /* AthleticsViewController.h */,
+				122C50EA16335F4D0033F322 /* AthleticsViewController.m */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
 				6672721714B95F430017CEDE /* MapViewController.m */,
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
@@ -500,6 +514,7 @@
 		66F97E8514F082F000D33150 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				122C50E5163356040033F322 /* Athletics */,
 				66D209FD14EDDA6B001E8CC2 /* description.html */,
 				66C8051E14EDA2E900DD312D /* rotations.txt */,
 				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
@@ -646,7 +661,7 @@
 				12A5150015F557260022E128 /* emails.txt in Resources */,
 				121166A815F6D2FF004C32FB /* Icon2013.png in Resources */,
 				121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */,
-				121166AB15F6D365004C32FB /* Sentinel-Info.plist in Resources */,
+				122C50E8163356140033F322 /* sports.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +704,7 @@
 				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
 				66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */,
 				668BA0BF1594386E001F516F /* Update.m in Sources */,
+				122C50EB16335F4D0033F322 /* AthleticsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

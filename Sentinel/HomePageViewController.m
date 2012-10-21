@@ -9,6 +9,7 @@
 #import "HomePageViewController.h"
 #import "MapViewController.h"
 #import "ASIHTTPRequest.h"
+#import "AthleticsViewController.h"
 @implementation HomePageViewController
 //Swipe
 //Swipe
@@ -127,6 +128,10 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+- (IBAction)athleticsPressed:(id)sender {
+    AthleticsViewController *avc = [[AthleticsViewController alloc] init];
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 //Swipe Action
