@@ -69,10 +69,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    NSDictionary *tempdict = [NSDictionary dictionaryWithDictionary:[_sportsArray objectAtIndex:indexPath.row]];
-    cell.textLabel.text = [tempdict objectForKey:@"name"];
-    // Configure the cell...
+
+    NSDictionary *item = (NSDictionary *)[self.sportsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [item objectForKey:@"name"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jvboysrugby" ofType:@"png"];
+    UIImage *theImage = [UIImage imageWithContentsOfFile:path];
+    cell.imageView.image = theImage;
     
     return cell;
 }

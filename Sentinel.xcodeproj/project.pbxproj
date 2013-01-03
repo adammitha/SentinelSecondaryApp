@@ -13,6 +13,8 @@
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
 		122C50E8163356140033F322 /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 122C50E7163356140033F322 /* sports.txt */; };
 		122C50EB16335F4D0033F322 /* AthleticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122C50EA16335F4D0033F322 /* AthleticsViewController.m */; };
+		122C50F1163389B20033F322 /* Sportscell.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50EF163389B20033F322 /* Sportscell.png */; };
+		122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50F0163389B20033F322 /* Sportscell@2x.png */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
@@ -129,6 +131,9 @@
 		122C50E7163356140033F322 /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sports.txt; sourceTree = "<group>"; };
 		122C50E916335F4D0033F322 /* AthleticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsViewController.h; sourceTree = "<group>"; };
 		122C50EA16335F4D0033F322 /* AthleticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsViewController.m; sourceTree = "<group>"; };
+		122C50EF163389B20033F322 /* Sportscell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sportscell.png; sourceTree = "<group>"; };
+		122C50F0163389B20033F322 /* Sportscell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sportscell@2x.png"; sourceTree = "<group>"; };
+		122C50F31633A0B50033F322 /* jvboysrugby */ = {isa = PBXFileReference; lastKnownFileType = file; path = jvboysrugby; sourceTree = "<group>"; };
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
@@ -307,6 +312,16 @@
 			name = Athletics;
 			sourceTree = "<group>";
 		};
+		122C50EC163387960033F322 /* Athletics */ = {
+			isa = PBXGroup;
+			children = (
+				122C50F31633A0B50033F322 /* jvboysrugby */,
+				122C50EF163389B20033F322 /* Sportscell.png */,
+				122C50F0163389B20033F322 /* Sportscell@2x.png */,
+			);
+			name = Athletics;
+			sourceTree = "<group>";
+		};
 		661D09D214B69CFC00C75B17 /* TestFlightSDK0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +486,7 @@
 		66F97E8414F0828B00D33150 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				122C50EC163387960033F322 /* Athletics */,
 				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
 				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
 				661D09CE14B4E44E00C75B17 /* 112-group.png */,
@@ -662,6 +678,8 @@
 				121166A815F6D2FF004C32FB /* Icon2013.png in Resources */,
 				121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */,
 				122C50E8163356140033F322 /* sports.txt in Resources */,
+				122C50F1163389B20033F322 /* Sportscell.png in Resources */,
+				122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
