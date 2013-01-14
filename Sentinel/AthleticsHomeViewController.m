@@ -25,7 +25,13 @@
     }
     return self;
 }
-
+- (IBAction)buttonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (void)swipeDidOccur
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+}
 - (void)viewDidLoad
 {
     

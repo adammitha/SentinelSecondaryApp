@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface AthleticsHomeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+- (IBAction)feedback:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITableView *athleticsTableView;
 @property (nonatomic, strong)
     NSArray *athleticsArray;
-
+-(void)swipeDidOccur;
 @end
