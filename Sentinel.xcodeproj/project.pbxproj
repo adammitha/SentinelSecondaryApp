@@ -12,7 +12,6 @@
 		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
 		122C50E8163356140033F322 /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 122C50E7163356140033F322 /* sports.txt */; };
-		122C50EB16335F4D0033F322 /* AthleticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122C50EA16335F4D0033F322 /* AthleticsViewController.m */; };
 		122C50F1163389B20033F322 /* Sportscell.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50EF163389B20033F322 /* Sportscell.png */; };
 		122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50F0163389B20033F322 /* Sportscell@2x.png */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
@@ -20,6 +19,13 @@
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
+		6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */; };
+		6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */; };
+		6190D14F16A3875C0012E214 /* StandingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14E16A3875C0012E214 /* StandingsViewController.m */; };
+		6190D15216A38C800012E214 /* StandingsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D15116A38C7F0012E214 /* StandingsCustomCell.m */; };
+		6190D15416A390940012E214 /* standings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15316A390940012E214 /* standings.txt */; };
+		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
+		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
@@ -129,8 +135,6 @@
 		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		122C50E7163356140033F322 /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sports.txt; sourceTree = "<group>"; };
-		122C50E916335F4D0033F322 /* AthleticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsViewController.h; sourceTree = "<group>"; };
-		122C50EA16335F4D0033F322 /* AthleticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsViewController.m; sourceTree = "<group>"; };
 		122C50EF163389B20033F322 /* Sportscell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sportscell.png; sourceTree = "<group>"; };
 		122C50F0163389B20033F322 /* Sportscell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sportscell@2x.png"; sourceTree = "<group>"; };
 		122C50F31633A0B50033F322 /* jvboysrugby */ = {isa = PBXFileReference; lastKnownFileType = file; path = jvboysrugby; sourceTree = "<group>"; };
@@ -139,6 +143,16 @@
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
+		6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsHomeViewController.h; sourceTree = "<group>"; };
+		6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsHomeViewController.m; sourceTree = "<group>"; };
+		6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleticsHomeViewController.xib; sourceTree = "<group>"; };
+		6190D14D16A3875C0012E214 /* StandingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingsViewController.h; sourceTree = "<group>"; };
+		6190D14E16A3875C0012E214 /* StandingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandingsViewController.m; sourceTree = "<group>"; };
+		6190D15016A38C7F0012E214 /* StandingsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingsCustomCell.h; sourceTree = "<group>"; };
+		6190D15116A38C7F0012E214 /* StandingsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandingsCustomCell.m; sourceTree = "<group>"; };
+		6190D15316A390940012E214 /* standings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = standings.txt; sourceTree = "<group>"; };
+		6190D15516A39E500012E214 /* Athletics Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Athletics Banner.png"; sourceTree = "<group>"; };
+		6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingsCustomCell.xib; sourceTree = "<group>"; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
 		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
@@ -308,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				122C50E7163356140033F322 /* sports.txt */,
+				6190D15316A390940012E214 /* standings.txt */,
 			);
 			name = Athletics;
 			sourceTree = "<group>";
@@ -414,11 +429,17 @@
 				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
 				660F36D514C8C0C000666214 /* HomePageViewController.m */,
+				6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */,
+				6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */,
+				6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */,
 				6627D19B14BA5C0A00053EF3 /* Location.h */,
+				6190D14D16A3875C0012E214 /* StandingsViewController.h */,
+				6190D14E16A3875C0012E214 /* StandingsViewController.m */,
 				6627D19C14BA5C0A00053EF3 /* Location.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
-				122C50E916335F4D0033F322 /* AthleticsViewController.h */,
-				122C50EA16335F4D0033F322 /* AthleticsViewController.m */,
+				6190D15016A38C7F0012E214 /* StandingsCustomCell.h */,
+				6190D15116A38C7F0012E214 /* StandingsCustomCell.m */,
+				6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */,
 				6672721614B95F420017CEDE /* MapViewController.h */,
 				6672721714B95F430017CEDE /* MapViewController.m */,
 				662A7C87149AED4900406F04 /* MBProgressHUD.h */,
@@ -488,6 +509,7 @@
 			children = (
 				122C50EC163387960033F322 /* Athletics */,
 				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
+				6190D15516A39E500012E214 /* Athletics Banner.png */,
 				66CE21FB14AF7F6800F6BF0D /* 111-user.png */,
 				661D09CE14B4E44E00C75B17 /* 112-group.png */,
 				66D209EF14EDD5DE001E8CC2 /* 179-notepad@2x.png */,
@@ -680,6 +702,10 @@
 				122C50E8163356140033F322 /* sports.txt in Resources */,
 				122C50F1163389B20033F322 /* Sportscell.png in Resources */,
 				122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */,
+				6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */,
+				6190D15416A390940012E214 /* standings.txt in Resources */,
+				6190D15616A39E500012E214 /* Athletics Banner.png in Resources */,
+				6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +748,9 @@
 				D035370D14EE4B0E00E85B40 /* CouncilEventsViewController.m in Sources */,
 				66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */,
 				668BA0BF1594386E001F516F /* Update.m in Sources */,
-				122C50EB16335F4D0033F322 /* AthleticsViewController.m in Sources */,
+				6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */,
+				6190D14F16A3875C0012E214 /* StandingsViewController.m in Sources */,
+				6190D15216A38C800012E214 /* StandingsCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
