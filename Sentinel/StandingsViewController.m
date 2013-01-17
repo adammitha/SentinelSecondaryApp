@@ -30,7 +30,6 @@
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     NSError *error;
@@ -74,16 +73,36 @@
     }
     // Configure the cell...
     NSDictionary *tempdict = [testArray objectAtIndex:indexPath.row];
+    //NSString *wins = [tempdict objectForKey:@"wins"];
+    //NSInteger winsInt = [wins integerValue];
+    //NSLog(@"%i", winsInt);
     cell.teamName.text = [tempdict objectForKey:@"teamName"];
-    cell.wins.text = [tempdict objectForKey:@"wins"];
-    cell.losses.text = [tempdict objectForKey:@"losses"];
-    cell.ties.text = [tempdict objectForKey:@"ties"];
-    cell.gamesPlayed.text = [tempdict objectForKey:@"gamesPlayed"];
-    cell.points.text = [tempdict objectForKey:@"points"];
+    cell.wins.text = [NSString stringWithFormat: @"%i",[[tempdict objectForKey:@"wins"] integerValue]];
+    cell.losses.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"losses"] integerValue]];
+    cell.ties.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"ties"] integerValue]];
+    cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"gamesPlayed"] integerValue]];
+    cell.points.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"points"] integerValue]];
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *imageName;
+    if (indexPath.row % 2) {
+        imageName = @"Standings Cell White.png";
+    }
+    else {
+        imageName = @"Standings Cell Dark White.png";
+    }
+    UIColor *cellColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
+    cell.backgroundColor = cellColor;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 48;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

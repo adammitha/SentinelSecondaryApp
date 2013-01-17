@@ -56,7 +56,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jRX-Wf-1fl" kind="push" id="BLX-1U-0vH"/>
+                                    <segue destination="jRX-Wf-1fl" kind="push" id="vb4-5r-wn5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Block rotation shown on school days" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="GT6-3R-RtS">
@@ -132,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="-1388" y="222"/>
         </scene>
-        <!--Athletics Home View Controller-->
+        <!--Athletics Home View Controller - Athletics-->
         <scene sceneID="Ebw-P6-7BM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXx-ox-8Zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,39 +141,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Athletics Banner.png" id="AN1-0z-PI6">
-                                <rect key="frame" x="0.0" y="44" width="320" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="yFu-Lo-oyw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Athletics" id="FQq-fZ-wM9">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Arr-FL-AgX">
-                                            <connections>
-                                                <action selector="buttonPressed:" destination="jRX-Wf-1fl" id="Vfi-ZT-6am"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yL9-nT-p7K">
-                                <rect key="frame" x="0.0" y="123" width="320" height="357"/>
+                                <rect key="frame" x="0.0" y="82" width="320" height="398"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Athletics Banner.png" id="f4c-Ef-cvg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JmS-Gn-0jx"/>
+                    <navigationItem key="navigationItem" title="Athletics" id="JmS-Gn-0jx">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="SwO-dK-KFG">
+                            <connections>
+                                <action selector="buttonPressed:" destination="jRX-Wf-1fl" id="y8C-jd-HCJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="athleticsTableView" destination="yL9-nT-p7K" id="z54-eS-iqM"/>
-                        <outlet property="imageView" destination="AN1-0z-PI6" id="9MP-eG-m3g"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-935" y="629"/>
+            <point key="canvasLocation" x="-377" y="763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ia4-ii-j8x">
@@ -409,11 +401,12 @@
             </objects>
             <point key="canvasLocation" x="-474" y="49"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Athletics Tab Bar View Controller-->
         <scene sceneID="wSU-HA-wov">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyd-0v-JRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="7qQ-Kp-68R" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="7qQ-Kp-68R" customClass="AthleticsTabBarViewController" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="S3i-jS-Vkh">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -426,7 +419,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-265" y="973"/>
+            <point key="canvasLocation" x="379" y="741"/>
         </scene>
         <!--Standings View Controller - Standings-->
         <scene sceneID="uSs-DS-tll">
@@ -434,7 +427,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQb-qK-gVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="mAe-EM-dw7" customClass="StandingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kxi-Yq-K2g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -443,9 +436,10 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Standings" id="RqD-Bt-7Rk"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="349" y="789"/>
+            <point key="canvasLocation" x="991" y="475"/>
         </scene>
         <!--Table View Controller - Schedule-->
         <scene sceneID="PNJ-Dt-leg">
@@ -453,7 +447,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="340-Xp-zqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="PDG-R3-jYt" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uWj-m6-dOa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -475,7 +469,7 @@
                     <tabBarItem key="tabBarItem" title="Schedule" id="Qpx-WN-Nzy"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="349" y="1365"/>
+            <point key="canvasLocation" x="991" y="1051"/>
         </scene>
         <!--Twitter View Controller - Twitter-->
         <scene sceneID="KSD-v4-9b7">
@@ -815,6 +809,9 @@
                 <relationship kind="outlet" name="athleticsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
+        </class>
+        <class className="AthleticsTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsTabBarViewController.h"/>
         </class>
         <class className="DocumentsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DocumentsViewController.h"/>

@@ -8,6 +8,7 @@
 
 #import "AthleticsHomeViewController.h"
 #import "StandingsViewController.h"
+#import "AthleticsTabBarViewController.h"
 @interface AthleticsHomeViewController ()
 
 @end
@@ -36,6 +37,9 @@
 {
     
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44);
     [athleticsTableView setDelegate:self];
     [athleticsTableView setDataSource:self];
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"sports" ofType:@"txt"]];
@@ -89,9 +93,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    StandingsViewController *vc = [[StandingsViewController alloc] init];
-    NSDictionary *tempdict2 = [athleticsArray objectAtIndex:indexPath.row];
-    vc.codekey = [tempdict2 objectForKey:@"codekey"];
+    AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
