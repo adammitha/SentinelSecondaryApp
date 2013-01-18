@@ -7,7 +7,6 @@
 //
 
 #import "MapViewController.h"
-#import "Location.h"
 
 @implementation MapViewController
 @synthesize webView;

@@ -13,4 +13,5 @@
 @property (nonatomic, strong) NSString *codekey;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 @property (nonatomic, strong) UIToolbar *toolbar;
+@property (nonatomic, strong) UISegmentedControl *segmentedControl;
 @end

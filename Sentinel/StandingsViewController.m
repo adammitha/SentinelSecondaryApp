@@ -19,6 +19,7 @@
 @synthesize codekey;
 @synthesize progressHUD;
 @synthesize toolbar;
+@synthesize segmentedControl;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -42,9 +43,11 @@
     toolbar = [[UIToolbar alloc] init];
     toolbar.barStyle = UIBarStyleBlack;
     toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
+    segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
     segmentedControl.frame = CGRectMake(self.tableView.bounds.size.width/5, 3, 200, 30);
     [toolbar addSubview:segmentedControl];
+    [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
+    segmentedControl.selectedSegmentIndex = 0;
     [self.navigationController.view addSubview:toolbar];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -52,6 +55,11 @@
     [request startAsynchronous];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"%@", [change objectForKey:NSKeyValueChangeNewKey]);
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request
