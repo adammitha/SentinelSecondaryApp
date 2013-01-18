@@ -20,7 +20,6 @@
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
 		6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */; };
-		6140415516A8B7CB0075A72A /* Standings Cell Blue 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415316A8B7CB0075A72A /* Standings Cell Blue 2.png */; };
 		6140415616A8B7CB0075A72A /* Standings Cell White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415416A8B7CB0075A72A /* Standings Cell White.png */; };
 		6140415816A8B9930075A72A /* Standings Cell Dark White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415716A8B9930075A72A /* Standings Cell Dark White.png */; };
 		6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */; };
@@ -30,6 +29,8 @@
 		6190D15416A390940012E214 /* standings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15316A390940012E214 /* standings.txt */; };
 		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
+		619FCE7216A8E06800367090 /* Dotbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 619FCE7116A8E06800367090 /* Dotbackground.png */; };
+		619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 619FCE7316A8E11800367090 /* Standings Cell Blue.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
@@ -149,7 +150,6 @@
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
 		6140415016A8AA4B0075A72A /* AthleticsTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsTabBarViewController.h; sourceTree = "<group>"; };
 		6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsTabBarViewController.m; sourceTree = "<group>"; };
-		6140415316A8B7CB0075A72A /* Standings Cell Blue 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue 2.png"; sourceTree = "<group>"; };
 		6140415416A8B7CB0075A72A /* Standings Cell White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White.png"; sourceTree = "<group>"; };
 		6140415716A8B9930075A72A /* Standings Cell Dark White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White.png"; sourceTree = "<group>"; };
 		6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsHomeViewController.h; sourceTree = "<group>"; };
@@ -162,6 +162,8 @@
 		6190D15316A390940012E214 /* standings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = standings.txt; sourceTree = "<group>"; };
 		6190D15516A39E500012E214 /* Athletics Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Athletics Banner.png"; sourceTree = "<group>"; };
 		6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingsCustomCell.xib; sourceTree = "<group>"; };
+		619FCE7116A8E06800367090 /* Dotbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground.png; sourceTree = "<group>"; };
+		619FCE7316A8E11800367090 /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
 		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
@@ -518,7 +520,8 @@
 		66F97E8414F0828B00D33150 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				6140415316A8B7CB0075A72A /* Standings Cell Blue 2.png */,
+				619FCE7116A8E06800367090 /* Dotbackground.png */,
+				619FCE7316A8E11800367090 /* Standings Cell Blue.png */,
 				6140415716A8B9930075A72A /* Standings Cell Dark White.png */,
 				6140415416A8B7CB0075A72A /* Standings Cell White.png */,
 				122C50EC163387960033F322 /* Athletics */,
@@ -720,9 +723,10 @@
 				6190D15416A390940012E214 /* standings.txt in Resources */,
 				6190D15616A39E500012E214 /* Athletics Banner.png in Resources */,
 				6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */,
-				6140415516A8B7CB0075A72A /* Standings Cell Blue 2.png in Resources */,
 				6140415616A8B7CB0075A72A /* Standings Cell White.png in Resources */,
 				6140415816A8B9930075A72A /* Standings Cell Dark White.png in Resources */,
+				619FCE7216A8E06800367090 /* Dotbackground.png in Resources */,
+				619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

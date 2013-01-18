@@ -165,7 +165,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-377" y="763"/>
+            <point key="canvasLocation" x="-97" y="741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ia4-ii-j8x">
@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cx-gP-AfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="49"/>
+            <point key="canvasLocation" x="-1388" y="865"/>
         </scene>
         <!--Athletics Tab Bar View Controller-->
         <scene sceneID="wSU-HA-wov">

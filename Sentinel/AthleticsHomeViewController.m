@@ -86,6 +86,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     NSDictionary *tempdict = [athleticsArray objectAtIndex:indexPath.row];
     cell.textLabel.text = [tempdict objectForKey:@"name"];
     return cell;
@@ -95,6 +96,7 @@
 {
     AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

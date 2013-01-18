@@ -32,6 +32,8 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
+    self.tableView.backgroundView = nil;
     NSError *error;
     testArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"standings" ofType:@"txt"]] options:kNilOptions error:&error];
     NSLog(@"%@",testArray);
@@ -71,6 +73,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StandingsCustomCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     // Configure the cell...
     NSDictionary *tempdict = [testArray objectAtIndex:indexPath.row];
     //NSString *wins = [tempdict objectForKey:@"wins"];
@@ -101,7 +104,25 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 48;
+    return 30;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
+    teamName.backgroundColor = [UIColor clearColor];
+    teamName.textColor = [UIColor whiteColor];
+    teamName.font = [UIFont boldSystemFontOfSize:14];
+    teamName.text = @"Team Name               W      L      T      GP      P";
+    [headerView addSubview:teamName];
+    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
+    return headerView;
 }
 /*
 // Override to support conditional editing of the table view.
