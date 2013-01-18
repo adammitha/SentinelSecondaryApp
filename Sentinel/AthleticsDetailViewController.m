@@ -10,7 +10,7 @@
 #import "ASIHTTPRequest.h"
 #import "MBProgressHUD.h"
 #import "StandingsCustomCell.h"
-
+#import "ScheduleCustomCell.h"
 
 @interface AthleticsDetailViewController ()
 
@@ -127,8 +127,9 @@
     } else if (tableView == scheduleTableView) {
         return [scheduleArray count];
     }
-    
+    return 0;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (tableView == standingsTableView) {
@@ -152,12 +153,27 @@
 
         return cell;
         //cell.textLabel.text = @"Hello1";
-    } else if(tableView == scheduleTableView) {
+    }    else if(tableView == scheduleTableView) {
+        NSDictionary *tempdict = [scheduleArray objectAtIndex:indexPath.row];
+        NSLog(@"%@",tempdict);
+            static NSString *CellIdentifier = @"ScheduleCell";
+            ScheduleCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            if (cell == nil){
+               NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ScheduleCustomCell" owner:self options:nil];
+                cell = [nib objectAtIndex:0];
+            }
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.homeTeam.text = [tempdict objectForKey:@"homeTeam"];
+            cell.awayTeam.text = [tempdict objectForKey:@"awayTeam"];
+            cell.theDate.text = [tempdict objectForKey:@"date"];
+            
+            return cell;
         //cell.textLabel.text = [[scheduleArray objectAtIndex:indexPath.row] objectAtIndex:6];
         //cell.textLabel.text = @"Hello2";
-    }
-}
 
+    }
+    return 0; //fail-safe
+}
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *imageName;
@@ -203,6 +219,4 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-@end
+}@end

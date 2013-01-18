@@ -66,6 +66,7 @@
 		6664557514B260D0009D0E87 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6664557414B260D0009D0E87 /* Entitlements.plist */; };
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
+		66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66727FED16A98762007BF71D /* Default-568h@2x.png */; };
 		668BA0BF1594386E001F516F /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BA0BE1594386E001F516F /* Update.m */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
 		66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3761491948C003C95DB /* Foundation.framework */; };
@@ -213,6 +214,7 @@
 		6672721614B95F420017CEDE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		66727FED16A98762007BF71D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		668BA0BD1594386E001F516F /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
 		668BA0BE1594386E001F516F /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		66C6D3701491948C003C95DB /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,6 +372,7 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				66727FED16A98762007BF71D /* Default-568h@2x.png */,
 				121166A615F6D2FF004C32FB /* Icon2013.png */,
 				121166A715F6D2FF004C32FB /* Iconsmall2013.png */,
 				66C6D37A1491948C003C95DB /* Sentinel */,
@@ -740,6 +743,7 @@
 				619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */,
 				66C9736816A948D00020BFEA /* schedule.txt in Resources */,
 				66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */,
+				66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

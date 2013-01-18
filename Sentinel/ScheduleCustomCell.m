@@ -2,13 +2,16 @@
 //  ScheduleCustomCell.m
 //  Sentinel
 //
-//  Created by Adam Mitha on 2013-01-18.
+//  Created by Justin Wong on 2013-01-18.
 //  Copyright (c) 2013 Sentinel Secondary School. All rights reserved.
 //
 
 #import "ScheduleCustomCell.h"
 
 @implementation ScheduleCustomCell
+@synthesize awayTeam;
+@synthesize homeTeam;
+@synthesize theDate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
