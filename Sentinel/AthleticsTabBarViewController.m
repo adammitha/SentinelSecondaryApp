@@ -14,6 +14,7 @@
 @end
 
 @implementation AthleticsTabBarViewController
+@synthesize codekey;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
     StandingsViewController *svc = [[StandingsViewController alloc] init];
+    NSLog(@"%@",codekey);
+    svc.codekey = self.codekey;
     [self setViewControllers:[NSArray arrayWithObjects:svc, nil]];
 	// Do any additional setup after loading the view.
 }

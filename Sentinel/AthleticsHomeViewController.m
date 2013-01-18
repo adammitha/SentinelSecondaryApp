@@ -94,7 +94,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
+    //AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
+    //vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
+    StandingsViewController *vc = [[StandingsViewController alloc] init];
+    vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
+    //NSLog(@"%@",vc.codekey);
     [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

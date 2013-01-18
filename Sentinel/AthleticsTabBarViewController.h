@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AthleticsTabBarViewController : UITabBarController
-
+@property (nonatomic, strong) NSString *codekey;
 @end

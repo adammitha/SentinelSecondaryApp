@@ -9,6 +9,7 @@
 #import "StandingsViewController.h"
 #import "StandingsCustomCell.h"
 #import "ASIHTTPRequest.h"
+#import "MBProgressHUD.h"
 @interface StandingsViewController ()
 
 @end
@@ -16,6 +17,7 @@
 @implementation StandingsViewController
 @synthesize testArray;
 @synthesize codekey;
+@synthesize progressHUD;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -33,11 +35,40 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
-    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.barStyle = UIBarStyleBlack;
+    toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
+    segmentedControl.frame = CGRectMake(self.tableView.bounds.size.width/5, 3, 200, 30);
+    [toolbar addSubview:segmentedControl];
+    [self.navigationController.view addSubview:toolbar];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.progressHUD.labelText = @"Loading...";
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSData *responseData = [request responseData];
     NSError *error;
-    testArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"standings" ofType:@"txt"]] options:kNilOptions error:&error];
-    NSLog(@"%@",testArray);
+    testArray = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    //NSLog(@"%@",testArray);
+    [self.tableView reloadData];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    NSLog(@"Request Failed: %@", [error localizedDescription]);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [alert show];
 }
 
 - (void)viewDidUnload
