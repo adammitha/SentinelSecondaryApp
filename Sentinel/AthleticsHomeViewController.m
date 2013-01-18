@@ -9,6 +9,7 @@
 #import "AthleticsHomeViewController.h"
 #import "StandingsViewController.h"
 #import "AthleticsTabBarViewController.h"
+#import "AthleticsDetailViewController.h"
 @interface AthleticsHomeViewController ()
 
 @end
@@ -96,7 +97,8 @@
 {
     //AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     //vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
-    StandingsViewController *vc = [[StandingsViewController alloc] init];
+    AthleticsDetailViewController *vc = [[AthleticsDetailViewController alloc] init];
+    vc.sportName = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"name"];
     vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
     //NSLog(@"%@",vc.codekey);
     [self.navigationController pushViewController:vc animated:YES];

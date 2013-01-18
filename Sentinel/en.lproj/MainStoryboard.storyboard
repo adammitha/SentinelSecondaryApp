@@ -116,21 +116,6 @@
                                 <rect key="frame" x="7" y="407" width="201" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9B1-Us-i0U">
-                                <rect key="frame" x="139" y="271" width="73" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="C1N-7y-Ofh" kind="push" id="Mo7-dd-7bJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -789,7 +774,6 @@
         <class className="AthleticsHomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsHomeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="outlet" name="athleticsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
@@ -814,11 +798,6 @@
         <class className="HomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
             <relationships>
-                <relationship kind="action" name="longPressDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="pinchDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="rotationDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="swipeDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="tapDetected:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="about" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>

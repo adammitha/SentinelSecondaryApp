@@ -12,5 +12,6 @@
 @property (nonatomic,weak) IBOutlet UILabel *awayTeam;
 @property (nonatomic,weak) IBOutlet UILabel *homeTeam;
 @property (nonatomic,weak) IBOutlet UILabel *theDate;
+@property (nonatomic,weak) IBOutlet UILabel *gameTime;
 
 @end

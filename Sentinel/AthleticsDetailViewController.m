@@ -22,6 +22,7 @@
 @synthesize toolbar,segmentedControl;
 @synthesize url;
 @synthesize standingsArray, scheduleArray;
+@synthesize sportName;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,7 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    codekey = @"4AF26B37-50A6-475C-8305-4B837F5A0445";
+    //codekey = @"4AF26B37-50A6-475C-8305-4B837F5A0445";
+    NSLog(@"%@",codekey);
+    self.title = sportName;
+    self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeFont:[UIFont boldSystemFontOfSize:17],UITextAttributeTextColor:[UIColor whiteColor]};
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44);
@@ -48,14 +52,14 @@
     [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
     [self.navigationController.view addSubview:toolbar];
 	// Do any additional setup after loading the view.
-    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 110) style:UITableViewStylePlain];
+    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 90) style:UITableViewStylePlain];
     self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
     [standingsTableView setDelegate:self];
     [standingsTableView setDataSource:self];
     standingsTableView.hidden = NO;
     [self.view addSubview:standingsTableView];
     
-    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 110) style:UITableViewStylePlain];
+    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 90) style:UITableViewStylePlain];
     self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
     [scheduleTableView setDelegate:self];
     [scheduleTableView setDataSource:self];
@@ -70,6 +74,12 @@
 
     //NSLog(@"%@", standingsArray);
     //[scheduleTableView reloadData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    toolbar.hidden = YES;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -111,6 +121,15 @@
     NSLog(@"%@", scheduleArray);
     [standingsTableView reloadData];
     [scheduleTableView reloadData];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    NSLog(@"Request Failed: %@", [error localizedDescription]);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the athletics feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [alert show];
 }
 
 #pragma mark - Table View Delegate
@@ -163,8 +182,7 @@
                 cell = [nib objectAtIndex:0];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.homeTeam.text = [tempdict objectForKey:@"homeTeam"];
-            cell.awayTeam.text = [tempdict objectForKey:@"awayTeam"];
+            cell.homeTeam.text = [NSString stringWithFormat:@"%@ vs. %@",[tempdict objectForKey:@"homeTeam"],[tempdict objectForKey:@"awayTeam"]];
             cell.theDate.text = [tempdict objectForKey:@"date"];
             
             return cell;
@@ -198,7 +216,7 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
+{ if (tableView==standingsTableView){
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
     UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
     teamName.backgroundColor = [UIColor clearColor];
@@ -209,6 +227,18 @@
     [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
     return headerView;
 }
+else if(tableView==scheduleTableView){
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(6, 5, tableView.bounds.size.width, 18)];
+    teamName.backgroundColor = [UIColor clearColor];
+    teamName.textColor = [UIColor whiteColor];
+    teamName.font = [UIFont boldSystemFontOfSize:14];
+    teamName.text = @"Home Team vs. Away Team      Date";
+    [headerView addSubview:teamName];
+    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
+    return headerView;
+} return 0;
+} 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

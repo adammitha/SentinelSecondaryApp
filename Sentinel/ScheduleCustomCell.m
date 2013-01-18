@@ -12,6 +12,7 @@
 @synthesize awayTeam;
 @synthesize homeTeam;
 @synthesize theDate;
+@synthesize gameTime;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

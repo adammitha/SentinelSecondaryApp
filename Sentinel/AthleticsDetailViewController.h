@@ -17,4 +17,5 @@
 @property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 @property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) NSString *sportName;
 @end
