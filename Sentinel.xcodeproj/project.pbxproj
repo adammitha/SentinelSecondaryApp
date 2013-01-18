@@ -84,6 +84,8 @@
 		66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */; };
 		66C9736616A9398B0020BFEA /* AthleticsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9736516A9398B0020BFEA /* AthleticsDetailViewController.m */; };
 		66C9736816A948D00020BFEA /* schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C9736716A948D00020BFEA /* schedule.txt */; };
+		66C9736B16A96A180020BFEA /* ScheduleCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9736A16A96A170020BFEA /* ScheduleCustomCell.m */; };
+		66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C9736C16A96A3B0020BFEA /* ScheduleCustomCell.xib */; };
 		66CBDB99149C274B004FE748 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB86149C274B004FE748 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66CBDB9A149C274B004FE748 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB89149C274B004FE748 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66CBDB9B149C274B004FE748 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDB8B149C274B004FE748 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -235,6 +237,9 @@
 		66C9736416A9398B0020BFEA /* AthleticsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsDetailViewController.h; sourceTree = "<group>"; };
 		66C9736516A9398B0020BFEA /* AthleticsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsDetailViewController.m; sourceTree = "<group>"; };
 		66C9736716A948D00020BFEA /* schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schedule.txt; sourceTree = "<group>"; };
+		66C9736916A96A170020BFEA /* ScheduleCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleCustomCell.h; sourceTree = "<group>"; };
+		66C9736A16A96A170020BFEA /* ScheduleCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleCustomCell.m; sourceTree = "<group>"; };
+		66C9736C16A96A3B0020BFEA /* ScheduleCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleCustomCell.xib; sourceTree = "<group>"; };
 		66CBDB85149C274B004FE748 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		66CBDB86149C274B004FE748 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		66CBDB87149C274B004FE748 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -453,6 +458,9 @@
 				6190D14D16A3875C0012E214 /* StandingsViewController.h */,
 				6190D14E16A3875C0012E214 /* StandingsViewController.m */,
 				66C6D3861491948C003C95DB /* MainStoryboard.storyboard */,
+				66C9736916A96A170020BFEA /* ScheduleCustomCell.h */,
+				66C9736A16A96A170020BFEA /* ScheduleCustomCell.m */,
+				66C9736C16A96A3B0020BFEA /* ScheduleCustomCell.xib */,
 				6190D15016A38C7F0012E214 /* StandingsCustomCell.h */,
 				6190D15116A38C7F0012E214 /* StandingsCustomCell.m */,
 				6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */,
@@ -731,6 +739,7 @@
 				619FCE7216A8E06800367090 /* Dotbackground.png in Resources */,
 				619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */,
 				66C9736816A948D00020BFEA /* schedule.txt in Resources */,
+				66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +786,7 @@
 				6190D15216A38C800012E214 /* StandingsCustomCell.m in Sources */,
 				6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */,
 				66C9736616A9398B0020BFEA /* AthleticsDetailViewController.m in Sources */,
+				66C9736B16A96A180020BFEA /* ScheduleCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

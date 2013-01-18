@@ -9,6 +9,8 @@
 #import "AthleticsDetailViewController.h"
 #import "ASIHTTPRequest.h"
 #import "MBProgressHUD.h"
+#import "StandingsCustomCell.h"
+
 
 @interface AthleticsDetailViewController ()
 
@@ -46,25 +48,26 @@
     [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
     [self.navigationController.view addSubview:toolbar];
 	// Do any additional setup after loading the view.
-    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 88) style:UITableViewStylePlain];
+    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 110) style:UITableViewStylePlain];
+    self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
     [standingsTableView setDelegate:self];
     [standingsTableView setDataSource:self];
     standingsTableView.hidden = NO;
     [self.view addSubview:standingsTableView];
     
-    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 88) style:UITableViewStylePlain];
+    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 110) style:UITableViewStylePlain];
+    self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
     [scheduleTableView setDelegate:self];
     [scheduleTableView setDataSource:self];
     scheduleTableView.hidden = YES;
     [self.view addSubview:scheduleTableView];
-    
-    NSError *error;
-    
+        
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
     [request setDelegate:self];
     [request startAsynchronous];
     //NSLog(@"%@", standingsArray);
-    
+
+
     //NSLog(@"%@", standingsArray);
     //[scheduleTableView reloadData];
 }
@@ -80,6 +83,9 @@
     } else if ([[change objectForKey:NSKeyValueChangeNewKey] integerValue] == 1) {
         standingsTableView.hidden = YES;
         scheduleTableView.hidden = NO;
+        ASIHTTPRequest *request1 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey]]];
+        [request1 setDelegate:self];
+        [request1 startAsynchronous];
         [scheduleTableView reloadData];
     }
 }
@@ -87,16 +93,24 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     NSError *error;
+    //NSLog(@"%@",request.responseData);
+    NSArray *data = [NSJSONSerialization JSONObjectWithData:request.responseData options:kNilOptions error:&error];
+    NSLog(@"%@",data);
     NSURL *requesturl = request.url;
-    NSLog(@"%@",requesturl);
-    if (requesturl == [NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]) {
-        standingsArray = [NSJSONSerialization JSONObjectWithData:[request responseData] options:kNilOptions error:&error];
-        [standingsTableView reloadData];
-    } else if (requesturl == [NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey]]) {
-        scheduleArray = [NSJSONSerialization JSONObjectWithData:[request responseData] options:kNilOptions error:&error];
+    NSString *standingsURL = [NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey];
+    NSString *scheduleURL = [NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey];
+    if ([requesturl isEqual:[NSURL URLWithString:standingsURL]]) {
+        standingsArray = data;
+    } else if ([requesturl isEqual:[NSURL URLWithString:scheduleURL]]) {
+        scheduleArray = data;
     }
+    //NSLog(@"%c",[requesturl isEqual:[NSURL URLWithString:standingsURL]]);
+    //NSLog(@"%@, %@",standingsURL,scheduleURL);
+    //NSLog(@"%@",requesturl);
     NSLog(@"%@", standingsArray);
     NSLog(@"%@", scheduleArray);
+    [standingsTableView reloadData];
+    [scheduleTableView reloadData];
 }
 
 #pragma mark - Table View Delegate
@@ -117,21 +131,67 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     if (tableView == standingsTableView) {
-        cell.textLabel.text = [[standingsArray objectAtIndex:indexPath.row] objectForKey:@"teamName"];
+        static NSString *CellIdentifier = @"StandingsCell";
+        StandingsCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil){
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StandingsCustomCell" owner:self options:nil];
+            cell = [nib objectAtIndex:0];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        NSDictionary *tempdict = [standingsArray objectAtIndex:indexPath.row];
+        //NSString *wins = [tempdict objectForKey:@"wins"];
+        //NSInteger winsInt = [wins integerValue];
+        //NSLog(@"%i", winsInt);
+        cell.teamName.text = [tempdict objectForKey:@"teamName"];
+        cell.wins.text = [NSString stringWithFormat: @"%i",[[tempdict objectForKey:@"wins"] integerValue]];
+        cell.losses.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"losses"] integerValue]];
+        cell.ties.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"ties"] integerValue]];
+        cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"gamesPlayed"] integerValue]];
+        cell.points.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"points"] integerValue]];
+
+        return cell;
         //cell.textLabel.text = @"Hello1";
     } else if(tableView == scheduleTableView) {
-        cell.textLabel.text = [[scheduleArray objectAtIndex:indexPath.row] objectAtIndex:6];
+        //cell.textLabel.text = [[scheduleArray objectAtIndex:indexPath.row] objectAtIndex:6];
         //cell.textLabel.text = @"Hello2";
     }
-    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *imageName;
+    if (indexPath.row % 2) {
+        imageName = @"Standings Cell White.png";
+    }
+    else {
+        imageName = @"Standings Cell Dark White.png";
+    }
+    UIColor *cellColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
+    cell.backgroundColor = cellColor;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 30;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
+    teamName.backgroundColor = [UIColor clearColor];
+    teamName.textColor = [UIColor whiteColor];
+    teamName.font = [UIFont boldSystemFontOfSize:14];
+    teamName.text = @"Team Name                  W       L     T      GP     P";
+    [headerView addSubview:teamName];
+    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
+    return headerView;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
