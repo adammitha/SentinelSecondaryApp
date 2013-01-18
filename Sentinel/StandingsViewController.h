@@ -12,4 +12,5 @@
 @property (nonatomic, strong) NSArray *testArray;
 @property (nonatomic, strong) NSString *codekey;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+@property (nonatomic, strong) UIToolbar *toolbar;
 @end

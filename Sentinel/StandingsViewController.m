@@ -18,6 +18,7 @@
 @synthesize testArray;
 @synthesize codekey;
 @synthesize progressHUD;
+@synthesize toolbar;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -35,8 +36,10 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.tableView.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height-30);
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
-    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar = [[UIToolbar alloc] init];
     toolbar.barStyle = UIBarStyleBlack;
     toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
@@ -71,9 +74,15 @@
     [alert show];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    toolbar.hidden = YES;
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -94,7 +103,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [testArray count];
+    if ([testArray count]*30 > (tableView.bounds.size.height - 44)) {
+        return [testArray count] + 2;
+    }
+    else {
+        return [testArray count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,17 +121,26 @@
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     // Configure the cell...
-    NSDictionary *tempdict = [testArray objectAtIndex:indexPath.row];
-    //NSString *wins = [tempdict objectForKey:@"wins"];
-    //NSInteger winsInt = [wins integerValue];
-    //NSLog(@"%i", winsInt);
-    cell.teamName.text = [tempdict objectForKey:@"teamName"];
-    cell.wins.text = [NSString stringWithFormat: @"%i",[[tempdict objectForKey:@"wins"] integerValue]];
-    cell.losses.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"losses"] integerValue]];
-    cell.ties.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"ties"] integerValue]];
-    cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"gamesPlayed"] integerValue]];
-    cell.points.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"points"] integerValue]];
-    
+    if (indexPath.row < [testArray count]) {
+        NSDictionary *tempdict = [testArray objectAtIndex:indexPath.row];
+        //NSString *wins = [tempdict objectForKey:@"wins"];
+        //NSInteger winsInt = [wins integerValue];
+        //NSLog(@"%i", winsInt);
+        cell.teamName.text = [tempdict objectForKey:@"teamName"];
+        cell.wins.text = [NSString stringWithFormat: @"%i",[[tempdict objectForKey:@"wins"] integerValue]];
+        cell.losses.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"losses"] integerValue]];
+        cell.ties.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"ties"] integerValue]];
+        cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"gamesPlayed"] integerValue]];
+        cell.points.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"points"] integerValue]];
+    }
+    else {
+        cell.teamName.text = nil;
+        cell.wins.text = nil;
+        cell.losses.text = nil;
+        cell.ties.text = nil;
+        cell.gamesPlayed.text = nil;
+        cell.points.text = nil;
+    }
     return cell;
 }
 
