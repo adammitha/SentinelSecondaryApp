@@ -23,6 +23,7 @@
 @synthesize url;
 @synthesize standingsArray, scheduleArray;
 @synthesize sportName;
+@synthesize detailView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -59,13 +60,15 @@
     standingsTableView.hidden = NO;
     [self.view addSubview:standingsTableView];
     
-    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 90) style:UITableViewStylePlain];
+    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 200) style:UITableViewStylePlain];
     self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
     [scheduleTableView setDelegate:self];
     [scheduleTableView setDataSource:self];
     scheduleTableView.hidden = YES;
     [self.view addSubview:scheduleTableView];
-        
+    detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-200, self.view.bounds.size.width, 156)];
+    detailView.hidden = YES;
+    [self.view addSubview:detailView];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -89,10 +92,12 @@
     if ([[change objectForKey:NSKeyValueChangeNewKey] integerValue] == 0) {
         standingsTableView.hidden = NO;
         scheduleTableView.hidden = YES;
+        detailView.hidden = YES;
         [standingsTableView reloadData];
     } else if ([[change objectForKey:NSKeyValueChangeNewKey] integerValue] == 1) {
         standingsTableView.hidden = YES;
         scheduleTableView.hidden = NO;
+        detailView.hidden = NO;
         ASIHTTPRequest *request1 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey]]];
         [request1 setDelegate:self];
         [request1 startAsynchronous];
@@ -181,7 +186,6 @@
            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ScheduleCustomCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.homeTeam.text = [NSString stringWithFormat:@"%@ vs. %@",[tempdict objectForKey:@"homeTeam"],[tempdict objectForKey:@"awayTeam"]];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
         [dateFormatter setDateFormat:@"MM/dd/yyyy"];
@@ -255,7 +259,10 @@ else if(tableView==scheduleTableView){
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    if (tableView == scheduleTableView) {
+        //stuff
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning

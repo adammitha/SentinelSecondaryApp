@@ -18,4 +18,5 @@
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSString *sportName;
+@property (nonatomic, strong) UIView *detailView;
 @end
