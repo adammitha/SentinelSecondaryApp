@@ -175,17 +175,25 @@
     }    else if(tableView == scheduleTableView) {
         NSDictionary *tempdict = [scheduleArray objectAtIndex:indexPath.row];
         NSLog(@"%@",tempdict);
-            static NSString *CellIdentifier = @"ScheduleCell";
-            ScheduleCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-            if (cell == nil){
-               NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ScheduleCustomCell" owner:self options:nil];
-                cell = [nib objectAtIndex:0];
-            }
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.homeTeam.text = [NSString stringWithFormat:@"%@ vs. %@",[tempdict objectForKey:@"homeTeam"],[tempdict objectForKey:@"awayTeam"]];
-            cell.theDate.text = [tempdict objectForKey:@"date"];
+        static NSString *CellIdentifier = @"ScheduleCell";
+        ScheduleCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil){
+           NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ScheduleCustomCell" owner:self options:nil];
+            cell = [nib objectAtIndex:0];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.homeTeam.text = [NSString stringWithFormat:@"%@ vs. %@",[tempdict objectForKey:@"homeTeam"],[tempdict objectForKey:@"awayTeam"]];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"MM/dd/yyyy"];
+        NSDate *gameDate = [dateFormatter dateFromString:[tempdict objectForKey:@"date"]];
+        [dateFormatter setDateFormat:@"MMM d, yyyy"];
+        cell.theDate.text = [dateFormatter stringFromDate:gameDate];
+        [dateFormatter setDateFormat:@"HH:mm:ss:SSS"];
+        NSDate *gameTime = [dateFormatter dateFromString:[tempdict objectForKey:@"gameTime"]];
+        [dateFormatter setDateFormat:@"hh:mm a"];
+        cell.gameTime.text = [dateFormatter stringFromDate:gameTime];
             
-            return cell;
+        return cell;
         //cell.textLabel.text = [[scheduleArray objectAtIndex:indexPath.row] objectAtIndex:6];
         //cell.textLabel.text = @"Hello2";
 
@@ -207,6 +215,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (tableView == standingsTableView) {
+        return  30;
+    } else if (tableView == scheduleTableView) {
+        return 50;
+    }
     return 30;
 }
 

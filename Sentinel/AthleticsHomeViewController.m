@@ -43,7 +43,16 @@
     self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44);
     [athleticsTableView setDelegate:self];
     [athleticsTableView setDataSource:self];
-    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"sports" ofType:@"txt"]];
+    NSDate *today = [NSDate date];
+    NSDateFormatter *spring = [[NSDateFormatter alloc] init];
+    [spring setDateFormat:@"dd/MM/yyyy"];
+    NSDate *april = [spring dateFromString:@"01/04/2013"];
+    NSData *data = [[NSData alloc] init];
+    if ([today earlierDate:april] == today) {
+        data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Winter" ofType:@"txt"]];
+    } else if ([today earlierDate:april] == april) {
+        data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Spring" ofType:@"txt"]];
+    }
     NSError *error;
     athleticsArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     [athleticsTableView reloadData];   

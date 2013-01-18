@@ -50,6 +50,9 @@
 		6612087A14C9FC69003E3863 /* Document Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6612087914C9FC69003E3863 /* Document Background.png */; };
 		6614A81814B9105100091A14 /* CouncilDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614A81614B9105100091A14 /* CouncilDetailViewController.m */; };
 		6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6614A81714B9105100091A14 /* CouncilDetailViewController.xib */; };
+		661A6D6916A9E05600EA4B8A /* Winter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D6816A9E05500EA4B8A /* Winter.txt */; };
+		661A6D6C16A9E08E00EA4B8A /* Spring.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D6B16A9E08E00EA4B8A /* Spring.txt */; };
+		661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D6D16A9EAA800EA4B8A /* Timetable.pdf */; };
 		661D09CC14B4E2A900C75B17 /* CouncilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D09CB14B4E2A900C75B17 /* CouncilViewController.m */; };
 		661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09CE14B4E44E00C75B17 /* 112-group.png */; };
 		661D09D714B69CFC00C75B17 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D09D314B69CFC00C75B17 /* libTestFlight.a */; };
@@ -121,7 +124,6 @@
 		66D209FA14EDD732001E8CC2 /* 66-microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */; };
 		66D209FE14EDDA6B001E8CC2 /* description.html in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FD14EDDA6B001E8CC2 /* description.html */; };
 		66D20A0014EDDBFB001E8CC2 /* SSS2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */; };
-		66F90C9914F73F3600FDBF5F /* Timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 66F90C9814F73F3600FDBF5F /* Timetable.pdf */; };
 		66F90C9B14FADA3400FDBF5F /* bird_32_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */; };
 		66F97E8214F0808400D33150 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F97E8114F0808400D33150 /* AboutUsViewController.m */; };
 		66F97E8914F0861100D33150 /* About Us Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F97E8814F0861100D33150 /* About Us Text.png */; };
@@ -193,6 +195,9 @@
 		6614A81614B9105100091A14 /* CouncilDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilDetailViewController.m; sourceTree = "<group>"; };
 		6614A81714B9105100091A14 /* CouncilDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouncilDetailViewController.xib; sourceTree = "<group>"; };
 		66160AE014C8FD9E009B809C /* rotation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotation.txt; sourceTree = "<group>"; };
+		661A6D6816A9E05500EA4B8A /* Winter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Winter.txt; sourceTree = "<group>"; };
+		661A6D6B16A9E08E00EA4B8A /* Spring.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spring.txt; sourceTree = "<group>"; };
+		661A6D6D16A9EAA800EA4B8A /* Timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Timetable.pdf; sourceTree = "<group>"; };
 		661D09CA14B4E2A900C75B17 /* CouncilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilViewController.h; sourceTree = "<group>"; };
 		661D09CB14B4E2A900C75B17 /* CouncilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilViewController.m; sourceTree = "<group>"; };
 		661D09CE14B4E44E00C75B17 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
@@ -295,7 +300,6 @@
 		66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "66-microphone@2x.png"; sourceTree = "<group>"; };
 		66D209FD14EDDA6B001E8CC2 /* description.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = description.html; sourceTree = "<group>"; };
 		66D209FF14EDDBFB001E8CC2 /* SSS2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSS2-1.png"; sourceTree = "<group>"; };
-		66F90C9814F73F3600FDBF5F /* Timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Timetable.pdf; sourceTree = "<group>"; };
 		66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird_32_black@2x.png"; sourceTree = "<group>"; };
 		66F97E8014F0808400D33150 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		66F97E8114F0808400D33150 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 		122C50E5163356040033F322 /* Athletics */ = {
 			isa = PBXGroup;
 			children = (
+				661A6D6816A9E05500EA4B8A /* Winter.txt */,
+				661A6D6B16A9E08E00EA4B8A /* Spring.txt */,
 				122C50E7163356140033F322 /* sports.txt */,
 				6190D15316A390940012E214 /* standings.txt */,
 				66C9736716A948D00020BFEA /* schedule.txt */,
@@ -590,8 +596,8 @@
 				12A514FF15F557260022E128 /* emails.txt */,
 				128C59CF15F167C80095DD5C /* Course Book.pdf */,
 				1223FA0115DE012D00B22BDF /* Calendar.pdf */,
+				661A6D6D16A9EAA800EA4B8A /* Timetable.pdf */,
 				128FE6AB15F3050000EFA893 /* Important Dates.pdf */,
-				66F90C9814F73F3600FDBF5F /* Timetable.pdf */,
 				1236475315F46EF30080D60D /* BlockRotation2013.txt */,
 				66160AE014C8FD9E009B809C /* rotation.txt */,
 				66F97E9414F090F900D33150 /* about_us.html */,
@@ -718,7 +724,6 @@
 				66F97E9014F090E200D33150 /* The_History_Text.png in Resources */,
 				66F97E9114F090E200D33150 /* The_Team_Text3.png in Resources */,
 				66F97E9514F090F900D33150 /* about_us.html in Resources */,
-				66F90C9914F73F3600FDBF5F /* Timetable.pdf in Resources */,
 				66F90C9B14FADA3400FDBF5F /* bird_32_black@2x.png in Resources */,
 				6647F37E152558CD0066F799 /* Home-arrow.png in Resources */,
 				1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */,
@@ -744,6 +749,9 @@
 				66C9736816A948D00020BFEA /* schedule.txt in Resources */,
 				66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */,
 				66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */,
+				661A6D6916A9E05600EA4B8A /* Winter.txt in Resources */,
+				661A6D6C16A9E08E00EA4B8A /* Spring.txt in Resources */,
+				661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
