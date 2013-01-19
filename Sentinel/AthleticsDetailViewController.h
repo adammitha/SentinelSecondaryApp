@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface AthleticsDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSString *codekey;
 @property (nonatomic, strong) UITableView *standingsTableView;
@@ -19,4 +18,10 @@
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSString *sportName;
 @property (nonatomic, strong) UIView *detailView;
+@property (nonatomic, strong) UILabel *homeTeamLabel;
+@property (nonatomic, strong) UILabel *awayTeamLabel;
+@property (nonatomic, strong) UILabel *dateTimeLabel;
+@property (nonatomic, strong) UILabel *locationLabel;
+@property (nonatomic, strong) NSString *address;
+- (void)launchMaps;
 @end

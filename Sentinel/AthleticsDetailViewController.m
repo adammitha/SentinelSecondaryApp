@@ -11,7 +11,6 @@
 #import "MBProgressHUD.h"
 #import "StandingsCustomCell.h"
 #import "ScheduleCustomCell.h"
-
 @interface AthleticsDetailViewController ()
 
 @end
@@ -24,6 +23,8 @@
 @synthesize standingsArray, scheduleArray;
 @synthesize sportName;
 @synthesize detailView;
+@synthesize homeTeamLabel,awayTeamLabel,dateTimeLabel,locationLabel;
+@synthesize address;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -66,9 +67,40 @@
     [scheduleTableView setDataSource:self];
     scheduleTableView.hidden = YES;
     [self.view addSubview:scheduleTableView];
+    
     detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-200, self.view.bounds.size.width, 156)];
+    detailView.backgroundColor = [UIColor whiteColor];
+    homeTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 128, 21)];
+    homeTeamLabel.text = @"Home Team";
+    [detailView addSubview:homeTeamLabel];
+    awayTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(175, 10, 128, 21)];
+    awayTeamLabel.text = @"Away Team";
+    awayTeamLabel.textAlignment = NSTextAlignmentRight;
+    [detailView addSubview:awayTeamLabel];
+    dateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(93, 40, 128, 21)];
+    dateTimeLabel.text = @"Date/Time";
+    dateTimeLabel.textAlignment = NSTextAlignmentCenter;
+    [detailView addSubview:dateTimeLabel];
+    locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(97, 75, 128, 21)];
+    locationLabel.text = @"Home Team";
+    locationLabel.textAlignment = NSTextAlignmentCenter;
+    [detailView addSubview:locationLabel];
+    UILabel *mapLabel = [[UILabel alloc] initWithFrame:CGRectMake(230, 80, 50, 21)];
+    mapLabel.text = @"Map:";
+    [detailView addSubview:mapLabel];
+    UIButton *mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    mapButton.titleLabel.text = @"Map";
+    [mapButton setBackgroundImage:[UIImage imageNamed:@"Outsource Button.png"] forState:UIControlStateNormal];
+    [mapButton addTarget:self action:@selector(launchMaps) forControlEvents:UIControlEventTouchUpInside];
+    mapButton.frame = CGRectMake(280, 80, 32, 20);
+    [detailView addSubview:mapButton];
+    UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 10, 22, 21)];
+    vsLabel.text = @"vs.";
+    [detailView addSubview:vsLabel];
+    
     detailView.hidden = YES;
     [self.view addSubview:detailView];
+    
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -77,6 +109,15 @@
 
     //NSLog(@"%@", standingsArray);
     //[scheduleTableView reloadData];
+}
+
+- (void)launchMaps
+{
+    //stuff
+    NSString *theaddress = [self.address stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+    NSString *theurl = [NSString stringWithFormat:@"http://maps.apple.com?q=%@",theaddress];
+    NSLog(@"%@",theurl);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:theurl]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -260,8 +301,16 @@ else if(tableView==scheduleTableView){
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (tableView == scheduleTableView) {
-        //stuff
-        
+        NSDictionary *tempdict = [scheduleArray objectAtIndex:indexPath.row];
+        self.homeTeamLabel.text = [tempdict objectForKey:@"homeTeam"];
+        self.awayTeamLabel.text = [tempdict objectForKey:@"awayTeam"];
+        self.locationLabel.text = [NSString stringWithFormat:@"At: %@",[tempdict objectForKey:@"location"]];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"MM/dd/yyyy"];
+        NSDate *gameDate = [dateFormatter dateFromString:[tempdict objectForKey:@"date"]];
+        [dateFormatter setDateFormat:@"MMM d, yyyy"];
+        self.dateTimeLabel.text = [dateFormatter stringFromDate:gameDate];
+        self.address = [tempdict objectForKey:@"address"];
     }
 }
 
