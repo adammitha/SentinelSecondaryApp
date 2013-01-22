@@ -58,9 +58,6 @@
 		661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D8016AA266B00EA4B8A /* Outsource Button.png */; };
 		661D09CC14B4E2A900C75B17 /* CouncilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D09CB14B4E2A900C75B17 /* CouncilViewController.m */; };
 		661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 661D09CE14B4E44E00C75B17 /* 112-group.png */; };
-		661D09D714B69CFC00C75B17 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D09D314B69CFC00C75B17 /* libTestFlight.a */; };
-		661D09D814B69CFC00C75B17 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D414B69CFC00C75B17 /* README.txt */; };
-		661D09D914B69CFC00C75B17 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 661D09D514B69CFC00C75B17 /* release_notes.txt */; };
 		662A7C89149AED4900406F04 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A7C88149AED4900406F04 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6647F37E152558CD0066F799 /* Home-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6647F37D152558CD0066F799 /* Home-arrow.png */; };
 		66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66490CE914CA07ED00F99B89 /* Welcome-1.png */; };
@@ -208,10 +205,6 @@
 		661D09CA14B4E2A900C75B17 /* CouncilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilViewController.h; sourceTree = "<group>"; };
 		661D09CB14B4E2A900C75B17 /* CouncilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilViewController.m; sourceTree = "<group>"; };
 		661D09CE14B4E44E00C75B17 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
-		661D09D314B69CFC00C75B17 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		661D09D414B69CFC00C75B17 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		661D09D514B69CFC00C75B17 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
-		661D09D614B69CFC00C75B17 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		662A7C87149AED4900406F04 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		662A7C88149AED4900406F04 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6647F37D152558CD0066F799 /* Home-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow.png"; sourceTree = "<group>"; };
@@ -342,7 +335,6 @@
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
-				661D09D714B69CFC00C75B17 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,17 +363,6 @@
 			name = Athletics;
 			sourceTree = "<group>";
 		};
-		661D09D214B69CFC00C75B17 /* TestFlightSDK0 */ = {
-			isa = PBXGroup;
-			children = (
-				661D09D314B69CFC00C75B17 /* libTestFlight.a */,
-				661D09D414B69CFC00C75B17 /* README.txt */,
-				661D09D514B69CFC00C75B17 /* release_notes.txt */,
-				661D09D614B69CFC00C75B17 /* TestFlight.h */,
-			);
-			path = TestFlightSDK0;
-			sourceTree = "<group>";
-		};
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
@@ -397,7 +378,6 @@
 				660F36CA14C8BEB500666214 /* School Info and Events.png */,
 				D0152A1B14C2A33C00D87C1D /* AVFoundation.framework */,
 				6672721914B961670017CEDE /* MapKit.framework */,
-				661D09D214B69CFC00C75B17 /* TestFlightSDK0 */,
 				6664557414B260D0009D0E87 /* Entitlements.plist */,
 				6664557014AFFC6A009D0E87 /* Default.png */,
 				66CE220414AF8E3100F6BF0D /* MessageUI.framework */,
@@ -698,8 +678,6 @@
 				6664557114AFFC6A009D0E87 /* Default.png in Resources */,
 				6664557514B260D0009D0E87 /* Entitlements.plist in Resources */,
 				661D09CF14B4E44E00C75B17 /* 112-group.png in Resources */,
-				661D09D814B69CFC00C75B17 /* README.txt in Resources */,
-				661D09D914B69CFC00C75B17 /* release_notes.txt in Resources */,
 				6614A81914B9105100091A14 /* CouncilDetailViewController.xib in Resources */,
 				660F36CD14C8BEB600666214 /* Button Clicked.png in Resources */,
 				660F36CE14C8BEB600666214 /* Button.png in Resources */,

@@ -46,7 +46,12 @@
     self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44);
     toolbar = [[UIToolbar alloc] init];
     toolbar.barStyle = UIBarStyleBlack;
-    toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    if (screenBounds.size.height == 568) {
+        toolbar.frame = CGRectMake(0, 523, self.view.frame.size.width, 44);
+    } else {
+        toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
+    }
     segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
     segmentedControl.frame = CGRectMake(self.view.bounds.size.width/5, 3, 200, 30);
     [toolbar addSubview:segmentedControl];
