@@ -19,6 +19,12 @@
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
+		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
+		12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */; };
+		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
+		12B8A78016B35E3400C36986 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77C16B35E3400C36986 /* libTestFlight.a */; };
+		12B8A78116B35E3500C36986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77D16B35E3400C36986 /* README.md */; };
+		12B8A78216B35E3500C36986 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77E16B35E3400C36986 /* release_notes.md */; };
 		6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */; };
 		6140415616A8B7CB0075A72A /* Standings Cell White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415416A8B7CB0075A72A /* Standings Cell White.png */; };
 		6140415816A8B9930075A72A /* Standings Cell Dark White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415716A8B9930075A72A /* Standings Cell Dark White.png */; };
@@ -154,6 +160,14 @@
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
+		12B8A76A16B3535000C36986 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		12B8A77616B3585F00C36986 /* GANTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12B8A77C16B35E3400C36986 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		12B8A77D16B35E3400C36986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		12B8A77E16B35E3400C36986 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		12B8A77F16B35E3400C36986 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		6140415016A8AA4B0075A72A /* AthleticsTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsTabBarViewController.h; sourceTree = "<group>"; };
 		6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsTabBarViewController.m; sourceTree = "<group>"; };
 		6140415416A8B7CB0075A72A /* Standings Cell White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White.png"; sourceTree = "<group>"; };
@@ -323,6 +337,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */,
+				12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */,
+				66CBDBA7149C27CC004FE748 /* SystemConfiguration.framework in Frameworks */,
+				12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */,
 				66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */,
 				D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */,
 				6672721A14B961670017CEDE /* MapKit.framework in Frameworks */,
@@ -330,11 +348,11 @@
 				66CBDBB414A4463C004FE748 /* QuartzCore.framework in Frameworks */,
 				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
 				66CBDBA9149C27DA004FE748 /* MobileCoreServices.framework in Frameworks */,
-				66CBDBA7149C27CC004FE748 /* SystemConfiguration.framework in Frameworks */,
 				66CBDBA5149C27C3004FE748 /* CFNetwork.framework in Frameworks */,
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
+				12B8A78016B35E3400C36986 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +381,32 @@
 			name = Athletics;
 			sourceTree = "<group>";
 		};
+		12B8A77516B3585400C36986 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				12B8A77616B3585F00C36986 /* GANTracker.h */,
+				12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */,
+			);
+			name = Google;
+			sourceTree = "<group>";
+		};
+		12B8A77B16B35E3400C36986 /* TestFlightSDK1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				12B8A77C16B35E3400C36986 /* libTestFlight.a */,
+				12B8A77D16B35E3400C36986 /* README.md */,
+				12B8A77E16B35E3400C36986 /* release_notes.md */,
+				12B8A77F16B35E3400C36986 /* TestFlight.h */,
+			);
+			name = TestFlightSDK1.1;
+			path = ../../../../../Desktop/TestFlightSDK1.1;
+			sourceTree = "<group>";
+		};
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				12B8A77916B35B7600C36986 /* libsqlite3.dylib */,
+				12B8A76A16B3535000C36986 /* CoreData.framework */,
 				66727FED16A98762007BF71D /* Default-568h@2x.png */,
 				121166A615F6D2FF004C32FB /* Icon2013.png */,
 				121166A715F6D2FF004C32FB /* Iconsmall2013.png */,
@@ -413,6 +454,8 @@
 		66C6D37A1491948C003C95DB /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
+				12B8A77B16B35E3400C36986 /* TestFlightSDK1.1 */,
+				12B8A77516B3585400C36986 /* Google */,
 				66F97E8414F0828B00D33150 /* Images */,
 				66F97E8514F082F000D33150 /* Files */,
 				66C6D37B1491948C003C95DB /* Supporting Files */,
@@ -743,6 +786,8 @@
 				661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */,
 				661A6D7D16A9FABB00EA4B8A /* ScheduleDetailView.xib in Resources */,
 				661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */,
+				12B8A78116B35E3500C36986 /* README.md in Resources */,
+				12B8A78216B35E3500C36986 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +898,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
+					"\"$(SRCROOT)/Sentinel\"",
+					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -928,6 +975,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
+					"\"$(SRCROOT)/Sentinel\"",
+					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -949,6 +998,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK0\"",
+					"\"$(SRCROOT)/Sentinel\"",
+					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

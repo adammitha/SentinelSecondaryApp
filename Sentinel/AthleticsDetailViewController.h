@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ASIHTTPRequest;
 @interface AthleticsDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSString *codekey;
 @property (nonatomic, strong) UITableView *standingsTableView;
@@ -23,5 +24,6 @@
 @property (nonatomic, strong) UILabel *dateTimeLabel;
 @property (nonatomic, strong) UILabel *locationLabel;
 @property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) ASIHTTPRequest *request;
 - (void)launchMaps;
 @end
