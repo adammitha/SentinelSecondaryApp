@@ -25,9 +25,12 @@
 		12B8A78016B35E3400C36986 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77C16B35E3400C36986 /* libTestFlight.a */; };
 		12B8A78116B35E3500C36986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77D16B35E3400C36986 /* README.md */; };
 		12B8A78216B35E3500C36986 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77E16B35E3400C36986 /* release_notes.md */; };
+		12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */; };
+		12DC6ED216B48588000D47FC /* Dotbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED116B48587000D47FC /* Dotbackground.png */; };
+		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
+		12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */; };
+		12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */; };
 		6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */; };
-		6140415616A8B7CB0075A72A /* Standings Cell White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415416A8B7CB0075A72A /* Standings Cell White.png */; };
-		6140415816A8B9930075A72A /* Standings Cell Dark White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140415716A8B9930075A72A /* Standings Cell Dark White.png */; };
 		6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */; };
 		6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */; };
 		6190D14F16A3875C0012E214 /* StandingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14E16A3875C0012E214 /* StandingsViewController.m */; };
@@ -35,8 +38,6 @@
 		6190D15416A390940012E214 /* standings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15316A390940012E214 /* standings.txt */; };
 		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
-		619FCE7216A8E06800367090 /* Dotbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 619FCE7116A8E06800367090 /* Dotbackground.png */; };
-		619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 619FCE7316A8E11800367090 /* Standings Cell Blue.png */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
@@ -168,10 +169,13 @@
 		12B8A77D16B35E3400C36986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		12B8A77E16B35E3400C36986 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		12B8A77F16B35E3400C36986 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White2.png"; sourceTree = "<group>"; };
+		12DC6ED116B48587000D47FC /* Dotbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground.png; sourceTree = "<group>"; };
+		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
+		12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White2.png"; sourceTree = "<group>"; };
+		12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
 		6140415016A8AA4B0075A72A /* AthleticsTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsTabBarViewController.h; sourceTree = "<group>"; };
 		6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsTabBarViewController.m; sourceTree = "<group>"; };
-		6140415416A8B7CB0075A72A /* Standings Cell White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White.png"; sourceTree = "<group>"; };
-		6140415716A8B9930075A72A /* Standings Cell Dark White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White.png"; sourceTree = "<group>"; };
 		6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsHomeViewController.h; sourceTree = "<group>"; };
 		6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsHomeViewController.m; sourceTree = "<group>"; };
 		6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleticsHomeViewController.xib; sourceTree = "<group>"; };
@@ -182,8 +186,6 @@
 		6190D15316A390940012E214 /* standings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = standings.txt; sourceTree = "<group>"; };
 		6190D15516A39E500012E214 /* Athletics Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Athletics Banner.png"; sourceTree = "<group>"; };
 		6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingsCustomCell.xib; sourceTree = "<group>"; };
-		619FCE7116A8E06800367090 /* Dotbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground.png; sourceTree = "<group>"; };
-		619FCE7316A8E11800367090 /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
 		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
@@ -574,10 +576,11 @@
 			isa = PBXGroup;
 			children = (
 				661A6D8016AA266B00EA4B8A /* Outsource Button.png */,
-				619FCE7116A8E06800367090 /* Dotbackground.png */,
-				619FCE7316A8E11800367090 /* Standings Cell Blue.png */,
-				6140415716A8B9930075A72A /* Standings Cell Dark White.png */,
-				6140415416A8B7CB0075A72A /* Standings Cell White.png */,
+				12DC6ED116B48587000D47FC /* Dotbackground.png */,
+				12DC6ED916B4881D000D47FC /* Dotbackground2.png */,
+				12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */,
+				12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */,
+				12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */,
 				122C50EC163387960033F322 /* Athletics */,
 				66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */,
 				6190D15516A39E500012E214 /* Athletics Banner.png */,
@@ -774,10 +777,6 @@
 				6190D15416A390940012E214 /* standings.txt in Resources */,
 				6190D15616A39E500012E214 /* Athletics Banner.png in Resources */,
 				6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */,
-				6140415616A8B7CB0075A72A /* Standings Cell White.png in Resources */,
-				6140415816A8B9930075A72A /* Standings Cell Dark White.png in Resources */,
-				619FCE7216A8E06800367090 /* Dotbackground.png in Resources */,
-				619FCE7416A8E11800367090 /* Standings Cell Blue.png in Resources */,
 				66C9736816A948D00020BFEA /* schedule.txt in Resources */,
 				66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */,
 				66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */,
@@ -788,6 +787,11 @@
 				661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */,
 				12B8A78116B35E3500C36986 /* README.md in Resources */,
 				12B8A78216B35E3500C36986 /* release_notes.md in Resources */,
+				12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */,
+				12DC6ED216B48588000D47FC /* Dotbackground.png in Resources */,
+				12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */,
+				12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */,
+				12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

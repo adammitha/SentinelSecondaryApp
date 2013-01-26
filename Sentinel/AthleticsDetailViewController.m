@@ -63,14 +63,14 @@
     [self.navigationController.view addSubview:toolbar];
 	// Do any additional setup after loading the view.
     standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 90) style:UITableViewStylePlain];
-    self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
+    self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground2.png"]];
     [standingsTableView setDelegate:self];
     [standingsTableView setDataSource:self];
     standingsTableView.hidden = NO;
     [self.view addSubview:standingsTableView];
     
     scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 200) style:UITableViewStylePlain];
-    self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
+    self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground2.png"]];
     [scheduleTableView setDelegate:self];
     [scheduleTableView setDataSource:self];
     scheduleTableView.hidden = YES;
@@ -256,10 +256,10 @@
 {
     static NSString *imageName;
     if (indexPath.row % 2) {
-        imageName = @"Standings Cell White.png";
+        imageName = @"Standings Cell White2.png";
     }
     else {
-        imageName = @"Standings Cell Dark White.png";
+        imageName = @"Standings Cell Dark White2.png";
     }
     UIColor *cellColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
     cell.backgroundColor = cellColor;
