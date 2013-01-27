@@ -11,7 +11,6 @@
 #import "MBProgressHUD.h"
 #import "StandingsCustomCell.h"
 #import "ScheduleCustomCell.h"
-#import "TestFlight.h"
 @interface AthleticsDetailViewController ()
 
 @end
@@ -39,7 +38,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [TestFlight passCheckpoint:@"Athletics"];
     //codekey = @"4AF26B37-50A6-475C-8305-4B837F5A0445";
     NSLog(@"%@",codekey);
     self.title = sportName;

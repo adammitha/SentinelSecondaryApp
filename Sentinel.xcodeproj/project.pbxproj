@@ -24,9 +24,6 @@
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
-		12B8A78016B35E3400C36986 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77C16B35E3400C36986 /* libTestFlight.a */; };
-		12B8A78116B35E3500C36986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77D16B35E3400C36986 /* README.md */; };
-		12B8A78216B35E3500C36986 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77E16B35E3400C36986 /* release_notes.md */; };
 		12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */; };
 		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
 		12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */; };
@@ -168,10 +165,6 @@
 		12B8A77616B3585F00C36986 /* GANTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		12B8A77C16B35E3400C36986 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		12B8A77D16B35E3400C36986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		12B8A77E16B35E3400C36986 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		12B8A77F16B35E3400C36986 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White2.png"; sourceTree = "<group>"; };
 		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
 		12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White2.png"; sourceTree = "<group>"; };
@@ -356,7 +349,6 @@
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
-				12B8A78016B35E3400C36986 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,18 +384,6 @@
 				12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */,
 			);
 			name = Google;
-			sourceTree = "<group>";
-		};
-		12B8A77B16B35E3400C36986 /* TestFlightSDK1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				12B8A77C16B35E3400C36986 /* libTestFlight.a */,
-				12B8A77D16B35E3400C36986 /* README.md */,
-				12B8A77E16B35E3400C36986 /* release_notes.md */,
-				12B8A77F16B35E3400C36986 /* TestFlight.h */,
-			);
-			name = TestFlightSDK1.1;
-			path = ../../../../../Desktop/TestFlightSDK1.1;
 			sourceTree = "<group>";
 		};
 		66C6D3651491948C003C95DB = {
@@ -458,7 +438,6 @@
 		66C6D37A1491948C003C95DB /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
-				12B8A77B16B35E3400C36986 /* TestFlightSDK1.1 */,
 				12B8A77516B3585400C36986 /* Google */,
 				66F97E8414F0828B00D33150 /* Images */,
 				66F97E8514F082F000D33150 /* Files */,
@@ -788,8 +767,6 @@
 				661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */,
 				661A6D7D16A9FABB00EA4B8A /* ScheduleDetailView.xib in Resources */,
 				661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */,
-				12B8A78116B35E3500C36986 /* README.md in Resources */,
-				12B8A78216B35E3500C36986 /* release_notes.md in Resources */,
 				12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */,
 				12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */,
 				12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */,

@@ -7,7 +7,6 @@
 //
 
 #import "SentinelAppDelegate.h"
-#import "TestFlight.h"
 @implementation SentinelAppDelegate
 
 @synthesize window = _window;
@@ -16,7 +15,6 @@
 {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
-    [TestFlight takeOff:@"dee30b38ab3c182759ed332028d6d143_NTA2MDMyMDEyLTAxLTAyIDE2OjE4OjUzLjYyODM1NQ"];
     return YES;
 }
 							
