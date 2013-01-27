@@ -78,32 +78,39 @@
     
     detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-200, self.view.bounds.size.width, 156)];
     detailView.backgroundColor = [UIColor whiteColor];
-    homeTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 128, 21)];
+    
+    /*
+    Problem: can't add image, labels create a white rectangle.
+            detailView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"Scheduledetailimage.png"]]; 
+     */
+
+    homeTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 3, 240, 21)];
     homeTeamLabel.text = @"Home Team";
+    [homeTeamLabel setFont:[UIFont systemFontOfSize: 16.0]];
+    homeTeamLabel.textAlignment = NSTextAlignmentCenter;
     [detailView addSubview:homeTeamLabel];
-    awayTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(175, 10, 128, 21)];
+    awayTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 37, 240, 21)];
     awayTeamLabel.text = @"Away Team";
-    awayTeamLabel.textAlignment = NSTextAlignmentRight;
+    [awayTeamLabel setFont:[UIFont systemFontOfSize: 16.0]];
+    awayTeamLabel.textAlignment = NSTextAlignmentCenter;
     [detailView addSubview:awayTeamLabel];
-    dateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(93, 40, 128, 21)];
+    dateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 66, 102, 21)];
     dateTimeLabel.text = @"Date/Time";
-    dateTimeLabel.textAlignment = NSTextAlignmentCenter;
+    dateTimeLabel.textAlignment = NSTextAlignmentLeft;
     [detailView addSubview:dateTimeLabel];
-    locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(97, 75, 128, 21)];
-    locationLabel.text = @"Home Team";
+    locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(118, 66, 197, 21)];
+    locationLabel.text = @"Location";
     locationLabel.textAlignment = NSTextAlignmentCenter;
     [detailView addSubview:locationLabel];
-    UILabel *mapLabel = [[UILabel alloc] initWithFrame:CGRectMake(230, 80, 50, 21)];
-    mapLabel.text = @"Map:";
-    [detailView addSubview:mapLabel];
-    UIButton *mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
+     UIButton *mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
     mapButton.titleLabel.text = @"Map";
-    [mapButton setBackgroundImage:[UIImage imageNamed:@"Outsource Button.png"] forState:UIControlStateNormal];
+    [mapButton setBackgroundImage:[UIImage imageNamed:@"mapicon.png"] forState:UIControlStateNormal];
     [mapButton addTarget:self action:@selector(launchMaps) forControlEvents:UIControlEventTouchUpInside];
-    mapButton.frame = CGRectMake(280, 80, 32, 20);
+    mapButton.frame = CGRectMake(270, 89, 42, 21);
     [detailView addSubview:mapButton];
-    UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 10, 22, 21)];
+    UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 21, 22, 21)];
     vsLabel.text = @"vs.";
+    [vsLabel setFont:[UIFont systemFontOfSize: 14.0]];
     [detailView addSubview:vsLabel];
     
     detailView.hidden = YES;
@@ -311,7 +318,7 @@ else if(tableView==scheduleTableView){
         NSDictionary *tempdict = [scheduleArray objectAtIndex:indexPath.row];
         self.homeTeamLabel.text = [tempdict objectForKey:@"homeTeam"];
         self.awayTeamLabel.text = [tempdict objectForKey:@"awayTeam"];
-        self.locationLabel.text = [NSString stringWithFormat:@"At: %@",[tempdict objectForKey:@"location"]];
+        self.locationLabel.text = [NSString stringWithFormat:@"@ %@",[tempdict objectForKey:@"location"]];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
         [dateFormatter setDateFormat:@"MM/dd/yyyy"];
         NSDate *gameDate = [dateFormatter dateFromString:[tempdict objectForKey:@"date"]];

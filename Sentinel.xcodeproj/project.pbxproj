@@ -15,6 +15,8 @@
 		122C50F1163389B20033F322 /* Sportscell.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50EF163389B20033F322 /* Sportscell.png */; };
 		122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50F0163389B20033F322 /* Sportscell@2x.png */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
+		124981B116B4B14300195C2B /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B016B4B14300195C2B /* mapicon.png */; };
+		124981B316B4B59000195C2B /* Scheduledetailimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B216B4B59000195C2B /* Scheduledetailimage.png */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
@@ -26,7 +28,6 @@
 		12B8A78116B35E3500C36986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77D16B35E3400C36986 /* README.md */; };
 		12B8A78216B35E3500C36986 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 12B8A77E16B35E3400C36986 /* release_notes.md */; };
 		12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */; };
-		12DC6ED216B48588000D47FC /* Dotbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED116B48587000D47FC /* Dotbackground.png */; };
 		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
 		12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */; };
 		12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */; };
@@ -157,6 +158,8 @@
 		122C50F0163389B20033F322 /* Sportscell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sportscell@2x.png"; sourceTree = "<group>"; };
 		122C50F31633A0B50033F322 /* jvboysrugby */ = {isa = PBXFileReference; lastKnownFileType = file; path = jvboysrugby; sourceTree = "<group>"; };
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
+		124981B016B4B14300195C2B /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
+		124981B216B4B59000195C2B /* Scheduledetailimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scheduledetailimage.png; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
@@ -170,7 +173,6 @@
 		12B8A77E16B35E3400C36986 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		12B8A77F16B35E3400C36986 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White2.png"; sourceTree = "<group>"; };
-		12DC6ED116B48587000D47FC /* Dotbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground.png; sourceTree = "<group>"; };
 		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
 		12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White2.png"; sourceTree = "<group>"; };
 		12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
@@ -576,7 +578,8 @@
 			isa = PBXGroup;
 			children = (
 				661A6D8016AA266B00EA4B8A /* Outsource Button.png */,
-				12DC6ED116B48587000D47FC /* Dotbackground.png */,
+				124981B216B4B59000195C2B /* Scheduledetailimage.png */,
+				124981B016B4B14300195C2B /* mapicon.png */,
 				12DC6ED916B4881D000D47FC /* Dotbackground2.png */,
 				12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */,
 				12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */,
@@ -788,10 +791,11 @@
 				12B8A78116B35E3500C36986 /* README.md in Resources */,
 				12B8A78216B35E3500C36986 /* release_notes.md in Resources */,
 				12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */,
-				12DC6ED216B48588000D47FC /* Dotbackground.png in Resources */,
 				12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */,
 				12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */,
 				12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */,
+				124981B116B4B14300195C2B /* mapicon.png in Resources */,
+				124981B316B4B59000195C2B /* Scheduledetailimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
