@@ -67,48 +67,48 @@
     standingsTableView.hidden = NO;
     [self.view addSubview:standingsTableView];
     
-    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 200) style:UITableViewStylePlain];
+    scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 160) style:UITableViewStylePlain];
     self.scheduleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground2.png"]];
     [scheduleTableView setDelegate:self];
     [scheduleTableView setDataSource:self];
     scheduleTableView.hidden = YES;
     [self.view addSubview:scheduleTableView];
     
-    detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-200, self.view.bounds.size.width, 156)];
-    detailView.backgroundColor = [UIColor whiteColor];
-    
-    /*
-    Problem: can't add image, labels create a white rectangle.
-            detailView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"Scheduledetailimage.png"]]; 
-     */
-
-    homeTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 3, 240, 21)];
+    detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-160, self.view.bounds.size.width, 156)];
+    detailView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Scheduledetailimage.png"]];
+    homeTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 128, 21)];
     homeTeamLabel.text = @"Home Team";
     [homeTeamLabel setFont:[UIFont systemFontOfSize: 16.0]];
-    homeTeamLabel.textAlignment = NSTextAlignmentCenter;
+    [homeTeamLabel setBackgroundColor:[UIColor clearColor]];
+    homeTeamLabel.textAlignment = NSTextAlignmentLeft;
     [detailView addSubview:homeTeamLabel];
-    awayTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 37, 240, 21)];
+    awayTeamLabel = [[UILabel alloc] initWithFrame:CGRectMake(175, 10, 128, 21)];
     awayTeamLabel.text = @"Away Team";
     [awayTeamLabel setFont:[UIFont systemFontOfSize: 16.0]];
-    awayTeamLabel.textAlignment = NSTextAlignmentCenter;
+    [awayTeamLabel setBackgroundColor:[UIColor clearColor]];
+    awayTeamLabel.textAlignment = NSTextAlignmentRight;
     [detailView addSubview:awayTeamLabel];
-    dateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 66, 102, 21)];
+    dateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(97, 30, 128, 21)];
     dateTimeLabel.text = @"Date/Time";
-    dateTimeLabel.textAlignment = NSTextAlignmentLeft;
+    [dateTimeLabel setBackgroundColor:[UIColor clearColor]];
+    dateTimeLabel.textAlignment = NSTextAlignmentCenter;
     [detailView addSubview:dateTimeLabel];
-    locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(118, 66, 197, 21)];
+    locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(35, 50, 250, 21)];
     locationLabel.text = @"Location";
+    [locationLabel setBackgroundColor:[UIColor clearColor]];
     locationLabel.textAlignment = NSTextAlignmentCenter;
+    [locationLabel setFont:[UIFont systemFontOfSize: 14.0]];
     [detailView addSubview:locationLabel];
      UIButton *mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
     mapButton.titleLabel.text = @"Map";
     [mapButton setBackgroundImage:[UIImage imageNamed:@"mapicon.png"] forState:UIControlStateNormal];
     [mapButton addTarget:self action:@selector(launchMaps) forControlEvents:UIControlEventTouchUpInside];
-    mapButton.frame = CGRectMake(270, 89, 42, 21);
+    mapButton.frame = CGRectMake(270, 49, 42, 21);
     [detailView addSubview:mapButton];
-    UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 21, 22, 21)];
+    UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 10, 22, 21)];
     vsLabel.text = @"vs.";
     [vsLabel setFont:[UIFont systemFontOfSize: 14.0]];
+    [vsLabel setBackgroundColor:[UIColor clearColor]];
     [detailView addSubview:vsLabel];
     
     detailView.hidden = YES;
