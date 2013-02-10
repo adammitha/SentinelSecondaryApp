@@ -63,7 +63,7 @@
     [super viewDidLoad];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelEventsXML"];
+    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/events.php"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];

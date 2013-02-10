@@ -60,7 +60,7 @@
     [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
     [self.navigationController.view addSubview:toolbar];
 	// Do any additional setup after loading the view.
-    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 90) style:UITableViewStylePlain];
+    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 86) style:UITableViewStylePlain];
     self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground2.png"]];
     [standingsTableView setDelegate:self];
     [standingsTableView setDataSource:self];

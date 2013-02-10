@@ -61,6 +61,7 @@
     NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.tabBarController.customizableViewControllers = nil;
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

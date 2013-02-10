@@ -78,7 +78,7 @@
 
 - (void)refresh
 {
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/sentinelAnnouncementsXml"];
+    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/announcements.php"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];

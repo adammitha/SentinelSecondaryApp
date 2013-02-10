@@ -15,6 +15,24 @@
 {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    NSData *blockRotation = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
+    NSError *error;
+    NSDictionary *rotationsDict = [NSJSONSerialization JSONObjectWithData:blockRotation options:kNilOptions error:&error];
+    NSDate *today = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *dateString = [formatter stringFromDate:today];
+    NSDictionary *dateDict = [rotationsDict objectForKey:dateString];
+    UILocalNotification *rotationNotification = [[UILocalNotification alloc] init];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:today];
+    [components setHour:7];
+    [components setMinute:0];
+    [components setSecond:0];
+    rotationNotification.fireDate = [today dateByAddingTimeInterval:10];
+    rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
+    rotationNotification.alertBody = @"Block Rotation:";
+    [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
     return YES;
 }
 							
