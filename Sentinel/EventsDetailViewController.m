@@ -36,6 +36,12 @@
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.eventLink]];
 }
+
+- (void)openActionSheet
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Open in Browser",@"Add to Calendar", nil];
+    [actionSheet showInView:self.view];
+}
 #pragma mark - View lifecycle
 
 - (void)swipeDidOccur
@@ -52,9 +58,11 @@
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     //swipe 
-
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openActionSheet)];
+    self.navigationItem.rightBarButtonItem = item;
     [super viewDidLoad];
     NSLog(@"%@", self.eventTitle);
+
     self.webView.scalesPageToFit = YES;
   //zoom
    /* CGRect webFrame = CGRectMake(0.0, 0.0, 320.0, 460.0);
@@ -76,6 +84,24 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        [self launchURL];
+    } else if (buttonIndex == 1) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"MMM dd, YYYY";
+        NSDate *date = [dateFormatter dateFromString:self.eventDescription];
+        NSLog(@"%@",self.eventDescription);
+        EKEventStore *eventStore = [[EKEventStore alloc] init];
+        EKEvent *addEvent = [EKEvent eventWithEventStore:eventStore];
+        addEvent.title = self.eventTitle;
+        addEvent.startDate = date;
+        addEvent.calendar = [eventStore defaultCalendarForNewEvents];
+        [eventStore saveEvent:addEvent span:EKSpanThisEvent error:nil];
+    }
 }
 - (void)viewDidUnload
 {

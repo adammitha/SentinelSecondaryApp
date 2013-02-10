@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
 #import "MBProgressHUD.h"
-@interface EventsDetailViewController : UIViewController <UIWebViewDelegate>
+@interface EventsDetailViewController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) NSString *eventTitle;
 @property (strong, nonatomic) NSString *eventDescription;
@@ -17,4 +18,5 @@
 @property (strong, nonatomic) MBProgressHUD *progressHUD;
 - (void)launchURL;
 - (void)swipeDidOccur;
+- (void)openActionSheet;
 @end
