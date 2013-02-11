@@ -326,7 +326,7 @@ else if(tableView==scheduleTableView){
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
     [recognizer setNumberOfTapsRequired:1];
     [recognizer setNumberOfTouchesRequired:1];
-[[self view] addGestureRecognizer:recognizer];
+[footerView addGestureRecognizer:recognizer];
     
 
     return footerView;
@@ -338,7 +338,7 @@ else if(tableView==scheduleTableView){
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
     [recognizer setNumberOfTapsRequired:1];
     [recognizer setNumberOfTouchesRequired:1];
-    [[self view] addGestureRecognizer:recognizer];
+    [footerView addGestureRecognizer:recognizer];
     return footerView;
 } return 0;
 }
