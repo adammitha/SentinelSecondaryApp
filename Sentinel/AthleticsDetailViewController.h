@@ -26,4 +26,5 @@
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) ASIHTTPRequest *request;
 - (void)launchMaps;
+- (void)oneFingerTwoTaps;
 @end

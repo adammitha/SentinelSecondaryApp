@@ -34,6 +34,14 @@
     }
     return self;
 }
+- (void)oneFingerTwoTaps
+    
+    {
+        //implement
+        NSLog(@"Action: One finger, two taps");
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.esportsdeskpro.com"]];
+    }
+
 
 - (void)viewDidLoad
 {
@@ -60,7 +68,7 @@
     [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
     [self.navigationController.view addSubview:toolbar];
 	// Do any additional setup after loading the view.
-    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 86) style:UITableViewStylePlain];
+    standingsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 88) style:UITableViewStylePlain];
     self.standingsTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground2.png"]];
     [standingsTableView setDelegate:self];
     [standingsTableView setDataSource:self];
@@ -308,7 +316,35 @@ else if(tableView==scheduleTableView){
     [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
     return headerView;
 } return 0;
-} 
+}
+//footer
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{ if (tableView==standingsTableView){
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [footerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"esportsdeskpro.png"]]];
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
+    [recognizer setNumberOfTapsRequired:1];
+    [recognizer setNumberOfTouchesRequired:1];
+[[self view] addGestureRecognizer:recognizer];
+    
+
+    return footerView;
+}
+else if(tableView==scheduleTableView){
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [footerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"esportsdeskpro.png"]]];
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
+    [recognizer setNumberOfTapsRequired:1];
+    [recognizer setNumberOfTouchesRequired:1];
+    [[self view] addGestureRecognizer:recognizer];
+    return footerView;
+} return 0;
+}
+
+//footer
+
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
