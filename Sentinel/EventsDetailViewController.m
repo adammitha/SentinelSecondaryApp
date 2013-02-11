@@ -39,7 +39,7 @@
 
 - (void)openActionSheet
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Open in Browser",@"Add to Calendar", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Open in Browser", nil];
     [actionSheet showInView:self.view];
 }
 #pragma mark - View lifecycle
@@ -90,18 +90,39 @@
 {
     if (buttonIndex == 0) {
         [self launchURL];
-    } else if (buttonIndex == 1) {
+    } /*else if (buttonIndex == 1) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         dateFormatter.dateFormat = @"MMM dd, YYYY";
         NSDate *date = [dateFormatter dateFromString:self.eventDescription];
+        NSLog(@"%@",date);
         NSLog(@"%@",self.eventDescription);
         EKEventStore *eventStore = [[EKEventStore alloc] init];
-        EKEvent *addEvent = [EKEvent eventWithEventStore:eventStore];
-        addEvent.title = self.eventTitle;
-        addEvent.startDate = date;
-        addEvent.calendar = [eventStore defaultCalendarForNewEvents];
-        [eventStore saveEvent:addEvent span:EKSpanThisEvent error:nil];
-    }
+        if([eventStore respondsToSelector:@selector(requestAccessToEntityType:completion:)]) {
+            // iOS 6 and later
+            [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+                if (granted){
+                    //---- codes here when user allow your app to access theirs' calendar.
+                    EKEvent *addEvent = [EKEvent eventWithEventStore:eventStore];
+                    addEvent.title = self.eventTitle;
+                    addEvent.startDate = [NSDate date];
+                    addEvent.calendar = [eventStore defaultCalendarForNewEvents];
+                    [eventStore saveEvent:addEvent span:EKSpanThisEvent error:nil];
+                }else
+                {
+                    //----- codes here when user NOT allow your app to access the calendar.
+                }
+}];
+        }
+        else {
+            //---- codes here for IOS < 6.0.
+            EKEvent *addEvent = [EKEvent eventWithEventStore:eventStore];
+            addEvent.title = self.eventTitle;
+            addEvent.startDate = date;
+            addEvent.calendar = [eventStore defaultCalendarForNewEvents];
+            [eventStore saveEvent:addEvent span:EKSpanThisEvent error:nil];
+        }
+
+    }*/
 }
 - (void)viewDidUnload
 {

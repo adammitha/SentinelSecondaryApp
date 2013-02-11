@@ -22,17 +22,26 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd"];
     NSString *dateString = [formatter stringFromDate:today];
-    NSDictionary *dateDict = [rotationsDict objectForKey:dateString];
-    UILocalNotification *rotationNotification = [[UILocalNotification alloc] init];
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:today];
-    [components setHour:7];
-    [components setMinute:0];
-    [components setSecond:0];
-    rotationNotification.fireDate = [today dateByAddingTimeInterval:10];
-    rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
-    rotationNotification.alertBody = @"Block Rotation:";
-    [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
+    NSDictionary *todayDict = [rotationsDict objectForKey:dateString];
+    NSDate *yesterday = [today dateByAddingTimeInterval:-86400];
+    NSString *yesterdayDateString = [formatter stringFromDate:yesterday];
+    NSDictionary *yesterdayDict = [rotationsDict objectForKey:yesterdayDateString];
+    BOOL rotationIsDifferent = ![[yesterdayDict objectForKey:@"day"] isEqualToString:[todayDict objectForKey:@"day"]];
+    [formatter setDateFormat:@"eeee"];
+    NSString *weekDay = [formatter stringFromDate:today];
+    if ([weekDay isEqualToString:@"Monday"] || rotationIsDifferent) {
+        NSLog(@"%d",rotationIsDifferent);
+        UILocalNotification *rotationNotification = [[UILocalNotification alloc] init];
+        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:today];
+        [components setHour:7];
+        [components setMinute:0];
+        [components setSecond:0];
+        rotationNotification.fireDate = [today dateByAddingTimeInterval:10];
+        rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
+        rotationNotification.alertBody = [NSString stringWithFormat:@"Block Rotation: %@-%@",[todayDict objectForKey:@"day"], [todayDict objectForKey:@"rotation"]];
+        [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
+    }
     return YES;
 }
 							
