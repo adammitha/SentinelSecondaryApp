@@ -30,6 +30,8 @@
 		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
 		12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */; };
 		12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */; };
+		6104C69C16C878BB00D3FA1F /* esportsdeskpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */; };
+		6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */; };
 		6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */; };
 		6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */; };
 		6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */; };
@@ -173,6 +175,8 @@
 		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
 		12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White2.png"; sourceTree = "<group>"; };
 		12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
+		6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esportsdeskpro.png; sourceTree = "<group>"; };
+		6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "esportsdeskpro@2x.png"; sourceTree = "<group>"; };
 		6140415016A8AA4B0075A72A /* AthleticsTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsTabBarViewController.h; sourceTree = "<group>"; };
 		6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsTabBarViewController.m; sourceTree = "<group>"; };
 		6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsHomeViewController.h; sourceTree = "<group>"; };
@@ -560,6 +564,8 @@
 		66F97E8414F0828B00D33150 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */,
+				6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */,
 				661A6D8016AA266B00EA4B8A /* Outsource Button.png */,
 				124981B016B4B14300195C2B /* mapicon.png */,
 				12DC6ED916B4881D000D47FC /* Dotbackground2.png */,
@@ -781,6 +787,8 @@
 				122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */,
 				122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */,
 				122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */,
+				6104C69C16C878BB00D3FA1F /* esportsdeskpro.png in Resources */,
+				6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
