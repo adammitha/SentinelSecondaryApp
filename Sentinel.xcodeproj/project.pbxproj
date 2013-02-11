@@ -16,9 +16,9 @@
 		122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122C50F0163389B20033F322 /* Sportscell@2x.png */; };
 		122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */; };
 		122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */; };
-		122D040F16C8568700D52FD2 /* esportsdeskpro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D040D16C8567D00D52FD2 /* esportsdeskpro@2x.png */; };
-		122D041116C856D300D52FD2 /* esportsdeskpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041016C856D200D52FD2 /* esportsdeskpro.png */; };
 		122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */; };
+		122D041716C86BD700D52FD2 /* esportsdeskpro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041516C86BD500D52FD2 /* esportsdeskpro@2x.png */; };
+		122D041916C86C3800D52FD2 /* esportsdeskpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041816C86C3600D52FD2 /* esportsdeskpro.png */; };
 		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		124981B116B4B14300195C2B /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B016B4B14300195C2B /* mapicon.png */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
@@ -160,9 +160,9 @@
 		122C50F31633A0B50033F322 /* jvboysrugby */ = {isa = PBXFileReference; lastKnownFileType = file; path = jvboysrugby; sourceTree = "<group>"; };
 		122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scheduledetailimage.png; sourceTree = "<group>"; };
 		122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scheduledetailimage@2x.png"; sourceTree = "<group>"; };
-		122D040D16C8567D00D52FD2 /* esportsdeskpro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "esportsdeskpro@2x.png"; sourceTree = "<group>"; };
-		122D041016C856D200D52FD2 /* esportsdeskpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esportsdeskpro.png; sourceTree = "<group>"; };
 		122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5 Black Wood Background3.png"; sourceTree = "<group>"; };
+		122D041516C86BD500D52FD2 /* esportsdeskpro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "esportsdeskpro@2x.png"; sourceTree = "<group>"; };
+		122D041816C86C3600D52FD2 /* esportsdeskpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esportsdeskpro.png; sourceTree = "<group>"; };
 		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		124981B016B4B14300195C2B /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
@@ -568,10 +568,10 @@
 				124981B016B4B14300195C2B /* mapicon.png */,
 				12DC6ED916B4881D000D47FC /* Dotbackground2.png */,
 				12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */,
+				122D041816C86C3600D52FD2 /* esportsdeskpro.png */,
+				122D041516C86BD500D52FD2 /* esportsdeskpro@2x.png */,
 				122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */,
 				122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */,
-				122D041016C856D200D52FD2 /* esportsdeskpro.png */,
-				122D040D16C8567D00D52FD2 /* esportsdeskpro@2x.png */,
 				12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */,
 				12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */,
 				122C50EC163387960033F322 /* Athletics */,
@@ -786,9 +786,9 @@
 				124981B116B4B14300195C2B /* mapicon.png in Resources */,
 				122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */,
 				122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */,
-				122D040F16C8568700D52FD2 /* esportsdeskpro@2x.png in Resources */,
-				122D041116C856D300D52FD2 /* esportsdeskpro.png in Resources */,
 				122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */,
+				122D041716C86BD700D52FD2 /* esportsdeskpro@2x.png in Resources */,
+				122D041916C86C3800D52FD2 /* esportsdeskpro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,6 +905,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -983,6 +984,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1004,6 +1006,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
