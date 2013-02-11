@@ -334,6 +334,7 @@ else if(tableView==scheduleTableView){
 else if(tableView==scheduleTableView){
     UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
     [footerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"esportsdeskpro.png"]]];
+    
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
     [recognizer setNumberOfTapsRequired:1];
     [recognizer setNumberOfTouchesRequired:1];
