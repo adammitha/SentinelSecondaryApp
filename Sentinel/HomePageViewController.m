@@ -85,9 +85,17 @@
 {
     [super viewDidLoad];
     self.about.backgroundColor = [UIColor clearColor];
-    //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://www.sd45app.com/test/test.json"]];
-    //[request setDelegate:self];
-    //[request startAsynchronous];
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    if (bounds.size.height == 568) {
+        //iPhone 5
+        self.infoArrow.frame = CGRectMake(296, 443, 24, 21);
+        self.infoButton.frame = CGRectMake(-3, 420, 326, 62);
+        self.infoLabel.frame = CGRectMake(12, 430, 243, 42);
+        self.athleticsArrow.frame = CGRectMake(296, 504, 24, 21);
+        self.athleticsButton.frame = CGRectMake(-3, 479, 326, 62);
+        self.athleticsLabel.frame = CGRectMake(7, 495, 201, 34);
+        self.aboutButton.frame = CGRectMake(96, 544, 128, 20);
+    }
 }
 
 /*- (void)requestFinished:(ASIHTTPRequest *)request
@@ -114,6 +122,13 @@
     [self setDayLabel:nil];
     [self setDateLabel:nil];
     [self setAbout:nil];
+    [self setInfoButton:nil];
+    [self setAthleticsButton:nil];
+    [self setAboutButton:nil];
+    [self setInfoLabel:nil];
+    [self setInfoArrow:nil];
+    [self setAthleticsLabel:nil];
+    [self setAthleticsArrow:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

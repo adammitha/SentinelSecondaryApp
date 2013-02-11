@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Home Page View Controller-->
@@ -123,8 +123,15 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="about" destination="dQv-iq-N7k" id="cUg-FU-Wby"/>
+                        <outlet property="aboutButton" destination="dQv-iq-N7k" id="XBK-Y8-ybA"/>
+                        <outlet property="athleticsArrow" destination="Cbg-b4-ShW" id="dvH-q7-6WG"/>
+                        <outlet property="athleticsButton" destination="REa-nc-rJ8" id="T1P-cy-iL9"/>
+                        <outlet property="athleticsLabel" destination="Sq9-Tc-ixd" id="Zzc-QK-5XR"/>
                         <outlet property="dateLabel" destination="Ho4-Rt-iW0" id="UgS-nK-qu3"/>
                         <outlet property="dayLabel" destination="TpI-bY-RWa" id="QSH-hh-40z"/>
+                        <outlet property="infoArrow" destination="4Oh-VZ-uYS" id="vCg-PY-AfF"/>
+                        <outlet property="infoButton" destination="vwP-mK-VzY" id="zuf-NE-aH2"/>
+                        <outlet property="infoLabel" destination="mi7-oy-tBK" id="yvq-tx-gyD"/>
                         <outlet property="rotationLabel" destination="GT6-3R-RtS" id="LAn-tU-0l8"/>
                     </connections>
                 </viewController>
@@ -791,7 +798,6 @@
         <class className="FeedbackViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedbackViewController.h"/>
             <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="action" name="feedback:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
@@ -799,9 +805,21 @@
         <class className="HomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
             <relationships>
+                <relationship kind="action" name="longPressDetected:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="pinchDetected:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="rotationDetected:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="swipeDetected:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="tapDetected:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="about" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="athleticsArrow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="athleticsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="athleticsLabel" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="infoArrow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="infoLabel" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="rotationLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

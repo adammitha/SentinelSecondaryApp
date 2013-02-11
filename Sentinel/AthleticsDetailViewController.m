@@ -49,7 +49,7 @@
     toolbar.barStyle = UIBarStyleBlack;
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     if (screenBounds.size.height == 568) {
-        toolbar.frame = CGRectMake(0, 523, self.view.frame.size.width, 44);
+        toolbar.frame = CGRectMake(0, 524, self.view.frame.size.width, 44);
     } else {
         toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
     }
@@ -103,7 +103,7 @@
     mapButton.titleLabel.text = @"Map";
     [mapButton setBackgroundImage:[UIImage imageNamed:@"mapicon.png"] forState:UIControlStateNormal];
     [mapButton addTarget:self action:@selector(launchMaps) forControlEvents:UIControlEventTouchUpInside];
-    mapButton.frame = CGRectMake(270, 49, 42, 21);
+    mapButton.frame = CGRectMake(263, 44, 55, 27);
     [detailView addSubview:mapButton];
     UILabel *vsLabel = [[UILabel alloc] initWithFrame:CGRectMake(149, 10, 22, 21)];
     vsLabel.text = @"vs.";
