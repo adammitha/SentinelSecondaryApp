@@ -67,6 +67,7 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
+  
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
     // Uncomment the following line to preserve selection between presentations.
@@ -74,6 +75,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 - (void)refresh
@@ -83,6 +85,7 @@
     [request setDelegate:self];
     [request startAsynchronous];
     [super refresh];
+    
 }
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
@@ -93,6 +96,7 @@
     [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
+
 
 - (void)requestFailed:(ASIHTTPRequest *)request 
 {
@@ -165,6 +169,7 @@
     // Configure the cell...
     
     return cell;
+
 }
 
 /*
@@ -205,6 +210,7 @@
     return YES;
 }
 */
+
 
 #pragma mark - Table view delegate
 
