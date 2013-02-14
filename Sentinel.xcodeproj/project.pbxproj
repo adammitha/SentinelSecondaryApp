@@ -81,6 +81,7 @@
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
 		66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66727FED16A98762007BF71D /* Default-568h@2x.png */; };
 		668BA0BF1594386E001F516F /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BA0BE1594386E001F516F /* Update.m */; };
+		66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AA27E016CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
 		66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3761491948C003C95DB /* Foundation.framework */; };
 		66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3781491948C003C95DB /* CoreGraphics.framework */; };
@@ -243,6 +244,7 @@
 		66727FED16A98762007BF71D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		668BA0BD1594386E001F516F /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
 		668BA0BE1594386E001F516F /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
+		66AA27E016CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5 Splash Screen 3.png"; sourceTree = "<group>"; };
 		66C6D3701491948C003C95DB /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C6D3741491948C003C95DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66C6D3761491948C003C95DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -568,6 +570,7 @@
 		66F97E8414F0828B00D33150 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66AA27E016CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png */,
 				6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */,
 				6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */,
 				661A6D8016AA266B00EA4B8A /* Outsource Button.png */,
@@ -793,6 +796,7 @@
 				122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */,
 				6104C69C16C878BB00D3FA1F /* esportsdeskpro.png in Resources */,
 				6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */,
+				66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

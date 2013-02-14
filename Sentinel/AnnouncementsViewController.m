@@ -156,10 +156,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:[self.announcementsArray objectAtIndex:indexPath.row]];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:12];
-    cell.textLabel.text = [tempDict objectForKey:@"title"];
+    if (self.announcementsArray) {
+        NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:[self.announcementsArray objectAtIndex:indexPath.row]];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:12];
+        cell.textLabel.text = [tempDict objectForKey:@"title"];
+    }
     // Configure the cell...
     
     return cell;
