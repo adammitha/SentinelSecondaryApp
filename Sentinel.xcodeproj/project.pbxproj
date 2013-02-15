@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		121166A815F6D2FF004C32FB /* Icon2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A615F6D2FF004C32FB /* Icon2013.png */; };
 		121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A715F6D2FF004C32FB /* Iconsmall2013.png */; };
+		12197FF916CF013200C7CF4C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FF816CF013200C7CF4C /* Parse.framework */; };
+		12197FFC16CF025D00C7CF4C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FFB16CF025D00C7CF4C /* AudioToolbox.framework */; };
+		12197FFE16CF026400C7CF4C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FFD16CF026400C7CF4C /* Accounts.framework */; };
+		1219800016CF026A00C7CF4C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FFF16CF026A00C7CF4C /* AdSupport.framework */; };
+		1219800216CF028200C7CF4C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1219800116CF028200C7CF4C /* CoreLocation.framework */; };
+		1219800416CF029100C7CF4C /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1219800316CF029100C7CF4C /* libz.1.1.3.dylib */; };
+		1219800616CF02A800C7CF4C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1219800516CF02A800C7CF4C /* Security.framework */; };
+		1219800816CF02AD00C7CF4C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1219800716CF02AD00C7CF4C /* StoreKit.framework */; };
+		1219800A16CF02BE00C7CF4C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1219800916CF02BE00C7CF4C /* Social.framework */; };
 		1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */; };
 		1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1223FA0115DE012D00B22BDF /* Calendar.pdf */; };
 		122C50E8163356140033F322 /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 122C50E7163356140033F322 /* sports.txt */; };
@@ -154,6 +163,15 @@
 		121166A615F6D2FF004C32FB /* Icon2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2013.png; sourceTree = "<group>"; };
 		121166A715F6D2FF004C32FB /* Iconsmall2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconsmall2013.png; sourceTree = "<group>"; };
 		121166AA15F6D365004C32FB /* Sentinel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
+		12197FF816CF013200C7CF4C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		12197FFB16CF025D00C7CF4C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		12197FFD16CF026400C7CF4C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		12197FFF16CF026A00C7CF4C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1219800116CF028200C7CF4C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1219800316CF029100C7CF4C /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		1219800516CF02A800C7CF4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1219800716CF02AD00C7CF4C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1219800916CF02BE00C7CF4C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1223F9FF15DDFF7200B22BDF /* Sentinel Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sentinel Athletics.png"; sourceTree = "<group>"; };
 		1223FA0115DE012D00B22BDF /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		122C50E7163356140033F322 /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sports.txt; sourceTree = "<group>"; };
@@ -346,22 +364,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6650C07916C867CC00233AF1 /* EventKit.framework in Frameworks */,
-				12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */,
-				12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */,
+				1219800A16CF02BE00C7CF4C /* Social.framework in Frameworks */,
 				66CBDBA7149C27CC004FE748 /* SystemConfiguration.framework in Frameworks */,
+				1219800816CF02AD00C7CF4C /* StoreKit.framework in Frameworks */,
+				1219800616CF02A800C7CF4C /* Security.framework in Frameworks */,
+				66CBDBB414A4463C004FE748 /* QuartzCore.framework in Frameworks */,
+				66CBDBA9149C27DA004FE748 /* MobileCoreServices.framework in Frameworks */,
+				1219800416CF029100C7CF4C /* libz.1.1.3.dylib in Frameworks */,
+				12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */,
+				1219800216CF028200C7CF4C /* CoreLocation.framework in Frameworks */,
+				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
+				66CBDBA5149C27C3004FE748 /* CFNetwork.framework in Frameworks */,
+				1219800016CF026A00C7CF4C /* AdSupport.framework in Frameworks */,
+				12197FFE16CF026400C7CF4C /* Accounts.framework in Frameworks */,
+				12197FFC16CF025D00C7CF4C /* AudioToolbox.framework in Frameworks */,
+				6650C07916C867CC00233AF1 /* EventKit.framework in Frameworks */,
+				12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */,
 				12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */,
 				66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */,
 				D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */,
 				6672721A14B961670017CEDE /* MapKit.framework in Frameworks */,
 				66CE220514AF8E3100F6BF0D /* MessageUI.framework in Frameworks */,
-				66CBDBB414A4463C004FE748 /* QuartzCore.framework in Frameworks */,
 				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
-				66CBDBA9149C27DA004FE748 /* MobileCoreServices.framework in Frameworks */,
-				66CBDBA5149C27C3004FE748 /* CFNetwork.framework in Frameworks */,
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
-				66C6D3791491948C003C95DB /* CoreGraphics.framework in Frameworks */,
+				12197FF916CF013200C7CF4C /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,8 +429,17 @@
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
+				1219800916CF02BE00C7CF4C /* Social.framework */,
+				1219800716CF02AD00C7CF4C /* StoreKit.framework */,
+				1219800516CF02A800C7CF4C /* Security.framework */,
+				1219800316CF029100C7CF4C /* libz.1.1.3.dylib */,
+				1219800116CF028200C7CF4C /* CoreLocation.framework */,
+				12197FFF16CF026A00C7CF4C /* AdSupport.framework */,
+				12197FFD16CF026400C7CF4C /* Accounts.framework */,
+				12197FFB16CF025D00C7CF4C /* AudioToolbox.framework */,
 				6650C07816C867CC00233AF1 /* EventKit.framework */,
 				12B8A77916B35B7600C36986 /* libsqlite3.dylib */,
+				12197FF816CF013200C7CF4C /* Parse.framework */,
 				12B8A76A16B3535000C36986 /* CoreData.framework */,
 				66727FED16A98762007BF71D /* Default-568h@2x.png */,
 				121166A615F6D2FF004C32FB /* Icon2013.png */,
@@ -900,6 +936,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
@@ -978,6 +1018,10 @@
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
@@ -1002,6 +1046,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
 				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";

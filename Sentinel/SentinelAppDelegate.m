@@ -37,7 +37,7 @@
         [components setHour:7];
         [components setMinute:0];
         [components setSecond:0];
-        rotationNotification.fireDate = [today dateByAddingTimeInterval:10];
+        rotationNotification.fireDate = [gregorian dateFromComponents:components];
         rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
         rotationNotification.alertBody = [NSString stringWithFormat:@"Block Rotation: %@-%@",[todayDict objectForKey:@"day"], [todayDict objectForKey:@"rotation"]];
         [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
