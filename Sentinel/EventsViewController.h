@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PullRefreshTableViewController.h"
+#import "GAITrackedViewController.h"
 @class MBProgressHUD;
 @interface EventsViewController : PullRefreshTableViewController
 

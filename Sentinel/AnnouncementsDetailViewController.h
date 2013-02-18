@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "GAITrackedViewController.h"
+
 @interface AnnouncementsDetailViewController : UIViewController <UIWebViewDelegate>
 
 - (void)launchURL;

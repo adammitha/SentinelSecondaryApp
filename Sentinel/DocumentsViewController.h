@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GAITrackedViewController.h"
 @interface DocumentsViewController : UIViewController
 {
     IBOutlet UIScrollView *scroller;

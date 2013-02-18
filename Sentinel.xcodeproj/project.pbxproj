@@ -41,6 +41,7 @@
 		12DC6EE016B489D9000D47FC /* Standings Cell Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */; };
 		6104C69C16C878BB00D3FA1F /* esportsdeskpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */; };
 		6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */; };
+		6118F12916D1F86100413DCD /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6118F12816D1F86100413DCD /* libGoogleAnalytics.a */; };
 		6140415216A8AA4B0075A72A /* AthleticsTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */; };
 		6190D14A16A369CE0012E214 /* AthleticsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190D14816A369CE0012E214 /* AthleticsHomeViewController.m */; };
 		6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D14916A369CE0012E214 /* AthleticsHomeViewController.xib */; };
@@ -197,6 +198,12 @@
 		12DC6EDF16B489D9000D47FC /* Standings Cell Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Blue.png"; sourceTree = "<group>"; };
 		6104C69B16C878BB00D3FA1F /* esportsdeskpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esportsdeskpro.png; sourceTree = "<group>"; };
 		6104C69D16C878C200D3FA1F /* esportsdeskpro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "esportsdeskpro@2x.png"; sourceTree = "<group>"; };
+		6118F12316D1F86100413DCD /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = ../GAI.h; sourceTree = "<group>"; };
+		6118F12416D1F86100413DCD /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = ../GAITrackedViewController.h; sourceTree = "<group>"; };
+		6118F12516D1F86100413DCD /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = ../GAITracker.h; sourceTree = "<group>"; };
+		6118F12616D1F86100413DCD /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransaction.h; path = ../GAITransaction.h; sourceTree = "<group>"; };
+		6118F12716D1F86100413DCD /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransactionItem.h; path = ../GAITransactionItem.h; sourceTree = "<group>"; };
+		6118F12816D1F86100413DCD /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = ../libGoogleAnalytics.a; sourceTree = "<group>"; };
 		6140415016A8AA4B0075A72A /* AthleticsTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsTabBarViewController.h; sourceTree = "<group>"; };
 		6140415116A8AA4B0075A72A /* AthleticsTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsTabBarViewController.m; sourceTree = "<group>"; };
 		6190D14716A369CE0012E214 /* AthleticsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsHomeViewController.h; sourceTree = "<group>"; };
@@ -389,6 +396,7 @@
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				12197FF916CF013200C7CF4C /* Parse.framework in Frameworks */,
+				6118F12916D1F86100413DCD /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +500,12 @@
 				66F97E8414F0828B00D33150 /* Images */,
 				66F97E8514F082F000D33150 /* Files */,
 				66C6D37B1491948C003C95DB /* Supporting Files */,
+				6118F12316D1F86100413DCD /* GAI.h */,
+				6118F12416D1F86100413DCD /* GAITrackedViewController.h */,
+				6118F12516D1F86100413DCD /* GAITracker.h */,
+				6118F12616D1F86100413DCD /* GAITransaction.h */,
+				6118F12716D1F86100413DCD /* GAITransactionItem.h */,
+				6118F12816D1F86100413DCD /* libGoogleAnalytics.a */,
 				66F97E8014F0808400D33150 /* AboutUsViewController.h */,
 				66F97E8114F0808400D33150 /* AboutUsViewController.m */,
 				66CE21F314AECD0300F6BF0D /* AnnouncementsDetailViewController.h */,
@@ -514,7 +528,6 @@
 				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
 				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
 				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
-				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
 				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
 				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
 				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
@@ -565,6 +578,7 @@
 		66C6D37B1491948C003C95DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
 				D0152A1414C2981200D87C1D /* assets */,
 				66C6D37D1491948C003C95DB /* InfoPlist.strings */,
 				121166AA15F6D365004C32FB /* Sentinel-Info.plist */,
@@ -949,6 +963,7 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 					"\"$(SRCROOT)/Sentinel\"",
 					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1031,6 +1046,7 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 					"\"$(SRCROOT)/Sentinel\"",
 					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1059,6 +1075,7 @@
 					"\"$(SRCROOT)/TestFlightSDK0\"",
 					"\"$(SRCROOT)/Sentinel\"",
 					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
+					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

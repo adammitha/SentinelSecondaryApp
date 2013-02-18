@@ -8,6 +8,7 @@
 
 #import "SentinelAppDelegate.h"
 #import <Parse/Parse.h>
+#import "GAI.h"
 
 @implementation SentinelAppDelegate
 
@@ -17,7 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-        // Override point for customization after application launch.
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    // Optional: set debug to YES for extra debugging information.
+    [GAI sharedInstance].debug = YES;
+    // Create tracker instance.
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-38572085-1"];
+    [tracker setSessionTimeout:60];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     NSData *blockRotation = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
     NSError *error;
@@ -45,8 +54,6 @@
         rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
         rotationNotification.alertBody = [NSString stringWithFormat:@"Block Rotation: %@-%@",[todayDict objectForKey:@"day"], [todayDict objectForKey:@"rotation"]];
         [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
-      
-        
         
     }
     return YES;
@@ -58,9 +65,13 @@
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
      UIRemoteNotificationTypeAlert|
      UIRemoteNotificationTypeSound];
+  
+    
+    // Override point for customization after application launch.
     
     return 0;
 }
+
 
 
 - (void)application:(UIApplication *)application
