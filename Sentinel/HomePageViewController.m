@@ -95,7 +95,10 @@
         self.athleticsButton.frame = CGRectMake(-3, 479, 326, 62);
         self.athleticsLabel.frame = CGRectMake(7, 495, 201, 34);
         self.aboutButton.frame = CGRectMake(96, 544, 128, 20);
+        
+        
     }
+    
 }
 
 /*- (void)requestFinished:(ASIHTTPRequest *)request
