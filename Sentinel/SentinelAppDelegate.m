@@ -7,13 +7,17 @@
 //
 
 #import "SentinelAppDelegate.h"
+#import <Parse/Parse.h>
+
 @implementation SentinelAppDelegate
+
 
 @synthesize window = _window;
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+        // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     NSData *blockRotation = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
     NSError *error;
@@ -37,14 +41,52 @@
         [components setHour:7];
         [components setMinute:0];
         [components setSecond:0];
-        rotationNotification.fireDate = [today dateByAddingTimeInterval:10];
+        rotationNotification.fireDate = [gregorian dateFromComponents:components];
         rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
         rotationNotification.alertBody = [NSString stringWithFormat:@"Block Rotation: %@-%@",[todayDict objectForKey:@"day"], [todayDict objectForKey:@"rotation"]];
         [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
+      
+        
+        
     }
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{  [Parse setApplicationId:@"xlapsbKC21vsScp5uIHfS0ThFYQ5EM7Ow7FzPrkS"
+                 clientKey:@"4alU2ROPszQIkf7pbi3SZhMEAB3vYoqQzc4tLoBR"];
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    
+    return 0;
+}
+
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
+- (void)application:(UIApplication *)application
+didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    if ([error code] == 3010) {
+        NSLog(@"Push notifications don't work in the simulator!");
+    } else {
+        NSLog(@"didFailToRegisterForRemoteNotificationsWithError: %@", error);
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
@@ -83,5 +125,7 @@
      See also applicationDidEnterBackground:.
      */
 }
+
+
 
 @end
