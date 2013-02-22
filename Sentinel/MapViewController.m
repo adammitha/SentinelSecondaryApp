@@ -11,6 +11,7 @@
 @implementation MapViewController
 @synthesize webView;
 @synthesize progressHUD;
+@synthesize mapView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,38 +50,35 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.webView.scalesPageToFit = YES;
-    self.webView.delegate = self;
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://g.co/maps/75nh6"]]];
-    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.progressHUD.labelText = @"Loading...";
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:49.346296 longitude:-123.149351 zoom:16];
+    mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
+    mapView.myLocationEnabled = YES;
+    [self.view addSubview:mapView];
+    GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
+    options.position = CLLocationCoordinate2DMake(49.346296, -123.149351);
+    options.title = @"Sentinel Secondary School";
+    options.snippet = @"West Vancouver, BC";
+    [mapView addMarkerWithOptions:options];
 }
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
-- (void)viewDidLoad
-{    
-    /*[super viewDidLoad];
-    self.title = @"Map";
-    MKCoordinateRegion region;
-    region.center.latitude = 49.3462955;
-    region.center.longitude = -123.1493511;
-    region.span.latitudeDelta = .01;
-    region.span.longitudeDelta = .01;
-    [self.mapView setRegion:region];
-    CLLocationCoordinate2D coordinate;
-    coordinate.latitude = 49.3462955;
-    coordinate.longitude = -123.1493511;
-    Location *annotation = [[Location alloc] initWithName:@"Sentinel" address:@"1250 Chartwell Dr, West Vancouver" coordinate:coordinate];
-    [self.mapView addAnnotation:annotation];
-   */
+- (void)launchMaps
+{
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"comgooglemaps://?q=1250+Charwell+Drive,+West+Vancouver+BC"]];
+    } else {
+        NSString *theurl = [NSString stringWithFormat:@"http://maps.apple.com?q=1250+Chartwell+Drive,+West+Vancouver+BC"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:theurl]];
+    }
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+- (void)viewDidLoad
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to Google Maps." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [alert show];
-    NSLog(@"Error: %@", [error localizedDescription]);
+    self.title = @"Maps";
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchMaps)];
+    self.navigationItem.rightBarButtonItem = item;
 }
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView 
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];

@@ -314,40 +314,9 @@
                     <view key="view" contentMode="scaleToFill" id="1eW-Zz-Blb">
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="cYC-yT-55C">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="aEe-gg-PVU">
-                                <rect key="frame" x="0.0" y="343" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="npx-tv-fhI"/>
-                                    <barButtonItem image="Home-arrow2.png" width="17" style="plain" id="nN3-nE-wIr">
-                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="LIy-PG-yVF" id="mat-uD-cmP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="164" style="plain" systemItem="fixedSpace" id="n5t-aT-fkF"/>
-                                    <barButtonItem tag="1" image="Home-arrow.png" width="17" style="plain" id="vYb-Ol-VZM">
-                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="LIy-PG-yVF" id="ZKM-5M-qjJ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Qxn-qm-lmN"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="07-map-marker.png" id="Oea-bq-tGW"/>
-                    <connections>
-                        <outlet property="webView" destination="cYC-yT-55C" id="A4x-q3-3Be"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJn-WC-QAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

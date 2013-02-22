@@ -8,7 +8,7 @@
 
 #import "SentinelAppDelegate.h"
 #import <Parse/Parse.h>
-
+#import <GoogleMaps/GoogleMaps.h>
 @implementation SentinelAppDelegate
 
 
@@ -19,6 +19,7 @@
 {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    [GMSServices provideAPIKey:@"AIzaSyC-8XytZ0Ph0C3rj1KHGU3BiGj-C7lG6LA"];
     return YES;
 }
 
