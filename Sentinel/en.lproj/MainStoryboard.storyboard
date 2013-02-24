@@ -380,7 +380,7 @@
         <!--Athletics Detail View Controller-->
         <scene sceneID="9VZ-nq-5Pc">
             <objects>
-                <viewController id="C1N-7y-Ofh" customClass="AthleticsDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="athleticsDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C1N-7y-Ofh" customClass="AthleticsDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I8l-0d-UU7">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -391,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StT-Rl-kuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-790" y="999"/>
+            <point key="canvasLocation" x="552" y="741"/>
         </scene>
         <!--Standings View Controller - Standings-->
         <scene sceneID="uSs-DS-tll">
@@ -411,7 +411,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQb-qK-gVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="741"/>
+            <point key="canvasLocation" x="1093" y="749"/>
         </scene>
         <!--Twitter View Controller - Twitter-->
         <scene sceneID="KSD-v4-9b7">
@@ -734,7 +734,7 @@
         <image name="bird_32_black.png" width="32" height="32"/>
     </resources>
     <classes>
-        <class className="AboutUsViewController" superclassName="UIViewController">
+        <class className="AboutUsViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutUsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="goHome:"/>
@@ -806,7 +806,7 @@
         <class className="StandingsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StandingsViewController.h"/>
         </class>
-        <class className="TwitterViewController" superclassName="UIViewController">
+        <class className="TwitterViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:"/>

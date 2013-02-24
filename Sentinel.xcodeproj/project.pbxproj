@@ -984,9 +984,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK0\"",
-					"\"$(SRCROOT)/Sentinel\"",
-					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1079,9 +1076,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK0\"",
-					"\"$(SRCROOT)/Sentinel\"",
-					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1108,9 +1102,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK0\"",
-					"\"$(SRCROOT)/Sentinel\"",
-					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
