@@ -1073,11 +1073,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Sentinel\"",
-<<<<<<< HEAD
-=======
-					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
-					"\"$(SRCROOT)\"",
->>>>>>> 27a802aa40e3bbe314cef3b0a60d06c8ebaa8cc8
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1104,11 +1099,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Sentinel\"",
-<<<<<<< HEAD
-=======
-					"\"$(SRCROOT)/../../../../Desktop/TestFlightSDK1.1\"",
-					"\"$(SRCROOT)\"",
->>>>>>> 27a802aa40e3bbe314cef3b0a60d06c8ebaa8cc8
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
