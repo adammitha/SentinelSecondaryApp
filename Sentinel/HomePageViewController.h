@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface HomePageViewController : UIViewController
+@interface HomePageViewController : GAITrackedViewController
 {
     UILabel *statusLabel;
 }

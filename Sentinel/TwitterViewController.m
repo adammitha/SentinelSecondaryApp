@@ -54,6 +54,7 @@
     [super viewDidLoad];
     self.title = @"Principal's Tweets";
     self.webView.delegate = self;
+       self.trackedViewName = @"Twitter View";
 }
 
 - (void)viewWillAppear:(BOOL)animated

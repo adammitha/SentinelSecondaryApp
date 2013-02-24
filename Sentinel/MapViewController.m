@@ -73,6 +73,7 @@
     Location *annotation = [[Location alloc] initWithName:@"Sentinel" address:@"1250 Chartwell Dr, West Vancouver" coordinate:coordinate];
     [self.mapView addAnnotation:annotation];
    */
+       self.trackedViewName = @"Map View";
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error

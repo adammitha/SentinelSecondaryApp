@@ -84,6 +84,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.trackedViewName = @"Home Page View";
     self.about.backgroundColor = [UIColor clearColor];
     CGRect bounds = [[UIScreen mainScreen] bounds];
     if (bounds.size.height == 568) {
@@ -95,7 +96,6 @@
         self.athleticsButton.frame = CGRectMake(-3, 479, 326, 62);
         self.athleticsLabel.frame = CGRectMake(7, 495, 201, 34);
         self.aboutButton.frame = CGRectMake(96, 544, 128, 20);
-        
         
     }
     

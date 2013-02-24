@@ -67,6 +67,7 @@
     self.navigationItem.rightBarButtonItem = item;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.siteLink]]];
     // Do any additional setup after loading the view from its nib.
+       self.trackedViewName = @"Website Detail View";
 }
 
 - (void)launchURL

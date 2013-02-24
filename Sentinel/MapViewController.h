@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Mapkit/Mapkit.h>
 #import "MBProgressHUD.h"
-@interface MapViewController : UIViewController <UIWebViewDelegate>
+#import "GAITrackedViewController.h"
+
+@interface MapViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (IBAction)buttonPressed:(UIBarButtonItem *)sender;

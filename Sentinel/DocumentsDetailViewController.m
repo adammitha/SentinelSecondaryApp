@@ -51,6 +51,7 @@
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:_filePath]]];
+    self.trackedViewName = @"Documents Detail View";
     // Do any additional setup after loading the view from its nib.
 }
 

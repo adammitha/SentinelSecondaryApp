@@ -79,6 +79,7 @@
    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.eventLink]]];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
+    self.trackedViewName = @"Events Detail View";
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
