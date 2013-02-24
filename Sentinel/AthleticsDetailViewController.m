@@ -35,12 +35,11 @@
     return self;
 }
 - (void)oneFingerTwoTaps
-    
-    {
-        //implement
-        NSLog(@"Action: One finger, two taps");
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.esportsdeskpro.com"]];
-    }
+{
+    //implement
+    NSLog(@"Action: One finger, two taps");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.esportsdeskpro.com"]];
+}
 - (void)swipeDidOccur
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
@@ -142,9 +141,12 @@
 {
     //stuff
     NSString *theaddress = [self.address stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"comgooglemaps://?q=%@",theaddress]]];
+    } else {
     NSString *theurl = [NSString stringWithFormat:@"http://maps.apple.com?q=%@",theaddress];
-    NSLog(@"%@",theurl);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:theurl]];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated

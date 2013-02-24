@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <Mapkit/Mapkit.h>
+#import <GoogleMaps/GoogleMaps.h>
 #import "MBProgressHUD.h"
 #import "GAITrackedViewController.h"
 
 @interface MapViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+@property (nonatomic, strong) GMSMapView *mapView;
 - (IBAction)buttonPressed:(UIBarButtonItem *)sender;
+- (void)launchMaps;
 @end

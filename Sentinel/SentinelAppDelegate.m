@@ -9,7 +9,7 @@
 #import "SentinelAppDelegate.h"
 #import <Parse/Parse.h>
 #import "GAI.h"
-
+#import <GoogleMaps/GoogleMaps.h>
 @implementation SentinelAppDelegate
 
 
@@ -18,44 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Optional: automatically send uncaught exceptions to Google Analytics.
-    [GAI sharedInstance].trackUncaughtExceptions = YES;
-    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-    [GAI sharedInstance].dispatchInterval = 20;
-    // Optional: set debug to YES for extra debugging information.
-    [GAI sharedInstance].debug = YES;
-    // Create tracker instance.
-    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-38572085-1"];
-    [tracker setSessionTimeout:60];
+    // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
-    NSData *blockRotation = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
-    NSError *error;
-    NSDictionary *rotationsDict = [NSJSONSerialization JSONObjectWithData:blockRotation options:kNilOptions error:&error];
-    NSDate *today = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateString = [formatter stringFromDate:today];
-    NSDictionary *todayDict = [rotationsDict objectForKey:dateString];
-    NSDate *yesterday = [today dateByAddingTimeInterval:-86400];
-    NSString *yesterdayDateString = [formatter stringFromDate:yesterday];
-    NSDictionary *yesterdayDict = [rotationsDict objectForKey:yesterdayDateString];
-    BOOL rotationIsDifferent = ![[yesterdayDict objectForKey:@"day"] isEqualToString:[todayDict objectForKey:@"day"]];
-    [formatter setDateFormat:@"eeee"];
-    NSString *weekDay = [formatter stringFromDate:today];
-    if ([weekDay isEqualToString:@"Monday"] || rotationIsDifferent) {
-        NSLog(@"%d",rotationIsDifferent);
-        UILocalNotification *rotationNotification = [[UILocalNotification alloc] init];
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:today];
-        [components setHour:7];
-        [components setMinute:0];
-        [components setSecond:0];
-        rotationNotification.fireDate = [gregorian dateFromComponents:components];
-        rotationNotification.timeZone = [NSTimeZone defaultTimeZone];
-        rotationNotification.alertBody = [NSString stringWithFormat:@"Block Rotation: %@-%@",[todayDict objectForKey:@"day"], [todayDict objectForKey:@"rotation"]];
-        [[UIApplication sharedApplication] scheduleLocalNotification:rotationNotification];
-        
-    }
+    [GMSServices provideAPIKey:@"AIzaSyC-8XytZ0Ph0C3rj1KHGU3BiGj-C7lG6LA"];
     return YES;
 }
 
