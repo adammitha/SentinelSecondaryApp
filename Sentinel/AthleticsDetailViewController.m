@@ -134,6 +134,7 @@
     [request0 startAsynchronous];
     //NSLog(@"%@", standingsArray);
     //[scheduleTableView reloadData];
+       self.trackedViewName = @"Athletics Detail View";
 }
 
 - (void)launchMaps

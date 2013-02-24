@@ -67,6 +67,10 @@
 }
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
+- (void)viewDidLoad
+{    
+	self.trackedViewName = @"Map View";
+}
 - (void)launchMaps
 {
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {

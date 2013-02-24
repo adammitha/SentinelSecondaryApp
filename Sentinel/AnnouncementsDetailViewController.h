@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
-@interface AnnouncementsDetailViewController : UIViewController <UIWebViewDelegate>
+#import "GAITrackedViewController.h"
+
+@interface AnnouncementsDetailViewController : GAITrackedViewController <UIWebViewDelegate>
 
 - (void)launchURL;
 @property (nonatomic, strong) NSString *announcementTitle;

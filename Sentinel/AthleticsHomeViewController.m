@@ -59,7 +59,8 @@
     }
     NSError *error;
     athleticsArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    [athleticsTableView reloadData];   
+    [athleticsTableView reloadData];
+    self.trackedViewName = @"Athletics Home View";
 
     
      

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "GAITrackedViewController.h"
 
-@interface DocumentsDetailViewController : UIViewController <UIWebViewDelegate>
+
+@interface DocumentsDetailViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSString *fileName;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;

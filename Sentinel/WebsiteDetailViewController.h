@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
+
 @class MBProgressHUD;
-@interface WebsiteDetailViewController : UIViewController <UIWebViewDelegate>
+@interface WebsiteDetailViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (nonatomic, strong) NSString *teacherName;
 @property (nonatomic, strong) NSString *siteLink;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;

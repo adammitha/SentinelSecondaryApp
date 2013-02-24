@@ -67,6 +67,7 @@
     [scroller setScrollEnabled:NO];
     [scroller setContentSize:CGSizeMake(320, 450)];
     [super viewDidLoad];
+    self.trackedViewName = @"Documents View";
 }
 
 

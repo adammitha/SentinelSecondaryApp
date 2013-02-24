@@ -8,6 +8,7 @@
 
 #import "SentinelAppDelegate.h"
 #import <Parse/Parse.h>
+#import "GAI.h"
 #import <GoogleMaps/GoogleMaps.h>
 @implementation SentinelAppDelegate
 
@@ -31,9 +32,13 @@
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
      UIRemoteNotificationTypeAlert|
      UIRemoteNotificationTypeSound];
+  
+    
+    // Override point for customization after application launch.
     
     return 0;
 }
+
 
 
 - (void)application:(UIApplication *)application
