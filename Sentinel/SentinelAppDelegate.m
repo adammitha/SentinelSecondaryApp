@@ -20,6 +20,8 @@
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     [GMSServices provideAPIKey:@"AIzaSyC-8XytZ0Ph0C3rj1KHGU3BiGj-C7lG6LA"];
+    //NSDictionary *notifPayload = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    //NSString *alertString = [[notifPayload objectForKey:@"aps"] objectForKey:@"alert"];
     return YES;
 }
 

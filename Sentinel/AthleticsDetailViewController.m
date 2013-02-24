@@ -25,7 +25,7 @@
 @synthesize detailView;
 @synthesize homeTeamLabel,awayTeamLabel,dateTimeLabel,locationLabel;
 @synthesize address;
-@synthesize request;
+@synthesize request0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -129,9 +129,9 @@
     [self.view addSubview:detailView];
     //NSLog(@"%@", standingsArray);
 
-    request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
-    [request setDelegate:self];
-    [request startAsynchronous];
+    request0 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
+    [request0 setDelegate:self];
+    [request0 startAsynchronous];
     //NSLog(@"%@", standingsArray);
     //[scheduleTableView reloadData];
 }
@@ -151,7 +151,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [request cancel];
+    [request0 clearDelegatesAndCancel];
     toolbar.hidden = YES;
 }
 

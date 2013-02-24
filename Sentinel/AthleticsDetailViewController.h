@@ -24,7 +24,7 @@
 @property (nonatomic, strong) UILabel *dateTimeLabel;
 @property (nonatomic, strong) UILabel *locationLabel;
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) ASIHTTPRequest *request;
+@property (nonatomic, strong) ASIHTTPRequest *request0;
 - (void)launchMaps;
 - (void)oneFingerTwoTaps;
 - (void)swipeDidOccur;
