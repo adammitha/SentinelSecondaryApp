@@ -750,6 +750,7 @@
         <class className="AthleticsHomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsHomeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="outlet" name="athleticsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
@@ -767,6 +768,7 @@
         <class className="FeedbackViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedbackViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="action" name="feedback:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>

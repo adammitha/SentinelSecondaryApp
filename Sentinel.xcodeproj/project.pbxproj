@@ -35,6 +35,7 @@
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77816B3587900C36986 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
+		12DAE65216DAD2E7008C908C /* Center Logo outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DAE65116DAD2E7008C908C /* Center Logo outline.png */; };
 		12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */; };
 		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
 		12DC6EDC16B488CB000D47FC /* Standings Cell Dark White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */; };
@@ -198,6 +199,7 @@
 		12B8A77616B3585F00C36986 /* GANTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		12B8A77716B3585F00C36986 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12DAE65116DAD2E7008C908C /* Center Logo outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Center Logo outline.png"; sourceTree = "<group>"; };
 		12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White2.png"; sourceTree = "<group>"; };
 		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
 		12DC6EDB16B488CB000D47FC /* Standings Cell Dark White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell Dark White2.png"; sourceTree = "<group>"; };
@@ -662,6 +664,7 @@
 				66F90C9A14FADA3400FDBF5F /* bird_32_black@2x.png */,
 				122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */,
 				66490CEB14CA083000F99B89 /* Black Wood Background3.png */,
+				12DAE65116DAD2E7008C908C /* Center Logo outline.png */,
 				66490CEF14CA0B4100F99B89 /* Center Logo-2.png */,
 				66F97E8A14F090E200D33150 /* Created_Text.png */,
 				D03F8A6C14E7B741008A8F33 /* Default@2x.png */,
@@ -861,6 +864,7 @@
 				6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */,
 				66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */,
 				667DFE5A16D716BD00BE2F7F /* GoogleMaps.bundle in Resources */,
+				12DAE65216DAD2E7008C908C /* Center Logo outline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,7 +942,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -996,7 +1000,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -1031,7 +1035,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
