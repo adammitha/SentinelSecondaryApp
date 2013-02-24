@@ -744,18 +744,17 @@
         <class className="AnnouncementsViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnnouncementsViewController.h"/>
         </class>
-        <class className="AthleticsDetailViewController" superclassName="UIViewController">
+        <class className="AthleticsDetailViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsDetailViewController.h"/>
         </class>
-        <class className="AthleticsHomeViewController" superclassName="UIViewController">
+        <class className="AthleticsHomeViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsHomeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="outlet" name="athleticsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
-        <class className="DocumentsViewController" superclassName="UIViewController">
+        <class className="DocumentsViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DocumentsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:"/>
@@ -768,10 +767,12 @@
         <class className="FeedbackViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedbackViewController.h"/>
             <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
                 <relationship kind="action" name="feedback:"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
+        </class>
+        <class className="GAITrackedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GAITrackedViewController.h"/>
         </class>
         <class className="HomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
@@ -789,7 +790,7 @@
                 <relationship kind="outlet" name="rotationLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="MapViewController" superclassName="UIViewController">
+        <class className="MapViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:" candidateClass="UIBarButtonItem"/>

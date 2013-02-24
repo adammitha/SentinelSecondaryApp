@@ -10,7 +10,9 @@
 #import <Mapkit/Mapkit.h>
 #import <GoogleMaps/GoogleMaps.h>
 #import "MBProgressHUD.h"
-@interface MapViewController : UIViewController <UIWebViewDelegate>
+#import "GAITrackedViewController.h"
+
+@interface MapViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 @property (nonatomic, strong) GMSMapView *mapView;

@@ -55,6 +55,7 @@
     self.progressHUD.labelText = @"Loading...";
     //swipe     
     [super viewDidLoad];
+    self.trackedViewName = @"Announcements Detail View";
     // Do any additional setup after loading the view from its nib.
 }
 

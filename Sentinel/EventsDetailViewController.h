@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 #import "MBProgressHUD.h"
-@interface EventsDetailViewController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate>
+#import "GAITrackedViewController.h"
+
+@interface EventsDetailViewController : GAITrackedViewController <UIWebViewDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) NSString *eventTitle;
 @property (strong, nonatomic) NSString *eventDescription;

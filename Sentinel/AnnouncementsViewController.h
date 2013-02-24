@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PullRefreshTableViewController.h"
+
 @class MBProgressHUD;
 @interface AnnouncementsViewController : PullRefreshTableViewController
 

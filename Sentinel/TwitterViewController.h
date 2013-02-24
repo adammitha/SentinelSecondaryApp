@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
+
 @class MBProgressHUD;
-@interface TwitterViewController : UIViewController <UIWebViewDelegate>
+@interface TwitterViewController : GAITrackedViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (IBAction)buttonPressed:(id)sender;

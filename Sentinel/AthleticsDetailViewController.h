@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 @class ASIHTTPRequest;
-@interface AthleticsDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AthleticsDetailViewController : GAITrackedViewController <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSString *codekey;
 @property (nonatomic, strong) UITableView *standingsTableView;
 @property (nonatomic, strong) UITableView *scheduleTableView;

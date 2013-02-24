@@ -74,6 +74,7 @@
 
 - (void)viewDidLoad
 {
+    self.trackedViewName = @"Map View";
     self.title = @"Maps";
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchMaps)];
     self.navigationItem.rightBarButtonItem = item;

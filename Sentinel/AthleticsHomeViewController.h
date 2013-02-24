@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#import "GAITrackedViewController.h"
 
-@interface AthleticsHomeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AthleticsHomeViewController : GAITrackedViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITableView *athleticsTableView;
 @property (nonatomic, strong)

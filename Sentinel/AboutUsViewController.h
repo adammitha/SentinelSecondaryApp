@@ -6,9 +6,11 @@
 //  Copyright (c) 2012 Sentinel Secondary School. All rights reserved.
 //
 
+#import "GAITrackedViewController.h"
 #import <UIKit/UIKit.h>
 
-@interface AboutUsViewController : UIViewController
+
+@interface AboutUsViewController : GAITrackedViewController
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)goHome:(id)sender;
 @end
