@@ -22,7 +22,9 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     [GMSServices provideAPIKey:@"AIzaSyC-8XytZ0Ph0C3rj1KHGU3BiGj-C7lG6LA"];
     return YES;
+   
 }
+
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {  [Parse setApplicationId:@"xlapsbKC21vsScp5uIHfS0ThFYQ5EM7Ow7FzPrkS"
@@ -33,9 +35,18 @@
   
     
     // Override point for customization after application launch.
-    
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    // Optional: set debug to YES for extra debugging information.
+    [GAI sharedInstance].debug = YES;
+    // Create tracker instance.
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-38572085-1"];
+
     return 0;
 }
+
 
 
 
