@@ -62,7 +62,7 @@
     if (bounds.size.height == 568) {
         self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 338);
     } else {
-        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 242);
+        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 243);
     }
     NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];

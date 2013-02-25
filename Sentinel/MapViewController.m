@@ -51,7 +51,12 @@
 {
     [super viewWillAppear:animated];
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:49.346296 longitude:-123.149351 zoom:16];
-    mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    if (screenBounds.size.height == 568) {
+        mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 475) camera:camera];
+    } else {
+        mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
+    }
     mapView.myLocationEnabled = YES;
     [self.view addSubview:mapView];
     GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
@@ -77,6 +82,7 @@
 {
     self.title = @"Maps";
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchMaps)];
+    self.trackedViewName = @"Map View";
     self.navigationItem.rightBarButtonItem = item;
     self.trackedViewName = @"Map View";
 
