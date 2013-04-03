@@ -67,6 +67,7 @@
 }
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
+
 - (void)launchMaps
 {
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {
@@ -84,6 +85,8 @@
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(launchMaps)];
     self.trackedViewName = @"Map View";
     self.navigationItem.rightBarButtonItem = item;
+    self.trackedViewName = @"Map View";
+
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView 
