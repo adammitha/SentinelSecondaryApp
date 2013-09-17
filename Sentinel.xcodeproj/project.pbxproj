@@ -26,8 +26,8 @@
 		122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */; };
 		122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */; };
 		122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */; };
-		1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1236475315F46EF30080D60D /* BlockRotation2013.txt */; };
 		124981B116B4B14300195C2B /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B016B4B14300195C2B /* mapicon.png */; };
+		1253D00C17E7D78700E52987 /* BlockRotation2014.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00B17E7D78700E52987 /* BlockRotation2014.txt */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
 		128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128FE6AB15F3050000EFA893 /* Important Dates.pdf */; };
@@ -111,7 +111,6 @@
 		66C6D3941491948C003C95DB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3931491948C003C95DB /* second.png */; };
 		66C6D3961491948C003C95DB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C6D3951491948C003C95DB /* second@2x.png */; };
 		66C6D3A4149199D1003C95DB /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D3A3149199D1003C95DB /* EventsViewController.m */; };
-		66C8051F14EDA2E900DD312D /* rotations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C8051E14EDA2E900DD312D /* rotations.txt */; };
 		66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C8052114EDA5A500DD312D /* CoreText.framework */; };
 		66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */; };
 		66C9736616A9398B0020BFEA /* AthleticsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9736516A9398B0020BFEA /* AthleticsDetailViewController.m */; };
@@ -189,8 +188,8 @@
 		122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scheduledetailimage.png; sourceTree = "<group>"; };
 		122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scheduledetailimage@2x.png"; sourceTree = "<group>"; };
 		122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5 Black Wood Background3.png"; sourceTree = "<group>"; };
-		1236475315F46EF30080D60D /* BlockRotation2013.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2013.txt; sourceTree = "<group>"; };
 		124981B016B4B14300195C2B /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
+		1253D00B17E7D78700E52987 /* BlockRotation2014.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2014.txt; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
 		128FE6AB15F3050000EFA893 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
@@ -246,7 +245,6 @@
 		6614A81514B9105100091A14 /* CouncilDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilDetailViewController.h; sourceTree = "<group>"; };
 		6614A81614B9105100091A14 /* CouncilDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilDetailViewController.m; sourceTree = "<group>"; };
 		6614A81714B9105100091A14 /* CouncilDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouncilDetailViewController.xib; sourceTree = "<group>"; };
-		66160AE014C8FD9E009B809C /* rotation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotation.txt; sourceTree = "<group>"; };
 		661A6D6816A9E05500EA4B8A /* Winter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Winter.txt; sourceTree = "<group>"; };
 		661A6D6B16A9E08E00EA4B8A /* Spring.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spring.txt; sourceTree = "<group>"; };
 		661A6D6D16A9EAA800EA4B8A /* Timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Timetable.pdf; sourceTree = "<group>"; };
@@ -299,7 +297,6 @@
 		66C6D3951491948C003C95DB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		66C6D3A2149199D1003C95DB /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		66C6D3A3149199D1003C95DB /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
-		66C8051E14EDA2E900DD312D /* rotations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rotations.txt; sourceTree = "<group>"; };
 		66C8052114EDA5A500DD312D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		66C8052614EDA8F100DD312D /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker@2x.png"; sourceTree = "<group>"; };
 		66C9736416A9398B0020BFEA /* AthleticsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsDetailViewController.h; sourceTree = "<group>"; };
@@ -695,15 +692,13 @@
 			children = (
 				122C50E5163356040033F322 /* Athletics */,
 				66D209FD14EDDA6B001E8CC2 /* description.html */,
-				66C8051E14EDA2E900DD312D /* rotations.txt */,
 				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
 				12A514FF15F557260022E128 /* emails.txt */,
 				128C59CF15F167C80095DD5C /* Course Book.pdf */,
 				1223FA0115DE012D00B22BDF /* Calendar.pdf */,
 				661A6D6D16A9EAA800EA4B8A /* Timetable.pdf */,
 				128FE6AB15F3050000EFA893 /* Important Dates.pdf */,
-				1236475315F46EF30080D60D /* BlockRotation2013.txt */,
-				66160AE014C8FD9E009B809C /* rotation.txt */,
+				1253D00B17E7D78700E52987 /* BlockRotation2014.txt */,
 				66F97E9414F090F900D33150 /* about_us.html */,
 			);
 			name = Files;
@@ -810,7 +805,6 @@
 				D0BD6F9114E7550F007986C6 /* DocumentsDetailViewController.xib in Resources */,
 				D0BD6F9514E75D35007986C6 /* Gym Schedule.pdf in Resources */,
 				D03F8A6D14E7B742008A8F33 /* Default@2x.png in Resources */,
-				66C8051F14EDA2E900DD312D /* rotations.txt in Resources */,
 				66C8052714EDA8F100DD312D /* 07-map-marker@2x.png in Resources */,
 				66D209F014EDD5DE001E8CC2 /* 179-notepad@2x.png in Resources */,
 				66D209F214EDD62B001E8CC2 /* 53-house@2x.png in Resources */,
@@ -832,7 +826,6 @@
 				1223FA0215DE012D00B22BDF /* Calendar.pdf in Resources */,
 				128C59D015F167C80095DD5C /* Course Book.pdf in Resources */,
 				128FE6AC15F3050000EFA893 /* Important Dates.pdf in Resources */,
-				1236475415F46EF30080D60D /* BlockRotation2013.txt in Resources */,
 				127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */,
 				12A5150015F557260022E128 /* emails.txt in Resources */,
 				121166A815F6D2FF004C32FB /* Icon2013.png in Resources */,
@@ -865,6 +858,7 @@
 				66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */,
 				667DFE5A16D716BD00BE2F7F /* GoogleMaps.bundle in Resources */,
 				12DAE65216DAD2E7008C908C /* Center Logo outline.png in Resources */,
+				1253D00C17E7D78700E52987 /* BlockRotation2014.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

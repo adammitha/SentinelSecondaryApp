@@ -57,7 +57,7 @@
     //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setDelegate:self];
     //[request startAsynchronous];
-    NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2013" ofType:@"txt"]];
+    NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2014" ofType:@"txt"]];
     NSError *error;
     self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     NSDate *date = [NSDate date];
