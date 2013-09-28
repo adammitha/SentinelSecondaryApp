@@ -53,6 +53,7 @@
 		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
+		6605186B17F7214700423DCD /* Fall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6605186A17F7214700423DCD /* Fall.txt */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
 		660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30914EE1B5100491668 /* TwitterViewController.m */; };
@@ -226,6 +227,7 @@
 		6190D15516A39E500012E214 /* Athletics Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Athletics Banner.png"; sourceTree = "<group>"; };
 		6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingsCustomCell.xib; sourceTree = "<group>"; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
+		6605186A17F7214700423DCD /* Fall.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fall.txt; sourceTree = "<group>"; };
 		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
 		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
 		660DE30614EE1ACD00491668 /* bird_32_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_32_black.png; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 		122C50E5163356040033F322 /* Athletics */ = {
 			isa = PBXGroup;
 			children = (
+				6605186A17F7214700423DCD /* Fall.txt */,
 				661A6D6816A9E05500EA4B8A /* Winter.txt */,
 				661A6D6B16A9E08E00EA4B8A /* Spring.txt */,
 				122C50E7163356140033F322 /* sports.txt */,
@@ -867,6 +870,7 @@
 				1253D01017E7DA6B00E52987 /* Important Dates.pdf in Resources */,
 				1253D01317E7E7F200E52987 /* Icon2014.png in Resources */,
 				1253D01417E7E7F200E52987 /* Iconsmall2014.png in Resources */,
+				6605186B17F7214700423DCD /* Fall.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
