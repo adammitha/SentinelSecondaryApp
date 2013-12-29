@@ -54,6 +54,7 @@
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
 		6605186B17F7214700423DCD /* Fall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6605186A17F7214700423DCD /* Fall.txt */; };
+		6605186D17F726C500423DCD /* constants.h in Resources */ = {isa = PBXBuildFile; fileRef = 6605186C17F726C500423DCD /* constants.h */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
 		660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30914EE1B5100491668 /* TwitterViewController.m */; };
@@ -228,6 +229,7 @@
 		6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingsCustomCell.xib; sourceTree = "<group>"; };
 		66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sentinel_Text_Logo.png; path = Sentinel/Sentinel_Text_Logo.png; sourceTree = SOURCE_ROOT; };
 		6605186A17F7214700423DCD /* Fall.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fall.txt; sourceTree = "<group>"; };
+		6605186C17F726C500423DCD /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		660DE30014EDF32600491668 /* StaffEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffEmailViewController.h; sourceTree = "<group>"; };
 		660DE30114EDF32700491668 /* StaffEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffEmailViewController.m; sourceTree = "<group>"; };
 		660DE30614EE1ACD00491668 /* bird_32_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_32_black.png; sourceTree = "<group>"; };
@@ -548,8 +550,9 @@
 				660F36E214C8EEEA00666214 /* DocumentsViewController.m */,
 				66CBDBC714A45523004FE748 /* EventsDetailViewController.h */,
 				66CBDBC814A45523004FE748 /* EventsDetailViewController.m */,
-				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
+				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
 				66C6D3A3149199D1003C95DB /* EventsViewController.m */,
+				66CBDBC914A45523004FE748 /* EventsDetailViewController.xib */,
 				66CE220614AF8ED100F6BF0D /* FeedbackViewController.h */,
 				66CE220714AF8ED100F6BF0D /* FeedbackViewController.m */,
 				660F36D414C8C0C000666214 /* HomePageViewController.h */,
@@ -599,7 +602,6 @@
 		66C6D37B1491948C003C95DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				66C6D3A2149199D1003C95DB /* EventsViewController.h */,
 				D0152A1414C2981200D87C1D /* assets */,
 				66C6D37D1491948C003C95DB /* InfoPlist.strings */,
 				121166AA15F6D365004C32FB /* Sentinel-Info.plist */,
@@ -701,6 +703,7 @@
 			children = (
 				122C50E5163356040033F322 /* Athletics */,
 				66D209FD14EDDA6B001E8CC2 /* description.html */,
+				6605186C17F726C500423DCD /* constants.h */,
 				D0BD6F9414E75D34007986C6 /* Gym Schedule.pdf */,
 				12A514FF15F557260022E128 /* emails.txt */,
 				128C59CF15F167C80095DD5C /* Course Book.pdf */,
@@ -755,7 +758,7 @@
 		66C6D3671491948C003C95DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sentinel Secondary School";
 			};
 			buildConfigurationList = 66C6D36A1491948C003C95DB /* Build configuration list for PBXProject "Sentinel" */;
@@ -871,6 +874,7 @@
 				1253D01317E7E7F200E52987 /* Icon2014.png in Resources */,
 				1253D01417E7E7F200E52987 /* Iconsmall2014.png in Resources */,
 				6605186B17F7214700423DCD /* Fall.txt in Resources */,
+				6605186D17F726C500423DCD /* constants.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,9 +952,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -960,9 +965,12 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -977,7 +985,6 @@
 		6664557314B25ECF009D0E87 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
@@ -1005,9 +1012,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1024,11 +1032,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
@@ -1040,9 +1052,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1052,9 +1065,12 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -1069,7 +1085,6 @@
 		66C6D39A1491948C003C95DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1098,7 +1113,6 @@
 		66C6D39B1491948C003C95DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (

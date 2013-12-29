@@ -48,13 +48,16 @@
     [athleticsTableView setDelegate:self];
     [athleticsTableView setDataSource:self];
     NSDate *today = [NSDate date];
-    NSDateFormatter *spring = [[NSDateFormatter alloc] init];
-    [spring setDateFormat:@"dd/MM/yyyy"];
-    NSDate *april = [spring dateFromString:@"01/04/2013"];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd/MM/yyyy"];
+    NSDate *winter = [formatter dateFromString:@"01/12/2013"];
+    NSDate *spring = [formatter dateFromString:@"01/04/2014"];
     NSData *data = [[NSData alloc] init];
-    if ([today earlierDate:april] == today) {
+    if ([today earlierDate:winter] == today) {
+        data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Fall" ofType:@"txt"]];
+    } else if ([today earlierDate:spring] == today && [today earlierDate:winter] == winter) {
         data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Winter" ofType:@"txt"]];
-    } else if ([today earlierDate:april] == april) {
+    } else if ([today earlierDate:spring] == spring) {
         data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Spring" ofType:@"txt"]];
     }
     NSError *error;
