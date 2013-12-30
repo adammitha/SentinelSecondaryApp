@@ -11,6 +11,7 @@
 #import "EventsDetailViewController.h"
 #import "MBProgressHUD.h"
 #import "HomePageViewController.h"
+#import "constants.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 @implementation EventsViewController
 @synthesize eventsArray = _eventsArray;
@@ -63,7 +64,7 @@
     [super viewDidLoad];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
-    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/events.php"];
+    NSURL *url = [NSURL URLWithString:kEventsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -79,7 +80,7 @@
 
 - (void)refresh
 {
-    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/events.php"];
+    NSURL *url = [NSURL URLWithString:kEventsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];

@@ -57,8 +57,6 @@
 		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
-		6605186B17F7214700423DCD /* Fall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6605186A17F7214700423DCD /* Fall.txt */; };
-		6605186D17F726C500423DCD /* constants.h in Resources */ = {isa = PBXBuildFile; fileRef = 6605186C17F726C500423DCD /* constants.h */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
 		660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30914EE1B5100491668 /* TwitterViewController.m */; };
