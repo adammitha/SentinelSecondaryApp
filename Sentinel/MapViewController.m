@@ -7,7 +7,6 @@
 //
 
 #import "MapViewController.h"
-#import <GoogleMaps/GoogleMaps.h>
 
 @implementation MapViewController {
     GMSMapView *mapview_;

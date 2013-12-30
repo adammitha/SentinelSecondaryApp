@@ -122,12 +122,14 @@
                         <outlet property="athleticsArrow" destination="Cbg-b4-ShW" id="dvH-q7-6WG"/>
                         <outlet property="athleticsButton" destination="REa-nc-rJ8" id="T1P-cy-iL9"/>
                         <outlet property="athleticsLabel" destination="Sq9-Tc-ixd" id="Zzc-QK-5XR"/>
+                        <outlet property="blackWoodBackground" destination="pKU-th-Zlx" id="KVV-V1-6US"/>
                         <outlet property="dateLabel" destination="Ho4-Rt-iW0" id="UgS-nK-qu3"/>
                         <outlet property="dayLabel" destination="TpI-bY-RWa" id="QSH-hh-40z"/>
                         <outlet property="infoArrow" destination="4Oh-VZ-uYS" id="vCg-PY-AfF"/>
                         <outlet property="infoButton" destination="vwP-mK-VzY" id="zuf-NE-aH2"/>
                         <outlet property="infoLabel" destination="mi7-oy-tBK" id="yvq-tx-gyD"/>
                         <outlet property="rotationLabel" destination="GT6-3R-RtS" id="LAn-tU-0l8"/>
+                        <outlet property="spartanLogo" destination="vn7-E5-jXi" id="iTw-Fk-HHB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yO-Bl-8K9" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -23,6 +23,8 @@
 		122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */; };
 		122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */; };
 		122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */; };
+		122FB90718723B3F00C473BA /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122FB90618723B3F00C473BA /* GoogleMaps.framework */; };
+		122FB90918723B6E00C473BA /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 122FB90818723B6E00C473BA /* GoogleMaps.bundle */; };
 		124981B116B4B14300195C2B /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B016B4B14300195C2B /* mapicon.png */; };
 		1253D00C17E7D78700E52987 /* BlockRotation2014.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00B17E7D78700E52987 /* BlockRotation2014.txt */; };
 		1253D00E17E7D9D900E52987 /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00D17E7D9D900E52987 /* Calendar.pdf */; };
@@ -32,8 +34,6 @@
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
-		12D0B4701870DD2000AD83EA /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0B46F1870DD2000AD83EA /* GoogleMaps.framework */; };
-		12D0B4721870DD3C00AD83EA /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4711870DD3C00AD83EA /* GoogleMaps.bundle */; };
 		12D0B4741870DDCA00AD83EA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0B4731870DDCA00AD83EA /* libc++.dylib */; };
 		12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5F16D7173F00BE2F7F /* libicucore.dylib */; };
 		12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6316D7177000BE2F7F /* OpenGLES.framework */; };
@@ -186,6 +186,8 @@
 		122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scheduledetailimage.png; sourceTree = "<group>"; };
 		122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scheduledetailimage@2x.png"; sourceTree = "<group>"; };
 		122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5 Black Wood Background3.png"; sourceTree = "<group>"; };
+		122FB90618723B3F00C473BA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		122FB90818723B6E00C473BA /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		124981B016B4B14300195C2B /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
 		1253D00B17E7D78700E52987 /* BlockRotation2014.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2014.txt; sourceTree = "<group>"; };
 		1253D00D17E7D9D900E52987 /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
@@ -195,8 +197,6 @@
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
 		12B8A76A16B3535000C36986 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		12D0B46F1870DD2000AD83EA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../../Desktop/GoogleMaps-iOS-1.6.1 2/GoogleMaps.framework"; sourceTree = "<group>"; };
-		12D0B4711870DD3C00AD83EA /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../../../Desktop/GoogleMaps-iOS-1.6.1 2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		12D0B4731870DDCA00AD83EA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 57.png"; sourceTree = "<group>"; };
 		12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 114.png"; sourceTree = "<group>"; };
@@ -390,7 +390,6 @@
 				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
 				12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */,
 				12D0B4741870DDCA00AD83EA /* libc++.dylib in Frameworks */,
-				12D0B4701870DD2000AD83EA /* GoogleMaps.framework in Frameworks */,
 				667DFE5E16D7172F00BE2F7F /* ImageIO.framework in Frameworks */,
 				667DFE5C16D7171400BE2F7F /* GLKit.framework in Frameworks */,
 				1219800A16CF02BE00C7CF4C /* Social.framework in Frameworks */,
@@ -409,6 +408,7 @@
 				12197FFC16CF025D00C7CF4C /* AudioToolbox.framework in Frameworks */,
 				6650C07916C867CC00233AF1 /* EventKit.framework in Frameworks */,
 				12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */,
+				122FB90718723B3F00C473BA /* GoogleMaps.framework in Frameworks */,
 				66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */,
 				D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */,
 				6672721A14B961670017CEDE /* MapKit.framework in Frameworks */,
@@ -446,20 +446,12 @@
 			name = Athletics;
 			sourceTree = "<group>";
 		};
-		12D0B46E1870DD0100AD83EA /* Google Maps Framework */ = {
-			isa = PBXGroup;
-			children = (
-				12D0B4711870DD3C00AD83EA /* GoogleMaps.bundle */,
-				12D0B46F1870DD2000AD83EA /* GoogleMaps.framework */,
-			);
-			name = "Google Maps Framework";
-			sourceTree = "<group>";
-		};
 		66C6D3651491948C003C95DB = {
 			isa = PBXGroup;
 			children = (
-				12D0B46E1870DD0100AD83EA /* Google Maps Framework */,
 				6118F12A16D2091200413DCD /* libGoogleAnalytics.a */,
+				122FB90818723B6E00C473BA /* GoogleMaps.bundle */,
+				122FB90618723B3F00C473BA /* GoogleMaps.framework */,
 				667DFE6316D7177000BE2F7F /* OpenGLES.framework */,
 				667DFE6116D7174F00BE2F7F /* libstdc++.dylib */,
 				667DFE5F16D7173F00BE2F7F /* libicucore.dylib */,
@@ -797,7 +789,6 @@
 				66CBDBB914A446BD004FE748 /* arrow.png in Resources */,
 				66CBDBCB14A45523004FE748 /* EventsDetailViewController.xib in Resources */,
 				66CE21EF14AD3D5100F6BF0D /* 83-calendar.png in Resources */,
-				12D0B4721870DD3C00AD83EA /* GoogleMaps.bundle in Resources */,
 				66CE21F714AECD0300F6BF0D /* AnnouncementsDetailViewController.xib in Resources */,
 				66CE21FC14AF7F6800F6BF0D /* 111-user.png in Resources */,
 				6664556A14AFF3A1009D0E87 /* WebsiteDetailViewController.xib in Resources */,
@@ -860,6 +851,7 @@
 				661A6D6C16A9E08E00EA4B8A /* Spring.txt in Resources */,
 				12D0B4941870EE4E00AD83EA /* Icon 2014 57.png in Resources */,
 				661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */,
+				122FB90918723B6E00C473BA /* GoogleMaps.bundle in Resources */,
 				661A6D7D16A9FABB00EA4B8A /* ScheduleDetailView.xib in Resources */,
 				661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */,
 				12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */,
@@ -995,6 +987,7 @@
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -1004,6 +997,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1099,6 +1093,7 @@
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -1108,6 +1103,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1128,6 +1124,7 @@
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -1137,6 +1134,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
