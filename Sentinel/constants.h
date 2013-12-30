@@ -4,3 +4,4 @@
 #define kAthleticsScheduleURL @"http://96.126.101.4/sentinel/athletics/schedule.php?codekey=%@"
 #define kWinterStartDate @""
 #define kSpringStartDate @"14/03/2014"
+#define kWebsitesURL @"http://96.126.101.4/sentinel/teacherwebsites.php"

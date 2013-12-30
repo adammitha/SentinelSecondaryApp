@@ -37,23 +37,16 @@
 }
 #pragma mark - View lifecycle
 
-- (void)swipeDidOccur
-{
-    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
-}
 
 - (void)viewDidLoad
 {
-    
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
-    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.webView.scalesPageToFit = YES;
     self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.announcementLink]]];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
-    //swipe     
+    
     [super viewDidLoad];
     self.trackedViewName = @"Announcements Detail View";
     // Do any additional setup after loading the view from its nib.

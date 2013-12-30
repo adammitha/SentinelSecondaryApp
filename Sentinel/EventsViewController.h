@@ -10,7 +10,7 @@
 #import "PullRefreshTableViewController.h"
 #import "GAITrackedViewController.h"
 @class MBProgressHUD;
-@interface EventsViewController : PullRefreshTableViewController
+@interface EventsViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *eventsArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;

@@ -11,6 +11,10 @@
 @implementation AboutUsViewController
 @synthesize webView;
 
+//iOS 7 Hide status bar
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.trackedViewName = @"About Screen";
     self.webView.scalesPageToFit = YES;
     NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"about_us" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];

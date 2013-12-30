@@ -199,7 +199,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="U4Z-98-WNi" kind="relationship" relationship="viewControllers" id="nIl-kV-gxw"/>
+                        <segue destination="3BC-FC-U5g" kind="relationship" relationship="viewControllers" id="hBE-7Y-OF1"/>
                         <segue destination="5SQ-Zg-6CK" kind="relationship" relationship="viewControllers" id="9hZ-yT-uUK"/>
                         <segue destination="vZ8-bz-8RI" kind="relationship" relationship="viewControllers" id="fxK-TY-hZe"/>
                         <segue destination="Fb7-DU-LEa" kind="relationship" relationship="viewControllers" id="e54-bQ-UOh"/>
@@ -236,32 +236,23 @@
         <!--Feedback View Controller - Home-->
         <scene sceneID="NGa-aN-QvO">
             <objects>
-                <viewController id="U4Z-98-WNi" customClass="FeedbackViewController" sceneMemberID="viewController">
+                <viewController title="Home" id="U4Z-98-WNi" customClass="FeedbackViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Qt-ol-xiz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" id="PfJ-8X-x9l">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Home" id="it4-3P-j16">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Pmv-cR-4Dr">
-                                            <connections>
-                                                <action selector="buttonPressed:" destination="U4Z-98-WNi" id="j7p-TY-qHN"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <webView contentMode="scaleToFill" id="UaM-J0-mXF">
-                                <rect key="frame" x="0.0" y="165" width="320" height="268"/>
+                                <rect key="frame" x="0.0" y="186" width="320" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SSS2-1.png" id="yF6-jN-CcU">
-                                <rect key="frame" x="0.0" y="44" width="320" height="130"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone5 Black Wood Background3.png" id="HIv-4X-0EM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -272,9 +263,8 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="53-house.png" id="pQo-Ge-rJz"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="x2l-Gw-3qv"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="webView" destination="UaM-J0-mXF" id="ana-nF-8HO"/>
                     </connections>
@@ -282,7 +272,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUd-Fj-jQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Wve-yQ-Dsw"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-2594"/>
+            <point key="canvasLocation" x="629" y="-2586"/>
+        </scene>
+        <!--Navigation Controller - Home-->
+        <scene sceneID="ec6-J4-ZI3">
+            <objects>
+                <navigationController title="Home" definesPresentationContext="YES" id="3BC-FC-U5g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="53-house.png" id="boY-0E-Mib"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rfK-RQ-a4q">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U4Z-98-WNi" kind="relationship" relationship="rootViewController" id="Gpf-If-h4A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITl-nL-49K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-2566"/>
         </scene>
         <!--Navigation Controller - Teacher Websites-->
         <scene sceneID="jHY-Sx-w9t">
@@ -493,11 +501,11 @@
             </objects>
             <point key="canvasLocation" x="638" y="-1983"/>
         </scene>
-        <!--Navigation Controller - Announcements-->
+        <!--Navigation Controller - eBulletins-->
         <scene sceneID="KO2-kS-fE1">
             <objects>
                 <navigationController definesPresentationContext="YES" id="vZ8-bz-8RI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Announcements" image="66-microphone.png" id="oPa-Vs-D42"/>
+                    <tabBarItem key="tabBarItem" title="eBulletins" image="66-microphone.png" id="oPa-Vs-D42"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" id="jeK-wR-HX5">
                         <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
@@ -727,97 +735,8 @@
         <image name="Sentinel Athletics.png" width="500" height="90"/>
         <image name="Welcome-1.png" width="380" height="90"/>
         <image name="bird_32_black.png" width="32" height="32"/>
+        <image name="iPhone5 Black Wood Background3.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="AboutUsViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutUsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="goHome:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="AnnouncementsViewController" superclassName="PullRefreshTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnnouncementsViewController.h"/>
-        </class>
-        <class className="AthleticsDetailViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsDetailViewController.h"/>
-        </class>
-        <class className="AthleticsHomeViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AthleticsHomeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="outlet" name="athleticsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="DocumentsViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DocumentsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="EventsViewController" superclassName="PullRefreshTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventsViewController.h"/>
-        </class>
-        <class className="FeedbackViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedbackViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="feedback:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GAITrackedViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GAITrackedViewController.h"/>
-        </class>
-        <class className="HomePageViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="longPressDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="pinchDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="rotationDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="swipeDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="tapDetected:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="about" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="athleticsArrow" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="athleticsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="athleticsLabel" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="infoArrow" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="infoLabel" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="rotationLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MapViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="PullRefreshTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
-        </class>
-        <class className="StaffEmailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StaffEmailViewController.h"/>
-        </class>
-        <class className="StandingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StandingsViewController.h"/>
-        </class>
-        <class className="TwitterViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="WebsiteViewController" superclassName="PullRefreshTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebsiteViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

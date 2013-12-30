@@ -31,23 +31,14 @@
 
 
 
-- (void)swipeDidOccur
-{
-    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
-}
-
-
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Staff Emails";
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
-    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-    //swipe 
+    
     
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"emails" ofType:@"txt"]];
     NSError *error;

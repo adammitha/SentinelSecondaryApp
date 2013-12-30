@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PullRefreshTableViewController.h"
 @class MBProgressHUD;
-@interface WebsiteViewController : PullRefreshTableViewController
+@interface WebsiteViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *websitesArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;

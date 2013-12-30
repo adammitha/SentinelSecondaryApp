@@ -57,11 +57,12 @@
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     //swipe 
+     
     
     
     
     [super viewDidLoad];
-    self.title = @"Announcements";
+    self.title = @"eBulletins";
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:kAnnouncementsURL];
@@ -77,23 +78,28 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
 }
 
-- (void)refresh
-{
+-(void)refresh {
+    
     NSURL *url = [NSURL URLWithString:kAnnouncementsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
-    [super refresh];
     
 }
+
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     NSData *responseData = [request responseData];
     NSError *error;
     NSArray *json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     self.announcementsArray = json;
+    [self.refreshControl endRefreshing];
     [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }

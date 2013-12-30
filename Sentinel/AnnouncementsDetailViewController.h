@@ -18,5 +18,4 @@
 @property (nonatomic, strong) NSString *announcementLink;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
-- (void)swipeDidOccur;
 @end

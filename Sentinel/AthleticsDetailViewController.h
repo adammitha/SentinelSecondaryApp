@@ -28,5 +28,4 @@
 @property (nonatomic, strong) ASIHTTPRequest *request0;
 - (void)launchMaps;
 - (void)oneFingerTwoTaps;
-- (void)swipeDidOccur;
 @end
