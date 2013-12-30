@@ -1,5 +1,5 @@
 //
-//  StandingsViewController.h
+//  ScheduleViewController.h
 //  Sentinel
 //
 //  Created by Adam Mitha on 2013-12-29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StandingsViewController : UITableViewController
+@interface ScheduleViewController : UIViewController
 
 @end

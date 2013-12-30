@@ -7,9 +7,10 @@
 //
 
 #import "AthleticsHomeViewController.h"
-#import "StandingsViewController.h"
 #import "AthleticsTabBarViewController.h"
 #import "AthleticsDetailViewController.h"
+#import "StandingsViewController.h"
+#import "ScheduleViewController.h"
 #import "constants.h"
 @interface AthleticsHomeViewController ()
 
@@ -38,7 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.imageView.frame = CGRectMake(0, self.navigationController.navigationBar.frame.size.height+20, self.view.frame.size.width, self.imageView.frame.size.height);
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
@@ -113,11 +114,18 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
-    //vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
-    AthleticsDetailViewController *vc = [[AthleticsDetailViewController alloc] init];
-    vc.sportName = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"name"];
+    StandingsViewController *stvc = [[StandingsViewController alloc] init];
+    stvc.title = @"Standings";
+    stvc.tabBarItem.image = [UIImage imageNamed:@"179-notepad.png"];
+    ScheduleViewController *scvc = [[ScheduleViewController alloc] init];
+    scvc.title = @"Schedule";
+    scvc.tabBarItem.image = [UIImage imageNamed:@"83-calendar.png"];
+    AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
+    vc.viewControllers = [NSArray arrayWithObjects:stvc,scvc,nil];
+    //AthleticsDetailViewController *vc = [[AthleticsDetailViewController alloc] init];
+    //vc.sportName = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"name"];
+    //vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
     //NSLog(@"%@",vc.codekey);
     [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
