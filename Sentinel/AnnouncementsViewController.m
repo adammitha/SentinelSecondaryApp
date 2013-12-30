@@ -10,6 +10,7 @@
 #import "ASIHTTPRequest.h"
 #import "AnnouncementsDetailViewController.h"
 #import "MBProgressHUD.h"
+#import "constants.h"
 @implementation AnnouncementsViewController
 @synthesize announcementsArray = _announcementsArray;
 @synthesize progressHUD = _progressHUD;
@@ -63,7 +64,7 @@
     self.title = @"Announcements";
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
     self.navigationItem.leftBarButtonItem = item;
-    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/announcements.php"];
+    NSURL *url = [NSURL URLWithString:kAnnouncementsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -80,7 +81,7 @@
 
 - (void)refresh
 {
-    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/announcements.php"];
+    NSURL *url = [NSURL URLWithString:kAnnouncementsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -220,7 +221,6 @@
     NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:[self.announcementsArray objectAtIndex:indexPath.row]];
     NSLog(@"%@", [tempDict objectForKey:@"title"]);
     detailViewController.announcementTitle = [tempDict objectForKey:@"title"];
-    detailViewController.announcementDescription = [tempDict objectForKey:@"description"];
     detailViewController.announcementLink = [tempDict objectForKey:@"link"];
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
