@@ -10,6 +10,7 @@
 #import "StandingsViewController.h"
 #import "AthleticsTabBarViewController.h"
 #import "AthleticsDetailViewController.h"
+#import "constants.h"
 @interface AthleticsHomeViewController ()
 
 @end
@@ -50,8 +51,8 @@
     NSDate *today = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd/MM/yyyy"];
-    NSDate *winter = [formatter dateFromString:@"01/12/2013"];
-    NSDate *spring = [formatter dateFromString:@"01/04/2014"];
+    NSDate *winter = [formatter dateFromString:kWinterStartDate];
+    NSDate *spring = [formatter dateFromString:kSpringStartDate];
     NSData *data = [[NSData alloc] init];
     if ([today earlierDate:winter] == today) {
         data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Fall" ofType:@"txt"]];

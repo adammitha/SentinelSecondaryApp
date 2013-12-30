@@ -11,6 +11,7 @@
 #import "MBProgressHUD.h"
 #import "StandingsCustomCell.h"
 #import "ScheduleCustomCell.h"
+#import "constants.h"
 @interface AthleticsDetailViewController ()
 
 @end
@@ -129,7 +130,7 @@
     [self.view addSubview:detailView];
     //NSLog(@"%@", standingsArray);
 
-    request0 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]]];
+    request0 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:kAthleticsStandingsURL,codekey]]];
     [request0 setDelegate:self];
     [request0 startAsynchronous];
     //NSLog(@"%@", standingsArray);
@@ -169,7 +170,7 @@
         standingsTableView.hidden = YES;
         scheduleTableView.hidden = NO;
         detailView.hidden = NO;
-        ASIHTTPRequest *request1 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey]]];
+        ASIHTTPRequest *request1 = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:kAthleticsScheduleURL,codekey]]];
         [request1 setDelegate:self];
         [request1 startAsynchronous];
         [scheduleTableView reloadData];
@@ -183,8 +184,8 @@
     NSArray *data = [NSJSONSerialization JSONObjectWithData:request.responseData options:kNilOptions error:&error];
     NSLog(@"%@",data);
     NSURL *requesturl = request.url;
-    NSString *standingsURL = [NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey];
-    NSString *scheduleURL = [NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/schedule.php?codekey=%@",codekey];
+    NSString *standingsURL = [NSString stringWithFormat:kAthleticsStandingsURL,codekey];
+    NSString *scheduleURL = [NSString stringWithFormat:kAthleticsScheduleURL,codekey];
     if ([requesturl isEqual:[NSURL URLWithString:standingsURL]]) {
         standingsArray = data;
     } else if ([requesturl isEqual:[NSURL URLWithString:scheduleURL]]) {
