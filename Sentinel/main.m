@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GAITrackedViewController.h"
 #import "SentinelAppDelegate.h"
 
 int main(int argc, char *argv[])

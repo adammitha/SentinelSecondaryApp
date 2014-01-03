@@ -31,10 +31,10 @@
 		1253D01017E7DA6B00E52987 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00F17E7DA6B00E52987 /* Important Dates.pdf */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
+		129585FE1875119700825730 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 129585FD1875119700825730 /* libc++.dylib */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
-		12D0B4741870DDCA00AD83EA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0B4731870DDCA00AD83EA /* libc++.dylib */; };
 		12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5F16D7173F00BE2F7F /* libicucore.dylib */; };
 		12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6316D7177000BE2F7F /* OpenGLES.framework */; };
 		12D0B4941870EE4E00AD83EA /* Icon 2014 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */; };
@@ -194,10 +194,10 @@
 		1253D00F17E7DA6B00E52987 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
+		129585FD1875119700825730 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
 		12B8A76A16B3535000C36986 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		12D0B4731870DDCA00AD83EA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 57.png"; sourceTree = "<group>"; };
 		12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 114.png"; sourceTree = "<group>"; };
 		12D0B4931870EE4E00AD83EA /* Icon 2014 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 120.png"; sourceTree = "<group>"; };
@@ -386,10 +386,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129585FE1875119700825730 /* libc++.dylib in Frameworks */,
 				12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */,
 				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
 				12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */,
-				12D0B4741870DDCA00AD83EA /* libc++.dylib in Frameworks */,
 				667DFE5E16D7172F00BE2F7F /* ImageIO.framework in Frameworks */,
 				667DFE5C16D7171400BE2F7F /* GLKit.framework in Frameworks */,
 				1219800A16CF02BE00C7CF4C /* Social.framework in Frameworks */,
@@ -507,7 +507,7 @@
 		66C6D3731491948C003C95DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12D0B4731870DDCA00AD83EA /* libc++.dylib */,
+				129585FD1875119700825730 /* libc++.dylib */,
 				66C6D3741491948C003C95DB /* UIKit.framework */,
 				66C6D3761491948C003C95DB /* Foundation.framework */,
 				66C6D3781491948C003C95DB /* CoreGraphics.framework */,
@@ -985,8 +985,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -996,7 +994,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1091,8 +1088,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1102,7 +1097,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1122,8 +1116,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1133,7 +1125,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/Sailesh/Desktop/GoogleMaps-iOS-1.6.1\\ 2/GoogleMaps.framework/Versions/A",
 					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

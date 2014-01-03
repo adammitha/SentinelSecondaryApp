@@ -14,6 +14,7 @@
 @interface FeedbackViewController : UIViewController <UIWebViewDelegate>
 - (IBAction)feedback:(id)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIImageView *sentinelImage;
 
 - (void)swipeDidOccur;
 @end
