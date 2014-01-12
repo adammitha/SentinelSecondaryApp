@@ -60,7 +60,7 @@
     self.webView.scalesPageToFit = YES;
     CGRect bounds = [[UIScreen mainScreen] bounds];
     if (bounds.size.height == 568) {
-        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 338);
+        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 360);
     } else {
         self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 243);
     }

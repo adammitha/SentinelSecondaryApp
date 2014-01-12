@@ -44,7 +44,7 @@
 
 - (void)viewDidLoad
 {
-    
+    [super viewDidLoad];
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
@@ -53,8 +53,7 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.announcementLink]]];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
-    //swipe     
-    [super viewDidLoad];
+    //swipe
     self.trackedViewName = @"Announcements Detail View";
     // Do any additional setup after loading the view from its nib.
 }

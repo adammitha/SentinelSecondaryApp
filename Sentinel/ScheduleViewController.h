@@ -20,5 +20,6 @@
 @property (nonatomic, strong) UILabel *dateTimeLabel;
 @property (nonatomic, strong) UILabel *locationLabel;
 @property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end

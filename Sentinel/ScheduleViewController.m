@@ -24,6 +24,7 @@
 @synthesize detailView = _detailView;
 @synthesize address;
 @synthesize homeTeamLabel,awayTeamLabel,locationLabel,dateTimeLabel;
+@synthesize refreshControl = _refreshControl;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +44,10 @@
     [_scheduleTableView setDataSource:self];
     [_scheduleTableView setDelegate:self];
     [self.view addSubview:self.scheduleTableView];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    [self.scheduleTableView addSubview:self.refreshControl];
     
     self.detailView = [[UIView alloc] initWithFrame:CGRectMake(0, self.scheduleTableView.frame.origin.y+self.scheduleTableView.frame.size.height, self.view.frame.size.width, 100)];
     self.detailView.backgroundColor = [UIColor clearColor];
@@ -96,11 +101,19 @@
     }
 }
 
+- (void)refresh
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:kAthleticsScheduleURL,self.codekey]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
 #pragma mark - ASIHTTPRequest methods
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
-    
+    [self.refreshControl endRefreshing];
     NSData *responseData = [request responseData];
     NSError* error;
     NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
@@ -111,6 +124,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];

@@ -10,7 +10,7 @@
 #import "PullRefreshTableViewController.h"
 
 @class MBProgressHUD;
-@interface AnnouncementsViewController : PullRefreshTableViewController
+@interface AnnouncementsViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *announcementsArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
