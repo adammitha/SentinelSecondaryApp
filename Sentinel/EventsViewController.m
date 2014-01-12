@@ -55,7 +55,7 @@
 #pragma mark - View lifecycle
 - (void)viewDidLoad
 {
-   
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
@@ -75,6 +75,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
 }
 
 
@@ -84,8 +89,9 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
-    [super refresh];
+
 }
+
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     NSData *responseData = [request responseData];
@@ -94,6 +100,7 @@
     //NSLog(@"%@", json);
     self.eventsArray = json;
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 

@@ -28,6 +28,11 @@
     return self;
 }
 
+//iOS 7 Hide status bar
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -53,6 +58,7 @@
     [[[self navigationController] view] setFrame:[[UIScreen mainScreen] bounds]];
     [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController setNavigationBarHidden:YES];
+    
     //NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
     //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setDelegate:self];
@@ -96,7 +102,6 @@
         self.athleticsButton.frame = CGRectMake(-3, 479, 326, 62);
         self.athleticsLabel.frame = CGRectMake(7, 495, 201, 34);
         self.aboutButton.frame = CGRectMake(96, 544, 128, 20);
-        
     }
     
 }

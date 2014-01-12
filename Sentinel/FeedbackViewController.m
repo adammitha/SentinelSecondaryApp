@@ -46,6 +46,12 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
+- (void)goHome
+{
+    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
+
+}
+
 - (void)swipeDidOccur
 {
     [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
@@ -53,21 +59,40 @@
 
 - (void)viewDidLoad
 {
+    self.title = @"Home";
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     [self.view addGestureRecognizer:swipeRecognizer];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
     CGRect bounds = [[UIScreen mainScreen] bounds];
-    if (bounds.size.height == 568) {
-        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 338);
+    
+    
+    //ios6
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        
+        // Load resources for iOS 6.1 or earlier
+        self.webView.frame = CGRectMake(0, 110, self.view.frame.size.width, 250);
+        self.sentinelImage.frame = CGRectMake(320, 130, 0, 0);
+        
     } else {
-        self.webView.frame = CGRectMake(0, 165, self.view.frame.size.width, 243);
+        
+        // Load resources for iOS 7 or later
+        if (bounds.size.height == 568) {
+            self.webView.frame = CGRectMake(0, 130, self.view.frame.size.width, 400);
+            
+        } else {
+            
+            self.webView.frame = CGRectMake(0, 140, self.view.frame.size.width, 310);
+        }
+        
     }
     NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.tabBarController.customizableViewControllers = nil;
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    self.navigationItem.leftBarButtonItem = item;
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

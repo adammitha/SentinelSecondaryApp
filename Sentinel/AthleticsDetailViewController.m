@@ -41,18 +41,12 @@
     NSLog(@"Action: One finger, two taps");
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.esportsdeskpro.com"]];
 }
-- (void)swipeDidOccur
-{
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
-    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
+    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     //codekey = @"4AF26B37-50A6-475C-8305-4B837F5A0445";
     NSLog(@"%@",codekey);
     self.title = sportName;

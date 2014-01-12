@@ -10,6 +10,7 @@
 #import "WebsiteDetailViewController.h"
 #import "ASIHTTPRequest.h"
 #import "MBProgressHUD.h"
+#import "constants.h"
 
 @implementation WebsiteViewController
 @synthesize websitesArray = _websitesArray;
@@ -33,22 +34,15 @@
 }
 
 #pragma mark - View lifecycle
-- (void)swipeDidOccur
-{
-    [self.tabBarController.navigationController popToRootViewControllerAnimated:YES];
-}
+
 
 - (void)viewDidLoad
 {
     
-    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
-    swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRecognizer];
-    self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-    //swipe 
+     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     [super viewDidLoad];
     self.title = @"Teacher Websites";
-    NSURL *url = [NSURL URLWithString:@"http://sd45app.com/sentinel/teacherwebsites.php"];
+    NSURL *url = [NSURL URLWithString:kWebsitesURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -59,15 +53,20 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
 }
 
 - (void)refresh
 {
-    NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/teacherWebsitesXml"];
+    NSURL *url = [NSURL URLWithString:kWebsitesURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
-    [super refresh];
+    
 }
 - (void)requestFinished:(ASIHTTPRequest *)request 
 {
@@ -75,6 +74,7 @@
     NSError *error;
     NSArray *json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     self.websitesArray = json;
+    [self.refreshControl endRefreshing];
     [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }

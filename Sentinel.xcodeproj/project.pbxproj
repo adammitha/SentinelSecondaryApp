@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121166A815F6D2FF004C32FB /* Icon2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A615F6D2FF004C32FB /* Icon2013.png */; };
-		121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 121166A715F6D2FF004C32FB /* Iconsmall2013.png */; };
 		12197FF916CF013200C7CF4C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FF816CF013200C7CF4C /* Parse.framework */; };
 		12197FFC16CF025D00C7CF4C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FFB16CF025D00C7CF4C /* AudioToolbox.framework */; };
 		12197FFE16CF026400C7CF4C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12197FFD16CF026400C7CF4C /* Accounts.framework */; };
@@ -25,17 +23,23 @@
 		122D03FE16C84B4D00D52FD2 /* Scheduledetailimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */; };
 		122D040016C84B5500D52FD2 /* Scheduledetailimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */; };
 		122D041316C8590100D52FD2 /* iPhone5 Black Wood Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */; };
+		122FB90718723B3F00C473BA /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122FB90618723B3F00C473BA /* GoogleMaps.framework */; };
+		122FB90918723B6E00C473BA /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 122FB90818723B6E00C473BA /* GoogleMaps.bundle */; };
 		124981B116B4B14300195C2B /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 124981B016B4B14300195C2B /* mapicon.png */; };
 		1253D00C17E7D78700E52987 /* BlockRotation2014.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00B17E7D78700E52987 /* BlockRotation2014.txt */; };
 		1253D00E17E7D9D900E52987 /* Calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00D17E7D9D900E52987 /* Calendar.pdf */; };
 		1253D01017E7DA6B00E52987 /* Important Dates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1253D00F17E7DA6B00E52987 /* Important Dates.pdf */; };
-		1253D01317E7E7F200E52987 /* Icon2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 1253D01117E7E7F000E52987 /* Icon2014.png */; };
-		1253D01417E7E7F200E52987 /* Iconsmall2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 1253D01217E7E7F100E52987 /* Iconsmall2014.png */; };
 		127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 127BBE3A15F48AF300D8892E /* Home-arrow2.png */; };
 		128C59D015F167C80095DD5C /* Course Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 128C59CF15F167C80095DD5C /* Course Book.pdf */; };
+		129585FE1875119700825730 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 129585FD1875119700825730 /* libc++.dylib */; };
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
+		12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5F16D7173F00BE2F7F /* libicucore.dylib */; };
+		12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6316D7177000BE2F7F /* OpenGLES.framework */; };
+		12D0B4941870EE4E00AD83EA /* Icon 2014 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */; };
+		12D0B4951870EE4E00AD83EA /* Icon 2014 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */; };
+		12D0B4961870EE4E00AD83EA /* Icon 2014 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4931870EE4E00AD83EA /* Icon 2014 120.png */; };
 		12DAE65216DAD2E7008C908C /* Center Logo outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DAE65116DAD2E7008C908C /* Center Logo outline.png */; };
 		12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */; };
 		12DC6EDA16B4881D000D47FC /* Dotbackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6ED916B4881D000D47FC /* Dotbackground2.png */; };
@@ -53,8 +57,6 @@
 		6190D15616A39E500012E214 /* Athletics Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15516A39E500012E214 /* Athletics Banner.png */; };
 		6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6190D15716A3A1BA0012E214 /* StandingsCustomCell.xib */; };
 		66000AAE14E741CC0004F786 /* Sentinel_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66000AAC14E741CC0004F786 /* Sentinel_Text_Logo.png */; };
-		6605186B17F7214700423DCD /* Fall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6605186A17F7214700423DCD /* Fall.txt */; };
-		6605186D17F726C500423DCD /* constants.h in Resources */ = {isa = PBXBuildFile; fileRef = 6605186C17F726C500423DCD /* constants.h */; };
 		660DE30214EDF32700491668 /* StaffEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30114EDF32700491668 /* StaffEmailViewController.m */; };
 		660DE30714EE1ACD00491668 /* bird_32_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DE30614EE1ACD00491668 /* bird_32_black.png */; };
 		660DE30A14EE1B5100491668 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660DE30914EE1B5100491668 /* TwitterViewController.m */; };
@@ -94,13 +96,8 @@
 		6672721814B95F430017CEDE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672721714B95F430017CEDE /* MapViewController.m */; };
 		6672721A14B961670017CEDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6672721914B961670017CEDE /* MapKit.framework */; };
 		66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66727FED16A98762007BF71D /* Default-568h@2x.png */; };
-		667DFE5816D7166700BE2F7F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5716D7166700BE2F7F /* GoogleMaps.framework */; };
-		667DFE5A16D716BD00BE2F7F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 667DFE5916D716BD00BE2F7F /* GoogleMaps.bundle */; };
 		667DFE5C16D7171400BE2F7F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5B16D7171400BE2F7F /* GLKit.framework */; };
 		667DFE5E16D7172F00BE2F7F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5D16D7172F00BE2F7F /* ImageIO.framework */; };
-		667DFE6016D7173F00BE2F7F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5F16D7173F00BE2F7F /* libicucore.dylib */; };
-		667DFE6216D7174F00BE2F7F /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6116D7174F00BE2F7F /* libstdc++.dylib */; };
-		667DFE6416D7177000BE2F7F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6316D7177000BE2F7F /* OpenGLES.framework */; };
 		668BA0BF1594386E001F516F /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BA0BE1594386E001F516F /* Update.m */; };
 		66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AA27E016CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png */; };
 		66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C6D3741491948C003C95DB /* UIKit.framework */; };
@@ -171,8 +168,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		121166A615F6D2FF004C32FB /* Icon2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2013.png; sourceTree = "<group>"; };
-		121166A715F6D2FF004C32FB /* Iconsmall2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconsmall2013.png; sourceTree = "<group>"; };
 		121166AA15F6D365004C32FB /* Sentinel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
 		12197FF816CF013200C7CF4C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		12197FFB16CF025D00C7CF4C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -191,17 +186,21 @@
 		122D03FD16C84B4C00D52FD2 /* Scheduledetailimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scheduledetailimage.png; sourceTree = "<group>"; };
 		122D03FF16C84B5500D52FD2 /* Scheduledetailimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scheduledetailimage@2x.png"; sourceTree = "<group>"; };
 		122D041216C858FF00D52FD2 /* iPhone5 Black Wood Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5 Black Wood Background3.png"; sourceTree = "<group>"; };
+		122FB90618723B3F00C473BA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		122FB90818723B6E00C473BA /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		124981B016B4B14300195C2B /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
 		1253D00B17E7D78700E52987 /* BlockRotation2014.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlockRotation2014.txt; sourceTree = "<group>"; };
 		1253D00D17E7D9D900E52987 /* Calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calendar.pdf; sourceTree = "<group>"; };
 		1253D00F17E7DA6B00E52987 /* Important Dates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Important Dates.pdf"; sourceTree = "<group>"; };
-		1253D01117E7E7F000E52987 /* Icon2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2014.png; sourceTree = "<group>"; };
-		1253D01217E7E7F100E52987 /* Iconsmall2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconsmall2014.png; sourceTree = "<group>"; };
 		127BBE3A15F48AF300D8892E /* Home-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-arrow2.png"; sourceTree = "<group>"; };
 		128C59CF15F167C80095DD5C /* Course Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Course Book.pdf"; sourceTree = "<group>"; };
+		129585FD1875119700825730 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
 		12B8A76A16B3535000C36986 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 57.png"; sourceTree = "<group>"; };
+		12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 114.png"; sourceTree = "<group>"; };
+		12D0B4931870EE4E00AD83EA /* Icon 2014 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 120.png"; sourceTree = "<group>"; };
 		12DAE65116DAD2E7008C908C /* Center Logo outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Center Logo outline.png"; sourceTree = "<group>"; };
 		12DC6ECC16B481FC000D47FC /* Standings Cell White2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standings Cell White2.png"; sourceTree = "<group>"; };
 		12DC6ED916B4881D000D47FC /* Dotbackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dotbackground2.png; sourceTree = "<group>"; };
@@ -279,8 +278,6 @@
 		6672721714B95F430017CEDE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		6672721914B961670017CEDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		66727FED16A98762007BF71D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		667DFE5716D7166700BE2F7F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		667DFE5916D716BD00BE2F7F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		667DFE5B16D7171400BE2F7F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		667DFE5D16D7172F00BE2F7F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		667DFE5F16D7173F00BE2F7F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -389,9 +386,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667DFE6416D7177000BE2F7F /* OpenGLES.framework in Frameworks */,
-				667DFE6216D7174F00BE2F7F /* libstdc++.dylib in Frameworks */,
-				667DFE6016D7173F00BE2F7F /* libicucore.dylib in Frameworks */,
+				129585FE1875119700825730 /* libc++.dylib in Frameworks */,
+				12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */,
+				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
+				12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */,
 				667DFE5E16D7172F00BE2F7F /* ImageIO.framework in Frameworks */,
 				667DFE5C16D7171400BE2F7F /* GLKit.framework in Frameworks */,
 				1219800A16CF02BE00C7CF4C /* Social.framework in Frameworks */,
@@ -410,16 +408,15 @@
 				12197FFC16CF025D00C7CF4C /* AudioToolbox.framework in Frameworks */,
 				6650C07916C867CC00233AF1 /* EventKit.framework in Frameworks */,
 				12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */,
+				122FB90718723B3F00C473BA /* GoogleMaps.framework in Frameworks */,
 				66C8052214EDA5A500DD312D /* CoreText.framework in Frameworks */,
 				D0152A1C14C2A33C00D87C1D /* AVFoundation.framework in Frameworks */,
 				6672721A14B961670017CEDE /* MapKit.framework in Frameworks */,
 				66CE220514AF8E3100F6BF0D /* MessageUI.framework in Frameworks */,
-				66CBDBAB149C27E7004FE748 /* libz.dylib in Frameworks */,
 				66C6D3751491948C003C95DB /* UIKit.framework in Frameworks */,
 				66C6D3771491948C003C95DB /* Foundation.framework in Frameworks */,
 				12197FF916CF013200C7CF4C /* Parse.framework in Frameworks */,
 				6118F12B16D2091200413DCD /* libGoogleAnalytics.a in Frameworks */,
-				667DFE5816D7166700BE2F7F /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,12 +450,13 @@
 			isa = PBXGroup;
 			children = (
 				6118F12A16D2091200413DCD /* libGoogleAnalytics.a */,
+				122FB90818723B6E00C473BA /* GoogleMaps.bundle */,
+				122FB90618723B3F00C473BA /* GoogleMaps.framework */,
 				667DFE6316D7177000BE2F7F /* OpenGLES.framework */,
 				667DFE6116D7174F00BE2F7F /* libstdc++.dylib */,
 				667DFE5F16D7173F00BE2F7F /* libicucore.dylib */,
 				667DFE5D16D7172F00BE2F7F /* ImageIO.framework */,
 				667DFE5B16D7171400BE2F7F /* GLKit.framework */,
-				667DFE5716D7166700BE2F7F /* GoogleMaps.framework */,
 				1219800916CF02BE00C7CF4C /* Social.framework */,
 				1219800716CF02AD00C7CF4C /* StoreKit.framework */,
 				1219800516CF02A800C7CF4C /* Security.framework */,
@@ -472,10 +470,9 @@
 				12197FF816CF013200C7CF4C /* Parse.framework */,
 				12B8A76A16B3535000C36986 /* CoreData.framework */,
 				66727FED16A98762007BF71D /* Default-568h@2x.png */,
-				1253D01117E7E7F000E52987 /* Icon2014.png */,
-				1253D01217E7E7F100E52987 /* Iconsmall2014.png */,
-				121166A615F6D2FF004C32FB /* Icon2013.png */,
-				121166A715F6D2FF004C32FB /* Iconsmall2013.png */,
+				12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */,
+				12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */,
+				12D0B4931870EE4E00AD83EA /* Icon 2014 120.png */,
 				66C6D37A1491948C003C95DB /* Sentinel */,
 				66C8052114EDA5A500DD312D /* CoreText.framework */,
 				660F36C614C8BEB500666214 /* Button Clicked.png */,
@@ -510,7 +507,7 @@
 		66C6D3731491948C003C95DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				667DFE5916D716BD00BE2F7F /* GoogleMaps.bundle */,
+				129585FD1875119700825730 /* libc++.dylib */,
 				66C6D3741491948C003C95DB /* UIKit.framework */,
 				66C6D3761491948C003C95DB /* Foundation.framework */,
 				66C6D3781491948C003C95DB /* CoreGraphics.framework */,
@@ -808,6 +805,7 @@
 				6612087414C9F97D003E3863 /* Documents-2.png in Resources */,
 				6612087514C9F97D003E3863 /* Documents-3.png in Resources */,
 				6612087614C9F97D003E3863 /* Documents-4.png in Resources */,
+				12D0B4951870EE4E00AD83EA /* Icon 2014 114.png in Resources */,
 				6612087714C9F97D003E3863 /* Documents-5.png in Resources */,
 				6612087A14C9FC69003E3863 /* Document Background.png in Resources */,
 				66490CEA14CA07ED00F99B89 /* Welcome-1.png in Resources */,
@@ -838,21 +836,22 @@
 				128C59D015F167C80095DD5C /* Course Book.pdf in Resources */,
 				127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */,
 				12A5150015F557260022E128 /* emails.txt in Resources */,
-				121166A815F6D2FF004C32FB /* Icon2013.png in Resources */,
-				121166A915F6D2FF004C32FB /* Iconsmall2013.png in Resources */,
 				122C50E8163356140033F322 /* sports.txt in Resources */,
 				122C50F1163389B20033F322 /* Sportscell.png in Resources */,
 				122C50F2163389B20033F322 /* Sportscell@2x.png in Resources */,
 				6190D14B16A369CE0012E214 /* AthleticsHomeViewController.xib in Resources */,
 				6190D15416A390940012E214 /* standings.txt in Resources */,
 				6190D15616A39E500012E214 /* Athletics Banner.png in Resources */,
+				12D0B4961870EE4E00AD83EA /* Icon 2014 120.png in Resources */,
 				6190D15816A3A1BB0012E214 /* StandingsCustomCell.xib in Resources */,
 				66C9736816A948D00020BFEA /* schedule.txt in Resources */,
 				66C9736D16A96A3B0020BFEA /* ScheduleCustomCell.xib in Resources */,
 				66727FEE16A98762007BF71D /* Default-568h@2x.png in Resources */,
 				661A6D6916A9E05600EA4B8A /* Winter.txt in Resources */,
 				661A6D6C16A9E08E00EA4B8A /* Spring.txt in Resources */,
+				12D0B4941870EE4E00AD83EA /* Icon 2014 57.png in Resources */,
 				661A6D6E16A9EAA800EA4B8A /* Timetable.pdf in Resources */,
+				122FB90918723B6E00C473BA /* GoogleMaps.bundle in Resources */,
 				661A6D7D16A9FABB00EA4B8A /* ScheduleDetailView.xib in Resources */,
 				661A6D8116AA266B00EA4B8A /* Outsource Button.png in Resources */,
 				12DC6ECE16B481FC000D47FC /* Standings Cell White2.png in Resources */,
@@ -866,15 +865,10 @@
 				6104C69C16C878BB00D3FA1F /* esportsdeskpro.png in Resources */,
 				6104C69E16C878C200D3FA1F /* esportsdeskpro@2x.png in Resources */,
 				66AA27E116CCAC9C00941FF4 /* iPhone5 Splash Screen 3.png in Resources */,
-				667DFE5A16D716BD00BE2F7F /* GoogleMaps.bundle in Resources */,
 				12DAE65216DAD2E7008C908C /* Center Logo outline.png in Resources */,
 				1253D00C17E7D78700E52987 /* BlockRotation2014.txt in Resources */,
 				1253D00E17E7D9D900E52987 /* Calendar.pdf in Resources */,
 				1253D01017E7DA6B00E52987 /* Important Dates.pdf in Resources */,
-				1253D01317E7E7F200E52987 /* Icon2014.png in Resources */,
-				1253D01417E7E7F200E52987 /* Iconsmall2014.png in Resources */,
-				6605186B17F7214700423DCD /* Fall.txt in Resources */,
-				6605186D17F726C500423DCD /* constants.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,7 +984,8 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -998,7 +993,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1091,7 +1087,8 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -1099,7 +1096,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1117,7 +1115,8 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
@@ -1125,7 +1124,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/Sailesh/Documents/Xcode/SD45App-new/SD45App/GoogleMaps.framework",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

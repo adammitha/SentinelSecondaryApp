@@ -16,5 +16,4 @@
 @property (nonatomic, strong) NSString *fileName;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
-- (void)swipeDidOccur;
 @end

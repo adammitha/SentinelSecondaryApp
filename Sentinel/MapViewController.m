@@ -8,7 +8,9 @@
 
 #import "MapViewController.h"
 
-@implementation MapViewController
+@implementation MapViewController {
+    GMSMapView *mapview_;
+}
 @synthesize webView;
 @synthesize progressHUD;
 @synthesize mapView;
@@ -53,17 +55,17 @@
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:49.346296 longitude:-123.149351 zoom:16];
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     if (screenBounds.size.height == 568) {
-        mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 475) camera:camera];
+        mapview_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 568) camera:camera];
     } else {
-        mapView = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
+        mapview_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
     }
-    mapView.myLocationEnabled = YES;
-    [self.view addSubview:mapView];
-    GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
-    options.position = CLLocationCoordinate2DMake(49.346296, -123.149351);
-    options.title = @"Sentinel Secondary School";
-    options.snippet = @"West Vancouver, BC";
-    [mapView addMarkerWithOptions:options];
+    mapview_.myLocationEnabled = YES;
+    [self.view addSubview:mapview_];
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(49.346296, -123.149351);
+    marker.title = @"Sentinel Secondary School";
+    marker.snippet = @"West Vancouver, BC";
+    marker.map = mapview_;
 }
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
