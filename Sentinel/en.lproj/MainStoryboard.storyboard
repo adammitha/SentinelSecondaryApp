@@ -392,7 +392,7 @@
         <!--Standings View Controller - Standings-->
         <scene sceneID="uSs-DS-tll">
             <objects>
-                <tableViewController id="mAe-EM-dw7" customClass="StandingsViewController" sceneMemberID="viewController">
+                <tableViewController title="Standings" id="mAe-EM-dw7" customClass="StandingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kxi-Yq-K2g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,12 +7,17 @@
 //
 
 #import "StandingsViewController.h"
-
+#import "ASIHTTPRequest.h"
+#import "StandingsCustomCell.h"
 @interface StandingsViewController ()
 
 @end
 
 @implementation StandingsViewController
+
+@synthesize progressHUD = _progressHUD;
+@synthesize codekey = _codekey;
+@synthesize standingsArray = _standingsArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,11 +32,27 @@
 {
     [super viewDidLoad];
     self.title = @"Standings";
+    [self.tableView setDelegate:self];
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height - 49);
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:kAthleticsStandingsURL,self.codekey]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.progressHUD.labelText = @"Loading...";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)refresh
+{
+    //Refresh code
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,30 +61,79 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - ASIHTTPRequest delegate methods
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSData *responseData = [request responseData];
+    NSError* error;
+    NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    self.standingsArray = json;
+    [self.tableView reloadData];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    NSLog(@"Request Failed: %@", [error localizedDescription]);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [alert show];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.standingsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"StandingsCell";
+    StandingsCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StandingsCustomCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
     // Configure the cell...
-    
+    NSDictionary *tempDict = [self.standingsArray objectAtIndex:indexPath.row];
+    cell.teamName.text = [tempDict objectForKey:@"teamName"];
+    cell.wins.text = [NSString stringWithFormat: @"%i",[[tempDict objectForKey:@"wins"] integerValue]];
+    cell.losses.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"losses"] integerValue]];
+    cell.ties.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"ties"] integerValue]];
+    cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"gamesPlayed"] integerValue]];
+    cell.points.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"points"] integerValue]];
     return cell;
+}
+
+#pragma mark - Table view delegate
+
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    //Header
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
+    teamName.backgroundColor = [UIColor clearColor];
+    teamName.textColor = [UIColor whiteColor];
+    teamName.font = [UIFont boldSystemFontOfSize:14];
+    teamName.text = @"Team Name                  W       L     T      GP     P";
+    [headerView addSubview:teamName];
+    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
 }
 
 /*

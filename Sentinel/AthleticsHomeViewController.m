@@ -114,19 +114,17 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSString *codekey = [[self.athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
     StandingsViewController *stvc = [[StandingsViewController alloc] init];
     stvc.title = @"Standings";
+    stvc.codekey = codekey;
     stvc.tabBarItem.image = [UIImage imageNamed:@"179-notepad.png"];
     ScheduleViewController *scvc = [[ScheduleViewController alloc] init];
     scvc.title = @"Schedule";
+    scvc.codekey = codekey;
     scvc.tabBarItem.image = [UIImage imageNamed:@"83-calendar.png"];
     AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
-    vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
     vc.viewControllers = [NSArray arrayWithObjects:stvc,scvc,nil];
-    //AthleticsDetailViewController *vc = [[AthleticsDetailViewController alloc] init];
-    //vc.sportName = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"name"];
-    //vc.codekey = [[athleticsArray objectAtIndex:indexPath.row] objectForKey:@"codekey"];
-    //NSLog(@"%@",vc.codekey);
     [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

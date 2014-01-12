@@ -53,10 +53,6 @@
     [[[self navigationController] view] setFrame:[[UIScreen mainScreen] bounds]];
     [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController setNavigationBarHidden:YES];
-    //NSURL *url = [NSURL URLWithString:@"http://events.sd45app.com/events/blockRotationXml"];
-    //ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    //[request setDelegate:self];
-    //[request startAsynchronous];
     NSData *responseData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BlockRotation2014" ofType:@"txt"]];
     NSError *error;
     self.rotationsDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
@@ -101,23 +97,6 @@
     
 }
 
-/*- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    //NSLog(@"%@", [request responseData]);
-    NSDictionary *tempdict = [NSJSONSerialization JSONObjectWithData:[request responseData] options:kNilOptions error:nil];
-    NSLog(@"%@", tempdict);
-    if ([[tempdict objectForKey:@"Update needed"] isEqualToString:@"YES"]) {
-        NSLog(@"Update needed.");
-        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[tempdict objectForKey:@"Update URL"]]];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Update URL:" message:[tempdict objectForKey:@"Update URL"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
-    }
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    NSLog(@"Error: %@", [[request error] localizedDescription]);
-}*/
 - (void)viewDidUnload
 {
     [self setRotationLabel:nil];

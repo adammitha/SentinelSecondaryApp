@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface StandingsViewController : UITableViewController
-
+#import "MBProgressHUD.h"
+@interface StandingsViewController : UITableViewController <UITableViewDelegate>
+@property (nonatomic, strong) MBProgressHUD *progressHUD;
+@property (nonatomic, strong) NSString *codekey;
+@property (nonatomic, strong) NSArray *standingsArray;
 @end
