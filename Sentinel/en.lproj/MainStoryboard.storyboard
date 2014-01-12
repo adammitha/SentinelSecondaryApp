@@ -163,11 +163,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="athleticsTableView" destination="yL9-nT-p7K" id="z54-eS-iqM"/>
+                        <outlet property="imageView" destination="f4c-Ef-cvg" id="i4Q-t4-jKx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXx-ox-8Zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="741"/>
+            <point key="canvasLocation" x="-85" y="729"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ia4-ii-j8x">

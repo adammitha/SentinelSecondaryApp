@@ -106,23 +106,6 @@
     
 }
 
-/*- (void)requestFinished:(ASIHTTPRequest *)request
-{
-    //NSLog(@"%@", [request responseData]);
-    NSDictionary *tempdict = [NSJSONSerialization JSONObjectWithData:[request responseData] options:kNilOptions error:nil];
-    NSLog(@"%@", tempdict);
-    if ([[tempdict objectForKey:@"Update needed"] isEqualToString:@"YES"]) {
-        NSLog(@"Update needed.");
-        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[tempdict objectForKey:@"Update URL"]]];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Update URL:" message:[tempdict objectForKey:@"Update URL"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
-    }
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    NSLog(@"Error: %@", [[request error] localizedDescription]);
-}*/
 - (void)viewDidUnload
 {
     [self setRotationLabel:nil];

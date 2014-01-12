@@ -51,7 +51,7 @@
 
 - (void)viewDidLoad
 {
-    
+    [super viewDidLoad];
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
@@ -69,7 +69,9 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
-  
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
     // Uncomment the following line to preserve selection between presentations.
@@ -95,6 +97,7 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSData *responseData = [request responseData];
     NSError *error;
     NSArray *json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
@@ -107,6 +110,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request 
 {
+    [self.refreshControl endRefreshing];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the announcements feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];

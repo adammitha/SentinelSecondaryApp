@@ -2,16 +2,14 @@
 //  StandingsViewController.h
 //  Sentinel
 //
-//  Created by Justin Wong on 13-01-13.
+//  Created by Adam Mitha on 2013-12-29.
 //  Copyright (c) 2013 Sentinel Secondary School. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class MBProgressHUD;
-@interface StandingsViewController : UITableViewController
-@property (nonatomic, strong) NSArray *testArray;
-@property (nonatomic, strong) NSString *codekey;
+#import "MBProgressHUD.h"
+@interface StandingsViewController : UITableViewController <UITableViewDelegate>
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
-@property (nonatomic, strong) UIToolbar *toolbar;
-@property (nonatomic, strong) UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) NSString *codekey;
+@property (nonatomic, strong) NSArray *standingsArray;
 @end

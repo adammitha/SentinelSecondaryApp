@@ -7,7 +7,6 @@
 //
 
 #import "AthleticsTabBarViewController.h"
-#import "StandingsViewController.h"
 
 @interface AthleticsTabBarViewController ()
 
@@ -28,11 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    StandingsViewController *svc = [[StandingsViewController alloc] init];
-    NSLog(@"%@",codekey);
-    svc.codekey = self.codekey;
-    [self setViewControllers:[NSArray arrayWithObjects:svc, nil]];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload

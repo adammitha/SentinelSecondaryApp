@@ -2,24 +2,23 @@
 //  StandingsViewController.m
 //  Sentinel
 //
-//  Created by Justin Wong on 13-01-13.
+//  Created by Adam Mitha on 2013-12-29.
 //  Copyright (c) 2013 Sentinel Secondary School. All rights reserved.
 //
 
 #import "StandingsViewController.h"
-#import "StandingsCustomCell.h"
 #import "ASIHTTPRequest.h"
-#import "MBProgressHUD.h"
+#import "StandingsCustomCell.h"
 @interface StandingsViewController ()
 
 @end
 
 @implementation StandingsViewController
-@synthesize testArray;
-@synthesize codekey;
-@synthesize progressHUD;
-@synthesize toolbar;
-@synthesize segmentedControl;
+
+@synthesize progressHUD = _progressHUD;
+@synthesize codekey = _codekey;
+@synthesize standingsArray = _standingsArray;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -32,72 +31,60 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.tableView.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height-30);
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Dotbackground.png"]];
-    toolbar = [[UIToolbar alloc] init];
-    toolbar.barStyle = UIBarStyleBlack;
-    toolbar.frame = CGRectMake(0, 436, self.view.frame.size.width, 44);
-    segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Standings", @"Schedule",nil]];
-    segmentedControl.frame = CGRectMake(self.tableView.bounds.size.width/5, 3, 200, 30);
-    [toolbar addSubview:segmentedControl];
-    [segmentedControl addObserver:self forKeyPath:@"selectedSegmentIndex" options:NSKeyValueObservingOptionNew context:NULL];
-    segmentedControl.selectedSegmentIndex = 0;
-    [self.navigationController.view addSubview:toolbar];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://sd45app.com/sentinel/athletics/standings.php?codekey=%@",codekey]];
+    self.title = @"Standings";
+    [self.tableView setDelegate:self];
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height - 150);
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:kAthleticsStandingsURL,self.codekey]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
     self.progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.progressHUD.labelText = @"Loading...";
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+- (void)refresh
 {
-    NSLog(@"%@", [change objectForKey:NSKeyValueChangeNewKey]);
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:kAthleticsStandingsURL,self.codekey]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
 }
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - ASIHTTPRequest delegate methods
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSData *responseData = [request responseData];
-    NSError *error;
-    testArray = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
-    //NSLog(@"%@",testArray);
+    NSError* error;
+    NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+    self.standingsArray = json;
     [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
-
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     [alert show];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    toolbar.hidden = YES;
-}
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 #pragma mark - Table view data source
@@ -111,12 +98,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if ([testArray count]*30 > (tableView.bounds.size.height - 44)) {
-        return [testArray count] + 2;
-    }
-    else {
-        return [testArray count];
-    }
+    return [self.standingsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -127,47 +109,32 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StandingsCustomCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     // Configure the cell...
-    if (indexPath.row < [testArray count]) {
-        NSDictionary *tempdict = [testArray objectAtIndex:indexPath.row];
-        //NSString *wins = [tempdict objectForKey:@"wins"];
-        //NSInteger winsInt = [wins integerValue];
-        //NSLog(@"%i", winsInt);
-        cell.teamName.text = [tempdict objectForKey:@"teamName"];
-        cell.wins.text = [NSString stringWithFormat: @"%i",[[tempdict objectForKey:@"wins"] integerValue]];
-        cell.losses.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"losses"] integerValue]];
-        cell.ties.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"ties"] integerValue]];
-        cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"gamesPlayed"] integerValue]];
-        cell.points.text = [NSString stringWithFormat:@"%i",[[tempdict objectForKey:@"points"] integerValue]];
-    }
-    else {
-        cell.teamName.text = nil;
-        cell.wins.text = nil;
-        cell.losses.text = nil;
-        cell.ties.text = nil;
-        cell.gamesPlayed.text = nil;
-        cell.points.text = nil;
-    }
+    NSDictionary *tempDict = [self.standingsArray objectAtIndex:indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.teamName.text = [tempDict objectForKey:@"teamName"];
+    cell.wins.text = [NSString stringWithFormat: @"%i",[[tempDict objectForKey:@"wins"] integerValue]];
+    cell.losses.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"losses"] integerValue]];
+    cell.ties.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"ties"] integerValue]];
+    cell.gamesPlayed.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"gamesPlayed"] integerValue]];
+    cell.points.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"points"] integerValue]];
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *imageName;
-    if (indexPath.row % 2) {
-        imageName = @"Standings Cell White.png";
-    }
-    else {
-        imageName = @"Standings Cell Dark White.png";
-    }
-    UIColor *cellColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
-    cell.backgroundColor = cellColor;
-}
+#pragma mark - Table view delegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return 30;
+    //Header
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
+    teamName.backgroundColor = [UIColor clearColor];
+    teamName.textColor = [UIColor whiteColor];
+    teamName.font = [UIFont boldSystemFontOfSize:14];
+    teamName.text = @"Team Name                  W       L     T      GP     P";
+    [headerView addSubview:teamName];
+    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
+    return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -175,18 +142,11 @@
     return 30;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
-    UILabel *teamName = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, tableView.bounds.size.width, 18)];
-    teamName.backgroundColor = [UIColor clearColor];
-    teamName.textColor = [UIColor whiteColor];
-    teamName.font = [UIFont boldSystemFontOfSize:14];
-    teamName.text = @"Team Name               W      L      T      GP      P";
-    [headerView addSubview:teamName];
-    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Standings Cell Blue.png"]]];
-    return headerView;
+    return 28;
 }
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -202,7 +162,7 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -226,17 +186,16 @@
 }
 */
 
-#pragma mark - Table view delegate
+/*
+#pragma mark - Navigation
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+// In a story board-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+
+ */
 
 @end
