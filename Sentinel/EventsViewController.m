@@ -55,14 +55,16 @@
 #pragma mark - View lifecycle
 - (void)viewDidLoad
 {
-   
+    [super viewDidLoad];
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
-      //swipe 
-    [super viewDidLoad];
+      //swipe
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
     self.navigationItem.leftBarButtonItem = item;
     NSURL *url = [NSURL URLWithString:kEventsURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -84,10 +86,10 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
-    [super refresh];
 }
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSData *responseData = [request responseData];
     NSError* error;
     NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
@@ -99,6 +101,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];

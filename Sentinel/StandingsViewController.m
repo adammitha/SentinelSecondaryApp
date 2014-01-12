@@ -33,7 +33,7 @@
     [super viewDidLoad];
     self.title = @"Standings";
     [self.tableView setDelegate:self];
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height - 49);
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height - 150);
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
@@ -52,7 +52,10 @@
 
 - (void)refresh
 {
-    //Refresh code
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:kAthleticsStandingsURL,self.codekey]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,6 +68,7 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSData *responseData = [request responseData];
     NSError* error;
     NSArray* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
@@ -75,6 +79,7 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
+    [self.refreshControl endRefreshing];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the events feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
@@ -106,6 +111,7 @@
     }
     // Configure the cell...
     NSDictionary *tempDict = [self.standingsArray objectAtIndex:indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.teamName.text = [tempDict objectForKey:@"teamName"];
     cell.wins.text = [NSString stringWithFormat: @"%i",[[tempDict objectForKey:@"wins"] integerValue]];
     cell.losses.text = [NSString stringWithFormat:@"%i",[[tempDict objectForKey:@"losses"] integerValue]];
@@ -134,6 +140,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 30;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 28;
 }
 
 /*

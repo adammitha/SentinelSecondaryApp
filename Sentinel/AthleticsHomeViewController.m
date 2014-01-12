@@ -125,6 +125,7 @@
     scvc.tabBarItem.image = [UIImage imageNamed:@"83-calendar.png"];
     AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     vc.viewControllers = [NSArray arrayWithObjects:stvc,scvc,nil];
+    vc.tabBar.translucent = NO;
     [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
