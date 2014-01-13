@@ -68,27 +68,26 @@
     self.webView.scalesPageToFit = YES;
     CGRect bounds = [[UIScreen mainScreen] bounds];
     
-    
-    //ios6
-    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-        
-        // Load resources for iOS 6.1 or earlier
-        self.webView.frame = CGRectMake(0, 110, self.view.frame.size.width, 250);
-        self.sentinelImage.frame = CGRectMake(320, 130, 0, 0);
-        
-    } else {
-        
-        // Load resources for iOS 7 or later
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    int ver = [version intValue];
+    if (ver < 7){
+        //iOS 6 work
+        self.webView.frame = CGRectMake(0, 114, self.view.frame.size.width, 254);
+        self.sentinelImage.frame = CGRectMake(0, 0, 320, 130);
+    }
+    else{
+        //iOS 7 work
         if (bounds.size.height == 568) {
-            self.webView.frame = CGRectMake(0, 130, self.view.frame.size.width, 400);
+            self.webView.frame = CGRectMake(0, 187, self.view.frame.size.width, 332);
             
         } else {
             
-            self.webView.frame = CGRectMake(0, 140, self.view.frame.size.width, 310);
+            self.webView.frame = CGRectMake(0, 180, self.view.frame.size.width, 250);
         }
-        
+
     }
-    NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
+    
+     NSString *tempString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"description" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:tempString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     self.tabBarController.moreNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.tabBarController.customizableViewControllers = nil;

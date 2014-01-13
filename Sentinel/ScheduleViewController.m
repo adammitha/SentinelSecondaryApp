@@ -40,7 +40,22 @@
     [super viewDidLoad];
     self.title = @"Schedule";
     self.view.backgroundColor = [UIColor whiteColor];
-    self.scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height+20, self.view.frame.size.width, self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height-156)];
+   
+    
+    //ios6
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        
+        // Load resources for iOS 6.1 or earlier
+         self.scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height-45, self.view.frame.size.width, self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height-156)];
+    } else {
+        
+        // Load resources for iOS 7 or later
+         self.scheduleTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height+20, self.view.frame.size.width, self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height-156)];
+    }
+    
+
+
+
     [_scheduleTableView setDataSource:self];
     [_scheduleTableView setDelegate:self];
     [self.view addSubview:self.scheduleTableView];
