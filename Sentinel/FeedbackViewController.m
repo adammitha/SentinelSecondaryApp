@@ -61,6 +61,7 @@
 - (void)viewDidLoad
 {
     self.title = @"Home";
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     [self.view addGestureRecognizer:swipeRecognizer];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
