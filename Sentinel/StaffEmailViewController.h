@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 @interface StaffEmailViewController : UITableViewController <MFMailComposeViewControllerDelegate>
-- (void)swipeDidOccur;
 @property (nonatomic, strong) NSArray *emailArray;
 @end

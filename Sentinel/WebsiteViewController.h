@@ -13,5 +13,4 @@
 
 @property (nonatomic, strong) NSArray *websitesArray;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
-- (void)swipeDidOccur;
 @end

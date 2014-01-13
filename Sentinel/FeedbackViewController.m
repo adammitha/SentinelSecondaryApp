@@ -11,6 +11,7 @@
 
 @implementation FeedbackViewController
 @synthesize webView = _webView;
+@synthesize sentinelImage = _sentinelImage;
 
 - (IBAction)feedback:(id)sender {
 }

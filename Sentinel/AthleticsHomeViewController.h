@@ -14,7 +14,6 @@
 @interface AthleticsHomeViewController : GAITrackedViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITableView *athleticsTableView;
-@property (nonatomic, strong)
-    NSArray *athleticsArray;
+@property (nonatomic, strong) NSArray *athleticsArray;
 -(void)swipeDidOccur;
 @end
