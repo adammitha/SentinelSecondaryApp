@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Standings";
+    self.tabBarController.title = @"Standings";
     [self.tableView setDelegate:self];
     self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height - 150);
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];

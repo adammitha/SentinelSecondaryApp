@@ -38,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Schedule";
+    self.tabBarController.title = @"Schedule";
     self.view.backgroundColor = [UIColor whiteColor];
    
     
@@ -199,6 +199,7 @@
     }
     NSDictionary *tempDict = [self.scheduleArray objectAtIndex:indexPath.row];
     NSLog(@"%@",tempDict);
+    cell.homeTeam.adjustsFontSizeToFitWidth = YES;
     cell.homeTeam.text = [NSString stringWithFormat:@"%@ vs. %@",[tempDict objectForKey:@"homeTeam"],[tempDict objectForKey:@"awayTeam"]];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"MM/dd/yyyy"];
