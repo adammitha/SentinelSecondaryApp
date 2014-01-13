@@ -39,7 +39,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.imageView.frame = CGRectMake(0, self.navigationController.navigationBar.frame.size.height+20, self.view.frame.size.width, self.imageView.frame.size.height);
+    //if ios 7
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    int ver = [version intValue];
+    if (ver >= 7){
+        
+        self.imageView.frame = CGRectMake(0, self.navigationController.navigationBar.frame.size.height+20, self.view.frame.size.width, self.imageView.frame.size.height);
+    }
+    
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRecognizer];
@@ -125,9 +132,21 @@
     scvc.tabBarItem.image = [UIImage imageNamed:@"83-calendar.png"];
     AthleticsTabBarViewController *vc = [[AthleticsTabBarViewController alloc] init];
     vc.viewControllers = [NSArray arrayWithObjects:stvc,scvc,nil];
-    vc.tabBar.translucent = NO;
+    //vc.tabBar.translucent = NO;
     [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    //ios 7
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    int ver = [version intValue];
+    if (ver >= 7){
+        vc.tabBar.translucent = NO;
+    }
+
+    
 }
+
+
+
 
 @end
