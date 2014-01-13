@@ -35,6 +35,7 @@
 		12A5150015F557260022E128 /* emails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 12A514FF15F557260022E128 /* emails.txt */; };
 		12B8A76B16B3535000C36986 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A76A16B3535000C36986 /* CoreData.framework */; };
 		12B8A77A16B35B7600C36986 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B8A77916B35B7600C36986 /* libsqlite3.dylib */; };
+		12B8B2D91884A9EE00BA5C01 /* 83-calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12B8B2D81884A9EE00BA5C01 /* 83-calendar@2x.png */; };
 		12D0B4751870DDDC00AD83EA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE5F16D7173F00BE2F7F /* libicucore.dylib */; };
 		12D0B4761870DDFA00AD83EA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DFE6316D7177000BE2F7F /* OpenGLES.framework */; };
 		12D0B4941870EE4E00AD83EA /* Icon 2014 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */; };
@@ -199,6 +200,7 @@
 		12A514FF15F557260022E128 /* emails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emails.txt; sourceTree = "<group>"; };
 		12B8A76A16B3535000C36986 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		12B8A77916B35B7600C36986 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12B8B2D81884A9EE00BA5C01 /* 83-calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar@2x.png"; sourceTree = "<group>"; };
 		12D0B4911870EE4E00AD83EA /* Icon 2014 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 57.png"; sourceTree = "<group>"; };
 		12D0B4921870EE4E00AD83EA /* Icon 2014 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 114.png"; sourceTree = "<group>"; };
 		12D0B4931870EE4E00AD83EA /* Icon 2014 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon 2014 120.png"; sourceTree = "<group>"; };
@@ -667,6 +669,7 @@
 				66D209F714EDD6EC001E8CC2 /* 42-photos@2x.png */,
 				66D209F114EDD62B001E8CC2 /* 53-house@2x.png */,
 				66D209F914EDD732001E8CC2 /* 66-microphone@2x.png */,
+				12B8B2D81884A9EE00BA5C01 /* 83-calendar@2x.png */,
 				66CE21EE14AD3D5100F6BF0D /* 83-calendar.png */,
 				66F97E8814F0861100D33150 /* About Us Text.png */,
 				66CBDBB814A446BD004FE748 /* arrow.png */,
@@ -838,6 +841,7 @@
 				66F90C9B14FADA3400FDBF5F /* bird_32_black@2x.png in Resources */,
 				6647F37E152558CD0066F799 /* Home-arrow.png in Resources */,
 				1223FA0015DDFF7200B22BDF /* Sentinel Athletics.png in Resources */,
+				12B8B2D91884A9EE00BA5C01 /* 83-calendar@2x.png in Resources */,
 				128C59D015F167C80095DD5C /* Course Book.pdf in Resources */,
 				127BBE3B15F48AF300D8892E /* Home-arrow2.png in Resources */,
 				12A5150015F557260022E128 /* emails.txt in Resources */,
