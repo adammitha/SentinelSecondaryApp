@@ -54,10 +54,15 @@
     [super viewWillAppear:animated];
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:49.346296 longitude:-123.149351 zoom:16];
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    //4" screen
+    
     if (screenBounds.size.height == 568) {
         mapview_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 568) camera:camera];
     } else {
-        mapview_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 387) camera:camera];
+    
+    //3.5" screen
+        
+        mapview_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 320, 430) camera:camera];
     }
     mapview_.myLocationEnabled = YES;
     [self.view addSubview:mapview_];
