@@ -436,7 +436,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="n2q-Yv-52o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="392"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -447,18 +447,35 @@
                                     <barButtonItem width="43" style="plain" systemItem="fixedSpace" id="Llf-Pb-spS"/>
                                     <barButtonItem image="Home-arrow2.png" width="17" style="plain" id="hic-tg-ORJ">
                                         <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="bNr-jx-sRB"/>
-                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem width="169" style="plain" systemItem="fixedSpace" id="spp-uY-7iA"/>
                                     <barButtonItem tag="1" image="Home-arrow.png" width="17" style="plain" id="vwF-yE-OiU">
                                         <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="sKQ-DR-drV"/>
-                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Wad-wK-KPK"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="Idx-Uf-tC2">
+                                <rect key="frame" x="0.0" y="392" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="refresh" id="FWs-XO-JjP">
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="028-17-eTk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="77" style="plain" systemItem="fixedSpace" id="dgR-uL-M9j"/>
+                                    <barButtonItem tag="1" title="◄" id="cB4-Ur-gv3">
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="bzX-lQ-BpW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="wgc-qs-Vr9"/>
+                                    <barButtonItem tag="2" title="►" id="f60-GB-nNa">
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vk2-jd-J1u" id="dZb-36-nn5"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

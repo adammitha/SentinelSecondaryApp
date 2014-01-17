@@ -81,10 +81,12 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request 
 {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     NSError *error = [request error];
     NSLog(@"Request Failed: %@", [error localizedDescription]);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to connect to the websites feed. Please check your internet connection, then restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
+    
 }
 - (void)viewDidUnload
 {

@@ -42,19 +42,22 @@
 - (IBAction)buttonPressed:(UIBarButtonItem *)sender
 {
     if (sender.tag == 0) {
-        [self.webView goBack];
+        [self.webView reload];
     }
     if (sender.tag == 1) {
+        [self.webView goBack];
+    }
+    if (sender.tag == 2) {
         [self.webView goForward];
     }
-        
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Principal's Tweets";
     self.webView.delegate = self;
-       self.trackedViewName = @"Twitter View";
+    self.trackedViewName = @"Twitter View";
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -65,10 +68,12 @@
     self.progressHUD.labelText = @"Loading...";
 
 }
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
+
 - (void)viewDidUnload
 {
     [self setWebView:nil];
