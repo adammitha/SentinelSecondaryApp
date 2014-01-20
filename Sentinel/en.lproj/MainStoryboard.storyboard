@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wYw-Cs-v7p">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Home Page View Controller-->
@@ -435,29 +435,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="n2q-Yv-52o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="392"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="O44-MQ-wE6">
-                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem width="43" style="plain" systemItem="fixedSpace" id="Llf-Pb-spS"/>
-                                    <barButtonItem image="Home-arrow2.png" width="17" style="plain" id="hic-tg-ORJ">
-                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                    </barButtonItem>
-                                    <barButtonItem width="169" style="plain" systemItem="fixedSpace" id="spp-uY-7iA"/>
-                                    <barButtonItem tag="1" image="Home-arrow.png" width="17" style="plain" id="vwF-yE-OiU">
-                                        <inset key="imageInsets" minX="10" minY="15" maxX="10" maxY="10"/>
-                                    </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Wad-wK-KPK"/>
-                                </items>
-                            </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="Idx-Uf-tC2">
-                                <rect key="frame" x="0.0" y="392" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="0.0" y="386" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-50" maxX="0.0" maxY="50"/>
                                 <items>
                                     <barButtonItem systemItem="refresh" id="FWs-XO-JjP">
                                         <connections>
@@ -478,6 +459,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <webView contentMode="scaleToFill" id="n2q-Yv-52o">
+                                <rect key="frame" x="0.0" y="64" width="320" height="322"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="57"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -744,11 +731,15 @@
         <image name="33-cabinet.png" width="30" height="30"/>
         <image name="42-photos.png" width="30" height="30"/>
         <image name="53-house.png" width="30" height="30"/>
+        <image name="53-house.png" width="30" height="30"/>
         <image name="66-microphone.png" width="30" height="30"/>
         <image name="About Us Text.png" width="490" height="80"/>
         <image name="Athletics Banner.png" width="640" height="168"/>
         <image name="Black Wood Background3.png" width="640" height="960"/>
         <image name="Button Clicked.png" width="640" height="110"/>
+        <image name="Button Clicked.png" width="640" height="110"/>
+        <image name="Button Clicked.png" width="640" height="110"/>
+        <image name="Button.png" width="640" height="110"/>
         <image name="Button.png" width="640" height="110"/>
         <image name="Center Logo-2.png" width="300" height="300"/>
         <image name="Documents-1.png" width="650" height="650"/>
@@ -757,7 +748,7 @@
         <image name="Documents-5.png" width="650" height="650"/>
         <image name="Header 1.png" width="660" height="168"/>
         <image name="Home-arrow.png" width="50" height="50"/>
-        <image name="Home-arrow2.png" width="50" height="50"/>
+        <image name="Home-arrow.png" width="50" height="50"/>
         <image name="SSS2-1.png" width="450" height="168"/>
         <image name="School Info and Events.png" width="640" height="109"/>
         <image name="Sentinel Athletics.png" width="500" height="90"/>
