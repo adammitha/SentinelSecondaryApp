@@ -42,6 +42,20 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:_filePath]]];
     self.trackedViewName = @"Documents Detail View";
     // Do any additional setup after loading the view from its nib.
+    
+    //iOS 6 vs. 7 Graphics placement
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    int ver = [version intValue];
+    if (ver < 7){
+        //iOS 6 work
+            self.webView.frame = CGRectMake(0, 44, self.view.frame.size.width, 436);
+        
+    } else {
+        //iOS 7 work
+ 
+            self.webView.frame = CGRectMake(0, 59, self.view.frame.size.width, 415);
+    }
+    
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView

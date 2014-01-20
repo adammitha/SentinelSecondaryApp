@@ -61,7 +61,12 @@
 - (void)viewDidLoad
 {
     self.title = @"Home";
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //ios6
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
+        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    }
+    
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     [self.view addGestureRecognizer:swipeRecognizer];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
@@ -69,14 +74,22 @@
     self.webView.scalesPageToFit = YES;
     CGRect bounds = [[UIScreen mainScreen] bounds];
     
+    //iOS 6 vs. 7 Graphics placement
     NSString *version = [[UIDevice currentDevice] systemVersion];
     int ver = [version intValue];
     if (ver < 7){
         //iOS 6 work
-        self.webView.frame = CGRectMake(0, 114, self.view.frame.size.width, 254);
-        self.sentinelImage.frame = CGRectMake(0, 0, 320, 130);
-    }
-    else{
+        if (bounds.size.height == 568) {
+            self.webView.frame = CGRectMake(0, 114, self.view.frame.size.width, 342);
+            self.sentinelImage.frame = CGRectMake(0, 0, 320, 130);
+            
+        } else {
+            self.webView.frame = CGRectMake(0, 114, self.view.frame.size.width, 254);
+            self.sentinelImage.frame = CGRectMake(0, 0, 320, 130);
+        }
+
+        
+    } else {
         //iOS 7 work
         if (bounds.size.height == 568) {
             self.webView.frame = CGRectMake(0, 187, self.view.frame.size.width, 332);
