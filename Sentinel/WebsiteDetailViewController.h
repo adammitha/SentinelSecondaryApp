@@ -16,4 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
 - (void)launchURL;
+- (IBAction)goForward:(id)sender;
+- (IBAction)goBack:(id)sender;
+- (IBAction)refresh:(id)sender;
 @end
