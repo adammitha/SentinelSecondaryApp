@@ -66,7 +66,6 @@
         // Load resources for iOS 6.1 or earlier
         self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     }
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccur)];
     [self.view addGestureRecognizer:swipeRecognizer];
     swipeRecognizer.direction= UISwipeGestureRecognizerDirectionRight;
