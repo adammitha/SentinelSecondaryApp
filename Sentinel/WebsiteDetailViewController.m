@@ -73,6 +73,21 @@
     self.trackedViewName = @"Website Detail View";
 }
 
+- (IBAction)refresh:(id)sender
+{
+    [self.webView reload];
+}
+
+- (IBAction)goBack:(id)sender
+{
+    [self.webView goBack];
+}
+
+- (IBAction)goForward:(id)sender
+{
+    [self.webView goForward];
+}
+
 - (void)launchURL
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.siteLink]];
